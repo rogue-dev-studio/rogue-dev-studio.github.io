@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T06:34:26.208Z",
+  "generatedAt": "2026-07-19T12:45:08.929Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -279,7 +279,7 @@
       "html_url": "https://github.com/rogue-dev-studio/laravel-project-management-system-aris",
       "language": "Blade",
       "default_branch": "main",
-      "updated_at": "2026-07-18T15:20:26Z",
+      "updated_at": "2026-07-19T08:40:45Z",
       "images": []
     },
     {
@@ -289,7 +289,7 @@
       "html_url": "https://github.com/rogue-dev-studio/sistem-antrian",
       "language": "Blade",
       "default_branch": "main",
-      "updated_at": "2026-07-19T04:04:34Z",
+      "updated_at": "2026-07-19T08:38:08Z",
       "images": [
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-ambil-nomor.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-nomor-antrian.png",
@@ -300,25 +300,25 @@
     },
     {
       "name": "sistem-informasi-klinik",
-      "description": "Aplikasi klinik : Poliklinik, Pasien, Pendaftaran, Laporan",
-      "homepage": "",
+      "description": "Sistem informasi klinik: pasien, poliklinik, pendaftaran, dan laporan.",
+      "homepage": "https://rogue-dev-studio.github.io/",
       "html_url": "https://github.com/rogue-dev-studio/sistem-informasi-klinik",
       "language": "JavaScript",
-      "default_branch": "main",
-      "updated_at": "2026-07-19T05:55:56Z",
+      "default_branch": "master",
+      "updated_at": "2026-07-19T08:38:00Z",
       "images": [
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/01-login.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/02-dashboard-home.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/03-pasien-index.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/04-pasien-create.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/05-pasien-search.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/06-poliklinik-index.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/07-poliklinik-create.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/08-pendaftaran-index.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/09-pendaftaran-create.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/10-laporan-pasien.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/11-laporan-pendaftaran.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/thumbnail-dashboard.png"
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/01-login.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/02-dashboard-home.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/03-pasien-index.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/04-pasien-create.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/05-pasien-search.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/06-poliklinik-index.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/07-poliklinik-create.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/08-pendaftaran-index.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/09-pendaftaran-create.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/10-laporan-pasien.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/11-laporan-pendaftaran.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/thumbnail-dashboard.png"
       ]
     },
     {
@@ -328,7 +328,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rental-mobil-new",
       "language": "CSS",
       "default_branch": "main",
-      "updated_at": "2026-07-18T15:20:21Z",
+      "updated_at": "2026-07-19T08:42:35Z",
       "images": [
         "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/1.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/2.png",
