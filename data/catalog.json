@@ -299,26 +299,26 @@
       ]
     },
     {
-      "name": "laravel-11-klinik-app",
+      "name": "sistem-informasi-klinik",
       "description": "Aplikasi klinik : Poliklinik, Pasien, Pendaftaran, Laporan",
       "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/laravel-11-klinik-app",
+      "html_url": "https://github.com/rogue-dev-studio/sistem-informasi-klinik",
       "language": "JavaScript",
       "default_branch": "main",
       "updated_at": "2026-07-19T05:55:56Z",
       "images": [
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/01-login.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/02-dashboard-home.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/03-pasien-index.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/04-pasien-create.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/05-pasien-search.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/06-poliklinik-index.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/07-poliklinik-create.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/08-pendaftaran-index.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/09-pendaftaran-create.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/10-laporan-pasien.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/11-laporan-pendaftaran.png",
-        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/thumbnail-dashboard.png"
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/01-login.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/02-dashboard-home.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/03-pasien-index.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/04-pasien-create.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/05-pasien-search.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/06-poliklinik-index.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/07-poliklinik-create.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/08-pendaftaran-index.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/09-pendaftaran-create.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/10-laporan-pasien.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/11-laporan-pendaftaran.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/main/github-contents/thumbnail-dashboard.png"
       ]
     },
     {

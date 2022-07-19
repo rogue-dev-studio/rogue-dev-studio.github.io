@@ -35,13 +35,13 @@ const FEATURED_META = {
         result: 'Proses panggil antrian lebih teratur dan mudah diikuti staf maupun pelanggan.',
         url: 'https://github.com/rogue-dev-studio/sistem-antrian'
     },
-    'laravel-11-klinik-app': {
+    'sistem-informasi-klinik': {
         title: 'Sistem Informasi Klinik',
         category: 'Sistem Informasi',
         problem: 'Klinik membutuhkan pencatatan pasien, poliklinik, dan pendaftaran dalam satu alur.',
         approach: 'Merancang aplikasi klinik yang menghubungkan data pasien dan layanan.',
         result: 'Administrasi klinik lebih tertata dari pendaftaran hingga pelayanan.',
-        url: 'https://github.com/rogue-dev-studio/laravel-11-klinik-app'
+        url: 'https://github.com/rogue-dev-studio/sistem-informasi-klinik'
     },
     'rental-mobil-new': {
         title: 'Rental Mobil',
