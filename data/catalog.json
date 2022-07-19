@@ -1,0 +1,1010 @@
+{
+  "generatedAt": "2026-07-19T06:34:26.208Z",
+  "owner": "rogue-dev-studio",
+  "topics": {
+    "lab": "experiment-arishadisopiyan",
+    "portfolio": "portfolio-arishadisopiyan"
+  },
+  "lab": [
+    {
+      "name": "welcome-me",
+      "description": "Simple welcome landing page for Rogue Dev Studio.",
+      "homepage": "https://rogue-dev-studio.github.io/welcome-me/",
+      "html_url": "https://github.com/rogue-dev-studio/welcome-me",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:39:48Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/welcome-me/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "handwritten-svg-text-animation",
+      "description": "Handwritten SVG text stroke animation.",
+      "homepage": "https://rogue-dev-studio.github.io/handwritten-svg-text-animation/",
+      "html_url": "https://github.com/rogue-dev-studio/handwritten-svg-text-animation",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:46Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/handwritten-svg-text-animation/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "animejs-preloading-particles",
+      "description": "Anime.js particle preloading animation.",
+      "homepage": "https://rogue-dev-studio.github.io/animejs-preloading-particles/",
+      "html_url": "https://github.com/rogue-dev-studio/animejs-preloading-particles",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:43Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/animejs-preloading-particles/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "animejs-logo-animation",
+      "description": "Anime.js logo animation demo.",
+      "homepage": "https://rogue-dev-studio.github.io/animejs-logo-animation/",
+      "html_url": "https://github.com/rogue-dev-studio/animejs-logo-animation",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:42Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/animejs-logo-animation/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "animejs-fireworks-canvas-demo",
+      "description": "Anime.js fireworks canvas demo.",
+      "homepage": "https://rogue-dev-studio.github.io/animejs-fireworks-canvas-demo/",
+      "html_url": "https://github.com/rogue-dev-studio/animejs-fireworks-canvas-demo",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:38Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/animejs-fireworks-canvas-demo/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "floating-draggable-menu",
+      "description": "Floating draggable radial menu demo.",
+      "homepage": "https://rogue-dev-studio.github.io/floating-draggable-menu/",
+      "html_url": "https://github.com/rogue-dev-studio/floating-draggable-menu",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:36Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/floating-draggable-menu/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "color-changing",
+      "description": "Color-changing Anime.js visual effect.",
+      "homepage": "https://rogue-dev-studio.github.io/color-changing/",
+      "html_url": "https://github.com/rogue-dev-studio/color-changing",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:33Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/color-changing/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "Arishadisopiyan3DModelsView",
+      "description": "Web viewer for 3D models by Aris Hadisopiyan.",
+      "homepage": "https://rogue-dev-studio.github.io/Arishadisopiyan3DModelsView/",
+      "html_url": "https://github.com/rogue-dev-studio/Arishadisopiyan3DModelsView",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:33Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/Arishadisopiyan3DModelsView/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "icon-erisu-v1",
+      "description": "Erisu icon font demo page.",
+      "homepage": "https://rogue-dev-studio.github.io/icon-erisu-v1/",
+      "html_url": "https://github.com/rogue-dev-studio/icon-erisu-v1",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:28Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/icon-erisu-v1/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "mobile-planet-gallery",
+      "description": "Mobile-friendly planet gallery with swipe controls.",
+      "homepage": "https://rogue-dev-studio.github.io/mobile-planet-gallery/",
+      "html_url": "https://github.com/rogue-dev-studio/mobile-planet-gallery",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:25Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/mobile-planet-gallery/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "bike-to-school",
+      "description": "Bike to school Lottie / motion demo.",
+      "homepage": "https://rogue-dev-studio.github.io/bike-to-school/",
+      "html_url": "https://github.com/rogue-dev-studio/bike-to-school",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:28Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/bike-to-school/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "BanksyShredder",
+      "description": "Interactive Banksy shredder visual demo.",
+      "homepage": "https://rogue-dev-studio.github.io/BanksyShredder/",
+      "html_url": "https://github.com/rogue-dev-studio/BanksyShredder",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:22Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/BanksyShredder/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "color-nine-blocks-loader",
+      "description": "Colored nine-block CSS loading animation.",
+      "homepage": "https://rogue-dev-studio.github.io/color-nine-blocks-loader/",
+      "html_url": "https://github.com/rogue-dev-studio/color-nine-blocks-loader",
+      "language": "CSS",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:21:20Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/color-nine-blocks-loader/main/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "basic-loading-animation-of-nine-blocks",
+      "description": "CSS nine-block loading animation.",
+      "homepage": "https://rogue-dev-studio.github.io/basic-loading-animation-of-nine-blocks/",
+      "html_url": "https://github.com/rogue-dev-studio/basic-loading-animation-of-nine-blocks",
+      "language": "CSS",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:21:14Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/basic-loading-animation-of-nine-blocks/main/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "3d-globe-earth-with-javascript",
+      "description": "Interactive 3D Earth globe in JavaScript.",
+      "homepage": "https://rogue-dev-studio.github.io/3d-globe-earth-with-javascript/",
+      "html_url": "https://github.com/rogue-dev-studio/3d-globe-earth-with-javascript",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:12Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/3d-globe-earth-with-javascript/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "codeplayground-test",
+      "description": "Test build of the Vite code playground.",
+      "homepage": "https://rogue-dev-studio.github.io/codeplayground-test/",
+      "html_url": "https://github.com/rogue-dev-studio/codeplayground-test",
+      "language": "Vue",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:21:11Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/codeplayground-test/main/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "astronaut-3d",
+      "description": "3D astronaut redirect / demo page.",
+      "homepage": "https://rogue-dev-studio.github.io/astronaut-3d/",
+      "html_url": "https://github.com/rogue-dev-studio/astronaut-3d",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:21:03Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/astronaut-3d/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "astronaut-viewer",
+      "description": "model-viewer demo: interactive astronaut GLB.",
+      "homepage": "https://rogue-dev-studio.github.io/astronaut-viewer/",
+      "html_url": "https://github.com/rogue-dev-studio/astronaut-viewer",
+      "language": "CSS",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:21:00Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/astronaut-viewer/main/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "base-coc",
+      "description": "Clash of Clans TH18 base catalog demo.",
+      "homepage": "https://rogue-dev-studio.github.io/base-coc/",
+      "html_url": "https://github.com/rogue-dev-studio/base-coc",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:20:58Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/base-coc/master/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "wheel-spinner-app",
+      "description": "Spin wheel for raffles, classrooms, and giveaways.",
+      "homepage": "https://rogue-dev-studio.github.io/wheel-spinner-app/",
+      "html_url": "https://github.com/rogue-dev-studio/wheel-spinner-app",
+      "language": "JavaScript",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:20:52Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/wheel-spinner-app/main/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "image-compressor",
+      "description": "In-browser image compressor. Files stay on your device.",
+      "homepage": "https://rogue-dev-studio.github.io/image-compressor/",
+      "html_url": "https://github.com/rogue-dev-studio/image-compressor",
+      "language": "JavaScript",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:20:49Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/image-compressor/main/github-contents/screenshot.png"
+      ]
+    },
+    {
+      "name": "todo-app",
+      "description": "Browser todo list with local storage and Excel export.",
+      "homepage": "https://rogue-dev-studio.github.io/todo-app/",
+      "html_url": "https://github.com/rogue-dev-studio/todo-app",
+      "language": "JavaScript",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:20:46Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/todo-app/main/github-contents/screenshot.png"
+      ]
+    }
+  ],
+  "karya": [
+    {
+      "name": "laravel-project-management-system-aris",
+      "description": "Laravel Project Management System - Template",
+      "homepage": "https://demo-pms.netlify.app/",
+      "html_url": "https://github.com/rogue-dev-studio/laravel-project-management-system-aris",
+      "language": "Blade",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:20:26Z",
+      "images": []
+    },
+    {
+      "name": "sistem-antrian",
+      "description": "Sistem antrian loket berbasis Laravel 11",
+      "homepage": "https://rogue-dev-studio.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/sistem-antrian",
+      "language": "Blade",
+      "default_branch": "main",
+      "updated_at": "2026-07-19T04:04:34Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-ambil-nomor.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-nomor-antrian.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-nomor-mobile.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-panggilan-antrian.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/thumbnail-dashboard.png"
+      ]
+    },
+    {
+      "name": "laravel-11-klinik-app",
+      "description": "Aplikasi klinik : Poliklinik, Pasien, Pendaftaran, Laporan",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/laravel-11-klinik-app",
+      "language": "JavaScript",
+      "default_branch": "main",
+      "updated_at": "2026-07-19T05:55:56Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/01-login.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/02-dashboard-home.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/03-pasien-index.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/04-pasien-create.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/05-pasien-search.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/06-poliklinik-index.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/07-poliklinik-create.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/08-pendaftaran-index.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/09-pendaftaran-create.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/10-laporan-pasien.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/11-laporan-pendaftaran.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-11-klinik-app/main/github-contents/thumbnail-dashboard.png"
+      ]
+    },
+    {
+      "name": "rental-mobil-new",
+      "description": "Rental Mobil Laravel 10 PHP 8.2",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rental-mobil-new",
+      "language": "CSS",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:20:21Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/1.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/2.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/3.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/4.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/5.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/6.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/7.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/8.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/9.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/10.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/11.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/12.png"
+      ]
+    },
+    {
+      "name": "Sistem-Informasi-Seminar-Informatika-",
+      "description": "Sistem Informasi Seminar (Informatika) Change Project To Visual_C_Sistem_Informasi_Seminar_appinventor_mysql_php",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/Sistem-Informasi-Seminar-Informatika-",
+      "language": "Java",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:20:41Z",
+      "images": []
+    },
+    {
+      "name": "Visual_C_Sistem_Informasi_Seminar_appinventor_mysql_php",
+      "description": "-App Inventor Online with Database MySQL Inner Join",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/Visual_C_Sistem_Informasi_Seminar_appinventor_mysql_php",
+      "language": "PHP",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:20:38Z",
+      "images": []
+    },
+    {
+      "name": "ChatGptPhpMySql",
+      "description": "Template Chat GPT with Php and Database MySql",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/ChatGptPhpMySql",
+      "language": "SCSS",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:20:36Z",
+      "images": []
+    },
+    {
+      "name": "laravel-10-deploy-workflow-gh",
+      "description": "Template deploy laravel 10 to netlify",
+      "homepage": "https://zippy-kataifi-e57910.netlify.app/",
+      "html_url": "https://github.com/rogue-dev-studio/laravel-10-deploy-workflow-gh",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:20:32Z",
+      "images": []
+    },
+    {
+      "name": "omeans-team-3d-portfolio",
+      "description": "Get ready to take your 3D modeling portfolio to new heights!",
+      "homepage": "https://rogue-dev-studio.github.io/omeans-team-3d-portfolio/",
+      "html_url": "https://github.com/rogue-dev-studio/omeans-team-3d-portfolio",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:20:28Z",
+      "images": []
+    },
+    {
+      "name": "porto_aplikasi_sistem_informasi_klinik",
+      "description": "Portfolio Aplikasi Sistem Informasi Klinik",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/porto_aplikasi_sistem_informasi_klinik",
+      "language": "CSS",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:20:16Z",
+      "images": []
+    }
+  ],
+  "archive": [
+    {
+      "name": "recent-work",
+      "description": "",
+      "homepage": "https://omeans-team.github.io/recent-work/",
+      "html_url": "https://github.com/rogue-dev-studio/recent-work",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:20:44Z",
+      "images": []
+    },
+    {
+      "name": "omeans-team",
+      "description": "omeans-team/omeans-team is a ✨special ✨ repository that you can use to add a README.md to your GitHub profile. Make sure it’s public and initialize it with a README to get started.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/omeans-team",
+      "language": "",
+      "default_branch": "master",
+      "updated_at": "2026-05-11T15:43:10Z",
+      "images": []
+    },
+    {
+      "name": "rancora-builder-api",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rancora-builder-api",
+      "language": "Blade",
+      "default_branch": "main",
+      "updated_at": "2026-04-14T05:16:06Z",
+      "images": []
+    },
+    {
+      "name": "rancora-builder-fe",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rancora-builder-fe",
+      "language": "",
+      "default_branch": "master",
+      "updated_at": "2026-04-14T05:04:11Z",
+      "images": []
+    },
+    {
+      "name": "n8n-docker-compose-postgresql",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/n8n-docker-compose-postgresql",
+      "language": "",
+      "default_branch": "master",
+      "updated_at": "2025-09-29T07:01:05Z",
+      "images": []
+    },
+    {
+      "name": "omeans-team.github.io",
+      "description": "Live site for omeans-team portfolio",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/omeans-team.github.io",
+      "language": "HTML",
+      "default_branch": "main",
+      "updated_at": "2025-08-25T06:24:38Z",
+      "images": []
+    },
+    {
+      "name": "omeans-team.github",
+      "description": "One-stop website for finding assets/features/projects I produce, including apps/games, 2D/3D, and more.",
+      "homepage": "https://omeans-team.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/omeans-team.github",
+      "language": "SCSS",
+      "default_branch": "omeans-team-published",
+      "updated_at": "2025-07-31T17:19:26Z",
+      "images": []
+    },
+    {
+      "name": "professional-portfolio-template-with-ai-protection",
+      "description": "Professional Portfolio Template with AI Protection - Complete template with license management system, security features, and comprehensive documentation",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/professional-portfolio-template-with-ai-protection",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2025-07-27T12:36:59Z",
+      "images": []
+    },
+    {
+      "name": "dededede",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/dededede",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2024-08-03T15:39:05Z",
+      "images": []
+    },
+    {
+      "name": "laravel-react-admin-master",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/laravel-react-admin-master",
+      "language": "JavaScript",
+      "default_branch": "main",
+      "updated_at": "2024-08-01T07:01:55Z",
+      "images": []
+    },
+    {
+      "name": "omeans-team.github.iofff",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/omeans-team.github.iofff",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2024-07-23T14:35:17Z",
+      "images": []
+    },
+    {
+      "name": "omeansteam",
+      "description": "",
+      "homepage": "https://omeansteam.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/omeansteam",
+      "language": "CSS",
+      "default_branch": "omeans",
+      "updated_at": "2024-07-13T13:36:04Z",
+      "images": []
+    },
+    {
+      "name": "omeans-team.without-jekyll",
+      "description": "One-stop website for finding assets/features/projects I produce, including apps/games, 2D/3D, and more.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/omeans-team.without-jekyll",
+      "language": "Ruby",
+      "default_branch": "main",
+      "updated_at": "2024-07-13T13:34:03Z",
+      "images": []
+    },
+    {
+      "name": "Crud-api",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/Crud-api",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2024-07-13T07:38:09Z",
+      "images": []
+    },
+    {
+      "name": "rentalmobil-deploy-vercel",
+      "description": "",
+      "homepage": "https://rentalmobil-deploy-vercel.vercel.app",
+      "html_url": "https://github.com/rogue-dev-studio/rentalmobil-deploy-vercel",
+      "language": "CSS",
+      "default_branch": "main",
+      "updated_at": "2024-07-08T13:46:56Z",
+      "images": []
+    },
+    {
+      "name": "absensi-unity",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/absensi-unity",
+      "language": "",
+      "default_branch": "master",
+      "updated_at": "2024-06-16T10:12:41Z",
+      "images": []
+    },
+    {
+      "name": "laravel-breeze-landing_page-adminlte---master",
+      "description": "laravel 10 and package laravel/breeze, frontend landing page and backend adminlte",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/laravel-breeze-landing_page-adminlte---master",
+      "language": "HTML",
+      "default_branch": "main",
+      "updated_at": "2024-05-29T12:52:01Z",
+      "images": []
+    },
+    {
+      "name": "omeans-team.githubiop",
+      "description": "One-stop website for finding assets/features/projects I produce, including apps/games, 2D/3D, and more.",
+      "homepage": "https://omeans-team.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/omeans-team.githubiop",
+      "language": "HTML",
+      "default_branch": "gh-pages",
+      "updated_at": "2024-05-29T12:46:09Z",
+      "images": []
+    },
+    {
+      "name": "vercel-laravel-breeze-landing_page-adminlte---master",
+      "description": "laravel 10 package laravel/breeze, landing page and adminlte",
+      "homepage": "https://laravel-breeze-landing-page-adminlte-master.vercel.app",
+      "html_url": "https://github.com/rogue-dev-studio/vercel-laravel-breeze-landing_page-adminlte---master",
+      "language": "HTML",
+      "default_branch": "main",
+      "updated_at": "2024-05-29T12:37:10Z",
+      "images": []
+    },
+    {
+      "name": "vercel-vite",
+      "description": "",
+      "homepage": "https://vercel-vite-phi-nine.vercel.app",
+      "html_url": "https://github.com/rogue-dev-studio/vercel-vite",
+      "language": "Vue",
+      "default_branch": "main",
+      "updated_at": "2024-05-28T17:23:30Z",
+      "images": []
+    },
+    {
+      "name": "laravel-breeze-landing_page---master",
+      "description": "laravel 10 and package laravel/breeze and frontend landing page",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/laravel-breeze-landing_page---master",
+      "language": "CSS",
+      "default_branch": "main",
+      "updated_at": "2024-05-28T10:04:58Z",
+      "images": []
+    },
+    {
+      "name": "laravel-breeze---master",
+      "description": "Laravel 10 and package laravel/breeze",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/laravel-breeze---master",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2024-05-28T09:16:01Z",
+      "images": []
+    },
+    {
+      "name": "hak-akses---master",
+      "description": "Laravel 10 login berdasarkan hak akses",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/hak-akses---master",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2024-05-27T04:21:47Z",
+      "images": []
+    },
+    {
+      "name": "jekyll-ruby",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/jekyll-ruby",
+      "language": "SCSS",
+      "default_branch": "main",
+      "updated_at": "2024-04-22T11:49:14Z",
+      "images": []
+    },
+    {
+      "name": "reactV18.2.0-master-without-ignore-nonpublish",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/reactV18.2.0-master-without-ignore-nonpublish",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2024-04-22T09:35:26Z",
+      "images": []
+    },
+    {
+      "name": "public_assets",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/public_assets",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2024-04-22T09:29:39Z",
+      "images": []
+    },
+    {
+      "name": "reactV18.2.0-master",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/reactV18.2.0-master",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2024-04-22T09:16:43Z",
+      "images": []
+    },
+    {
+      "name": "codeigniter4-master",
+      "description": "codeigniter4 php 8",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/codeigniter4-master",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2024-04-20T11:58:49Z",
+      "images": []
+    },
+    {
+      "name": "codeigniter4.5.1-mysql-grafik-table",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/codeigniter4.5.1-mysql-grafik-table",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2024-04-20T11:56:41Z",
+      "images": []
+    },
+    {
+      "name": "Sistem-Informasi-Seminar-appinventor-mysql-php",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/Sistem-Informasi-Seminar-appinventor-mysql-php",
+      "language": "PHP",
+      "default_branch": "master",
+      "updated_at": "2024-03-22T13:45:56Z",
+      "images": []
+    },
+    {
+      "name": "Sistem-Informasi-Seminar-Java",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/Sistem-Informasi-Seminar-Java",
+      "language": "Java",
+      "default_branch": "master",
+      "updated_at": "2024-03-22T13:43:39Z",
+      "images": []
+    },
+    {
+      "name": "laravel-php-unit-14-07-2018",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/laravel-php-unit-14-07-2018",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2024-03-22T13:36:23Z",
+      "images": []
+    },
+    {
+      "name": "Steganografia-20181104T153639Z-002",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/Steganografia-20181104T153639Z-002",
+      "language": "Java",
+      "default_branch": "master",
+      "updated_at": "2024-03-22T13:12:52Z",
+      "images": []
+    },
+    {
+      "name": "Steganografia-20181104T153639Z-001",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/Steganografia-20181104T153639Z-001",
+      "language": "Java",
+      "default_branch": "master",
+      "updated_at": "2024-03-22T13:09:42Z",
+      "images": []
+    },
+    {
+      "name": "laravel10-api",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/laravel10-api",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2024-03-21T19:00:45Z",
+      "images": []
+    },
+    {
+      "name": "laravel10-vuejs3",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/laravel10-vuejs3",
+      "language": "Vue",
+      "default_branch": "master",
+      "updated_at": "2024-03-21T17:31:02Z",
+      "images": []
+    },
+    {
+      "name": "installation-vuejs",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/installation-vuejs",
+      "language": "",
+      "default_branch": "master",
+      "updated_at": "2024-03-21T16:28:40Z",
+      "images": []
+    },
+    {
+      "name": "collections",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/collections",
+      "language": "HTML",
+      "default_branch": "main",
+      "updated_at": "2024-03-19T05:30:10Z",
+      "images": []
+    },
+    {
+      "name": "laravel-app-test-run",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/laravel-app-test-run",
+      "language": "PHP",
+      "default_branch": "master",
+      "updated_at": "2024-03-04T05:06:54Z",
+      "images": []
+    },
+    {
+      "name": "template-readme",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/template-readme",
+      "language": "",
+      "default_branch": "master",
+      "updated_at": "2024-02-14T14:22:00Z",
+      "images": []
+    },
+    {
+      "name": "bootswatch",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/bootswatch",
+      "language": "HTML",
+      "default_branch": "main",
+      "updated_at": "2024-02-11T09:03:57Z",
+      "images": []
+    },
+    {
+      "name": "Blogger",
+      "description": "dasar blogger",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/Blogger",
+      "language": "",
+      "default_branch": "master",
+      "updated_at": "2024-02-11T05:05:14Z",
+      "images": []
+    },
+    {
+      "name": "img",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/img",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2024-02-10T15:08:17Z",
+      "images": []
+    },
+    {
+      "name": "p0502",
+      "description": "Basic",
+      "homepage": "https://omeansteam.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/p0502",
+      "language": "JavaScript",
+      "default_branch": "main",
+      "updated_at": "2024-02-05T16:03:57Z",
+      "images": []
+    },
+    {
+      "name": "RentalobilTess",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/RentalobilTess",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2024-01-27T15:49:01Z",
+      "images": []
+    },
+    {
+      "name": "rentalobiltes",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rentalobiltes",
+      "language": "PHP",
+      "default_branch": "master",
+      "updated_at": "2024-01-27T15:46:20Z",
+      "images": []
+    },
+    {
+      "name": "app-240124",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/app-240124",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2024-01-24T10:51:26Z",
+      "images": []
+    },
+    {
+      "name": "test-laravel",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/test-laravel",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2024-01-21T17:04:46Z",
+      "images": []
+    },
+    {
+      "name": "omeansteam.github.io",
+      "description": "",
+      "homepage": "https://omeansteam.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/omeansteam.github.io",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2023-11-19T09:51:18Z",
+      "images": []
+    },
+    {
+      "name": "omeansteam.github.io.bu.1",
+      "description": "Omeans Team adalah sebuah website portfolio yang dibuat oleh Aris Hadisopiyan. Website ini menampilkan karya-karya Aris yang mencakup desain grafis, desain UI/UX, serta pengembangan website.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/omeansteam.github.io.bu.1",
+      "language": "SCSS",
+      "default_branch": "omeansteam.github.io",
+      "updated_at": "2023-11-19T08:29:15Z",
+      "images": []
+    },
+    {
+      "name": "guidelines",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/guidelines",
+      "language": "",
+      "default_branch": "master",
+      "updated_at": "2023-11-11T07:58:37Z",
+      "images": []
+    },
+    {
+      "name": "asasas",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/asasas",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2023-10-16T15:37:47Z",
+      "images": []
+    },
+    {
+      "name": "theme",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/theme",
+      "language": "SCSS",
+      "default_branch": "master",
+      "updated_at": "2023-10-16T15:23:48Z",
+      "images": []
+    },
+    {
+      "name": "SubToUnlock",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/SubToUnlock",
+      "language": "PHP",
+      "default_branch": "master",
+      "updated_at": "2023-10-16T14:42:47Z",
+      "images": []
+    },
+    {
+      "name": "coba3",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/coba3",
+      "language": "PHP",
+      "default_branch": "master",
+      "updated_at": "2023-10-15T10:21:45Z",
+      "images": []
+    },
+    {
+      "name": "miniature-train",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/miniature-train",
+      "language": "Hack",
+      "default_branch": "master",
+      "updated_at": "2023-10-15T10:09:02Z",
+      "images": []
+    },
+    {
+      "name": "curly-octo-parakeet",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/curly-octo-parakeet",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2023-10-15T09:50:20Z",
+      "images": []
+    },
+    {
+      "name": "omeansteamx",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/omeansteamx",
+      "language": "Hack",
+      "default_branch": "master",
+      "updated_at": "2023-10-14T18:44:17Z",
+      "images": []
+    },
+    {
+      "name": "omeansteamc",
+      "description": "",
+      "homepage": "https://omeansteam.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/omeansteamc",
+      "language": "Hack",
+      "default_branch": "master",
+      "updated_at": "2023-10-13T14:36:18Z",
+      "images": []
+    },
+    {
+      "name": "about.github.io",
+      "description": "",
+      "homepage": "https://omeansteam.github.io",
+      "html_url": "https://github.com/rogue-dev-studio/about.github.io",
+      "language": "PHP",
+      "default_branch": "master",
+      "updated_at": "2022-10-01T10:45:01Z",
+      "images": []
+    }
+  ]
+}

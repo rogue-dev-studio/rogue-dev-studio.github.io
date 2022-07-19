@@ -1,0 +1,29 @@
+# Local / IDE (never publish)
+.cursor/
+.vscode/
+*.code-workspace
+
+# Secrets & credentials (never publish)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencies / build
+node_modules/
+dist/
+.cache/
+
+# Local scratch (not part of Pages)
+reference/
+AGENTS.md
+*.log
+.temp/
+.tmp/

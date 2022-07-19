@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aset 3D — Rogue Development</title>
+    <meta name="description" content="Galeri aset 3D Rogue Development (Aris Hadisopiyan).">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top">
+        <a class="logo" href="../">ROGUE.DEV</a>
+        <nav>
+            <a href="../">Portfolio</a>
+            <a href="../lab/">Lab</a>
+            <a href="./" class="is-active">Aset 3D</a>
+            <a href="https://www.shutterstock.com/g/ArisHadisopiyan" target="_blank" rel="noopener noreferrer">Stock</a>
+            <a href="https://sketchfab.com/aris.hadisopiyan" target="_blank" rel="noopener noreferrer">Sketchfab</a>
+            <a href="../#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="eyebrow">Rogue Development · Aset 3D</p>
+            <h1>Galeri Model</h1>
+            <p class="lede">Putar model 3D di bawah ini, atau buka koleksi lengkap di Sketchfab.</p>
+        </section>
+
+        <p class="gallery-status" id="gallery-status" role="status">Sedang membuka galeri…</p>
+        <section class="gallery" id="gallery" aria-live="polite"></section>
+
+        <div class="pagination" id="pagination" hidden>
+            <button type="button" class="pagination-btn" id="prev-page" disabled>Sebelumnya</button>
+            <span class="pagination-info">Halaman <span id="page-num">1</span> dari <span id="total-pages">1</span></span>
+            <button type="button" class="pagination-btn" id="next-page" disabled>Selanjutnya</button>
+        </div>
+
+        <div class="cta" id="gallery-actions" hidden>
+            <a class="btn btn-ghost" href="https://sketchfab.com/aris.hadisopiyan" target="_blank" rel="noopener noreferrer">Semua di Sketchfab</a>
+            <a class="btn btn-ghost" href="../">Kembali ke portfolio</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year">2026</span> Rogue Development · Aris Hadisopiyan</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
