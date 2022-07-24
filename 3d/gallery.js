@@ -1,4 +1,4 @@
-const SKETCHFAB_USER = 'aris.hadisopiyan';
+const SKETCHFAB_USER = 'rogue-dev-studio';
 const PAGE_SIZE = 6;
 const API_PAGE_SIZE = 24;
 const API_BASE = 'https://api.sketchfab.com/v3/models';
