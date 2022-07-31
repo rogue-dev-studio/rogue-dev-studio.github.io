@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T08:28:17.828Z",
+  "generatedAt": "2026-07-31T13:25:17.442Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -407,6 +407,26 @@
   ],
   "archive": [
     {
+      "name": "ai-agents-rogue",
+      "description": "Kumpulan AI agents, prompt, rules, skills, dan command workflows terstandarisasi",
+      "homepage": "https://rogue-dev-studio.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue",
+      "language": "PowerShell",
+      "default_branch": "master",
+      "updated_at": "2026-07-31T11:59:56Z",
+      "images": []
+    },
+    {
+      "name": "professional-portfolio-template-with-ai-protection",
+      "description": "Professional Portfolio Template with AI Protection - Complete template with license management system, security features, and comprehensive documentation",
+      "homepage": "https://rogue-dev-studio.github.io/professional-portfolio-template-with-ai-protection/",
+      "html_url": "https://github.com/rogue-dev-studio/professional-portfolio-template-with-ai-protection",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2026-07-31T08:52:44Z",
+      "images": []
+    },
+    {
       "name": "about.github.io",
       "description": "",
       "homepage": "https://rogue-dev-studio.github.io/about.github.io/",
@@ -524,16 +544,6 @@
       "language": "SCSS",
       "default_branch": "omeans-team-published",
       "updated_at": "2025-07-31T17:19:26Z",
-      "images": []
-    },
-    {
-      "name": "professional-portfolio-template-with-ai-protection",
-      "description": "Professional Portfolio Template with AI Protection - Complete template with license management system, security features, and comprehensive documentation",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/professional-portfolio-template-with-ai-protection",
-      "language": "JavaScript",
-      "default_branch": "master",
-      "updated_at": "2025-07-27T12:36:59Z",
       "images": []
     },
     {
@@ -994,16 +1004,6 @@
       "language": "HTML",
       "default_branch": "master",
       "updated_at": "2023-10-15T09:50:20Z",
-      "images": []
-    },
-    {
-      "name": "omeansteamc",
-      "description": "",
-      "homepage": "https://omeansteam.github.io/",
-      "html_url": "https://github.com/rogue-dev-studio/omeansteamc",
-      "language": "Hack",
-      "default_branch": "master",
-      "updated_at": "2023-10-13T14:36:18Z",
       "images": []
     }
   ]
