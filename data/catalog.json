@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T07:57:50.520Z",
+  "generatedAt": "2026-08-01T12:49:30.903Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -407,13 +407,23 @@
   ],
   "archive": [
     {
+      "name": "unity-github-game",
+      "description": "Micro Dodge — lightweight Unity WebGL arcade demo. Dodge obstacles and beat your high score in the browser.",
+      "homepage": "https://rogue-dev-studio.github.io/unity-github-game/",
+      "html_url": "https://github.com/rogue-dev-studio/unity-github-game",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-08-01T09:47:03Z",
+      "images": []
+    },
+    {
       "name": "agents-portfolio",
       "description": "",
       "homepage": "https://rogue-dev-studio.github.io/agents-portfolio/",
       "html_url": "https://github.com/rogue-dev-studio/agents-portfolio",
       "language": "CSS",
       "default_branch": "master",
-      "updated_at": "2026-07-31T16:49:03Z",
+      "updated_at": "2026-08-01T08:18:34Z",
       "images": []
     },
     {
@@ -994,16 +1004,6 @@
       "language": "PHP",
       "default_branch": "master",
       "updated_at": "2023-10-15T10:21:45Z",
-      "images": []
-    },
-    {
-      "name": "miniature-train",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/miniature-train",
-      "language": "Hack",
-      "default_branch": "master",
-      "updated_at": "2023-10-15T10:09:02Z",
       "images": []
     }
   ]
