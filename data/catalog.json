@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T12:49:30.903Z",
+  "generatedAt": "2026-08-01T18:48:37.934Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -407,6 +407,16 @@
   ],
   "archive": [
     {
+      "name": "ai-agents-rogue",
+      "description": "Kumpulan AI agents, prompt, rules, skills, dan command workflows terstandarisasi",
+      "homepage": "https://rogue-dev-studio.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue",
+      "language": "Python",
+      "default_branch": "master",
+      "updated_at": "2026-08-01T14:26:22Z",
+      "images": []
+    },
+    {
       "name": "unity-github-game",
       "description": "Micro Dodge — lightweight Unity WebGL arcade demo. Dodge obstacles and beat your high score in the browser.",
       "homepage": "https://rogue-dev-studio.github.io/unity-github-game/",
@@ -424,16 +434,6 @@
       "language": "CSS",
       "default_branch": "master",
       "updated_at": "2026-08-01T08:18:34Z",
-      "images": []
-    },
-    {
-      "name": "ai-agents-rogue",
-      "description": "Kumpulan AI agents, prompt, rules, skills, dan command workflows terstandarisasi",
-      "homepage": "https://rogue-dev-studio.github.io/",
-      "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue",
-      "language": "Python",
-      "default_branch": "master",
-      "updated_at": "2026-07-31T16:38:55Z",
       "images": []
     },
     {
