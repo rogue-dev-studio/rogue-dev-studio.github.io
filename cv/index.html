@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aris Hadisopiyan — Curriculum Vitae</title>
+  <style>
+    :root {
+      --ink: #111;
+      --muted: #333;
+      --btn: #1a1a1a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #f4f4f4;
+      font: 11pt/1.45 "Calibri", "Segoe UI", Arial, sans-serif;
+    }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 12px;
+      padding: 10px 16px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    .lang-switch {
+      display: inline-flex;
+      border: 1px solid #111;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .lang-switch button {
+      min-height: 40px;
+      padding: 8px 12px;
+      border: 0;
+      background: #fff;
+      color: #111;
+      font: 600 10pt/1 "Segoe UI", Arial, sans-serif;
+      cursor: pointer;
+    }
+    .lang-switch button[aria-pressed="true"] {
+      background: #111;
+      color: #fff;
+    }
+    .lang-switch button:focus-visible {
+      outline: 2px solid #000;
+      outline-offset: 2px;
+    }
+    .toolbar-hint {
+      margin: 0;
+      flex: 1 1 220px;
+      color: var(--muted);
+      font-size: 10pt;
+    }
+    .btn-print,
+    a.btn-nav {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 8px 16px;
+      border: 0;
+      border-radius: 4px;
+      background: var(--btn);
+      color: #fff;
+      font: 600 11pt/1 "Segoe UI", Arial, sans-serif;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    a.btn-nav {
+      background: #fff;
+      color: #111;
+      border: 1px solid #111;
+    }
+    .btn-print:hover,
+    .btn-print:focus-visible,
+    a.btn-nav:hover,
+    a.btn-nav:focus-visible {
+      background: #000;
+      color: #fff;
+      outline: 2px solid #000;
+      outline-offset: 2px;
+    }
+    main {
+      max-width: 210mm;
+      margin: 12px auto 24px;
+      padding: 16mm 18mm;
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+    h1 {
+      margin: 0 0 4px;
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .headline {
+      margin: 0 0 8px;
+      font-size: 12pt;
+      font-weight: 600;
+    }
+    .contact {
+      margin: 0 0 16px;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 10pt;
+    }
+    .contact li { margin: 0; }
+    main a,
+    main a:visited,
+    main a:hover,
+    main a:focus-visible {
+      color: inherit;
+      text-decoration: none;
+    }
+    h2 {
+      margin: 16px 0 8px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid var(--ink);
+      font-size: 12pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    p { margin: 0 0 8px; }
+    .job {
+      margin: 0 0 14px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .keep-print {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .job h3 {
+      margin: 0;
+      font-size: 11pt;
+      font-weight: 700;
+    }
+    .meta {
+      margin: 0 0 4px;
+      color: var(--muted);
+      font-size: 10pt;
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    li { margin: 0 0 4px; }
+    @media (max-width: 640px) {
+      .toolbar {
+        padding: 8px 12px;
+      }
+      .toolbar-hint {
+        display: none;
+      }
+    }
+    @media print {
+      body { background: #fff; }
+      .toolbar { display: none !important; }
+      main {
+        margin: 0;
+        padding: 12mm 15mm;
+        max-width: none;
+        box-shadow: none;
+      }
+      .keep-print,
+      .job {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      h2 {
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+      a,
+      a:visited {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a class="btn-nav" href="../">Portfolio</a>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" id="btn-lang-id" aria-pressed="true">Indonesia</button>
+      <button type="button" id="btn-lang-en" aria-pressed="false">English</button>
+    </div>
+    <button type="button" class="btn-print" id="btn-cetak-pdf" data-i18n="printBtn">Cetak PDF</button>
+    <p class="toolbar-hint" data-i18n="printHint">Pilih <strong>Save as PDF</strong> / <strong>Microsoft Print to PDF</strong> pada dialog cetak.</p>
+  </div>
+
+  <main>
+    <header>
+      <h1>Aris Hadisopiyan</h1>
+      <p class="headline" data-i18n="headline">Software Engineer SIMRS</p>
+      <ul class="contact">
+        <li>Bandung, Jawa Barat, Indonesia</li>
+        <li>Email: <a href="mailto:aris.hadisopiyan@gmail.com">aris.hadisopiyan@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/arishadisopiyan">linkedin.com/in/arishadisopiyan</a></li>
+        <li>GitHub: <a href="https://github.com/rogue-dev-studio">github.com/rogue-dev-studio</a></li>
+      </ul>
+    </header>
+
+    <section>
+      <h2 data-i18n="hSummary">Ringkasan profesional</h2>
+      <p data-i18n="summary">Software Engineer SIMRS (PHP, Yii 2, PostgreSQL) di DHealth, dengan pengalaman bridging BPJS dan ANTROL. Dua tahun Web Developer SIMRS Yii 1 di Inovamedika. Sarjana Informatika UNIPA, IPK 3,60.</p>
+    </section>
+
+    <section>
+      <h2 data-i18n="hExperience">Pengalaman kerja</h2>
+
+      <article class="job">
+        <h3>Software Engineer</h3>
+        <p class="meta" data-i18n="job1meta">DHealth (produk PT Docotel Teknologi Informasi) | Bandung, Jawa Barat, Indonesia | Februari 2025 – Sekarang</p>
+        <ul>
+          <li data-i18n="job1b1">Mengikuti alur SIMRS end-to-end; fokus BPJS, ANTROL, apotek online, serta reservasi kunjungan dan rujukan.</li>
+          <li data-i18n="job1b2">Memakai integrasi pihak ketiga BPJS Kesehatan dan Kemenkes di aplikasi (bridging/API).</li>
+          <li data-i18n="job1b3">PHP, Yii 2, JavaScript, HTML, CSS/Bootstrap, PostgreSQL. Memakai Docker, Redis, dan RabbitMQ di lingkungan tim. GitLab dan Jira.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3 data-i18n="job3title">Pengembang mandiri (sampingan)</h3>
+        <p class="meta" data-i18n="job3meta">Rogue Developer | 2019 – sekarang (Nov 2023 – Jan 2025: aktivitas utama di antara dua pekerjaan)</p>
+        <ul>
+          <li data-i18n="job3b1">Portofolio sistem informasi klinik dan starter Laravel di GitHub.</li>
+          <li data-i18n="job3b2">Katalog AI Agents Rogue (agents, skill, rule, workflow).</li>
+          <li data-i18n="job3b3">Situs studio: <a href="https://rogue-dev-studio.github.io/">rogue-dev-studio.github.io</a> (website, SaaS, aset digital).</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Web Developer</h3>
+        <p class="meta" data-i18n="job2meta">Life as Inovers — PT Inova Medika Solusindo | Bandung, Jawa Barat, Indonesia | November 2021 – November 2023</p>
+        <ul>
+          <li data-i18n="job2b1">Mengembangkan SIMRS end-to-end: pendaftaran, rawat jalan dan inap, rekam medis, farmasi, kasir/billing.</li>
+          <li data-i18n="job2b2">Bridging BPJS, ANTROL, SATUSEHAT, LIS, dan RIS ke dalam alur SIMRS.</li>
+          <li data-i18n="job2b3">PHP, Yii 1, JavaScript, HTML, CSS/Bootstrap, PostgreSQL; Bitbucket dan Jira.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="keep-print">
+      <h2 data-i18n="hEducation">Pendidikan</h2>
+      <article class="job">
+        <h3 data-i18n="eduTitle">Sarjana Komputer, Informatika</h3>
+        <p class="meta">Universitas Negeri Papua (UNIPA) | Manokwari, Papua Barat, Indonesia | 2016 – 2020</p>
+        <p data-i18n="gpa">IPK: 3,60 / 4,00</p>
+      </article>
+    </section>
+
+    <section class="keep-print">
+      <h2 data-i18n="hPublication">Publikasi</h2>
+      <p data-i18n="publication">Hadisopiyan, A., Suhendra, C. D., dan Rantelinggi, P. H. (2020). Membuat Game 3D Survival Horror Suanggi Survival Papua Berbasis Desktop Menggunakan Unity. INFORMAL Informatics Journal, Vol. 5 No. 3. DOI: 10.19184/isj.v5i3.21235. Kata kunci: Unity, C#, Blender, pengembangan game 3D, aplikasi desktop.</p>
+    </section>
+
+    <section class="keep-print">
+      <h2 data-i18n="hSkills">Keahlian teknis</h2>
+      <p data-i18n="skLang">PHP, JavaScript, HTML, CSS, SQL</p>
+      <p data-i18n="skTools">Yii 2, Yii 1, PostgreSQL, Bootstrap, Docker, Redis, RabbitMQ, GitLab, Bitbucket, Jira, Laravel (proyek mandiri)</p>
+      <p data-i18n="skDomain">SIMRS, BPJS, ANTROL, SATUSEHAT, LIS, RIS, apotek online, reservasi kunjungan/rujukan, integrasi Kemenkes</p>
+    </section>
+  </main>
+
+  <script>
+    var I18N = {
+      id: {
+        printBtn: "Cetak PDF",
+        printHint: "Pilih <strong>Save as PDF</strong> / <strong>Microsoft Print to PDF</strong> pada dialog cetak.",
+        headline: "Software Engineer SIMRS",
+        labelSite: "Situs",
+        hSummary: "Ringkasan profesional",
+        summary: "Software Engineer SIMRS (PHP, Yii 2, PostgreSQL) di DHealth, dengan pengalaman bridging BPJS dan ANTROL. Dua tahun Web Developer SIMRS Yii 1 di Inovamedika. Sarjana Informatika UNIPA, IPK 3,60.",
+        hExperience: "Pengalaman kerja",
+        job1meta: "DHealth (produk PT Docotel Teknologi Informasi) | Bandung, Jawa Barat, Indonesia | Februari 2025 – Sekarang",
+        job1b1: "Mengikuti alur SIMRS end-to-end; fokus BPJS, ANTROL, apotek online, serta reservasi kunjungan dan rujukan.",
+        job1b2: "Memakai integrasi pihak ketiga BPJS Kesehatan dan Kemenkes di aplikasi (bridging/API).",
+        job1b3: "PHP, Yii 2, JavaScript, HTML, CSS/Bootstrap, PostgreSQL. Memakai Docker, Redis, dan RabbitMQ di lingkungan tim. GitLab dan Jira.",
+        job2meta: "Life as Inovers — PT Inova Medika Solusindo | Bandung, Jawa Barat, Indonesia | November 2021 – November 2023",
+        job2b1: "Mengembangkan SIMRS end-to-end: pendaftaran, rawat jalan dan inap, rekam medis, farmasi, kasir/billing.",
+        job2b2: "Bridging BPJS, ANTROL, SATUSEHAT, LIS, dan RIS ke dalam alur SIMRS.",
+        job2b3: "PHP, Yii 1, JavaScript, HTML, CSS/Bootstrap, PostgreSQL; Bitbucket dan Jira.",
+        job3title: "Pengembang mandiri (sampingan)",
+        job3meta: "Rogue Developer | 2019 – sekarang (Nov 2023 – Jan 2025: aktivitas utama di antara dua pekerjaan)",
+        job3b1: "Portofolio sistem informasi klinik dan starter Laravel di GitHub.",
+        job3b2: "Katalog AI Agents Rogue (agents, skill, rule, workflow).",
+        job3b3: "Situs studio: <a href=\"https://rogue-dev-studio.github.io/\">rogue-dev-studio.github.io</a> (website, SaaS, aset digital).",
+        hEducation: "Pendidikan",
+        eduTitle: "Sarjana Komputer, Informatika",
+        gpa: "IPK: 3,60 / 4,00",
+        hPublication: "Publikasi",
+        publication: "Hadisopiyan, A., Suhendra, C. D., dan Rantelinggi, P. H. (2020). Membuat Game 3D Survival Horror Suanggi Survival Papua Berbasis Desktop Menggunakan Unity. INFORMAL Informatics Journal, Vol. 5 No. 3. DOI: 10.19184/isj.v5i3.21235. Kata kunci: Unity, C#, Blender, pengembangan game 3D, aplikasi desktop.",
+        hSkills: "Keahlian teknis",
+        skLang: "PHP, JavaScript, HTML, CSS, SQL",
+        skTools: "Yii 2, Yii 1, PostgreSQL, Bootstrap, Docker, Redis, RabbitMQ, GitLab, Bitbucket, Jira, Laravel (proyek mandiri)",
+        skDomain: "SIMRS, BPJS, ANTROL, SATUSEHAT, LIS, RIS, apotek online, reservasi kunjungan/rujukan, integrasi Kemenkes",
+        skOther: "Unity, Blender (publikasi akademik)",
+        hProjects: "Proyek terpilih",
+        p1: "Portofolio aplikasi sistem informasi klinik (GitHub).",
+        p2: "AI Agents Rogue — katalog agents dan skill (GitHub: rogue-dev-studio/ai-agents-rogue)."
+      },
+      en: {
+        printBtn: "Print PDF",
+        printHint: "Choose <strong>Save as PDF</strong> / <strong>Microsoft Print to PDF</strong> in the print dialog.",
+        headline: "SIMRS Software Engineer",
+        labelSite: "Website",
+        hSummary: "Professional summary",
+        summary: "SIMRS software engineer (PHP, Yii 2, PostgreSQL) at DHealth, with BPJS and ANTROL bridging. Two years as a Yii 1 SIMRS web developer at Inovamedika. B.Comp. Informatics, UNIPA, GPA 3.60.",
+        hExperience: "Work experience",
+        job1meta: "DHealth (product of PT Docotel Teknologi Informasi) | Bandung, West Java, Indonesia | February 2025 – Present",
+        job1b1: "Work across the SIMRS flow end-to-end; focus on BPJS, ANTROL, online pharmacy, and visit/referral reservation.",
+        job1b2: "Use third-party BPJS Kesehatan and Ministry of Health (Kemenkes) integrations in the application (bridging/APIs).",
+        job1b3: "PHP, Yii 2, JavaScript, HTML, CSS/Bootstrap, PostgreSQL. Use Docker, Redis, and RabbitMQ in the team environment. GitLab and Jira.",
+        job2meta: "Life as Inovers — PT Inova Medika Solusindo | Bandung, West Java, Indonesia | November 2021 – November 2023",
+        job2b1: "Built SIMRS end-to-end: registration, outpatient and inpatient, medical records, pharmacy, cashier/billing.",
+        job2b2: "Bridged BPJS, ANTROL, SATUSEHAT, LIS, and RIS into SIMRS workflows.",
+        job2b3: "PHP, Yii 1, JavaScript, HTML, CSS/Bootstrap, PostgreSQL; Bitbucket and Jira.",
+        job3title: "Independent developer (side work)",
+        job3meta: "Rogue Developer | 2019 – present (Nov 2023 – Jan 2025: primary activity between jobs)",
+        job3b1: "Clinic information system portfolio and Laravel starters on GitHub.",
+        job3b2: "AI Agents Rogue catalog (agents, skills, rules, workflows).",
+        job3b3: "Studio site: <a href=\"https://rogue-dev-studio.github.io/\">rogue-dev-studio.github.io</a> (websites, SaaS, digital assets).",
+        hEducation: "Education",
+        eduTitle: "Bachelor of Informatics (Sarjana Komputer)",
+        gpa: "GPA: 3.60 / 4.00",
+        hPublication: "Publication",
+        publication: "Hadisopiyan, A., Suhendra, C. D., and Rantelinggi, P. H. (2020). Membuat Game 3D Survival Horror Suanggi Survival Papua Berbasis Desktop Menggunakan Unity. INFORMAL Informatics Journal, Vol. 5 No. 3. DOI: 10.19184/isj.v5i3.21235. Keywords: Unity, C#, Blender, 3D game development, desktop application.",
+        hSkills: "Technical skills",
+        skLang: "PHP, JavaScript, HTML, CSS, SQL",
+        skTools: "Yii 2, Yii 1, PostgreSQL, Bootstrap, Docker, Redis, RabbitMQ, GitLab, Bitbucket, Jira, Laravel (side projects)",
+        skDomain: "SIMRS, BPJS, ANTROL, SATUSEHAT, LIS, RIS, online pharmacy, visit/referral reservation, Kemenkes integration",
+        skOther: "Unity, Blender (academic publication)",
+        hProjects: "Selected projects",
+        p1: "Clinic information system application portfolio (GitHub).",
+        p2: "AI Agents Rogue — agents and skills catalog (GitHub: rogue-dev-studio/ai-agents-rogue)."
+      }
+    };
+
+    function setLang(lang) {
+      var pack = I18N[lang] || I18N.id;
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n");
+        if (pack[key] != null) el.innerHTML = pack[key];
+      });
+      document.getElementById("btn-lang-id").setAttribute("aria-pressed", lang === "id" ? "true" : "false");
+      document.getElementById("btn-lang-en").setAttribute("aria-pressed", lang === "en" ? "true" : "false");
+      try { localStorage.setItem("cv-lang", lang); } catch (e) {}
+    }
+
+    document.getElementById("btn-lang-id").addEventListener("click", function () { setLang("id"); });
+    document.getElementById("btn-lang-en").addEventListener("click", function () { setLang("en"); });
+    document.getElementById("btn-cetak-pdf").addEventListener("click", function () { window.print(); });
+
+    var saved = "id";
+    try { saved = localStorage.getItem("cv-lang") || "id"; } catch (e) {}
+    if (saved === "en") setLang("en");
+  </script>
+</body>
+</html>

@@ -2,7 +2,6 @@
     const PER_PAGE = 9;
     const OWNER = 'rogue-dev-studio';
     const TOPIC = 'experiment-arishadisopiyan';
-    const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg)$/i;
 
     let page = 1;
     let items = [];
@@ -43,24 +42,20 @@
         return Array.isArray(data.items) ? data.items : [];
     }
 
-    async function fetchContentImages(repo) {
-        try {
-            const response = await fetch(`https://api.github.com/repos/${OWNER}/${encodeURIComponent(repo)}/contents/github-contents`);
-            if (!response.ok) return [];
-            const entries = await response.json();
-            if (!Array.isArray(entries)) return [];
-            return entries
-                .filter((entry) => entry.type === 'file' && IMAGE_EXT.test(entry.name || '') && entry.download_url)
-                .sort((a, b) => a.name.localeCompare(b.name, 'en', { numeric: true }))
-                .map((entry) => entry.download_url);
-        } catch (_) {
-            return [];
-        }
+    const DEFAULT_THUMB = `${window.location.origin}/thumbnail-default.png`;
+    const SVG_FALLBACK = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="100%" height="100%" fill="%23121a16"/><text x="400" y="310" font-family="sans-serif" font-size="28" fill="%23eef5f0" text-anchor="middle">ROGUE.DEV</text></svg>`;
+
+    function mountDefault(el, title) {
+        el.innerHTML = `<img src="${DEFAULT_THUMB}" alt="${escapeHTML(title)}" class="is-fallback">`;
+        const img = el.querySelector('img');
+        img.addEventListener('error', () => {
+            img.src = SVG_FALLBACK;
+        });
     }
 
     function mountMedia(el, images, title) {
         if (!images.length) {
-            el.innerHTML = `<span>${escapeHTML(title)}</span>`;
+            mountDefault(el, title);
             return;
         }
 
@@ -77,9 +72,16 @@
             ` : ''}
         `;
 
-        if (images.length < 2) return;
-
         const slides = [...el.querySelectorAll('.thumb-slide')];
+        const live = slides.map(() => true);
+        slides.forEach((slide, i) => {
+            slide.addEventListener('error', () => {
+                live[i] = false;
+                if (!live.some(Boolean)) mountDefault(el, title);
+            });
+        });
+
+        if (images.length < 2) return;
         const show = (nextIndex) => {
             index = (nextIndex + slides.length) % slides.length;
             slides.forEach((slide, i) => slide.classList.toggle('is-active', i === index));
@@ -125,10 +127,12 @@
             const card = gallery.children[i];
             if (!card) return;
             const media = card.querySelector('[data-media]');
-            const images = item.images?.length
-                ? item.images
-                : await fetchContentImages(item.repo);
-            mountMedia(media, images, item.title);
+            const images = item.images || [];
+            if (images.length) {
+                mountMedia(media, images, item.title);
+            } else {
+                mountDefault(media, item.title);
+            }
         });
 
         pagination.hidden = totalPages <= 1;

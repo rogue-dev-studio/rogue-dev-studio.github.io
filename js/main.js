@@ -12,12 +12,31 @@ const ARCHIVE_EXCLUDE = new Set([
 
 /** Shared topic cache so Karya + Proyek Lainnya don't double-hit search API */
 const topicCache = new Map();
-const contentImageCache = new Map();
 /** Static catalog from Actions (preferred — no browser API key) */
 let staticCatalog = null;
 
 /** Enrichment for Karya cards keyed by repo name (spek portfolio-arishadisopiyan) */
 const FEATURED_META = {
+    'sijama': {
+        title: 'SIJAMA',
+        category: 'Sistem Informasi',
+        audience: 'Pengurus organisasi',
+        stack: 'Laravel 11 · React · PostgreSQL · Docker',
+        requirements: [
+            'Pendataan anggota berjenjang wilayah',
+            'RBAC peran pengguna',
+            'Jadwal pengajian & kegiatan',
+            'Absensi pengajian dengan face recognition'
+        ],
+        problem: 'Pendataan anggota, jadwal, dan absensi masih terpisah dan sulit diaudit.',
+        approach: 'Membangun SIJAMA dengan unggulan face recognition kamera lokal (tanpa cloud) untuk absensi pengajian, plus master wilayah, anggota, dan kegiatan.',
+        result: 'Operasional organisasi punya satu aplikasi web dengan Docker Compose.',
+        url: 'https://github.com/rogue-dev-studio/sijama',
+        images: [
+            'thumbs/sijama/01-face-scan.png',
+            'thumbs/sijama/02-logo.svg'
+        ]
+    },
     'laravel-project-management-system-aris': {
         title: 'Project Management System',
         category: 'Sistem Bisnis',
@@ -85,7 +104,6 @@ const FEATURED_META = {
     }
 };
 
-const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg)$/i;
 const SOCIAL_FALLBACK = [
     { label: 'GitHub', url: 'https://github.com/rogue-dev-studio', icon: 'github' },
     { label: 'GitLab', url: 'https://gitlab.com/aris.hadisopiyan', icon: 'gitlab' },
@@ -93,7 +111,23 @@ const SOCIAL_FALLBACK = [
     { label: 'Instagram', url: 'https://www.instagram.com/aya.erisu/', icon: 'instagram' }
 ];
 
-window.svgFallback = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="100%" height="100%" fill="%23F5F5F0"/><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="%23000000" stroke-width="1" opacity="0.06"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/><rect x="250" y="200" width="300" height="200" fill="none" stroke="%23000000" stroke-width="2"/><text x="400" y="295" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="bold" fill="%23000000" text-anchor="middle" letter-spacing="2">ROGUE.DEV</text><text x="400" y="335" font-family="'Inter', sans-serif" font-size="14" fill="%23666666" text-anchor="middle" letter-spacing="1">NO IMAGE</text></svg>`;
+window.svgFallback = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="100%" height="100%" fill="%23F5F5F0"/><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="%23000000" stroke-width="1" opacity="0.06"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/><rect x="250" y="200" width="300" height="200" fill="none" stroke="%23000000" stroke-width="2"/><text x="400" y="295" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="bold" fill="%23000000" text-anchor="middle" letter-spacing="2">ROGUE.DEV</text></svg>`;
+
+function defaultThumbSrc() {
+    if (window.location.protocol === 'file:') return window.svgFallback;
+    return `${window.location.origin}/thumbnail-default.png`;
+}
+
+function mountDefaultThumb(container, title) {
+    const png = defaultThumbSrc();
+    container.classList.add('thumb-gallery', 'is-default-thumb');
+    container.innerHTML = `<img src="${png}" alt="${escapeHTML(title)}" class="is-fallback">`;
+    const img = container.querySelector('img');
+    img.addEventListener('error', () => {
+        img.onerror = null;
+        img.src = window.svgFallback;
+    });
+}
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -134,14 +168,6 @@ async function loadStaticCatalog() {
         const response = await fetch('data/catalog.json', { cache: 'no-cache' });
         if (!response.ok) return null;
         staticCatalog = await response.json();
-        // Warm image cache from catalog so cards never need live GitHub API
-        for (const section of ['karya', 'lab', 'archive']) {
-            for (const item of staticCatalog[section] || []) {
-                if (item?.name && Array.isArray(item.images) && item.images.length) {
-                    contentImageCache.set(item.name, item.images);
-                }
-            }
-        }
         return staticCatalog;
     } catch (error) {
         console.warn('Static catalog unavailable:', error);
@@ -254,36 +280,6 @@ function renderAvailability() {
     });
 }
 
-async function fetchRepoContentImages(repo) {
-    if (!repo) return [];
-    if (contentImageCache.has(repo)) return contentImageCache.get(repo);
-
-    try {
-        const response = await fetch(`https://api.github.com/repos/${OWNER}/${encodeURIComponent(repo)}/contents/github-contents`);
-        if (!response.ok) {
-            contentImageCache.set(repo, []);
-            return [];
-        }
-
-        const entries = await response.json();
-        if (!Array.isArray(entries)) {
-            contentImageCache.set(repo, []);
-            return [];
-        }
-
-        const urls = entries
-            .filter((entry) => entry.type === 'file' && IMAGE_EXT.test(entry.name || '') && entry.download_url)
-            .sort((a, b) => a.name.localeCompare(b.name, 'en', { numeric: true }))
-            .map((entry) => entry.download_url);
-        contentImageCache.set(repo, urls);
-        return urls;
-    } catch (error) {
-        console.error(`Gagal memuat github-contents/${repo}:`, error);
-        contentImageCache.set(repo, []);
-        return [];
-    }
-}
-
 function ensureLightbox() {
     let root = document.getElementById('image-lightbox');
     if (root) return root;
@@ -381,30 +377,20 @@ function openLightbox(urls, index, title) {
 }
 
 function mountThumbnailGallery(container, images, title) {
-    const urls = images.length ? images : [];
+    const urls = (images || []).filter(Boolean);
     if (!urls.length) {
-        container.innerHTML = `<img src="${window.svgFallback}" alt="${escapeHTML(title)}" class="is-fallback">`;
+        mountDefaultThumb(container, title);
         return;
     }
 
     let index = 0;
-    container.classList.add('thumb-gallery', 'has-peek');
+    container.classList.add('thumb-gallery');
+    container.classList.remove('is-default-thumb');
     container.innerHTML = `
         <div class="thumb-track" role="group" aria-label="Pratinjau ${escapeHTML(title)}">
             ${urls.map((src, i) => `
-                <img src="${escapeHTML(src)}" alt="${escapeHTML(title)} — gambar ${i + 1}" class="thumb-slide${i === 0 ? ' is-active' : ''}" loading="${i === 0 ? 'eager' : 'lazy'}" onerror="this.classList.add('is-broken')">
+                <img src="${escapeHTML(src)}" alt="${escapeHTML(title)} — gambar ${i + 1}" class="thumb-slide${i === 0 ? ' is-active' : ''}" loading="${i === 0 ? 'eager' : 'lazy'}">
             `).join('')}
-        </div>
-        <div class="thumb-peek" hidden>
-            <p class="thumb-peek-title">${escapeHTML(title)} · ${urls.length} gambar</p>
-            <div class="thumb-peek-grid">
-                ${urls.map((src, i) => `
-                    <button type="button" class="thumb-peek-item${i === 0 ? ' is-active' : ''}" data-peek-index="${i}" aria-label="Gambar ${i + 1}">
-                        <img src="${escapeHTML(src)}" alt="" loading="lazy">
-                    </button>
-                `).join('')}
-            </div>
-            <button type="button" class="thumb-peek-open" data-open-full>Lihat penuh</button>
         </div>
         <button type="button" class="thumb-zoom" aria-label="Lihat gambar penuh">Perbesar</button>
         ${urls.length > 1 ? `
@@ -418,21 +404,41 @@ function mountThumbnailGallery(container, images, title) {
 
     const slides = [...container.querySelectorAll('.thumb-slide')];
     const dots = [...container.querySelectorAll('.thumb-dot')];
-    const peekItems = [...container.querySelectorAll('.thumb-peek-item')];
-    const peek = container.querySelector('.thumb-peek');
     const prev = container.querySelector('.thumb-prev');
     const next = container.querySelector('.thumb-next');
     const zoom = container.querySelector('.thumb-zoom');
-    const openBtn = container.querySelector('[data-open-full]');
+    const live = slides.map(() => true);
 
     const show = (nextIndex) => {
-        index = (nextIndex + slides.length) % slides.length;
-        slides.forEach((slide, i) => slide.classList.toggle('is-active', i === index));
+        const n = slides.length;
+        const ok = live.map((v, i) => (v ? i : -1)).filter((i) => i >= 0);
+        if (!ok.length) {
+            stopTimer();
+            mountDefaultThumb(container, title);
+            return;
+        }
+        let wrapped = ((nextIndex % n) + n) % n;
+        if (!live[wrapped]) {
+            const dir = nextIndex >= index ? 1 : -1;
+            for (let step = 1; step <= n; step += 1) {
+                const i = (wrapped + dir * step + n) % n;
+                if (live[i]) {
+                    wrapped = i;
+                    break;
+                }
+            }
+        }
+        index = wrapped;
+        slides.forEach((slide, i) => slide.classList.toggle('is-active', i === index && live[i]));
         dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
-        peekItems.forEach((item, i) => item.classList.toggle('is-active', i === index));
     };
 
-    const openFull = (at = index) => openLightbox(urls, at, title);
+    const openFull = (at = index) => {
+        const okUrls = urls.filter((_, i) => live[i]);
+        if (!okUrls.length) return;
+        const mapped = Math.max(0, urls.slice(0, at + 1).filter((_, i) => live[i]).length - 1);
+        openLightbox(okUrls, mapped, title);
+    };
 
     let timer = null;
     const stopTimer = () => {
@@ -447,58 +453,34 @@ function mountThumbnailGallery(container, images, title) {
         timer = window.setInterval(() => show(index + 1), 4200);
     };
 
-    let hidePeekTimer = null;
-    const showPeek = () => {
-        window.clearTimeout(hidePeekTimer);
-        peek.hidden = false;
-        container.classList.add('is-peeking');
-        stopTimer();
-    };
-    const hidePeek = () => {
-        hidePeekTimer = window.setTimeout(() => {
-            peek.hidden = true;
-            container.classList.remove('is-peeking');
-            startTimer();
-        }, 180);
-    };
-
-    container.addEventListener('mouseenter', showPeek);
-    container.addEventListener('mouseleave', hidePeek);
-    peek.addEventListener('mouseenter', showPeek);
-    peek.addEventListener('mouseleave', hidePeek);
-
-    peekItems.forEach((item) => {
-        item.addEventListener('mouseenter', () => {
-            const i = Number(item.dataset.peekIndex || 0);
-            show(i);
-        });
-        item.addEventListener('click', (event) => {
-            event.preventDefault();
-            event.stopPropagation();
-            const i = Number(item.dataset.peekIndex || 0);
-            show(i);
-            openFull(i);
-        });
-    });
-
     slides.forEach((slide, i) => {
+        slide.addEventListener('error', () => {
+            live[i] = false;
+            slide.classList.add('is-broken');
+            if (!live.some(Boolean)) {
+                stopTimer();
+                mountDefaultThumb(container, title);
+                return;
+            }
+            if (i === index) show(index + 1);
+        });
         slide.style.cursor = 'zoom-in';
         slide.addEventListener('click', (event) => {
             event.preventDefault();
             event.stopPropagation();
+            if (!live[i]) return;
             show(i);
             openFull(i);
         });
     });
 
-    [zoom, openBtn].forEach((btn) => {
-        if (!btn) return;
-        btn.addEventListener('click', (event) => {
+    if (zoom) {
+        zoom.addEventListener('click', (event) => {
             event.preventDefault();
             event.stopPropagation();
             openFull(index);
         });
-    });
+    }
 
     if (urls.length > 1) {
         prev.addEventListener('click', (event) => {
@@ -515,26 +497,16 @@ function mountThumbnailGallery(container, images, title) {
     }
 }
 
-async function hydrateCardGallery(card, repoName, title, fallbackImages = []) {
+async function hydrateCardGallery(card, repoName, title, catalogImages = []) {
     const media = card.querySelector('.project-image');
     if (!media) return;
 
-    const cached = contentImageCache.get(repoName);
-    const initial = (cached && cached.length ? cached : fallbackImages).filter(Boolean);
     media.classList.add('thumb-gallery');
-    if (initial.length) {
-        mountThumbnailGallery(media, initial, title);
-    } else {
-        media.innerHTML = `<img src="${window.svgFallback}" alt="${escapeHTML(title)}" class="is-fallback">`;
+    if (catalogImages.length) {
+        mountThumbnailGallery(media, catalogImages, title);
+        return;
     }
-
-    // Only hit live GitHub API if catalog/cache had no images
-    if (cached && cached.length) return;
-
-    const contentImages = await fetchRepoContentImages(repoName);
-    if (contentImages.length) {
-        mountThumbnailGallery(media, contentImages, title);
-    }
+    mountDefaultThumb(media, title);
 }
 
 async function renderFeaturedProjects() {
@@ -581,15 +553,11 @@ async function renderFeaturedProjects() {
         const category = meta.category || remote?.language || 'Karya';
         const url = meta.url || (remote ? liveOrRepoUrl(remote) : `https://github.com/${OWNER}/${repoName}`);
         const desc = remote?.description || '';
-        if (Array.isArray(remote?.images) && remote.images.length) {
-            contentImageCache.set(repoName, remote.images);
-        }
-
         const card = document.createElement('article');
         card.className = 'project-card featured-card';
 
         const reqList = Array.isArray(meta.requirements) && meta.requirements.length
-            ? `<li><strong>Kebutuhan:</strong> ${meta.requirements.map((r) => escapeHTML(r)).join('; ')}</li>`
+            ? `<li><strong>Kebutuhan:</strong> ${meta.requirements.map((r) => escapeHTML(r)).join(' · ')}</li>`
             : '';
         const audienceLine = meta.audience
             ? `<li><strong>Untuk:</strong> ${escapeHTML(meta.audience)}</li>`
@@ -619,7 +587,7 @@ async function renderFeaturedProjects() {
             </div>
         `;
         grid.appendChild(card);
-        await hydrateCardGallery(card, repoName, title);
+        await hydrateCardGallery(card, repoName, title, (remote?.images?.length ? remote.images : meta.images) || []);
     }));
 
     observeElements();
@@ -774,11 +742,7 @@ function renderProjectsPage(page) {
             </div>
         `;
         grid.appendChild(card);
-
-        if (Array.isArray(repo.images) && repo.images.length) {
-            contentImageCache.set(repo.name, repo.images);
-        }
-        hydrateCardGallery(card, repo.name, title);
+        hydrateCardGallery(card, repo.name, title, repo.images || []);
     });
 
     const pageNumEl = document.getElementById('page-num');
@@ -887,6 +851,27 @@ async function fetchGitHubSocials() {
     }
 }
 
+function setupNav() {
+    const nav = document.querySelector('nav');
+    const toggle = document.querySelector('.nav-toggle');
+    if (!nav || !toggle) return;
+
+    const setOpen = (open) => {
+        nav.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Tutup menu' : 'Buka menu');
+        toggle.textContent = open ? 'Tutup' : 'Menu';
+    };
+
+    toggle.addEventListener('click', () => {
+        setOpen(!nav.classList.contains('is-open'));
+    });
+
+    nav.querySelectorAll('.nav-links a').forEach((link) => {
+        link.addEventListener('click', () => setOpen(false));
+    });
+}
+
 function setupContactForm() {
     const form = document.getElementById('contact-form');
     if (!form) return;
@@ -917,6 +902,7 @@ async function initApp() {
     renderIcons();
     renderAvailability();
     setupContactForm();
+    setupNav();
 
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener('click', function (e) {

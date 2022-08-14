@@ -25,6 +25,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
     padding: 24px 40px;
     border-bottom: 1px solid var(--line);
     position: sticky;
@@ -32,6 +34,21 @@ body {
     background: rgba(14, 14, 14, 0.92);
     backdrop-filter: blur(8px);
     z-index: 10;
+}
+
+.nav-toggle {
+    display: none;
+    min-height: 40px;
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .logo {
@@ -273,12 +290,31 @@ footer {
     .top,
     main,
     footer {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
-    nav {
-        gap: 16px;
+    .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding-top: 8px;
+        border-top: 1px solid var(--line);
+    }
+
+    .top.is-open nav {
+        display: flex;
+    }
+
+    .top nav a {
+        padding: 12px 0;
     }
 
     .gallery {

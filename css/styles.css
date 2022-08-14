@@ -77,8 +77,23 @@ nav {
 
 .nav-links {
     display: flex;
-    gap: 40px;
+    gap: 28px;
     list-style: none;
+}
+
+.nav-toggle {
+    display: none;
+    min-height: 40px;
+    padding: 8px 14px;
+    border: 1px solid var(--outline-color);
+    background: transparent;
+    color: var(--text-primary);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .nav-links a {
@@ -636,15 +651,6 @@ nav {
     border-bottom: 1px solid var(--outline-light);
 }
 
-.project-image.thumb-gallery.has-peek {
-    overflow: visible;
-}
-
-.project-card:has(.is-peeking) {
-    z-index: 6;
-    overflow: visible;
-}
-
 .project-image img,
 .thumb-slide {
     width: 100%;
@@ -677,8 +683,15 @@ nav {
     pointer-events: auto;
 }
 
+.project-image img.is-fallback {
+    filter: none;
+    transform: none;
+    object-fit: cover;
+}
+
 .thumb-gallery .thumb-slide.is-broken {
     opacity: 0 !important;
+    pointer-events: none;
 }
 
 .thumb-nav {
@@ -745,90 +758,6 @@ nav {
     color: var(--bg-primary);
 }
 
-.thumb-gallery.has-peek {
-    overflow: visible;
-    z-index: 1;
-}
-
-.thumb-gallery.is-peeking {
-    z-index: 5;
-}
-
-.thumb-peek {
-    position: absolute;
-    left: 50%;
-    bottom: calc(100% + 10px);
-    transform: translateX(-50%);
-    width: min(420px, 92vw);
-    max-height: 320px;
-    padding: 12px;
-    background: #fff;
-    border: 1px solid var(--outline-color);
-    box-shadow: 8px 8px 0 0 var(--outline-color);
-    z-index: 20;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.thumb-peek[hidden] {
-    display: none !important;
-}
-
-.thumb-peek-title {
-    margin: 0;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-}
-
-.thumb-peek-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
-    gap: 8px;
-    overflow-y: auto;
-    max-height: 220px;
-}
-
-.thumb-peek-item {
-    border: 1px solid var(--outline-light);
-    background: var(--bg-secondary);
-    padding: 0;
-    cursor: pointer;
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-}
-
-.thumb-peek-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    filter: none;
-    transform: none;
-}
-
-.thumb-peek-item.is-active,
-.thumb-peek-item:hover {
-    border-color: var(--outline-color);
-    box-shadow: 2px 2px 0 0 var(--outline-color);
-}
-
-.thumb-peek-open {
-    align-self: flex-start;
-    border: 1px solid var(--outline-color);
-    background: var(--text-primary);
-    color: var(--bg-primary);
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 8px 12px;
-    cursor: pointer;
-}
-
 .lightbox-strip {
     display: flex;
     gap: 8px;
@@ -863,17 +792,6 @@ nav {
 .lightbox-strip-item:hover {
     opacity: 1;
     border-color: #fff;
-}
-
-@media (max-width: 720px) {
-    .thumb-peek {
-        left: 0;
-        right: 0;
-        width: auto;
-        transform: none;
-        bottom: 12px;
-        max-height: 260px;
-    }
 }
 
 body.lightbox-open {
@@ -1120,18 +1038,43 @@ footer {
 
 @media (max-width: 768px) {
     nav {
-        padding: 20px 24px;
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-links {
-        gap: 16px;
-        flex-wrap: wrap;
-        justify-content: flex-end;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        border-top: 1px solid var(--outline-light);
+        padding-top: 8px;
+    }
+
+    nav.is-open .nav-links {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 0;
+        font-size: 0.95rem;
+    }
+
+    .nav-links a::after {
+        display: none;
     }
 
     .hero, .section, .contact-section {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .about-grid,
