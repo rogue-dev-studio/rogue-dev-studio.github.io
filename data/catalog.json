@@ -558,16 +558,6 @@
       "images": []
     },
     {
-      "name": "laravel-react-admin-master",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/laravel-react-admin-master",
-      "language": "JavaScript",
-      "default_branch": "main",
-      "updated_at": "2024-08-01T07:01:55Z",
-      "images": []
-    },
-    {
       "name": "omeans-team.github.iofff",
       "description": "",
       "homepage": "",
@@ -628,16 +618,6 @@
       "images": []
     },
     {
-      "name": "laravel-breeze-landing_page-adminlte---master",
-      "description": "laravel 10 and package laravel/breeze, frontend landing page and backend adminlte",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/laravel-breeze-landing_page-adminlte---master",
-      "language": "HTML",
-      "default_branch": "main",
-      "updated_at": "2024-05-29T12:52:01Z",
-      "images": []
-    },
-    {
       "name": "omeans-team.githubiop",
       "description": "One-stop website for finding assets/features/projects I produce, including apps/games, 2D/3D, and more.",
       "homepage": "https://omeans-team.github.io/",
@@ -645,16 +625,6 @@
       "language": "HTML",
       "default_branch": "gh-pages",
       "updated_at": "2024-05-29T12:46:09Z",
-      "images": []
-    },
-    {
-      "name": "vercel-laravel-breeze-landing_page-adminlte---master",
-      "description": "laravel 10 package laravel/breeze, landing page and adminlte",
-      "homepage": "https://laravel-breeze-landing-page-adminlte-master.vercel.app",
-      "html_url": "https://github.com/rogue-dev-studio/vercel-laravel-breeze-landing_page-adminlte---master",
-      "language": "HTML",
-      "default_branch": "main",
-      "updated_at": "2024-05-29T12:37:10Z",
       "images": []
     },
     {
@@ -668,36 +638,6 @@
       "images": []
     },
     {
-      "name": "laravel-breeze-landing_page---master",
-      "description": "laravel 10 and package laravel/breeze and frontend landing page",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/laravel-breeze-landing_page---master",
-      "language": "CSS",
-      "default_branch": "main",
-      "updated_at": "2024-05-28T10:04:58Z",
-      "images": []
-    },
-    {
-      "name": "laravel-breeze---master",
-      "description": "Laravel 10 and package laravel/breeze",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/laravel-breeze---master",
-      "language": "PHP",
-      "default_branch": "main",
-      "updated_at": "2024-05-28T09:16:01Z",
-      "images": []
-    },
-    {
-      "name": "hak-akses---master",
-      "description": "Laravel 10 login berdasarkan hak akses",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/hak-akses---master",
-      "language": "PHP",
-      "default_branch": "main",
-      "updated_at": "2024-05-27T04:21:47Z",
-      "images": []
-    },
-    {
       "name": "jekyll-ruby",
       "description": "",
       "homepage": "",
@@ -708,16 +648,6 @@
       "images": []
     },
     {
-      "name": "reactV18.2.0-master-without-ignore-nonpublish",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/reactV18.2.0-master-without-ignore-nonpublish",
-      "language": "JavaScript",
-      "default_branch": "master",
-      "updated_at": "2024-04-22T09:35:26Z",
-      "images": []
-    },
-    {
       "name": "public_assets",
       "description": "",
       "homepage": "",
@@ -725,46 +655,6 @@
       "language": "HTML",
       "default_branch": "master",
       "updated_at": "2024-04-22T09:29:39Z",
-      "images": []
-    },
-    {
-      "name": "reactV18.2.0-master",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/reactV18.2.0-master",
-      "language": "JavaScript",
-      "default_branch": "master",
-      "updated_at": "2024-04-22T09:16:43Z",
-      "images": []
-    },
-    {
-      "name": "codeigniter4-master",
-      "description": "codeigniter4 php 8",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/codeigniter4-master",
-      "language": "PHP",
-      "default_branch": "main",
-      "updated_at": "2024-04-20T11:58:49Z",
-      "images": []
-    },
-    {
-      "name": "codeigniter4.5.1-mysql-grafik-table",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/codeigniter4.5.1-mysql-grafik-table",
-      "language": "PHP",
-      "default_branch": "main",
-      "updated_at": "2024-04-20T11:56:41Z",
-      "images": []
-    },
-    {
-      "name": "laravel-php-unit-14-07-2018",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/laravel-php-unit-14-07-2018",
-      "language": "HTML",
-      "default_branch": "master",
-      "updated_at": "2024-03-22T13:36:23Z",
       "images": []
     },
     {
@@ -785,26 +675,6 @@
       "language": "Java",
       "default_branch": "master",
       "updated_at": "2024-03-22T13:09:42Z",
-      "images": []
-    },
-    {
-      "name": "laravel10-api",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/laravel10-api",
-      "language": "PHP",
-      "default_branch": "main",
-      "updated_at": "2024-03-21T19:00:45Z",
-      "images": []
-    },
-    {
-      "name": "laravel10-vuejs3",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/laravel10-vuejs3",
-      "language": "Vue",
-      "default_branch": "master",
-      "updated_at": "2024-03-21T17:31:02Z",
       "images": []
     },
     {
@@ -845,16 +715,6 @@
       "language": "",
       "default_branch": "master",
       "updated_at": "2024-02-14T14:22:00Z",
-      "images": []
-    },
-    {
-      "name": "bootswatch",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/bootswatch",
-      "language": "HTML",
-      "default_branch": "main",
-      "updated_at": "2024-02-11T09:03:57Z",
       "images": []
     },
     {
