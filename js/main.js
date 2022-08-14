@@ -7,7 +7,9 @@ const TOPIC_LAB = 'experiment-arishadisopiyan';
 const TOPIC_PORTFOLIO = 'portfolio-arishadisopiyan';
 const ARCHIVE_EXCLUDE = new Set([
     'rogue-dev-studio.github.io',
-    'ArisHadisopiyan'
+    'ArisHadisopiyan',
+    'rogue-dev-studio',
+    'professional-portfolio-template-with-ai-protection'
 ]);
 
 /** Shared topic cache so Karya + Proyek Lainnya don't double-hit search API */
@@ -37,11 +39,11 @@ const FEATURED_META = {
             'thumbs/sijama/02-logo.svg'
         ]
     },
-    'laravel-project-management-system-aris': {
+    'laravel-pms': {
         title: 'Project Management System',
         category: 'Sistem Bisnis',
         audience: 'Project manager & tim',
-        stack: 'Laravel · demo Netlify',
+        stack: 'Laravel 11 · demo Netlify',
         requirements: [
             'Kelola tugas & status progress',
             'Kolaborasi anggota tim',
@@ -49,8 +51,8 @@ const FEATURED_META = {
             'Demo publik tanpa instalasi lokal'
         ],
         problem: 'Tim kesulitan melihat gambaran kerja proyek sebelum membangun sistem sendiri.',
-        approach: 'Menyediakan demo sistem manajemen proyek yang bisa langsung dicoba.',
-        result: 'Alur tugas, progress, dan kolaborasi tim terlihat jelas di browser.',
+        approach: 'Menyediakan demo UI manajemen proyek yang bisa langsung dicoba. Bukan PMS produksi.',
+        result: 'Alur tugas dan progress terlihat di browser.',
         url: 'https://demo-pms.netlify.app/'
     },
     'sistem-antrian': {
@@ -186,7 +188,7 @@ async function fetchReposByTopic(topic) {
         return [];
     }
     const data = await response.json();
-    const items = Array.isArray(data.items) ? data.items : [];
+    const items = (Array.isArray(data.items) ? data.items : []).filter((repo) => !repo.fork);
     topicCache.set(topic, items);
     return items;
 }

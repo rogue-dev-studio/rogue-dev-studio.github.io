@@ -223,18 +223,6 @@
       ]
     },
     {
-      "name": "base-coc",
-      "description": "Clash of Clans TH18 base catalog demo.",
-      "homepage": "https://rogue-dev-studio.github.io/base-coc/",
-      "html_url": "https://github.com/rogue-dev-studio/base-coc",
-      "language": "HTML",
-      "default_branch": "master",
-      "updated_at": "2026-07-18T15:20:58Z",
-      "images": [
-        "https://raw.githubusercontent.com/rogue-dev-studio/base-coc/master/github-contents/screenshot.png"
-      ]
-    },
-    {
       "name": "wheel-spinner-app",
       "description": "Spin wheel for raffles, classrooms, and giveaways.",
       "homepage": "https://rogue-dev-studio.github.io/wheel-spinner-app/",
@@ -286,10 +274,10 @@
       ]
     },
     {
-      "name": "laravel-project-management-system-aris",
-      "description": "Laravel Project Management System - Template",
+      "name": "laravel-pms",
+      "description": "Laravel 11 UI demo for a project management dashboard. Not a production PMS.",
       "homepage": "https://demo-pms.netlify.app/",
-      "html_url": "https://github.com/rogue-dev-studio/laravel-project-management-system-aris",
+      "html_url": "https://github.com/rogue-dev-studio/laravel-pms",
       "language": "Blade",
       "default_branch": "main",
       "updated_at": "2026-08-12T13:28:09Z",
@@ -358,23 +346,13 @@
       ]
     },
     {
-      "name": "Sistem-Informasi-Seminar-Informatika-",
-      "description": "Sistem Informasi Seminar (Informatika) Change Project To Visual_C_Sistem_Informasi_Seminar_appinventor_mysql_php",
+      "name": "sistem-informasi-seminar",
+      "description": "Android (Java) login prototype for a campus seminar app. Not a full seminar system.",
       "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/Sistem-Informasi-Seminar-Informatika-",
+      "html_url": "https://github.com/rogue-dev-studio/sistem-informasi-seminar",
       "language": "Java",
       "default_branch": "master",
-      "updated_at": "2026-07-18T15:20:41Z",
-      "images": []
-    },
-    {
-      "name": "Visual_C_Sistem_Informasi_Seminar_appinventor_mysql_php",
-      "description": "-App Inventor Online with Database MySQL Inner Join",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/Visual_C_Sistem_Informasi_Seminar_appinventor_mysql_php",
-      "language": "PHP",
-      "default_branch": "master",
-      "updated_at": "2026-07-18T15:20:38Z",
+      "updated_at": "2026-08-14T09:25:00Z",
       "images": []
     },
     {
@@ -385,16 +363,6 @@
       "language": "SCSS",
       "default_branch": "master",
       "updated_at": "2026-07-18T15:20:36Z",
-      "images": []
-    },
-    {
-      "name": "laravel-10-deploy-workflow-gh",
-      "description": "Template deploy laravel 10 to netlify",
-      "homepage": "https://zippy-kataifi-e57910.netlify.app/",
-      "html_url": "https://github.com/rogue-dev-studio/laravel-10-deploy-workflow-gh",
-      "language": "PHP",
-      "default_branch": "main",
-      "updated_at": "2026-07-18T15:20:32Z",
       "images": []
     },
     {
@@ -460,16 +428,6 @@
       "images": []
     },
     {
-      "name": "professional-portfolio-template-with-ai-protection",
-      "description": "Professional Portfolio Template with AI Protection - Complete template with license management system, security features, and comprehensive documentation",
-      "homepage": "https://rogue-dev-studio.github.io/professional-portfolio-template-with-ai-protection/",
-      "html_url": "https://github.com/rogue-dev-studio/professional-portfolio-template-with-ai-protection",
-      "language": "JavaScript",
-      "default_branch": "master",
-      "updated_at": "2026-07-31T08:52:44Z",
-      "images": []
-    },
-    {
       "name": "about.github.io",
       "description": "",
       "homepage": "https://rogue-dev-studio.github.io/about.github.io/",
@@ -520,10 +478,10 @@
       "images": []
     },
     {
-      "name": "recent-work",
-      "description": "",
-      "homepage": "https://omeans-team.github.io/recent-work/",
-      "html_url": "https://github.com/rogue-dev-studio/recent-work",
+      "name": "galeri-karya",
+      "description": "Galeri karya lama (arsip). Portfolio aktif: rogue-dev-studio.github.io",
+      "homepage": "https://rogue-dev-studio.github.io/galeri-karya/",
+      "html_url": "https://github.com/rogue-dev-studio/galeri-karya",
       "language": "JavaScript",
       "default_branch": "master",
       "updated_at": "2026-07-18T15:20:44Z",
@@ -797,26 +755,6 @@
       "language": "PHP",
       "default_branch": "main",
       "updated_at": "2024-04-20T11:56:41Z",
-      "images": []
-    },
-    {
-      "name": "Sistem-Informasi-Seminar-appinventor-mysql-php",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/Sistem-Informasi-Seminar-appinventor-mysql-php",
-      "language": "PHP",
-      "default_branch": "master",
-      "updated_at": "2024-03-22T13:45:56Z",
-      "images": []
-    },
-    {
-      "name": "Sistem-Informasi-Seminar-Java",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/Sistem-Informasi-Seminar-Java",
-      "language": "Java",
-      "default_branch": "master",
-      "updated_at": "2024-03-22T13:43:39Z",
       "images": []
     },
     {
