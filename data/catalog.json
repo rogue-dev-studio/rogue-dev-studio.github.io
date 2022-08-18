@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T07:03:37.839Z",
+  "generatedAt": "2026-08-18T06:21:06.423Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -261,26 +261,13 @@
   ],
   "karya": [
     {
-      "name": "sijama",
-      "description": "SIJAMA — unggulan face recognition kamera lokal (tanpa cloud) untuk absensi pengajian. Laravel, React, PostgreSQL, Docker.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/sijama",
-      "language": "PHP",
-      "default_branch": "main",
-      "updated_at": "2026-08-14T07:44:00Z",
-      "images": [
-        "thumbs/sijama/01-face-scan.png",
-        "thumbs/sijama/02-logo.svg"
-      ]
-    },
-    {
       "name": "laravel-pms",
       "description": "Laravel 11 UI demo for a project management dashboard. Not a production PMS.",
       "homepage": "https://demo-pms.netlify.app/",
       "html_url": "https://github.com/rogue-dev-studio/laravel-pms",
       "language": "Blade",
       "default_branch": "main",
-      "updated_at": "2026-08-12T13:28:09Z",
+      "updated_at": "2026-08-14T10:19:00Z",
       "images": []
     },
     {
@@ -346,13 +333,23 @@
       ]
     },
     {
+      "name": "galeri-karya",
+      "description": "Galeri karya lama (arsip). Portfolio aktif: rogue-dev-studio.github.io",
+      "homepage": "https://rogue-dev-studio.github.io/galeri-karya/",
+      "html_url": "https://github.com/rogue-dev-studio/galeri-karya",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2026-08-14T10:04:34Z",
+      "images": []
+    },
+    {
       "name": "sistem-informasi-seminar",
       "description": "Android (Java) login prototype for a campus seminar app. Not a full seminar system.",
       "homepage": "",
       "html_url": "https://github.com/rogue-dev-studio/sistem-informasi-seminar",
       "language": "Java",
       "default_branch": "master",
-      "updated_at": "2026-08-14T09:25:00Z",
+      "updated_at": "2026-08-14T09:26:06Z",
       "images": []
     },
     {
@@ -387,6 +384,16 @@
     }
   ],
   "archive": [
+    {
+      "name": "omeans-team.github.io",
+      "description": "Live site for omeans-team portfolio",
+      "homepage": "https://rogue-dev-studio.github.io/omeans-team.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/omeans-team.github.io",
+      "language": "HTML",
+      "default_branch": "main",
+      "updated_at": "2026-08-14T10:25:27Z",
+      "images": []
+    },
     {
       "name": "ai-agents-rogue-programmer",
       "description": "AI Agents Rogue — Programmer Edition (coding, API, DB, FE, BE). Free to use — no fork or star required.",
@@ -478,16 +485,6 @@
       "images": []
     },
     {
-      "name": "galeri-karya",
-      "description": "Galeri karya lama (arsip). Portfolio aktif: rogue-dev-studio.github.io",
-      "homepage": "https://rogue-dev-studio.github.io/galeri-karya/",
-      "html_url": "https://github.com/rogue-dev-studio/galeri-karya",
-      "language": "JavaScript",
-      "default_branch": "master",
-      "updated_at": "2026-07-18T15:20:44Z",
-      "images": []
-    },
-    {
       "name": "omeans-team",
       "description": "omeans-team/omeans-team is a ✨special ✨ repository that you can use to add a README.md to your GitHub profile. Make sure it’s public and initialize it with a README to get started.",
       "homepage": "",
@@ -525,16 +522,6 @@
       "language": "",
       "default_branch": "master",
       "updated_at": "2025-09-29T07:01:05Z",
-      "images": []
-    },
-    {
-      "name": "omeans-team.github.io",
-      "description": "Live site for omeans-team portfolio",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/omeans-team.github.io",
-      "language": "HTML",
-      "default_branch": "main",
-      "updated_at": "2025-08-25T06:24:38Z",
       "images": []
     },
     {
@@ -648,6 +635,16 @@
       "images": []
     },
     {
+      "name": "reactV18.2.0-master-without-ignore-nonpublish",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/reactV18.2.0-master-without-ignore-nonpublish",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2024-04-22T09:35:26Z",
+      "images": []
+    },
+    {
       "name": "public_assets",
       "description": "",
       "homepage": "",
@@ -715,6 +712,16 @@
       "language": "",
       "default_branch": "master",
       "updated_at": "2024-02-14T14:22:00Z",
+      "images": []
+    },
+    {
+      "name": "bootswatch",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/bootswatch",
+      "language": "HTML",
+      "default_branch": "main",
+      "updated_at": "2024-02-11T09:03:57Z",
       "images": []
     },
     {
@@ -815,6 +822,116 @@
       "language": "PHP",
       "default_branch": "master",
       "updated_at": "2023-10-16T14:42:47Z",
+      "images": []
+    },
+    {
+      "name": "coba3",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/coba3",
+      "language": "PHP",
+      "default_branch": "master",
+      "updated_at": "2023-10-15T10:21:45Z",
+      "images": []
+    },
+    {
+      "name": "miniature-train",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/miniature-train",
+      "language": "Hack",
+      "default_branch": "master",
+      "updated_at": "2023-10-15T10:09:02Z",
+      "images": []
+    },
+    {
+      "name": "curly-octo-parakeet",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/curly-octo-parakeet",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2023-10-15T09:50:20Z",
+      "images": []
+    },
+    {
+      "name": "omeansteamc",
+      "description": "",
+      "homepage": "https://omeansteam.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/omeansteamc",
+      "language": "Hack",
+      "default_branch": "master",
+      "updated_at": "2023-10-13T14:36:18Z",
+      "images": []
+    },
+    {
+      "name": "assets-omeans",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/assets-omeans",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2022-06-06T15:53:32Z",
+      "images": []
+    },
+    {
+      "name": "omeans-style",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/omeans-style",
+      "language": "CSS",
+      "default_branch": "master",
+      "updated_at": "2022-06-06T14:49:21Z",
+      "images": []
+    },
+    {
+      "name": "bootstrap-5.1.3",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/bootstrap-5.1.3",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2022-06-06T14:39:17Z",
+      "images": []
+    },
+    {
+      "name": "Bootstrap-4.0.0",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/Bootstrap-4.0.0",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2022-04-11T12:34:04Z",
+      "images": []
+    },
+    {
+      "name": "aplikasi_sistem_informasi_klinik",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/aplikasi_sistem_informasi_klinik",
+      "language": "CSS",
+      "default_branch": "master",
+      "updated_at": "2021-10-08T03:13:25Z",
+      "images": []
+    },
+    {
+      "name": "Copyright",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/Copyright",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2021-04-01T11:25:37Z",
+      "images": []
+    },
+    {
+      "name": "Suanggi.net",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/Suanggi.net",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2020-07-25T17:50:31Z",
       "images": []
     }
   ]
