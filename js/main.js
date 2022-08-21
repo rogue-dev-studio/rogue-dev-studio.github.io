@@ -108,7 +108,9 @@ const FEATURED_META = {
 
 const SOCIAL_FALLBACK = [
     { label: 'GitHub', url: 'https://github.com/rogue-dev-studio', icon: 'github' },
-    { label: 'GitLab', url: 'https://gitlab.com/aris.hadisopiyan', icon: 'gitlab' },
+    { label: 'GitLab', url: 'https://gitlab.com/rogue-dev-studio', icon: 'gitlab' },
+    { label: 'Patreon', url: 'https://www.patreon.com/c/roguedevstudio', icon: 'patreon' },
+    { label: 'itch.io', url: 'https://rogue-dev-studio.itch.io', icon: 'itch' },
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/arishadisopiyan/', icon: 'linkedin' },
     { label: 'Instagram', url: 'https://www.instagram.com/aya.erisu/', icon: 'instagram' }
 ];
@@ -253,6 +255,8 @@ function renderIcons() {
                 biIconName = 'x';
             } else if (iconName === 'link') {
                 biIconName = 'link-45deg';
+            } else if (iconName === 'itch') {
+                biIconName = 'controller';
             }
 
             el.classList.add('bi', `bi-${biIconName}`);
@@ -802,7 +806,13 @@ async function fetchGitHubSocials() {
         const ensured = [...socials];
         const urls = ensured.map((s) => (s.url || '').toLowerCase());
         if (!urls.some((u) => u.includes('gitlab.com'))) {
-            ensured.push({ provider: 'generic', url: 'https://gitlab.com/aris.hadisopiyan' });
+            ensured.push({ provider: 'generic', url: 'https://gitlab.com/rogue-dev-studio' });
+        }
+        if (!urls.some((u) => u.includes('patreon.com'))) {
+            ensured.push({ provider: 'generic', url: 'https://www.patreon.com/c/roguedevstudio' });
+        }
+        if (!urls.some((u) => u.includes('itch.io'))) {
+            ensured.push({ provider: 'generic', url: 'https://rogue-dev-studio.itch.io' });
         }
         if (!urls.some((u) => u.includes('shutterstock.com'))) {
             ensured.push({ provider: 'generic', url: 'https://www.shutterstock.com/g/ArisHadisopiyan' });
@@ -819,6 +829,12 @@ async function fetchGitHubSocials() {
                 if (rawUrl.includes('gitlab.com')) {
                     iconName = 'gitlab';
                     label = 'GitLab';
+                } else if (rawUrl.includes('patreon.com')) {
+                    iconName = 'patreon';
+                    label = 'Patreon';
+                } else if (rawUrl.includes('itch.io')) {
+                    iconName = 'itch';
+                    label = 'itch.io';
                 } else if (rawUrl.includes('shutterstock.com')) {
                     iconName = 'camera';
                     label = 'Shutterstock';
