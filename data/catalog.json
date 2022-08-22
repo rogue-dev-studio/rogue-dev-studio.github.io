@@ -1,9 +1,99 @@
 {
-  "generatedAt": "2026-08-21T06:22:55.808Z",
+  "generatedAt": "2026-08-22T05:46:43.230Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
-    "portfolio": "portfolio-arishadisopiyan"
+    "karya": "business-system-arishadisopiyan"
+  },
+  "karyaTopicManifest": {
+    "primaryTopic": "business-system-arishadisopiyan",
+    "categories": {
+      "technology": "Kategori Teknologi & Arsitektur",
+      "industry": "Kategori Industri Spesifik",
+      "business": "Kategori Umum Sistem Bisnis"
+    },
+    "repos": {
+      "sijama": {
+        "technology": [
+          "laravel",
+          "react",
+          "postgresql",
+          "docker",
+          "full-stack"
+        ],
+        "industry": [
+          "nonprofit",
+          "community-management"
+        ],
+        "business": [
+          "information-system",
+          "attendance-system",
+          "rbac"
+        ]
+      },
+      "laravel-pms": {
+        "technology": [
+          "laravel",
+          "blade",
+          "demo-app",
+          "netlify"
+        ],
+        "industry": [
+          "project-management"
+        ],
+        "business": [
+          "business-system",
+          "task-management"
+        ]
+      },
+      "sistem-antrian": {
+        "technology": [
+          "laravel",
+          "mysql",
+          "web-application",
+          "realtime-web"
+        ],
+        "industry": [
+          "public-service",
+          "retail"
+        ],
+        "business": [
+          "queue-management",
+          "operational-system"
+        ]
+      },
+      "sistem-informasi-klinik": {
+        "technology": [
+          "laravel",
+          "mysql",
+          "vite",
+          "web-application"
+        ],
+        "industry": [
+          "healthcare",
+          "clinic"
+        ],
+        "business": [
+          "information-system",
+          "patient-management"
+        ]
+      },
+      "rental-mobil-new": {
+        "technology": [
+          "laravel",
+          "mysql",
+          "web-application"
+        ],
+        "industry": [
+          "automotive",
+          "rental"
+        ],
+        "business": [
+          "business-system",
+          "fleet-management"
+        ]
+      }
+    }
   },
   "lab": [
     {
@@ -261,14 +351,90 @@
   ],
   "karya": [
     {
+      "name": "sijama",
+      "description": "SIJAMA — unggulan face recognition kamera lokal (tanpa cloud) untuk absensi pengajian. Laravel, React, PostgreSQL, Docker.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/sijama",
+      "language": "TypeScript",
+      "default_branch": "main",
+      "updated_at": "2026-08-22T05:45:16Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/sijama/main/github-contents/01-face-scan.png"
+      ],
+      "topics": [
+        "business-system-arishadisopiyan",
+        "laravel",
+        "react",
+        "postgresql",
+        "docker",
+        "full-stack",
+        "nonprofit",
+        "community-management",
+        "information-system",
+        "attendance-system",
+        "rbac"
+      ],
+      "topicGroups": {
+        "primary": "business-system-arishadisopiyan",
+        "technology": [
+          "laravel",
+          "react",
+          "postgresql",
+          "docker",
+          "full-stack"
+        ],
+        "industry": [
+          "nonprofit",
+          "community-management"
+        ],
+        "business": [
+          "information-system",
+          "attendance-system",
+          "rbac"
+        ]
+      }
+    },
+    {
       "name": "laravel-pms",
       "description": "Laravel 11 UI demo for a project management dashboard. Not a production PMS.",
       "homepage": "https://demo-pms.netlify.app/",
       "html_url": "https://github.com/rogue-dev-studio/laravel-pms",
       "language": "Blade",
       "default_branch": "main",
-      "updated_at": "2026-08-14T10:19:00Z",
-      "images": []
+      "updated_at": "2026-08-22T05:45:18Z",
+      "images": [
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-pms/main/github-contents/01-dashboard.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-pms/main/github-contents/02-projects.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-pms/main/github-contents/03-task.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-pms/main/github-contents/04-employees.png",
+        "https://raw.githubusercontent.com/rogue-dev-studio/laravel-pms/main/github-contents/thumbnail-dashboard.png"
+      ],
+      "topics": [
+        "business-system-arishadisopiyan",
+        "laravel",
+        "blade",
+        "demo-app",
+        "netlify",
+        "project-management",
+        "business-system",
+        "task-management"
+      ],
+      "topicGroups": {
+        "primary": "business-system-arishadisopiyan",
+        "technology": [
+          "laravel",
+          "blade",
+          "demo-app",
+          "netlify"
+        ],
+        "industry": [
+          "project-management"
+        ],
+        "business": [
+          "business-system",
+          "task-management"
+        ]
+      }
     },
     {
       "name": "sistem-antrian",
@@ -277,14 +443,42 @@
       "html_url": "https://github.com/rogue-dev-studio/sistem-antrian",
       "language": "Blade",
       "default_branch": "main",
-      "updated_at": "2026-07-19T08:38:08Z",
+      "updated_at": "2026-08-22T05:45:19Z",
       "images": [
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-ambil-nomor.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-nomor-antrian.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-nomor-mobile.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-panggilan-antrian.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/thumbnail-dashboard.png"
-      ]
+      ],
+      "topics": [
+        "business-system-arishadisopiyan",
+        "laravel",
+        "mysql",
+        "web-application",
+        "realtime-web",
+        "public-service",
+        "retail",
+        "queue-management",
+        "operational-system"
+      ],
+      "topicGroups": {
+        "primary": "business-system-arishadisopiyan",
+        "technology": [
+          "laravel",
+          "mysql",
+          "web-application",
+          "realtime-web"
+        ],
+        "industry": [
+          "public-service",
+          "retail"
+        ],
+        "business": [
+          "queue-management",
+          "operational-system"
+        ]
+      }
     },
     {
       "name": "sistem-informasi-klinik",
@@ -293,7 +487,7 @@
       "html_url": "https://github.com/rogue-dev-studio/sistem-informasi-klinik",
       "language": "JavaScript",
       "default_branch": "master",
-      "updated_at": "2026-07-19T08:38:00Z",
+      "updated_at": "2026-08-22T05:45:20Z",
       "images": [
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/01-login.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/02-dashboard-home.png",
@@ -307,7 +501,35 @@
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/10-laporan-pasien.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/11-laporan-pendaftaran.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/thumbnail-dashboard.png"
-      ]
+      ],
+      "topics": [
+        "business-system-arishadisopiyan",
+        "laravel",
+        "mysql",
+        "vite",
+        "web-application",
+        "healthcare",
+        "clinic",
+        "information-system",
+        "patient-management"
+      ],
+      "topicGroups": {
+        "primary": "business-system-arishadisopiyan",
+        "technology": [
+          "laravel",
+          "mysql",
+          "vite",
+          "web-application"
+        ],
+        "industry": [
+          "healthcare",
+          "clinic"
+        ],
+        "business": [
+          "information-system",
+          "patient-management"
+        ]
+      }
     },
     {
       "name": "rental-mobil-new",
@@ -316,7 +538,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rental-mobil-new",
       "language": "CSS",
       "default_branch": "main",
-      "updated_at": "2026-07-19T08:42:35Z",
+      "updated_at": "2026-08-22T05:45:22Z",
       "images": [
         "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/1.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/2.png",
@@ -330,7 +552,45 @@
         "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/10.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/11.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/12.png"
-      ]
+      ],
+      "topics": [
+        "business-system-arishadisopiyan",
+        "laravel",
+        "mysql",
+        "web-application",
+        "automotive",
+        "rental",
+        "business-system",
+        "fleet-management"
+      ],
+      "topicGroups": {
+        "primary": "business-system-arishadisopiyan",
+        "technology": [
+          "laravel",
+          "mysql",
+          "web-application"
+        ],
+        "industry": [
+          "automotive",
+          "rental"
+        ],
+        "business": [
+          "business-system",
+          "fleet-management"
+        ]
+      }
+    }
+  ],
+  "archive": [
+    {
+      "name": "omeans-team.github.io",
+      "description": "Live site for omeans-team portfolio",
+      "homepage": "https://rogue-dev-studio.github.io/omeans-team.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/omeans-team.github.io",
+      "language": "HTML",
+      "default_branch": "main",
+      "updated_at": "2026-08-14T10:25:27Z",
+      "images": []
     },
     {
       "name": "galeri-karya",
@@ -350,48 +610,6 @@
       "language": "Java",
       "default_branch": "master",
       "updated_at": "2026-08-14T09:26:06Z",
-      "images": []
-    },
-    {
-      "name": "ChatGptPhpMySql",
-      "description": "Template Chat GPT with Php and Database MySql",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/ChatGptPhpMySql",
-      "language": "SCSS",
-      "default_branch": "master",
-      "updated_at": "2026-07-18T15:20:36Z",
-      "images": []
-    },
-    {
-      "name": "omeans-team-3d-portfolio",
-      "description": "Get ready to take your 3D modeling portfolio to new heights!",
-      "homepage": "https://rogue-dev-studio.github.io/omeans-team-3d-portfolio/",
-      "html_url": "https://github.com/rogue-dev-studio/omeans-team-3d-portfolio",
-      "language": "JavaScript",
-      "default_branch": "master",
-      "updated_at": "2026-07-18T15:20:28Z",
-      "images": []
-    },
-    {
-      "name": "porto_aplikasi_sistem_informasi_klinik",
-      "description": "Portfolio Aplikasi Sistem Informasi Klinik",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/porto_aplikasi_sistem_informasi_klinik",
-      "language": "CSS",
-      "default_branch": "main",
-      "updated_at": "2026-07-18T15:20:16Z",
-      "images": []
-    }
-  ],
-  "archive": [
-    {
-      "name": "omeans-team.github.io",
-      "description": "Live site for omeans-team portfolio",
-      "homepage": "https://rogue-dev-studio.github.io/omeans-team.github.io/",
-      "html_url": "https://github.com/rogue-dev-studio/omeans-team.github.io",
-      "language": "HTML",
-      "default_branch": "main",
-      "updated_at": "2026-08-14T10:25:27Z",
       "images": []
     },
     {
@@ -482,6 +700,36 @@
       "language": "PHP",
       "default_branch": "main",
       "updated_at": "2026-07-23T14:17:34Z",
+      "images": []
+    },
+    {
+      "name": "ChatGptPhpMySql",
+      "description": "Template Chat GPT with Php and Database MySql",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/ChatGptPhpMySql",
+      "language": "SCSS",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:20:36Z",
+      "images": []
+    },
+    {
+      "name": "omeans-team-3d-portfolio",
+      "description": "Get ready to take your 3D modeling portfolio to new heights!",
+      "homepage": "https://rogue-dev-studio.github.io/omeans-team-3d-portfolio/",
+      "html_url": "https://github.com/rogue-dev-studio/omeans-team-3d-portfolio",
+      "language": "JavaScript",
+      "default_branch": "master",
+      "updated_at": "2026-07-18T15:20:28Z",
+      "images": []
+    },
+    {
+      "name": "porto_aplikasi_sistem_informasi_klinik",
+      "description": "Portfolio Aplikasi Sistem Informasi Klinik",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/porto_aplikasi_sistem_informasi_klinik",
+      "language": "CSS",
+      "default_branch": "main",
+      "updated_at": "2026-07-18T15:20:16Z",
       "images": []
     },
     {
@@ -585,16 +833,6 @@
       "images": []
     },
     {
-      "name": "rentalmobil-deploy-vercel",
-      "description": "",
-      "homepage": "https://rentalmobil-deploy-vercel.vercel.app",
-      "html_url": "https://github.com/rogue-dev-studio/rentalmobil-deploy-vercel",
-      "language": "CSS",
-      "default_branch": "main",
-      "updated_at": "2024-07-08T13:46:56Z",
-      "images": []
-    },
-    {
       "name": "absensi-unity",
       "description": "",
       "homepage": "",
@@ -612,16 +850,6 @@
       "language": "HTML",
       "default_branch": "gh-pages",
       "updated_at": "2024-05-29T12:46:09Z",
-      "images": []
-    },
-    {
-      "name": "vercel-vite",
-      "description": "",
-      "homepage": "https://vercel-vite-phi-nine.vercel.app",
-      "html_url": "https://github.com/rogue-dev-studio/vercel-vite",
-      "language": "Vue",
-      "default_branch": "main",
-      "updated_at": "2024-05-28T17:23:30Z",
       "images": []
     },
     {
@@ -745,26 +973,6 @@
       "images": []
     },
     {
-      "name": "p0502",
-      "description": "Basic",
-      "homepage": "https://omeansteam.github.io/",
-      "html_url": "https://github.com/rogue-dev-studio/p0502",
-      "language": "JavaScript",
-      "default_branch": "main",
-      "updated_at": "2024-02-05T16:03:57Z",
-      "images": []
-    },
-    {
-      "name": "RentalobilTess",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/RentalobilTess",
-      "language": "PHP",
-      "default_branch": "main",
-      "updated_at": "2024-01-27T15:49:01Z",
-      "images": []
-    },
-    {
       "name": "rentalobiltes",
       "description": "",
       "homepage": "",
@@ -785,16 +993,6 @@
       "images": []
     },
     {
-      "name": "test-laravel",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/test-laravel",
-      "language": "PHP",
-      "default_branch": "main",
-      "updated_at": "2024-01-21T17:04:46Z",
-      "images": []
-    },
-    {
       "name": "guidelines",
       "description": "",
       "homepage": "",
@@ -812,16 +1010,6 @@
       "language": "SCSS",
       "default_branch": "master",
       "updated_at": "2023-10-16T15:23:48Z",
-      "images": []
-    },
-    {
-      "name": "SubToUnlock",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/SubToUnlock",
-      "language": "PHP",
-      "default_branch": "master",
-      "updated_at": "2023-10-16T14:42:47Z",
       "images": []
     },
     {

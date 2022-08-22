@@ -19,8 +19,8 @@ Portfolio komersial **Rogue Development** (Aris Hadisopiyan) — website, aplika
 
 ## Di situs Anda akan menemukan
 
-- **Karya** — sistem bisnis dan aplikasi yang sudah dipublikasikan
-- **Lab** — eksperimen UI dan demo interaktif
+- **Karya** — sistem bisnis dan aplikasi yang sudah dipublikasikan (topic GitHub: `business-system-arishadisopiyan`)
+- **Lab** — eksperimen UI dan demo interaktif (topic: `experiment-arishadisopiyan`)
 - **Aset 3D / Stock** — tautan ke marketplace
 
 ---

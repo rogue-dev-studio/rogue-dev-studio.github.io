@@ -4,7 +4,7 @@ const projectsPerPage = 9;
 
 const OWNER = 'rogue-dev-studio';
 const TOPIC_LAB = 'experiment-arishadisopiyan';
-const TOPIC_PORTFOLIO = 'portfolio-arishadisopiyan';
+const TOPIC_KARYA = 'business-system-arishadisopiyan';
 const ARCHIVE_EXCLUDE = new Set([
     'rogue-dev-studio.github.io',
     'ArisHadisopiyan',
@@ -17,7 +17,16 @@ const topicCache = new Map();
 /** Static catalog from Actions (preferred — no browser API key) */
 let staticCatalog = null;
 
-/** Enrichment for Karya cards keyed by repo name (spek portfolio-arishadisopiyan) */
+/** Proyek siap pakai yang ditampilkan di section 03 Karya (bukan semua topic portfolio) */
+const KARYA_PROJECTS = [
+    'sijama',
+    'laravel-pms',
+    'sistem-antrian',
+    'sistem-informasi-klinik',
+    'rental-mobil-new'
+];
+
+/** Enrichment for Karya cards keyed by repo name (topic: business-system-arishadisopiyan) */
 const FEATURED_META = {
     'sijama': {
         title: 'SIJAMA',
@@ -33,11 +42,7 @@ const FEATURED_META = {
         problem: 'Pendataan anggota, jadwal, dan absensi masih terpisah dan sulit diaudit.',
         approach: 'Membangun SIJAMA dengan unggulan face recognition kamera lokal (tanpa cloud) untuk absensi pengajian, plus master wilayah, anggota, dan kegiatan.',
         result: 'Operasional organisasi punya satu aplikasi web dengan Docker Compose.',
-        url: 'https://github.com/rogue-dev-studio/sijama',
-        images: [
-            'thumbs/sijama/01-face-scan.png',
-            'thumbs/sijama/02-logo.svg'
-        ]
+        url: 'https://github.com/rogue-dev-studio/sijama'
     },
     'laravel-pms': {
         title: 'Project Management System',
@@ -536,19 +541,14 @@ async function renderFeaturedProjects() {
         }));
     } else {
         try {
-            portfolioRepos = await fetchReposByTopic(TOPIC_PORTFOLIO);
+            portfolioRepos = await fetchReposByTopic(TOPIC_KARYA);
         } catch (error) {
-            console.error('Gagal memuat topic portfolio:', error);
+            console.error('Gagal memuat topic karya:', error);
         }
     }
 
     const byName = new Map(portfolioRepos.map((r) => [r.name, r]));
-    const orderedNames = [
-        ...Object.keys(FEATURED_META),
-        ...portfolioRepos.map((r) => r.name).filter((n) => !FEATURED_META[n])
-    ];
-
-    const names = [...new Set(orderedNames)];
+    const names = KARYA_PROJECTS.filter((name) => FEATURED_META[name] || byName.has(name));
 
     grid.innerHTML = '';
 
@@ -556,7 +556,7 @@ async function renderFeaturedProjects() {
         const remote = byName.get(repoName);
         const meta = FEATURED_META[repoName] || {};
         const title = meta.title || prettyTitle(repoName);
-        const category = meta.category || remote?.language || 'Karya';
+        const category = meta.category || 'Sistem Digital';
         const url = meta.url || (remote ? liveOrRepoUrl(remote) : `https://github.com/${OWNER}/${repoName}`);
         const desc = remote?.description || '';
         const card = document.createElement('article');
@@ -593,7 +593,7 @@ async function renderFeaturedProjects() {
             </div>
         `;
         grid.appendChild(card);
-        await hydrateCardGallery(card, repoName, title, (remote?.images?.length ? remote.images : meta.images) || []);
+        await hydrateCardGallery(card, repoName, title, remote?.images || []);
     }));
 
     observeElements();
@@ -639,17 +639,15 @@ async function fetchGitHubProjects() {
             return;
         }
 
-        const [repos, labRepos, portfolioRepos] = await Promise.all([
+        const [repos, labRepos] = await Promise.all([
             fetchAllUserRepos(),
-            fetchReposByTopic(TOPIC_LAB),
-            fetchReposByTopic(TOPIC_PORTFOLIO)
+            fetchReposByTopic(TOPIC_LAB)
         ]);
 
         const exclude = new Set([
             ...ARCHIVE_EXCLUDE,
-            ...Object.keys(FEATURED_META),
-            ...labRepos.map((r) => r.name),
-            ...portfolioRepos.map((r) => r.name)
+            ...KARYA_PROJECTS,
+            ...labRepos.map((r) => r.name)
         ]);
 
         gitHubProjectsData = repos.filter((repo) => {

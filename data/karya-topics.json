@@ -1,0 +1,35 @@
+{
+  "primaryTopic": "business-system-arishadisopiyan",
+  "categories": {
+    "technology": "Kategori Teknologi & Arsitektur",
+    "industry": "Kategori Industri Spesifik",
+    "business": "Kategori Umum Sistem Bisnis"
+  },
+  "repos": {
+    "sijama": {
+      "technology": ["laravel", "react", "postgresql", "docker", "full-stack"],
+      "industry": ["nonprofit", "community-management"],
+      "business": ["information-system", "attendance-system", "rbac"]
+    },
+    "laravel-pms": {
+      "technology": ["laravel", "blade", "demo-app", "netlify"],
+      "industry": ["project-management"],
+      "business": ["business-system", "task-management"]
+    },
+    "sistem-antrian": {
+      "technology": ["laravel", "mysql", "web-application", "realtime-web"],
+      "industry": ["public-service", "retail"],
+      "business": ["queue-management", "operational-system"]
+    },
+    "sistem-informasi-klinik": {
+      "technology": ["laravel", "mysql", "vite", "web-application"],
+      "industry": ["healthcare", "clinic"],
+      "business": ["information-system", "patient-management"]
+    },
+    "rental-mobil-new": {
+      "technology": ["laravel", "mysql", "web-application"],
+      "industry": ["automotive", "rental"],
+      "business": ["business-system", "fleet-management"]
+    }
+  }
+}
