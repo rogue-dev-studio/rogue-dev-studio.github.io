@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T05:46:43.230Z",
+  "generatedAt": "2026-08-22T06:18:05.807Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -351,57 +351,13 @@
   ],
   "karya": [
     {
-      "name": "sijama",
-      "description": "SIJAMA — unggulan face recognition kamera lokal (tanpa cloud) untuk absensi pengajian. Laravel, React, PostgreSQL, Docker.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/sijama",
-      "language": "TypeScript",
-      "default_branch": "main",
-      "updated_at": "2026-08-22T05:45:16Z",
-      "images": [
-        "https://raw.githubusercontent.com/rogue-dev-studio/sijama/main/github-contents/01-face-scan.png"
-      ],
-      "topics": [
-        "business-system-arishadisopiyan",
-        "laravel",
-        "react",
-        "postgresql",
-        "docker",
-        "full-stack",
-        "nonprofit",
-        "community-management",
-        "information-system",
-        "attendance-system",
-        "rbac"
-      ],
-      "topicGroups": {
-        "primary": "business-system-arishadisopiyan",
-        "technology": [
-          "laravel",
-          "react",
-          "postgresql",
-          "docker",
-          "full-stack"
-        ],
-        "industry": [
-          "nonprofit",
-          "community-management"
-        ],
-        "business": [
-          "information-system",
-          "attendance-system",
-          "rbac"
-        ]
-      }
-    },
-    {
       "name": "laravel-pms",
       "description": "Laravel 11 UI demo for a project management dashboard. Not a production PMS.",
       "homepage": "https://demo-pms.netlify.app/",
       "html_url": "https://github.com/rogue-dev-studio/laravel-pms",
       "language": "Blade",
       "default_branch": "main",
-      "updated_at": "2026-08-22T05:45:18Z",
+      "updated_at": "2026-08-22T06:09:24Z",
       "images": [
         "https://raw.githubusercontent.com/rogue-dev-studio/laravel-pms/main/github-contents/01-dashboard.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/laravel-pms/main/github-contents/02-projects.png",
@@ -443,7 +399,7 @@
       "html_url": "https://github.com/rogue-dev-studio/sistem-antrian",
       "language": "Blade",
       "default_branch": "main",
-      "updated_at": "2026-08-22T05:45:19Z",
+      "updated_at": "2026-08-22T05:46:34Z",
       "images": [
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-ambil-nomor.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-antrian/main/github-contents/preview-nomor-antrian.png",
@@ -487,7 +443,7 @@
       "html_url": "https://github.com/rogue-dev-studio/sistem-informasi-klinik",
       "language": "JavaScript",
       "default_branch": "master",
-      "updated_at": "2026-08-22T05:45:20Z",
+      "updated_at": "2026-08-22T05:46:36Z",
       "images": [
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/01-login.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/sistem-informasi-klinik/master/github-contents/02-dashboard-home.png",
@@ -538,7 +494,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rental-mobil-new",
       "language": "CSS",
       "default_branch": "main",
-      "updated_at": "2026-08-22T05:45:22Z",
+      "updated_at": "2026-08-22T05:46:37Z",
       "images": [
         "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/1.png",
         "https://raw.githubusercontent.com/rogue-dev-studio/rental-mobil-new/main/github-contents/2.png",
