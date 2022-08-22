@@ -17,6 +17,7 @@ const ROOT = path.join(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data');
 const OUT_FILE = path.join(OUT_DIR, 'catalog.json');
 const TOPICS_FILE = path.join(OUT_DIR, 'karya-topics.json');
+const PREVIEWS_DIR = path.join(ROOT, 'thumbs');
 
 const OWNER = 'rogue-dev-studio';
 const TOPIC_LAB = 'experiment-arishadisopiyan';
@@ -86,24 +87,63 @@ async function listAllRepos() {
   return all;
 }
 
-async function listContentImages(repo, contentPath = 'github-contents', depth = 0) {
+async function listContentImageEntries(repo, contentPath = 'github-contents', depth = 0) {
   if (depth > 4) return [];
   try {
     const entries = await gh(`/repos/${OWNER}/${encodeURIComponent(repo)}/contents/${contentPath}`);
     if (!Array.isArray(entries)) return [];
-    const urls = [];
+    const files = [];
     for (const e of entries) {
       if (e.type === 'file' && IMAGE_EXT.test(e.name || '') && e.download_url) {
-        urls.push(e.download_url);
+        files.push({ name: e.name, download_url: e.download_url });
       } else if (e.type === 'dir' && e.path) {
-        urls.push(...await listContentImages(repo, e.path, depth + 1));
+        files.push(...await listContentImageEntries(repo, e.path, depth + 1));
       }
     }
-    urls.sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
-    return urls;
+    files.sort((a, b) => a.name.localeCompare(b.name, 'en', { numeric: true }));
+    return files;
   } catch {
     return [];
   }
+}
+
+async function listContentImages(repo, contentPath = 'github-contents', depth = 0) {
+  const files = await listContentImageEntries(repo, contentPath, depth);
+  return files.map((f) => f.download_url);
+}
+
+async function cachePrivateRepoPreviews(repo) {
+  if (!repo.private) return null;
+  const files = await listContentImageEntries(repo.name);
+  if (!files.length) return [];
+
+  const previewDir = path.join(PREVIEWS_DIR, repo.name);
+  fs.mkdirSync(previewDir, { recursive: true });
+
+  const publicPaths = [];
+  for (const file of files) {
+    const res = await fetch(file.download_url, {
+      headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' },
+    });
+    if (!res.ok) {
+      console.warn(`preview ${repo.name}/${file.name} download failed: ${res.status}`);
+      continue;
+    }
+    const buf = Buffer.from(await res.arrayBuffer());
+    fs.writeFileSync(path.join(previewDir, file.name), buf);
+    publicPaths.push(`thumbs/${repo.name}/${file.name}`);
+    console.log(`preview cached ${repo.name}/${file.name}`);
+  }
+  return publicPaths;
+}
+
+async function resolveKaryaImages(repo) {
+  const remoteUrls = await listContentImages(repo.name);
+  if (repo.private) {
+    const cached = await cachePrivateRepoPreviews(repo);
+    if (cached?.length) return cached;
+  }
+  return remoteUrls.map(normalizeRawUrl);
 }
 
 function buildRepoTopics(repoName) {
@@ -185,13 +225,13 @@ function mapRepo(repo, images = [], extra = {}) {
   };
 }
 
-async function withImages(repos, { concurrency = 4, mapExtra } = {}) {
+async function withImages(repos, { concurrency = 4, mapExtra, karya = false } = {}) {
   const out = [];
   for (let i = 0; i < repos.length; i += concurrency) {
     const chunk = repos.slice(i, i + concurrency);
     const mapped = await Promise.all(
       chunk.map(async (repo) => {
-        const images = await listContentImages(repo.name);
+        const images = karya ? await resolveKaryaImages(repo) : (await listContentImages(repo.name)).map(normalizeRawUrl);
         const extra = typeof mapExtra === 'function' ? mapExtra(repo) : {};
         return mapRepo(repo, images, extra);
       }),
@@ -241,6 +281,7 @@ for (const repoName of FEATURED_ORDER) {
 const [lab, karya, archive] = await Promise.all([
   withImages(labRepos.filter((r) => !r.fork)),
   withImages(karyaSource, {
+    karya: true,
     mapExtra: (repo) => ({
       topics: appliedTopics[repo.name] || buildRepoTopics(repo.name),
       topicGroups: topicGroupsForRepo(repo.name),
