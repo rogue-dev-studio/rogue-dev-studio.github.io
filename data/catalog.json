@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T06:19:34.639Z",
+  "generatedAt": "2026-08-23T12:14:09.296Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -539,6 +539,16 @@
   ],
   "archive": [
     {
+      "name": "ai-agents-rogue",
+      "description": "Kumpulan AI agents, prompt, rules, skills, dan command workflows terstandarisasi",
+      "homepage": "https://rogue-dev-studio.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue",
+      "language": "Python",
+      "default_branch": "master",
+      "updated_at": "2026-08-23T09:54:17Z",
+      "images": []
+    },
+    {
       "name": "omeans-team.github.io",
       "description": "Live site for omeans-team portfolio",
       "homepage": "https://rogue-dev-studio.github.io/omeans-team.github.io/",
@@ -576,16 +586,6 @@
       "language": "PowerShell",
       "default_branch": "master",
       "updated_at": "2026-08-13T07:31:52Z",
-      "images": []
-    },
-    {
-      "name": "ai-agents-rogue",
-      "description": "Kumpulan AI agents, prompt, rules, skills, dan command workflows terstandarisasi",
-      "homepage": "https://rogue-dev-studio.github.io/",
-      "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue",
-      "language": "Python",
-      "default_branch": "master",
-      "updated_at": "2026-08-08T08:39:32Z",
       "images": []
     },
     {
@@ -879,26 +879,6 @@
       "images": []
     },
     {
-      "name": "laravel-app-test-run",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/laravel-app-test-run",
-      "language": "PHP",
-      "default_branch": "master",
-      "updated_at": "2024-03-04T05:06:54Z",
-      "images": []
-    },
-    {
-      "name": "template-readme",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/template-readme",
-      "language": "",
-      "default_branch": "master",
-      "updated_at": "2024-02-14T14:22:00Z",
-      "images": []
-    },
-    {
       "name": "bootswatch",
       "description": "",
       "homepage": "",
@@ -946,16 +926,6 @@
       "language": "PHP",
       "default_branch": "main",
       "updated_at": "2024-01-24T10:51:26Z",
-      "images": []
-    },
-    {
-      "name": "guidelines",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/guidelines",
-      "language": "",
-      "default_branch": "master",
-      "updated_at": "2023-11-11T07:58:37Z",
       "images": []
     },
     {
@@ -1066,16 +1036,6 @@
       "language": "HTML",
       "default_branch": "master",
       "updated_at": "2021-04-01T11:25:37Z",
-      "images": []
-    },
-    {
-      "name": "Suanggi.net",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/Suanggi.net",
-      "language": "JavaScript",
-      "default_branch": "master",
-      "updated_at": "2020-07-25T17:50:31Z",
       "images": []
     }
   ]
