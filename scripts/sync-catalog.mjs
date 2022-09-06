@@ -39,6 +39,20 @@ const FEATURED_ORDER = [
   'rental-mobil-new',
 ];
 
+/** Cuplikan penting saja per karya (urutan = urutan galeri). Tanpa daftar = semua file github-contents. */
+const KARYA_FEATURED_IMAGES = {
+  sijama: [
+    'pc_halaman_dashboard.png',
+    'pc_halaman_absensi.png',
+    'pc_halaman_jamaah.png',
+    'pc_halaman_jadwal_rutin.png',
+    'pc_halaman_kalender.png',
+    'pc_halaman_laporan_kehadiran.png',
+    'mobile_halaman_dashboard.png',
+    'mobile_halaman_absensi.png',
+  ],
+};
+
 const karyaTopicsManifest = JSON.parse(fs.readFileSync(TOPICS_FILE, 'utf8'));
 
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
@@ -114,7 +128,7 @@ async function listContentImages(repo, contentPath = 'github-contents', depth = 
 
 async function cachePrivateRepoPreviews(repo) {
   if (!repo.private) return null;
-  const files = await listContentImageEntries(repo.name);
+  const files = repo._previewFiles || await listContentImageEntries(repo.name);
   if (!files.length) return [];
 
   const previewDir = path.join(PREVIEWS_DIR, repo.name);
@@ -138,12 +152,27 @@ async function cachePrivateRepoPreviews(repo) {
 }
 
 async function resolveKaryaImages(repo) {
-  const remoteUrls = await listContentImages(repo.name);
+  const files = await listContentImageEntries(repo.name);
+  const allow = KARYA_FEATURED_IMAGES[repo.name];
+  let selected = files;
+  if (Array.isArray(allow) && allow.length) {
+    const byName = new Map(files.map((f) => [f.name, f]));
+    selected = allow.map((name) => byName.get(name)).filter(Boolean);
+    if (!selected.length) {
+      console.warn(`featured images missing for ${repo.name}; falling back to all github-contents`);
+      selected = files;
+    }
+  }
+
   if (repo.private) {
-    const cached = await cachePrivateRepoPreviews(repo);
+    const cached = await cachePrivateRepoPreviews({
+      ...repo,
+      _previewFiles: selected,
+    });
     if (cached?.length) return cached;
   }
-  return remoteUrls.map(normalizeRawUrl);
+
+  return selected.map((f) => normalizeRawUrl(f.download_url));
 }
 
 function buildRepoTopics(repoName) {

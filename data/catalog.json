@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T01:32:49.325Z",
+  "generatedAt": "2026-09-06T07:18:52.690Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -351,6 +351,57 @@
   ],
   "karya": [
     {
+      "name": "sijama",
+      "description": "Sistem Informasi Jamaah: master wilayah & anggota, jadwal kegiatan, absensi face recognition (kamera lokal), laporan, RBAC.",
+      "homepage": "https://sijama-web.onrender.com",
+      "html_url": "https://github.com/rogue-dev-studio/sijama",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2026-09-06T07:18:52.689Z",
+      "images": [
+        "thumbs/sijama/pc_halaman_dashboard.png",
+        "thumbs/sijama/pc_halaman_absensi.png",
+        "thumbs/sijama/pc_halaman_jamaah.png",
+        "thumbs/sijama/pc_halaman_jadwal_rutin.png",
+        "thumbs/sijama/pc_halaman_kalender.png",
+        "thumbs/sijama/pc_halaman_laporan_kehadiran.png",
+        "thumbs/sijama/mobile_halaman_dashboard.png",
+        "thumbs/sijama/mobile_halaman_absensi.png"
+      ],
+      "topics": [
+        "business-system-arishadisopiyan",
+        "laravel",
+        "react",
+        "postgresql",
+        "docker",
+        "full-stack",
+        "nonprofit",
+        "community-management",
+        "information-system",
+        "attendance-system",
+        "rbac"
+      ],
+      "topicGroups": {
+        "primary": "business-system-arishadisopiyan",
+        "technology": [
+          "laravel",
+          "react",
+          "postgresql",
+          "docker",
+          "full-stack"
+        ],
+        "industry": [
+          "nonprofit",
+          "community-management"
+        ],
+        "business": [
+          "information-system",
+          "attendance-system",
+          "rbac"
+        ]
+      }
+    },
+    {
       "name": "laravel-pms",
       "description": "Laravel 11 UI demo for a project management dashboard. Not a production PMS.",
       "homepage": "https://demo-pms.netlify.app/",
@@ -580,7 +631,7 @@
     },
     {
       "name": "ai-agents-rogue-programmer",
-      "description": "AI Agents Rogue — Programmer Edition (coding, API, DB, FE, BE). Free to use — no fork or star required.",
+      "description": "AI Agents Rogue ΓÇö Programmer Edition (coding, API, DB, FE, BE). Free to use ΓÇö no fork or star required.",
       "homepage": "",
       "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue-programmer",
       "language": "PowerShell",
@@ -590,7 +641,7 @@
     },
     {
       "name": "unity-github-game",
-      "description": "Micro Dodge — lightweight Unity WebGL arcade demo. Dodge obstacles and beat your high score in the browser.",
+      "description": "Micro Dodge ΓÇö lightweight Unity WebGL arcade demo. Dodge obstacles and beat your high score in the browser.",
       "homepage": "https://rogue-dev-studio.github.io/unity-github-game/",
       "html_url": "https://github.com/rogue-dev-studio/unity-github-game",
       "language": "",
@@ -690,7 +741,7 @@
     },
     {
       "name": "omeans-team",
-      "description": "omeans-team/omeans-team is a ✨special ✨ repository that you can use to add a README.md to your GitHub profile. Make sure it’s public and initialize it with a README to get started.",
+      "description": "omeans-team/omeans-team is a Γ£¿special Γ£¿ repository that you can use to add a README.md to your GitHub profile. Make sure itΓÇÖs public and initialize it with a README to get started.",
       "homepage": "",
       "html_url": "https://github.com/rogue-dev-studio/omeans-team",
       "language": "",

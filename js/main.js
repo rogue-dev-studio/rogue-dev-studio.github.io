@@ -34,15 +34,16 @@ const FEATURED_META = {
         audience: 'Pengurus organisasi',
         stack: 'Laravel 11 · React · PostgreSQL · Docker',
         requirements: [
-            'Pendataan anggota berjenjang wilayah',
-            'RBAC peran pengguna',
-            'Jadwal pengajian & kegiatan',
-            'Absensi pengajian dengan face recognition'
+            'Menu: Informasi, Laporan, Transaksi, Master, Aplikasi (RBAC)',
+            'Absensi pengajian dengan face recognition kamera lokal',
+            'Master jamaah, keluarga, lokasi & wilayah berjenjang',
+            'Jadwal rutin, kalender kegiatan, dan laporan kehadiran',
+            'Responsive PC + mobile (bottom navigation)'
         ],
         problem: 'Pendataan anggota, jadwal, dan absensi masih terpisah dan sulit diaudit.',
         approach: 'Membangun SIJAMA dengan unggulan face recognition kamera lokal (tanpa cloud) untuk absensi pengajian, plus master wilayah, anggota, dan kegiatan.',
         result: 'Operasional organisasi punya satu aplikasi web dengan Docker Compose.',
-        url: 'https://github.com/rogue-dev-studio/sijama'
+        url: 'https://sijama-web.onrender.com'
     },
     'laravel-pms': {
         title: 'Project Management System',
