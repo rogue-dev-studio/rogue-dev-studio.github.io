@@ -1,0 +1,52 @@
+# Sync static GitHub catalog for the portfolio (no browser API key).
+# Token stays in Actions secrets only — never shipped to Pages/JS.
+
+name: Sync portfolio catalog
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/sync-catalog.mjs'
+      - '.github/workflows/sync-catalog.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-portfolio-catalog
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate data/catalog.json
+        env:
+          # Prefer optional fine-grained/classic PAT (public_repo read) if set;
+          # otherwise use the built-in Actions token (never exposed to the site).
+          GITHUB_TOKEN: ${{ secrets.GH_CATALOG_TOKEN || github.token }}
+        run: node scripts/sync-catalog.mjs
+
+      - name: Commit catalog if changed
+        run: |
+          git config user.name "rogue-dev-studio"
+          git config user.email "rogue-dev-studio@users.noreply.github.com"
+          git add data/catalog.json
+          if git diff --staged --quiet; then
+            echo "No catalog changes"
+          else
+            git commit -m "chore: refresh portfolio catalog (Karya/Lab/Archive)"
+            git push
+          fi
