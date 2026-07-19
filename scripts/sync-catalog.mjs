@@ -29,7 +29,7 @@ const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg)$/i;
 const FEATURED_ORDER = [
   'laravel-project-management-system-aris',
   'sistem-antrian',
-  'laravel-11-klinik-app',
+  'sistem-informasi-klinik',
   'rental-mobil-new',
 ];
 
