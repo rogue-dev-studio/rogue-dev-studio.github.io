@@ -16,20 +16,35 @@ const contentImageCache = new Map();
 /** Static catalog from Actions (preferred — no browser API key) */
 let staticCatalog = null;
 
-/** Enrichment for Karya cards keyed by repo name */
+/** Enrichment for Karya cards keyed by repo name (spek portfolio-arishadisopiyan) */
 const FEATURED_META = {
     'laravel-project-management-system-aris': {
         title: 'Project Management System',
         category: 'Sistem Bisnis',
+        audience: 'Project manager & tim',
+        stack: 'Laravel · demo Netlify',
+        requirements: [
+            'Kelola tugas & status progress',
+            'Kolaborasi anggota tim',
+            'Dashboard progres proyek',
+            'Demo publik tanpa instalasi lokal'
+        ],
         problem: 'Tim kesulitan melihat gambaran kerja proyek sebelum membangun sistem sendiri.',
         approach: 'Menyediakan demo sistem manajemen proyek yang bisa langsung dicoba.',
         result: 'Alur tugas, progress, dan kolaborasi tim terlihat jelas di browser.',
         url: 'https://demo-pms.netlify.app/'
-        // images: only from repo github-contents/ (via catalog sync)
     },
     'sistem-antrian': {
         title: 'Sistem Antrian',
         category: 'Sistem Operasional',
+        audience: 'Loket layanan & pelanggan',
+        stack: 'Laravel 11 · MySQL',
+        requirements: [
+            'Ambil nomor antrian',
+            'Panggil & update status',
+            'Dashboard & sisa antrian',
+            'Tampilan siap monitor loket'
+        ],
         problem: 'Bisnis layanan butuh alur antrian yang rapi dan bisa dipantau secara realtime.',
         approach: 'Membangun aplikasi antrian berbasis web untuk operasional harian.',
         result: 'Proses panggil antrian lebih teratur dan mudah diikuti staf maupun pelanggan.',
@@ -38,6 +53,15 @@ const FEATURED_META = {
     'sistem-informasi-klinik': {
         title: 'Sistem Informasi Klinik',
         category: 'Sistem Informasi',
+        audience: 'Admin & staf klinik',
+        stack: 'Laravel 11 · MySQL · Vite',
+        requirements: [
+            'Login terautentikasi',
+            'CRUD pasien & pencarian',
+            'CRUD poliklinik',
+            'Pendaftaran layanan',
+            'Laporan pasien & pendaftaran'
+        ],
         problem: 'Klinik membutuhkan pencatatan pasien, poliklinik, dan pendaftaran dalam satu alur.',
         approach: 'Merancang aplikasi klinik yang menghubungkan data pasien dan layanan.',
         result: 'Administrasi klinik lebih tertata dari pendaftaran hingga pelayanan.',
@@ -46,6 +70,14 @@ const FEATURED_META = {
     'rental-mobil-new': {
         title: 'Rental Mobil',
         category: 'Sistem Bisnis',
+        audience: 'Pemilik & staf rental',
+        stack: 'Laravel · MySQL',
+        requirements: [
+            'Manajemen armada',
+            'Data pelanggan',
+            'Transaksi sewa',
+            'Status ketersediaan kendaraan'
+        ],
         problem: 'Bisnis rental perlu mengelola armada, sewa, dan data pelanggan tanpa catatan terpisah-pisah.',
         approach: 'Membangun sistem rental mobil berbasis web untuk operasional usaha.',
         result: 'Proses sewa dan inventaris kendaraan lebih mudah dikelola.',
@@ -556,11 +588,24 @@ async function renderFeaturedProjects() {
         const card = document.createElement('article');
         card.className = 'project-card featured-card';
 
+        const reqList = Array.isArray(meta.requirements) && meta.requirements.length
+            ? `<li><strong>Kebutuhan:</strong> ${meta.requirements.map((r) => escapeHTML(r)).join('; ')}</li>`
+            : '';
+        const audienceLine = meta.audience
+            ? `<li><strong>Untuk:</strong> ${escapeHTML(meta.audience)}</li>`
+            : '';
+        const stackLine = meta.stack
+            ? `<li><strong>Stack:</strong> ${escapeHTML(meta.stack)}</li>`
+            : '';
+
         const caseBlock = meta.problem
             ? `<ul class="case-meta">
+                    ${audienceLine}
                     <li><strong>Tantangan:</strong> ${escapeHTML(meta.problem)}</li>
                     <li><strong>Solusi:</strong> ${escapeHTML(meta.approach)}</li>
                     <li><strong>Hasil:</strong> ${escapeHTML(meta.result)}</li>
+                    ${reqList}
+                    ${stackLine}
                </ul>`
             : `<p class="project-desc">${escapeHTML(desc || 'Proyek portfolio.')}</p>`;
 
