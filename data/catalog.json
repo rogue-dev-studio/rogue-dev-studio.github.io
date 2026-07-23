@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T13:19:03.002Z",
+  "generatedAt": "2026-07-23T18:55:53.077Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -406,6 +406,56 @@
     }
   ],
   "archive": [
+    {
+      "name": "about.github.io",
+      "description": "",
+      "homepage": "https://rogue-dev-studio.github.io/about.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/about.github.io",
+      "language": "PHP",
+      "default_branch": "master",
+      "updated_at": "2026-07-23T14:21:15Z",
+      "images": []
+    },
+    {
+      "name": "omeansteamx",
+      "description": "",
+      "homepage": "https://rogue-dev-studio.github.io/omeansteamx/",
+      "html_url": "https://github.com/rogue-dev-studio/omeansteamx",
+      "language": "Hack",
+      "default_branch": "master",
+      "updated_at": "2026-07-23T14:20:54Z",
+      "images": []
+    },
+    {
+      "name": "asasas",
+      "description": "",
+      "homepage": "https://rogue-dev-studio.github.io/asasas/",
+      "html_url": "https://github.com/rogue-dev-studio/asasas",
+      "language": "HTML",
+      "default_branch": "master",
+      "updated_at": "2026-07-23T14:20:10Z",
+      "images": []
+    },
+    {
+      "name": "omeansteam.github.io.bu.1",
+      "description": "Omeans Team adalah sebuah website portfolio yang dibuat oleh Aris Hadisopiyan. Website ini menampilkan karya-karya Aris yang mencakup desain grafis, desain UI/UX, serta pengembangan website.",
+      "homepage": "https://rogue-dev-studio.github.io/omeansteam.github.io.bu.1/",
+      "html_url": "https://github.com/rogue-dev-studio/omeansteam.github.io.bu.1",
+      "language": "SCSS",
+      "default_branch": "omeansteam.github.io",
+      "updated_at": "2026-07-23T14:19:23Z",
+      "images": []
+    },
+    {
+      "name": "omeansteam.github.io",
+      "description": "",
+      "homepage": "https://rogue-dev-studio.github.io/omeansteam.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/omeansteam.github.io",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2026-07-23T14:17:34Z",
+      "images": []
+    },
     {
       "name": "recent-work",
       "description": "",
@@ -887,26 +937,6 @@
       "images": []
     },
     {
-      "name": "omeansteam.github.io",
-      "description": "",
-      "homepage": "https://omeansteam.github.io/",
-      "html_url": "https://github.com/rogue-dev-studio/omeansteam.github.io",
-      "language": "PHP",
-      "default_branch": "main",
-      "updated_at": "2023-11-19T09:51:18Z",
-      "images": []
-    },
-    {
-      "name": "omeansteam.github.io.bu.1",
-      "description": "Omeans Team adalah sebuah website portfolio yang dibuat oleh Aris Hadisopiyan. Website ini menampilkan karya-karya Aris yang mencakup desain grafis, desain UI/UX, serta pengembangan website.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/omeansteam.github.io.bu.1",
-      "language": "SCSS",
-      "default_branch": "omeansteam.github.io",
-      "updated_at": "2023-11-19T08:29:15Z",
-      "images": []
-    },
-    {
       "name": "guidelines",
       "description": "",
       "homepage": "",
@@ -914,16 +944,6 @@
       "language": "",
       "default_branch": "master",
       "updated_at": "2023-11-11T07:58:37Z",
-      "images": []
-    },
-    {
-      "name": "asasas",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/asasas",
-      "language": "HTML",
-      "default_branch": "master",
-      "updated_at": "2023-10-16T15:37:47Z",
       "images": []
     },
     {
@@ -977,16 +997,6 @@
       "images": []
     },
     {
-      "name": "omeansteamx",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/omeansteamx",
-      "language": "Hack",
-      "default_branch": "master",
-      "updated_at": "2023-10-14T18:44:17Z",
-      "images": []
-    },
-    {
       "name": "omeansteamc",
       "description": "",
       "homepage": "https://omeansteam.github.io/",
@@ -994,16 +1004,6 @@
       "language": "Hack",
       "default_branch": "master",
       "updated_at": "2023-10-13T14:36:18Z",
-      "images": []
-    },
-    {
-      "name": "about.github.io",
-      "description": "",
-      "homepage": "https://omeansteam.github.io",
-      "html_url": "https://github.com/rogue-dev-studio/about.github.io",
-      "language": "PHP",
-      "default_branch": "master",
-      "updated_at": "2022-10-01T10:45:01Z",
       "images": []
     }
   ]
