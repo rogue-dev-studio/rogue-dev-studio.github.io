@@ -633,7 +633,7 @@ async function fetchGitHubProfile() {
             const avatarImg = document.querySelector('.about-image img');
             if (avatarImg && data.avatar_url) {
                 avatarImg.src = escapeHTML(data.avatar_url);
-                avatarImg.alt = escapeHTML(data.name || 'Aris Hadisopiyan');
+                avatarImg.alt = escapeHTML(data.name || 'Rogue Developer');
             }
         }
     } catch (error) {
