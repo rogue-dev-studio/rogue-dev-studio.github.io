@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T13:25:17.442Z",
+  "generatedAt": "2026-07-31T19:03:19.284Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -407,13 +407,23 @@
   ],
   "archive": [
     {
+      "name": "agents-portfolio",
+      "description": "",
+      "homepage": "https://rogue-dev-studio.github.io/agents-portfolio/",
+      "html_url": "https://github.com/rogue-dev-studio/agents-portfolio",
+      "language": "CSS",
+      "default_branch": "master",
+      "updated_at": "2026-07-31T16:49:03Z",
+      "images": []
+    },
+    {
       "name": "ai-agents-rogue",
       "description": "Kumpulan AI agents, prompt, rules, skills, dan command workflows terstandarisasi",
       "homepage": "https://rogue-dev-studio.github.io/",
       "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue",
-      "language": "PowerShell",
+      "language": "Python",
       "default_branch": "master",
-      "updated_at": "2026-07-31T11:59:56Z",
+      "updated_at": "2026-07-31T16:38:55Z",
       "images": []
     },
     {
@@ -994,16 +1004,6 @@
       "language": "Hack",
       "default_branch": "master",
       "updated_at": "2023-10-15T10:09:02Z",
-      "images": []
-    },
-    {
-      "name": "curly-octo-parakeet",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/curly-octo-parakeet",
-      "language": "HTML",
-      "default_branch": "master",
-      "updated_at": "2023-10-15T09:50:20Z",
       "images": []
     }
   ]
