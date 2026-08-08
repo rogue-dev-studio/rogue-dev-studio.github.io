@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T06:29:48.303Z",
+  "generatedAt": "2026-08-08T12:20:59.194Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -413,7 +413,17 @@
       "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue",
       "language": "Python",
       "default_branch": "master",
-      "updated_at": "2026-08-02T08:58:47Z",
+      "updated_at": "2026-08-08T08:39:32Z",
+      "images": []
+    },
+    {
+      "name": "ai-agents-rogue-programmer",
+      "description": "AI Agents Rogue — Programmer Edition (coding, API, DB, FE, BE). Free to use — no fork or star required.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue-programmer",
+      "language": "PowerShell",
+      "default_branch": "master",
+      "updated_at": "2026-08-08T08:29:18Z",
       "images": []
     },
     {
@@ -994,16 +1004,6 @@
       "language": "PHP",
       "default_branch": "master",
       "updated_at": "2023-10-16T14:42:47Z",
-      "images": []
-    },
-    {
-      "name": "coba3",
-      "description": "",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/coba3",
-      "language": "PHP",
-      "default_branch": "master",
-      "updated_at": "2023-10-15T10:21:45Z",
       "images": []
     }
   ]
