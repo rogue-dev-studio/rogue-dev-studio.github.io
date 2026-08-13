@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T07:07:27.205Z",
+  "generatedAt": "2026-08-13T12:39:39.041Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -407,6 +407,16 @@
   ],
   "archive": [
     {
+      "name": "ai-agents-rogue-programmer",
+      "description": "AI Agents Rogue — Programmer Edition (coding, API, DB, FE, BE). Free to use — no fork or star required.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue-programmer",
+      "language": "PowerShell",
+      "default_branch": "master",
+      "updated_at": "2026-08-13T07:31:52Z",
+      "images": []
+    },
+    {
       "name": "ai-agents-rogue",
       "description": "Kumpulan AI agents, prompt, rules, skills, dan command workflows terstandarisasi",
       "homepage": "https://rogue-dev-studio.github.io/",
@@ -414,16 +424,6 @@
       "language": "Python",
       "default_branch": "master",
       "updated_at": "2026-08-08T08:39:32Z",
-      "images": []
-    },
-    {
-      "name": "ai-agents-rogue-programmer",
-      "description": "AI Agents Rogue — Programmer Edition (coding, API, DB, FE, BE). Free to use — no fork or star required.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue-programmer",
-      "language": "PowerShell",
-      "default_branch": "master",
-      "updated_at": "2026-08-08T08:29:18Z",
       "images": []
     },
     {
