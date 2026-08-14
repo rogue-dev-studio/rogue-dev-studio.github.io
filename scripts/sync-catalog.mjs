@@ -27,6 +27,7 @@ const ARCHIVE_EXCLUDE = new Set([
 const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg)$/i;
 
 const FEATURED_ORDER = [
+  'sijama',
   'laravel-project-management-system-aris',
   'sistem-antrian',
   'sistem-informasi-klinik',
@@ -74,14 +75,21 @@ async function listAllRepos() {
   return all;
 }
 
-async function listContentImages(repo) {
+async function listContentImages(repo, path = 'github-contents', depth = 0) {
+  if (depth > 4) return [];
   try {
-    const entries = await gh(`/repos/${OWNER}/${encodeURIComponent(repo)}/contents/github-contents`);
+    const entries = await gh(`/repos/${OWNER}/${encodeURIComponent(repo)}/contents/${path}`);
     if (!Array.isArray(entries)) return [];
-    return entries
-      .filter((e) => e.type === 'file' && IMAGE_EXT.test(e.name || '') && e.download_url)
-      .sort((a, b) => a.name.localeCompare(b.name, 'en', { numeric: true }))
-      .map((e) => e.download_url);
+    const urls = [];
+    for (const e of entries) {
+      if (e.type === 'file' && IMAGE_EXT.test(e.name || '') && e.download_url) {
+        urls.push(e.download_url);
+      } else if (e.type === 'dir' && e.path) {
+        urls.push(...await listContentImages(repo, e.path, depth + 1));
+      }
+    }
+    urls.sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
+    return urls;
   } catch {
     return [];
   }

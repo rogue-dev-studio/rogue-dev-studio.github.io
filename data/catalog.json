@@ -273,6 +273,19 @@
   ],
   "karya": [
     {
+      "name": "sijama",
+      "description": "SIJAMA — unggulan face recognition kamera lokal (tanpa cloud) untuk absensi pengajian. Laravel, React, PostgreSQL, Docker.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/sijama",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2026-08-14T07:44:00Z",
+      "images": [
+        "thumbs/sijama/01-face-scan.png",
+        "thumbs/sijama/02-logo.svg"
+      ]
+    },
+    {
       "name": "laravel-project-management-system-aris",
       "description": "Laravel Project Management System - Template",
       "homepage": "https://demo-pms.netlify.app/",
