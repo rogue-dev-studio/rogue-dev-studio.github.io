@@ -23,12 +23,14 @@ const TOPIC_PORTFOLIO = 'portfolio-arishadisopiyan';
 const ARCHIVE_EXCLUDE = new Set([
   'rogue-dev-studio.github.io',
   'ArisHadisopiyan',
+  'rogue-dev-studio',
+  'professional-portfolio-template-with-ai-protection',
 ]);
 const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg)$/i;
 
 const FEATURED_ORDER = [
   'sijama',
-  'laravel-project-management-system-aris',
+  'laravel-pms',
   'sistem-antrian',
   'sistem-informasi-klinik',
   'rental-mobil-new',
@@ -129,19 +131,19 @@ const [labRepos, portfolioRepos, allRepos] = await Promise.all([
   listAllRepos(),
 ]);
 
-const labNames = new Set(labRepos.map((r) => r.name));
-const portfolioNames = new Set(portfolioRepos.map((r) => r.name));
+const labNames = new Set(labRepos.filter((r) => !r.fork).map((r) => r.name));
+const portfolioNames = new Set(portfolioRepos.filter((r) => !r.fork).map((r) => r.name));
 
 // Ensure featured order first in karya
-const portfolioByName = new Map(portfolioRepos.map((r) => [r.name, r]));
+const portfolioByName = new Map(portfolioRepos.filter((r) => !r.fork).map((r) => [r.name, r]));
 const karyaSource = [
   ...FEATURED_ORDER.map((n) => portfolioByName.get(n)).filter(Boolean),
-  ...portfolioRepos.filter((r) => !FEATURED_ORDER.includes(r.name)),
+  ...portfolioRepos.filter((r) => !r.fork && !FEATURED_ORDER.includes(r.name)),
 ];
 // If featured missing from topic search, still try to resolve via allRepos
 for (const name of FEATURED_ORDER) {
   if (!karyaSource.find((r) => r.name === name)) {
-    const found = allRepos.find((r) => r.name === name);
+    const found = allRepos.find((r) => r.name === name && !r.fork);
     if (found) karyaSource.unshift(found);
   }
 }
@@ -157,7 +159,7 @@ const archiveSource = allRepos.filter((r) => {
 console.log(`lab=${labRepos.length} karya=${karyaSource.length} archive=${archiveSource.length}`);
 
 const [lab, karya, archive] = await Promise.all([
-  withImages(labRepos),
+  withImages(labRepos.filter((r) => !r.fork)),
   withImages(karyaSource),
   withImages(archiveSource.slice(0, 60)), // cap archive image fetch to keep Action fast
 ]);
