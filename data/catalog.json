@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T06:18:05.807Z",
+  "generatedAt": "2026-08-22T12:13:48.569Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -350,50 +350,6 @@
     }
   ],
   "karya": [
-    {
-      "name": "sijama",
-      "description": "SIJAMA — unggulan face recognition kamera lokal (tanpa cloud) untuk absensi pengajian. Laravel, React, PostgreSQL, Docker.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/sijama",
-      "language": "TypeScript",
-      "default_branch": "main",
-      "updated_at": "2026-08-22T05:45:16Z",
-      "images": [
-        "thumbs/sijama/01-face-scan.png"
-      ],
-      "topics": [
-        "business-system-arishadisopiyan",
-        "laravel",
-        "react",
-        "postgresql",
-        "docker",
-        "full-stack",
-        "nonprofit",
-        "community-management",
-        "information-system",
-        "attendance-system",
-        "rbac"
-      ],
-      "topicGroups": {
-        "primary": "business-system-arishadisopiyan",
-        "technology": [
-          "laravel",
-          "react",
-          "postgresql",
-          "docker",
-          "full-stack"
-        ],
-        "industry": [
-          "nonprofit",
-          "community-management"
-        ],
-        "business": [
-          "information-system",
-          "attendance-system",
-          "rbac"
-        ]
-      }
-    },
     {
       "name": "laravel-pms",
       "description": "Laravel 11 UI demo for a project management dashboard. Not a production PMS.",
