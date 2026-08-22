@@ -16,17 +16,19 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data');
 const OUT_FILE = path.join(OUT_DIR, 'catalog.json');
+const TOPICS_FILE = path.join(OUT_DIR, 'karya-topics.json');
 
 const OWNER = 'rogue-dev-studio';
 const TOPIC_LAB = 'experiment-arishadisopiyan';
-const TOPIC_PORTFOLIO = 'portfolio-arishadisopiyan';
+const TOPIC_KARYA = 'business-system-arishadisopiyan';
 const ARCHIVE_EXCLUDE = new Set([
   'rogue-dev-studio.github.io',
   'ArisHadisopiyan',
   'rogue-dev-studio',
   'professional-portfolio-template-with-ai-protection',
 ]);
-const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg)$/i;
+const IMAGE_EXT = /\.(png|jpe?g|gif|webp)$/i;
+const MAX_GITHUB_TOPICS = 20;
 
 const FEATURED_ORDER = [
   'sijama',
@@ -35,6 +37,8 @@ const FEATURED_ORDER = [
   'sistem-informasi-klinik',
   'rental-mobil-new',
 ];
+
+const karyaTopicsManifest = JSON.parse(fs.readFileSync(TOPICS_FILE, 'utf8'));
 
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
 if (!token) {
@@ -49,14 +53,19 @@ const headers = {
   'X-GitHub-Api-Version': '2022-11-28',
 };
 
-async function gh(pathname, { raw = false } = {}) {
+async function gh(pathname, { raw = false, method = 'GET', body } = {}) {
   const url = pathname.startsWith('http') ? pathname : `https://api.github.com${pathname}`;
-  const res = await fetch(url, { headers });
+  const init = { method, headers: { ...headers } };
+  if (body !== undefined) {
+    init.body = JSON.stringify(body);
+  }
+  const res = await fetch(url, init);
   if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`${res.status} ${pathname} — ${body.slice(0, 200)}`);
+    const text = await res.text();
+    throw new Error(`${res.status} ${pathname} — ${text.slice(0, 200)}`);
   }
   if (raw) return res;
+  if (res.status === 204) return null;
   return res.json();
 }
 
@@ -77,10 +86,10 @@ async function listAllRepos() {
   return all;
 }
 
-async function listContentImages(repo, path = 'github-contents', depth = 0) {
+async function listContentImages(repo, contentPath = 'github-contents', depth = 0) {
   if (depth > 4) return [];
   try {
-    const entries = await gh(`/repos/${OWNER}/${encodeURIComponent(repo)}/contents/${path}`);
+    const entries = await gh(`/repos/${OWNER}/${encodeURIComponent(repo)}/contents/${contentPath}`);
     if (!Array.isArray(entries)) return [];
     const urls = [];
     for (const e of entries) {
@@ -97,7 +106,72 @@ async function listContentImages(repo, path = 'github-contents', depth = 0) {
   }
 }
 
-function mapRepo(repo, images = []) {
+function buildRepoTopics(repoName) {
+  const spec = karyaTopicsManifest.repos[repoName];
+  if (!spec) return [];
+  const primary = karyaTopicsManifest.primaryTopic || TOPIC_KARYA;
+  const merged = [
+    primary,
+    ...(spec.technology || []),
+    ...(spec.industry || []),
+    ...(spec.business || []),
+  ];
+  return [...new Set(merged.map((t) => String(t).trim().toLowerCase()).filter(Boolean))].slice(0, MAX_GITHUB_TOPICS);
+}
+
+function topicGroupsForRepo(repoName) {
+  const spec = karyaTopicsManifest.repos[repoName];
+  if (!spec) return null;
+  return {
+    primary: karyaTopicsManifest.primaryTopic || TOPIC_KARYA,
+    technology: spec.technology || [],
+    industry: spec.industry || [],
+    business: spec.business || [],
+  };
+}
+
+async function getRepoTopics(repoName) {
+  try {
+    const data = await gh(`/repos/${OWNER}/${encodeURIComponent(repoName)}/topics`);
+    return Array.isArray(data.names) ? data.names : [];
+  } catch {
+    return [];
+  }
+}
+
+async function applyRepoTopics(repoName, requiredTopics) {
+  const current = await getRepoTopics(repoName);
+  const canonical = requiredTopics.map((t) => t.toLowerCase());
+  const same = canonical.length === current.length
+    && canonical.every((t, i) => current[i]?.toLowerCase() === t);
+  if (same) {
+    console.log(`topics ${repoName}: OK (${canonical.length})`);
+    return canonical;
+  }
+  await gh(`/repos/${OWNER}/${encodeURIComponent(repoName)}/topics`, {
+    method: 'PUT',
+    body: { names: canonical },
+  });
+  console.log(`topics ${repoName}: applied ${canonical.join(', ')}`);
+  return canonical;
+}
+
+function normalizeRawUrl(url) {
+  if (!url) return url;
+  try {
+    const parsed = new URL(url);
+    if (parsed.hostname === 'raw.githubusercontent.com') {
+      parsed.search = '';
+      parsed.hash = '';
+      return parsed.toString();
+    }
+    return url.split('?')[0];
+  } catch {
+    return String(url).split('?')[0];
+  }
+}
+
+function mapRepo(repo, images = [], extra = {}) {
   return {
     name: repo.name,
     description: repo.description || '',
@@ -106,16 +180,21 @@ function mapRepo(repo, images = []) {
     language: repo.language || '',
     default_branch: repo.default_branch || 'main',
     updated_at: repo.updated_at || null,
-    images,
+    images: images.map(normalizeRawUrl),
+    ...extra,
   };
 }
 
-async function withImages(repos, { concurrency = 4 } = {}) {
+async function withImages(repos, { concurrency = 4, mapExtra } = {}) {
   const out = [];
   for (let i = 0; i < repos.length; i += concurrency) {
     const chunk = repos.slice(i, i + concurrency);
     const mapped = await Promise.all(
-      chunk.map(async (repo) => mapRepo(repo, await listContentImages(repo.name))),
+      chunk.map(async (repo) => {
+        const images = await listContentImages(repo.name);
+        const extra = typeof mapExtra === 'function' ? mapExtra(repo) : {};
+        return mapRepo(repo, images, extra);
+      }),
     );
     out.push(...mapped);
     console.log(`images ${Math.min(i + concurrency, repos.length)}/${repos.length}`);
@@ -125,43 +204,49 @@ async function withImages(repos, { concurrency = 4 } = {}) {
 
 console.log('Sync catalog as', OWNER);
 
-const [labRepos, portfolioRepos, allRepos] = await Promise.all([
+const [labRepos, karyaTopicRepos, allRepos] = await Promise.all([
   searchTopic(TOPIC_LAB),
-  searchTopic(TOPIC_PORTFOLIO),
+  searchTopic(TOPIC_KARYA),
   listAllRepos(),
 ]);
 
 const labNames = new Set(labRepos.filter((r) => !r.fork).map((r) => r.name));
-const portfolioNames = new Set(portfolioRepos.filter((r) => !r.fork).map((r) => r.name));
-
-// Ensure featured order first in karya
-const portfolioByName = new Map(portfolioRepos.filter((r) => !r.fork).map((r) => [r.name, r]));
-const karyaSource = [
-  ...FEATURED_ORDER.map((n) => portfolioByName.get(n)).filter(Boolean),
-  ...portfolioRepos.filter((r) => !r.fork && !FEATURED_ORDER.includes(r.name)),
-];
-// If featured missing from topic search, still try to resolve via allRepos
-for (const name of FEATURED_ORDER) {
-  if (!karyaSource.find((r) => r.name === name)) {
-    const found = allRepos.find((r) => r.name === name && !r.fork);
-    if (found) karyaSource.unshift(found);
-  }
-}
+const karyaByName = new Map(karyaTopicRepos.filter((r) => !r.fork).map((r) => [r.name, r]));
+const allByName = new Map(allRepos.filter((r) => !r.fork).map((r) => [r.name, r]));
+const karyaSource = FEATURED_ORDER.map((name) => karyaByName.get(name) || allByName.get(name)).filter(Boolean);
 
 const archiveSource = allRepos.filter((r) => {
   if (r.fork) return false;
   if (ARCHIVE_EXCLUDE.has(r.name)) return false;
-  if (labNames.has(r.name) || portfolioNames.has(r.name)) return false;
+  if (labNames.has(r.name)) return false;
   if (FEATURED_ORDER.includes(r.name)) return false;
   return true;
 });
 
 console.log(`lab=${labRepos.length} karya=${karyaSource.length} archive=${archiveSource.length}`);
 
+console.log('Applying Karya GitHub topics…');
+const appliedTopics = {};
+for (const repoName of FEATURED_ORDER) {
+  const required = buildRepoTopics(repoName);
+  if (!required.length) continue;
+  try {
+    appliedTopics[repoName] = await applyRepoTopics(repoName, required);
+  } catch (error) {
+    console.warn(`topics ${repoName} failed:`, error.message);
+    appliedTopics[repoName] = required;
+  }
+}
+
 const [lab, karya, archive] = await Promise.all([
   withImages(labRepos.filter((r) => !r.fork)),
-  withImages(karyaSource),
-  withImages(archiveSource.slice(0, 60)), // cap archive image fetch to keep Action fast
+  withImages(karyaSource, {
+    mapExtra: (repo) => ({
+      topics: appliedTopics[repo.name] || buildRepoTopics(repo.name),
+      topicGroups: topicGroupsForRepo(repo.name),
+    }),
+  }),
+  withImages(archiveSource.slice(0, 60)),
 ]);
 
 const catalog = {
@@ -169,8 +254,9 @@ const catalog = {
   owner: OWNER,
   topics: {
     lab: TOPIC_LAB,
-    portfolio: TOPIC_PORTFOLIO,
+    karya: TOPIC_KARYA,
   },
+  karyaTopicManifest: karyaTopicsManifest,
   lab,
   karya,
   archive,
