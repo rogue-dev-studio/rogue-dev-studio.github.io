@@ -120,6 +120,10 @@ const SOCIAL_FALLBACK = [
     { label: 'Instagram', url: 'https://www.instagram.com/aya.erisu/', icon: 'instagram' }
 ];
 
+/** Bootstrap Icons has no bi-patreon — use brand logomark (circle + stem). */
+const PATREON_ICON_SVG =
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><circle cx="14.48" cy="9.73" r="7.23"/><rect x="2" y="2.5" width="4.5" height="19" rx="0.5"/></svg>';
+
 window.svgFallback = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="100%" height="100%" fill="%23F5F5F0"/><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="%23000000" stroke-width="1" opacity="0.06"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/><rect x="250" y="200" width="300" height="200" fill="none" stroke="%23000000" stroke-width="2"/><text x="400" y="295" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="bold" fill="%23000000" text-anchor="middle" letter-spacing="2">ROGUE.DEV</text></svg>`;
 
 function defaultThumbSrc() {
@@ -255,6 +259,13 @@ function renderIcons() {
         });
 
         if (iconName) {
+            if (iconName === 'patreon') {
+                el.classList.add('icon-svg');
+                el.innerHTML = PATREON_ICON_SVG;
+                el.setAttribute('aria-hidden', 'true');
+                return;
+            }
+
             let biIconName = iconName;
             if (iconName === 'twitter') {
                 biIconName = 'x';
