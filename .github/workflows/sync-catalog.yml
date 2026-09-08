@@ -43,7 +43,8 @@ jobs:
         run: |
           git config user.name "rogue-dev-studio"
           git config user.email "rogue-dev-studio@users.noreply.github.com"
-          git add data/catalog.json
+          # thumbs/ holds public copies of private-repo previews (e.g. SIJAMA)
+          git add data/catalog.json thumbs/
           if git diff --staged --quiet; then
             echo "No catalog changes"
           else

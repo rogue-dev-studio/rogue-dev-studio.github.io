@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T01:41:07.880Z",
+  "generatedAt": "2026-09-08T05:19:41.008Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -350,6 +350,57 @@
     }
   ],
   "karya": [
+    {
+      "name": "sijama",
+      "description": "Sistem Informasi Jamaah: master wilayah & anggota, jadwal kegiatan, absensi face recognition (kamera lokal), laporan, RBAC.",
+      "homepage": "https://sijama-web.onrender.com",
+      "html_url": "https://github.com/rogue-dev-studio/sijama",
+      "language": "PHP",
+      "default_branch": "main",
+      "updated_at": "2026-09-06T07:18:52.689Z",
+      "images": [
+        "thumbs/sijama/pc_halaman_dashboard.png",
+        "thumbs/sijama/pc_halaman_absensi.png",
+        "thumbs/sijama/pc_halaman_jamaah.png",
+        "thumbs/sijama/pc_halaman_jadwal_rutin.png",
+        "thumbs/sijama/pc_halaman_kalender.png",
+        "thumbs/sijama/pc_halaman_laporan_kehadiran.png",
+        "thumbs/sijama/mobile_halaman_dashboard.png",
+        "thumbs/sijama/mobile_halaman_absensi.png"
+      ],
+      "topics": [
+        "business-system-arishadisopiyan",
+        "laravel",
+        "react",
+        "postgresql",
+        "docker",
+        "full-stack",
+        "nonprofit",
+        "community-management",
+        "information-system",
+        "attendance-system",
+        "rbac"
+      ],
+      "topicGroups": {
+        "primary": "business-system-arishadisopiyan",
+        "technology": [
+          "laravel",
+          "react",
+          "postgresql",
+          "docker",
+          "full-stack"
+        ],
+        "industry": [
+          "nonprofit",
+          "community-management"
+        ],
+        "business": [
+          "information-system",
+          "attendance-system",
+          "rbac"
+        ]
+      }
+    },
     {
       "name": "laravel-pms",
       "description": "Laravel 11 UI demo for a project management dashboard. Not a production PMS.",

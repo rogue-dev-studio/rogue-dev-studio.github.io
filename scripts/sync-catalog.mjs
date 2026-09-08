@@ -271,7 +271,71 @@ async function withImages(repos, { concurrency = 4, mapExtra, karya = false } = 
   return out;
 }
 
+function loadPreviousCatalog() {
+  try {
+    return JSON.parse(fs.readFileSync(OUT_FILE, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+async function fetchRepoByName(name) {
+  try {
+    const repo = await gh(`/repos/${OWNER}/${encodeURIComponent(name)}`);
+    if (repo && !repo.fork) return repo;
+  } catch (error) {
+    console.warn(`repo ${name}: ${error.message}`);
+  }
+  return null;
+}
+
+async function resolveFeaturedRepo(name, karyaByName, allByName, previousKaryaByName) {
+  const fromLists = karyaByName.get(name) || allByName.get(name);
+  if (fromLists) return { kind: 'live', repo: fromLists };
+
+  const direct = await fetchRepoByName(name);
+  if (direct) return { kind: 'live', repo: direct };
+
+  const preserved = previousKaryaByName.get(name);
+  if (preserved) {
+    console.warn(`featured ${name}: API miss — preserving previous catalog entry (private/token scope)`);
+    return { kind: 'preserved', entry: preserved };
+  }
+
+  console.warn(`featured ${name}: missing from API and previous catalog`);
+  return null;
+}
+
+function preferLocalThumbs(entry) {
+  if (!entry || !Array.isArray(entry.images) || !entry.images.length) return entry;
+  const localDir = path.join(PREVIEWS_DIR, entry.name);
+  if (!fs.existsSync(localDir)) return entry;
+
+  const allow = KARYA_FEATURED_IMAGES[entry.name];
+  const files = fs.readdirSync(localDir).filter((name) => IMAGE_EXT.test(name));
+  if (!files.length) return entry;
+
+  let selected = files;
+  if (Array.isArray(allow) && allow.length) {
+    const set = new Set(files);
+    selected = allow.filter((name) => set.has(name));
+    if (!selected.length) selected = files.sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
+  } else {
+    selected = files.sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
+  }
+
+  return {
+    ...entry,
+    images: selected.map((name) => `thumbs/${entry.name}/${name}`),
+  };
+}
+
 console.log('Sync catalog as', OWNER);
+
+const previousCatalog = loadPreviousCatalog();
+const previousKaryaByName = new Map(
+  (previousCatalog?.karya || []).filter((r) => r?.name).map((r) => [r.name, r]),
+);
 
 const [labRepos, karyaTopicRepos, allRepos] = await Promise.all([
   searchTopic(TOPIC_LAB),
@@ -282,7 +346,15 @@ const [labRepos, karyaTopicRepos, allRepos] = await Promise.all([
 const labNames = new Set(labRepos.filter((r) => !r.fork).map((r) => r.name));
 const karyaByName = new Map(karyaTopicRepos.filter((r) => !r.fork).map((r) => [r.name, r]));
 const allByName = new Map(allRepos.filter((r) => !r.fork).map((r) => [r.name, r]));
-const karyaSource = FEATURED_ORDER.map((name) => karyaByName.get(name) || allByName.get(name)).filter(Boolean);
+
+const featuredResolved = [];
+for (const name of FEATURED_ORDER) {
+  featuredResolved.push(await resolveFeaturedRepo(name, karyaByName, allByName, previousKaryaByName));
+}
+const karyaLive = featuredResolved.filter((x) => x?.kind === 'live').map((x) => x.repo);
+const karyaPreserved = featuredResolved
+  .filter((x) => x?.kind === 'preserved')
+  .map((x) => preferLocalThumbs(x.entry));
 
 const archiveSource = allRepos.filter((r) => {
   if (r.fork) return false;
@@ -292,7 +364,7 @@ const archiveSource = allRepos.filter((r) => {
   return true;
 });
 
-console.log(`lab=${labRepos.length} karya=${karyaSource.length} archive=${archiveSource.length}`);
+console.log(`lab=${labRepos.length} karyaLive=${karyaLive.length} karyaPreserved=${karyaPreserved.length} archive=${archiveSource.length}`);
 
 console.log('Applying Karya GitHub topics…');
 const appliedTopics = {};
@@ -307,9 +379,9 @@ for (const repoName of FEATURED_ORDER) {
   }
 }
 
-const [lab, karya, archive] = await Promise.all([
+const [lab, karyaFresh, archive] = await Promise.all([
   withImages(labRepos.filter((r) => !r.fork)),
-  withImages(karyaSource, {
+  withImages(karyaLive, {
     karya: true,
     mapExtra: (repo) => ({
       topics: appliedTopics[repo.name] || buildRepoTopics(repo.name),
@@ -318,6 +390,12 @@ const [lab, karya, archive] = await Promise.all([
   }),
   withImages(archiveSource.slice(0, 60)),
 ]);
+
+const karyaByResolvedName = new Map([
+  ...karyaFresh.map((r) => [r.name, r]),
+  ...karyaPreserved.map((r) => [r.name, r]),
+]);
+const karya = FEATURED_ORDER.map((name) => karyaByResolvedName.get(name)).filter(Boolean);
 
 const catalog = {
   generatedAt: new Date().toISOString(),
