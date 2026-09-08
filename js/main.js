@@ -1,18 +1,7 @@
-let gitHubProjectsData = [];
-let currentProjectsPage = 1;
-const projectsPerPage = 9;
-
 const OWNER = 'rogue-dev-studio';
-const TOPIC_LAB = 'experiment-arishadisopiyan';
 const TOPIC_KARYA = 'business-system-arishadisopiyan';
-const ARCHIVE_EXCLUDE = new Set([
-    'rogue-dev-studio.github.io',
-    'ArisHadisopiyan',
-    'rogue-dev-studio',
-    'professional-portfolio-template-with-ai-protection'
-]);
 
-/** Shared topic cache so Karya + Proyek Lainnya don't double-hit search API */
+/** Shared topic cache so Karya fallback doesn't re-hit search API */
 const topicCache = new Map();
 /** Static catalog from Actions (preferred — no browser API key) */
 let staticCatalog = null;
@@ -25,6 +14,45 @@ const KARYA_PROJECTS = [
     'sistem-informasi-klinik',
     'rental-mobil-new'
 ];
+
+/** Section 04 — Toolkit (AI Agents Rogue editions; bukan arsip Proyek Lainnya) */
+const AGENTS_PROJECTS = [
+    'ai-agents-rogue-programmer',
+    'ai-agents-rogue'
+];
+
+const AGENTS_META = {
+    'ai-agents-rogue-programmer': {
+        title: 'AI Agents Rogue Programmer',
+        category: 'AI Agents',
+        audience: 'Developer & coding assistant workflow',
+        stack: 'Skills · Roles · Rules · Commands',
+        requirements: [
+            'Edisi fokus engineering (API, DB, FE, BE)',
+            'Bebas dipakai — tanpa wajib fork atau star',
+            'Install ke Cursor, Claude Code, dan host sejenis'
+        ],
+        problem: 'Tim butuh paket agent coding yang ringkas tanpa katalog penuh semua domain.',
+        approach: 'Memisahkan edisi Programmer dari katalog utama agar onboarding coding lebih cepat.',
+        result: 'Satu paket agent siap pakai khusus alur pengembangan software.',
+        url: 'https://github.com/rogue-dev-studio/ai-agents-rogue-programmer'
+    },
+    'ai-agents-rogue': {
+        title: 'AI Agents Rogue',
+        category: 'AI Agents',
+        audience: 'Tim produk & engineering',
+        stack: 'Multi-agent · E2E delivery · 68+ skills',
+        requirements: [
+            'Katalog agents, skills, rules, dan command workflows',
+            'Mode e2e atau manual lewat WORKMODE',
+            'Portable lintas Cursor, Claude Code, Antigravity, OpenCode'
+        ],
+        problem: 'AI coding assistant sering jalan tanpa role, rule, dan alur delivery yang konsisten.',
+        approach: 'Menstandarkan multi-agent software house (orchestrator, BA, engineer, QA) sebagai katalog terbuka.',
+        result: 'Satu sistem agents yang bisa di-install dan dipakai lintas host.',
+        url: 'https://github.com/rogue-dev-studio/ai-agents-rogue'
+    }
+};
 
 /** Enrichment for Karya cards keyed by repo name (topic: business-system-arishadisopiyan) */
 const FEATURED_META = {
@@ -203,22 +231,6 @@ async function fetchReposByTopic(topic) {
     const items = (Array.isArray(data.items) ? data.items : []).filter((repo) => !repo.fork);
     topicCache.set(topic, items);
     return items;
-}
-
-async function fetchAllUserRepos() {
-    const all = [];
-    for (let page = 1; page <= 5; page += 1) {
-        const response = await fetch(`https://api.github.com/users/${OWNER}/repos?sort=updated&per_page=100&page=${page}`);
-        if (!response.ok) {
-            console.warn('Repos fetch failed:', response.status);
-            break;
-        }
-        const batch = await response.json();
-        if (!Array.isArray(batch) || batch.length === 0) break;
-        all.push(...batch);
-        if (batch.length < 100) break;
-    }
-    return all;
 }
 
 function observeElements() {
@@ -627,149 +639,65 @@ async function fetchGitHubProfile() {
     }
 }
 
-async function fetchGitHubProjects() {
-    const grid = document.querySelector('.archive-grid');
-    if (grid) {
-        grid.innerHTML = '<p class="section-lead" id="archive-status">Memuat proyek lainnya…</p>';
-    }
-
-    try {
-        const catalog = await loadStaticCatalog();
-        if (catalog?.archive?.length) {
-            gitHubProjectsData = catalog.archive.map((item) => ({
-                name: item.name,
-                description: item.description,
-                homepage: item.homepage,
-                html_url: item.html_url,
-                language: item.language,
-                default_branch: item.default_branch,
-                images: item.images || [],
-                fork: false
-            }));
-            setupPagination();
-            renderProjectsPage(1);
-            return;
-        }
-
-        const [repos, labRepos] = await Promise.all([
-            fetchAllUserRepos(),
-            fetchReposByTopic(TOPIC_LAB)
-        ]);
-
-        const exclude = new Set([
-            ...ARCHIVE_EXCLUDE,
-            ...KARYA_PROJECTS,
-            ...labRepos.map((r) => r.name)
-        ]);
-
-        gitHubProjectsData = repos.filter((repo) => {
-            if (!repo || repo.fork) return false;
-            if (exclude.has(repo.name)) return false;
-            return true;
-        });
-
-        setupPagination();
-        renderProjectsPage(1);
-    } catch (error) {
-        console.error('Gagal mengambil repositori GitHub:', error);
-        if (grid) {
-            grid.innerHTML = '<p class="section-lead">Gagal memuat proyek lainnya. Muat ulang halaman sebentar lagi.</p>';
-        }
-    }
-}
-
-function setupPagination() {
-    const prevBtn = document.getElementById('prev-page');
-    const nextBtn = document.getElementById('next-page');
-
-    if (prevBtn && nextBtn) {
-        prevBtn.replaceWith(prevBtn.cloneNode(true));
-        nextBtn.replaceWith(nextBtn.cloneNode(true));
-
-        const newPrevBtn = document.getElementById('prev-page');
-        const newNextBtn = document.getElementById('next-page');
-
-        newPrevBtn.addEventListener('click', () => {
-            if (currentProjectsPage > 1) {
-                currentProjectsPage--;
-                renderProjectsPage(currentProjectsPage);
-                document.getElementById('archive').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-
-        newNextBtn.addEventListener('click', () => {
-            const totalPages = Math.ceil(gitHubProjectsData.length / projectsPerPage);
-            if (currentProjectsPage < totalPages) {
-                currentProjectsPage++;
-                renderProjectsPage(currentProjectsPage);
-                document.getElementById('archive').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    }
-}
-
-function renderProjectsPage(page) {
-    const grid = document.querySelector('.archive-grid');
+async function renderAgentsProjects() {
+    const grid = document.getElementById('agents-grid');
     if (!grid) return;
 
-    grid.innerHTML = '';
-    currentProjectsPage = page;
+    grid.innerHTML = '<p class="section-lead">Memuat toolkit…</p>';
 
-    if (!gitHubProjectsData.length) {
-        grid.innerHTML = '<p class="section-lead">Belum ada proyek lain di luar Karya dan Lab.</p>';
-        const pageNumEl = document.getElementById('page-num');
-        const totalPagesEl = document.getElementById('total-pages');
-        const prevBtn = document.getElementById('prev-page');
-        const nextBtn = document.getElementById('next-page');
-        if (pageNumEl) pageNumEl.textContent = '1';
-        if (totalPagesEl) totalPagesEl.textContent = '1';
-        if (prevBtn) prevBtn.disabled = true;
-        if (nextBtn) nextBtn.disabled = true;
-        return;
+    const catalog = await loadStaticCatalog();
+    const byName = new Map();
+    for (const bucket of [catalog?.karya, catalog?.lab, catalog?.archive]) {
+        (bucket || []).forEach((item) => {
+            if (item?.name) byName.set(item.name, item);
+        });
     }
 
-    const totalPages = Math.ceil(gitHubProjectsData.length / projectsPerPage) || 1;
-    const startIdx = (page - 1) * projectsPerPage;
-    const endIdx = startIdx + projectsPerPage;
-    const pageProjects = gitHubProjectsData.slice(startIdx, endIdx);
+    grid.innerHTML = '';
 
-    const status = document.createElement('p');
-    status.className = 'section-lead';
-    status.style.gridColumn = '1 / -1';
-    status.textContent = `${gitHubProjectsData.length} proyek`;
-    grid.appendChild(status);
+    AGENTS_PROJECTS.forEach((repoName) => {
+        const remote = byName.get(repoName);
+        const meta = AGENTS_META[repoName] || {};
+        const title = meta.title || prettyTitle(repoName);
+        const category = meta.category || 'AI Agents';
+        const url = meta.url || (remote ? liveOrRepoUrl(remote) : `https://github.com/${OWNER}/${repoName}`);
+        const desc = remote?.description || '';
 
-    pageProjects.forEach((repo) => {
-        const title = prettyTitle(repo.name);
-        const category = repo.language || 'Open Source';
-        const desc = repo.description || 'Proyek yang dipublikasikan secara terbuka.';
-        const url = liveOrRepoUrl(repo);
+        const reqList = Array.isArray(meta.requirements) && meta.requirements.length
+            ? `<li><strong>Kebutuhan:</strong> ${meta.requirements.map((r) => escapeHTML(r)).join(' · ')}</li>`
+            : '';
+        const audienceLine = meta.audience
+            ? `<li><strong>Untuk:</strong> ${escapeHTML(meta.audience)}</li>`
+            : '';
+        const stackLine = meta.stack
+            ? `<li><strong>Stack:</strong> ${escapeHTML(meta.stack)}</li>`
+            : '';
+
+        const caseBlock = meta.problem
+            ? `<ul class="case-meta">
+                    ${audienceLine}
+                    <li><strong>Tantangan:</strong> ${escapeHTML(meta.problem)}</li>
+                    <li><strong>Solusi:</strong> ${escapeHTML(meta.approach)}</li>
+                    <li><strong>Hasil:</strong> ${escapeHTML(meta.result)}</li>
+                    ${reqList}
+                    ${stackLine}
+               </ul>`
+            : `<p class="project-desc">${escapeHTML(desc || 'Katalog AI agents Rogue Development.')}</p>`;
 
         const card = document.createElement('article');
-        card.className = 'project-card';
-
+        card.className = 'project-card featured-card';
         card.innerHTML = `
-            <div class="project-image thumb-gallery" data-repo="${escapeHTML(repo.name)}"></div>
+            <div class="project-image thumb-gallery" data-repo="${escapeHTML(repoName)}"></div>
             <div class="project-info">
                 <div class="project-category">${escapeHTML(category)}</div>
                 <h3 class="project-title">${escapeHTML(title)}</h3>
-                <p class="project-desc">${escapeHTML(desc)}</p>
-                <a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer" class="project-link">${repo.homepage ? 'Buka →' : 'Lihat proyek →'}</a>
+                ${caseBlock}
+                <a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer" class="project-link">Buka di GitHub →</a>
             </div>
         `;
         grid.appendChild(card);
-        hydrateCardGallery(card, repo.name, title, repo.images || []);
+        hydrateCardGallery(card, repoName, title, remote?.images || []);
     });
-
-    const pageNumEl = document.getElementById('page-num');
-    const totalPagesEl = document.getElementById('total-pages');
-    const prevBtn = document.getElementById('prev-page');
-    const nextBtn = document.getElementById('next-page');
-
-    if (pageNumEl) pageNumEl.textContent = page;
-    if (totalPagesEl) totalPagesEl.textContent = totalPages;
-    if (prevBtn) prevBtn.disabled = page === 1;
-    if (nextBtn) nextBtn.disabled = page === totalPages || totalPages <= 1;
 
     observeElements();
 }
@@ -948,8 +876,8 @@ async function initApp() {
     // Load sections independently so one failure does not wipe the others
     await Promise.allSettled([
         renderFeaturedProjects(),
+        renderAgentsProjects(),
         fetchGitHubProfile(),
-        fetchGitHubProjects(),
         fetchGitHubSocials()
     ]);
 
