@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T01:56:45.182Z",
+  "generatedAt": "2026-09-20T10:11:28.535Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -589,6 +589,26 @@
     }
   ],
   "archive": [
+    {
+      "name": "rogue-market-agent",
+      "description": "Public marketplace for Rogue skills, MCP servers, and AI agents",
+      "homepage": "https://rogue-dev-studio.github.io/rogue-market-agent/",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-market-agent",
+      "language": "JavaScript",
+      "default_branch": "main",
+      "updated_at": "2026-09-20T07:42:36Z",
+      "images": []
+    },
+    {
+      "name": "rogue-blender-mcp",
+      "description": "Rogue Blender MCP — modeling, sculpting, and scene control for AI agents",
+      "homepage": "https://rogue-dev-studio.github.io/rogue-market-agent/",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-blender-mcp",
+      "language": "Python",
+      "default_branch": "main",
+      "updated_at": "2026-09-20T07:09:47Z",
+      "images": []
+    },
     {
       "name": "omeansteam.github.io.bu.1",
       "description": "Omeans Team adalah sebuah website portfolio yang dibuat oleh Aris Hadisopiyan. Website ini menampilkan karya-karya Aris yang mencakup desain grafis, desain UI/UX, serta pengembangan website.",
