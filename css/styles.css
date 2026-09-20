@@ -1036,6 +1036,15 @@ footer {
     font-size: 0.85rem;
 }
 
+footer a {
+    color: var(--accent, #e47909);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;

@@ -15,13 +15,30 @@ const KARYA_PROJECTS = [
     'rental-mobil-new'
 ];
 
-/** Section 04 — Toolkit (AI Agents Rogue editions; bukan arsip Proyek Lainnya) */
+/** Section 04 — Toolkit (AI Agents Rogue editions + marketplace) */
 const AGENTS_PROJECTS = [
+    'rogue-market-agent',
     'ai-agents-rogue-programmer',
     'ai-agents-rogue'
 ];
 
 const AGENTS_META = {
+    'rogue-market-agent': {
+        title: 'Rogue Market Agent',
+        category: 'Marketplace',
+        audience: 'Pengguna Cursor, Claude Code, dan host AI lain',
+        stack: 'Skills · MCP Servers · GitHub Pages',
+        requirements: [
+            'Katalog publik skill & MCP server Rogue',
+            'Listing dari topic rogue-market-skills / rogue-market-mcp',
+            'Install lewat CLI host (skills add / MCP config)'
+        ],
+        problem: 'Skill dan MCP tersebar di banyak repo tanpa satu tempat discovery.',
+        approach: 'Marketplace statis di GitHub Pages yang menarik listing dari topic org.',
+        result: 'Satu katalog installable untuk skill dan MCP Rogue Development.',
+        url: 'https://rogue-dev-studio.github.io/rogue-market-agent/',
+        linkLabel: 'Buka marketplace →'
+    },
     'ai-agents-rogue-programmer': {
         title: 'AI Agents Rogue Programmer',
         category: 'AI Agents',
@@ -684,6 +701,7 @@ async function renderAgentsProjects() {
                </ul>`
             : `<p class="project-desc">${escapeHTML(desc || 'Katalog AI agents Rogue Development.')}</p>`;
 
+        const linkLabel = meta.linkLabel || 'Buka di GitHub →';
         const card = document.createElement('article');
         card.className = 'project-card featured-card';
         card.innerHTML = `
@@ -692,7 +710,7 @@ async function renderAgentsProjects() {
                 <div class="project-category">${escapeHTML(category)}</div>
                 <h3 class="project-title">${escapeHTML(title)}</h3>
                 ${caseBlock}
-                <a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer" class="project-link">Buka di GitHub →</a>
+                <a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer" class="project-link">${escapeHTML(linkLabel)}</a>
             </div>
         `;
         grid.appendChild(card);
