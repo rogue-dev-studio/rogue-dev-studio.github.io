@@ -13,7 +13,7 @@ Portfolio komersial **Rogue Development** (Aris Hadisopiyan) — website, aplika
 - Website & landing page
 - Aplikasi web & sistem informasi
 - Desain antarmuka minimal / brutalist
-- Aset 3D dan stock visual (Sketchfab, Shutterstock, dan platform serupa)
+- Aset 3D dan stock visual (Sketchfab, TurboSquid, Shutterstock, dan platform serupa)
 
 ---
 

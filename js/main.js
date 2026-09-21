@@ -773,6 +773,9 @@ async function fetchGitHubSocials() {
         if (!urls.some((u) => u.includes('shutterstock.com'))) {
             ensured.push({ provider: 'generic', url: 'https://www.shutterstock.com/g/ArisHadisopiyan' });
         }
+        if (!urls.some((u) => u.includes('turbosquid.com'))) {
+            ensured.push({ provider: 'generic', url: 'https://www.turbosquid.com/Search/Artists/ArisHadisopiyan' });
+        }
 
         ensured.forEach((account) => {
             const provider = escapeHTML((account.provider || 'generic').toLowerCase());
@@ -794,6 +797,9 @@ async function fetchGitHubSocials() {
                 } else if (rawUrl.includes('shutterstock.com')) {
                     iconName = 'camera';
                     label = 'Shutterstock';
+                } else if (rawUrl.includes('turbosquid.com')) {
+                    iconName = 'link';
+                    label = 'TurboSquid';
                 } else if (rawUrl.includes('linkedin.com')) {
                     iconName = 'linkedin';
                     label = 'LinkedIn';
