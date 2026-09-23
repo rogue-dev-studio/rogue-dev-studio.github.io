@@ -874,7 +874,8 @@ function setupContactForm() {
             `Nama: ${name}\nEmail: ${email}\nBudget: ${budget}\nTimeline: ${timeline}\n\nKebutuhan:\n${need}`
         );
 
-        window.location.href = `mailto:aris.hadisopiyan@gmail.com?subject=${subject}&body=${body}`;
+        const inbox = ['aris.hadisopiyan', 'gmail.com'].join('@');
+        window.location.href = `mailto:${inbox}?subject=${subject}&body=${body}`;
     });
 }
 
