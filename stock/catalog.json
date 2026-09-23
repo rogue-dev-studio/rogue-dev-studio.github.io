@@ -1,708 +1,3747 @@
 {
   "store": "shutterstock",
   "profile": "https://www.shutterstock.com/g/ArisHadisopiyan",
-  "updatedAt": "2026-09-23T03:03:38.280Z",
-  "total": 100,
+  "source": "contributor-collections",
+  "contributorId": "298451514",
+  "updatedAt": "2026-09-23T05:01:20.561Z",
+  "total": 195,
+  "collections": [
+    {
+      "id": "328468921",
+      "name": "Christmas & Holiday Vectors",
+      "totalItemCount": 14
+    },
+    {
+      "id": "328468727",
+      "name": "Color Palettes & Gradients",
+      "totalItemCount": 55
+    },
+    {
+      "id": "328468726",
+      "name": "UI/UX & Gadget Icon Packs",
+      "totalItemCount": 49
+    },
+    {
+      "id": "328468724",
+      "name": "Business & Professional Avatars",
+      "totalItemCount": 30
+    },
+    {
+      "id": "328468666",
+      "name": "Abstract & Conceptual Vectors",
+      "totalItemCount": 49
+    },
+    {
+      "id": "328468645",
+      "name": "Indonesian & Islamic Culture",
+      "totalItemCount": 12
+    }
+  ],
   "items": [
     {
-      "id": "2056492070",
-      "title": "Beautiful 9 Color Palette Omeans Studios Aris Hadisopiyan",
-      "url": "https://www.shutterstock.com/image-vector/beautiful-9-color-palette-omeans-studios-2056492070",
-      "thumb": "https://www.shutterstock.com/image-vector/beautiful-9-color-palette-omeans-260nw-2056492070.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2676486829",
-      "title": "Warm gradient background with retro sunset tones in yellow, orange, and red shades. Perfect for abstract design, posters, wallpapers, and modern creative projects.",
-      "url": "https://www.shutterstock.com/image-vector/warm-gradient-background-retro-sunset-tones-2676486829",
-      "thumb": "https://www.shutterstock.com/image-vector/warm-gradient-background-retro-sunset-260nw-2676486829.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2056453337",
-      "title": "Vector Business Profile Male Icon Student Associate Bachelor Master Doctoral School University Academy",
-      "url": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-student-2056453337",
-      "thumb": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-260nw-2056453337.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2683255931",
-      "title": "Adorable Kawaii sea creatures line art set! Featuring cute dolphin, octopus, fish, and crab doodles. Perfect for kids' designs, coloring pages, stickers, and marine themes.",
-      "url": "https://www.shutterstock.com/image-vector/adorable-kawaii-sea-creatures-line-art-2683255931",
-      "thumb": "https://www.shutterstock.com/image-vector/adorable-kawaii-sea-creatures-line-260nw-2683255931.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2683251523",
-      "title": "Illustration of a sad man sitting on a giant pill, symbolizing depression, stress, or drug addiction. Conceptual healthcare design for awareness, medical campaigns, and mental health issues.",
-      "url": "https://www.shutterstock.com/image-vector/illustration-sad-man-sitting-on-giant-2683251523",
-      "thumb": "https://www.shutterstock.com/image-vector/illustration-sad-man-sitting-on-260nw-2683251523.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2688759841",
-      "title": "Minimal abstract geometric background with pastel circles and lines. Modern art for posters, web design, or branding projects",
-      "url": "https://www.shutterstock.com/image-vector/minimal-abstract-geometric-background-pastel-circles-2688759841",
-      "thumb": "https://www.shutterstock.com/image-vector/minimal-abstract-geometric-background-pastel-260nw-2688759841.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2143977559",
-      "title": "Default silhouette avatar profile picture",
-      "url": "https://www.shutterstock.com/image-vector/default-silhouette-avatar-profile-picture-2143977559",
-      "thumb": "https://www.shutterstock.com/image-vector/default-silhouette-avatar-profile-picture-260nw-2143977559.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2056492067",
-      "title": "Beautiful 6 Color Palette Omeans Studios Aris Hadisopiyan",
-      "url": "https://www.shutterstock.com/image-vector/beautiful-6-color-palette-omeans-studios-2056492067",
-      "thumb": "https://www.shutterstock.com/image-vector/beautiful-6-color-palette-omeans-260nw-2056492067.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2141538209",
-      "title": "Set template stamp text collection",
-      "url": "https://www.shutterstock.com/image-vector/set-template-stamp-text-collection-2141538209",
-      "thumb": "https://www.shutterstock.com/image-vector/set-template-stamp-text-collection-260nw-2141538209.jpg",
-      "kind": "vector"
-    },
-    {
       "id": "2400695797",
-      "title": "Santa fishes for a gift on a moon amid stars and clouds; a serene, whimsical night scene",
+      "title": "Santa Fishes Gift Moon",
       "url": "https://www.shutterstock.com/image-vector/santa-fishes-gift-on-moon-amid-2400695797",
       "thumb": "https://www.shutterstock.com/image-vector/santa-fishes-gift-on-moon-260nw-2400695797.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2398375517",
-      "title": "Mountain and Lake in day Landscape",
-      "url": "https://www.shutterstock.com/image-vector/mountain-lake-day-landscape-2398375517",
-      "thumb": "https://www.shutterstock.com/image-vector/mountain-lake-day-landscape-260nw-2398375517.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2131609927",
-      "title": "Black and Pink Gradient Color Background",
-      "url": "https://www.shutterstock.com/image-illustration/black-pink-gradient-color-background-2131609927",
-      "thumb": "https://www.shutterstock.com/image-illustration/black-pink-gradient-color-background-260nw-2131609927.jpg",
-      "kind": "illustration"
-    },
-    {
-      "id": "2056453322",
-      "title": "Vector Business Profile Male Icon Student Associate Bachelor Master Doctoral School University Academy",
-      "url": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-student-2056453322",
-      "thumb": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-260nw-2056453322.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2399894379",
-      "title": "Blue sky with clouds in the day",
-      "url": "https://www.shutterstock.com/image-photo/blue-sky-clouds-day-2399894379",
-      "thumb": "https://www.shutterstock.com/image-photo/blue-sky-clouds-day-260nw-2399894379.jpg",
-      "kind": "photo"
-    },
-    {
-      "id": "2676489185",
-      "title": "Blue gradient background with smooth tones. Perfect for business design, technology themes, digital art, wallpapers, posters, and abstract modern projects.",
-      "url": "https://www.shutterstock.com/image-vector/blue-gradient-background-smooth-tones-perfect-2676489185",
-      "thumb": "https://www.shutterstock.com/image-vector/blue-gradient-background-smooth-tones-260nw-2676489185.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2676488335",
-      "title": "Fresh green gradient background with natural tones. Ideal for eco-friendly design, nature themes, wallpapers, posters, and modern abstract creative projects.",
-      "url": "https://www.shutterstock.com/image-vector/fresh-green-gradient-background-natural-tones-2676488335",
-      "thumb": "https://www.shutterstock.com/image-vector/fresh-green-gradient-background-natural-260nw-2676488335.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "1960024282",
-      "title": "Maroon color background, Base color",
-      "url": "https://www.shutterstock.com/image-vector/maroon-color-background-base-1960024282",
-      "thumb": "https://www.shutterstock.com/image-vector/maroon-color-background-base-260nw-1960024282.jpg",
-      "kind": "vector"
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
     },
     {
       "id": "2400759151",
-      "title": "A green pine tree illustration with a brown trunk on a white background",
+      "title": "Green Pine Tree Trunk",
       "url": "https://www.shutterstock.com/image-vector/green-pine-tree-illustration-brown-trunk-2400759151",
       "thumb": "https://www.shutterstock.com/image-vector/green-pine-tree-illustration-brown-260nw-2400759151.jpg",
-      "kind": "vector"
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
     },
     {
-      "id": "2056453334",
-      "title": "Vector Business Profile Male Icon Student Associate Bachelor Master Doctoral School University Academy",
-      "url": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-student-2056453334",
-      "thumb": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-260nw-2056453334.jpg",
-      "kind": "vector"
+      "id": "2400795367",
+      "title": "Three Santa Hats",
+      "url": "https://www.shutterstock.com/image-vector/three-santa-hats-different-styles-outlined-2400795367",
+      "thumb": "https://www.shutterstock.com/image-vector/three-santa-hats-different-styles-260nw-2400795367.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2400728357",
+      "title": "Vibrant Red Background",
+      "url": "https://www.shutterstock.com/image-vector/image-features-vibrant-red-background-intricate-2400728357",
+      "thumb": "https://www.shutterstock.com/image-vector/image-features-vibrant-red-background-260nw-2400728357.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2400818655",
+      "title": "Seven Gift Boxes",
+      "url": "https://www.shutterstock.com/image-vector/colorful-collection-seven-different-gift-boxes-2400818655",
+      "thumb": "https://www.shutterstock.com/image-vector/colorful-collection-seven-different-gift-260nw-2400818655.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2400774177",
+      "title": "Green Christmas Tree Snowflakes",
+      "url": "https://www.shutterstock.com/image-vector/green-christmas-tree-adorned-white-snowflakes-2400774177",
+      "thumb": "https://www.shutterstock.com/image-vector/green-christmas-tree-adorned-white-260nw-2400774177.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2716218969",
+      "title": "Stock 2716218969",
+      "url": "https://www.shutterstock.com/image-vector/2716218969",
+      "thumb": "https://image.shutterstock.com/image-vector/2716218969-260nw-2716218969.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2400785229",
+      "title": "Stock 2400785229",
+      "url": "https://www.shutterstock.com/image-vector/2400785229",
+      "thumb": "https://image.shutterstock.com/image-vector/2400785229-260nw-2400785229.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2400719569",
+      "title": "Stock 2400719569",
+      "url": "https://www.shutterstock.com/image-vector/2400719569",
+      "thumb": "https://image.shutterstock.com/image-vector/2400719569-260nw-2400719569.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2400682703",
+      "title": "Stock 2400682703",
+      "url": "https://www.shutterstock.com/image-vector/2400682703",
+      "thumb": "https://image.shutterstock.com/image-vector/2400682703-260nw-2400682703.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2400749127",
+      "title": "Stock 2400749127",
+      "url": "https://www.shutterstock.com/image-vector/2400749127",
+      "thumb": "https://image.shutterstock.com/image-vector/2400749127-260nw-2400749127.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683249835",
+      "title": "Stock 2683249835",
+      "url": "https://www.shutterstock.com/image-vector/2683249835",
+      "thumb": "https://image.shutterstock.com/image-vector/2683249835-260nw-2683249835.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2688759753",
+      "title": "Stock 2688759753",
+      "url": "https://www.shutterstock.com/image-vector/2688759753",
+      "thumb": "https://image.shutterstock.com/image-vector/2688759753-260nw-2688759753.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2400761915",
+      "title": "Stock 2400761915",
+      "url": "https://www.shutterstock.com/image-vector/2400761915",
+      "thumb": "https://image.shutterstock.com/image-vector/2400761915-260nw-2400761915.jpg",
+      "kind": "vector",
+      "collection": "Christmas & Holiday Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Holiday",
+        "Christmas",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056492070",
+      "title": "Beautiful Color Palette Omeans Studios",
+      "url": "https://www.shutterstock.com/image-vector/beautiful-9-color-palette-omeans-studios-2056492070",
+      "thumb": "https://www.shutterstock.com/image-vector/beautiful-9-color-palette-omeans-260nw-2056492070.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2676486829",
+      "title": "Warm Gradient Retro Sunset Tones",
+      "url": "https://www.shutterstock.com/image-vector/warm-gradient-background-retro-sunset-tones-2676486829",
+      "thumb": "https://www.shutterstock.com/image-vector/warm-gradient-background-retro-sunset-260nw-2676486829.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056492067",
+      "title": "Beautiful Color Palette Omeans Studios",
+      "url": "https://www.shutterstock.com/image-vector/beautiful-6-color-palette-omeans-studios-2056492067",
+      "thumb": "https://www.shutterstock.com/image-vector/beautiful-6-color-palette-omeans-260nw-2056492067.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2131609927",
+      "title": "Black Pink Gradient Color",
+      "url": "https://www.shutterstock.com/image-illustration/black-pink-gradient-color-background-2131609927",
+      "thumb": "https://www.shutterstock.com/image-illustration/black-pink-gradient-color-background-260nw-2131609927.jpg",
+      "kind": "illustration",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Illustration"
+      ]
+    },
+    {
+      "id": "2676489185",
+      "title": "Blue Gradient Smooth Tones Perfect",
+      "url": "https://www.shutterstock.com/image-vector/blue-gradient-background-smooth-tones-perfect-2676489185",
+      "thumb": "https://www.shutterstock.com/image-vector/blue-gradient-background-smooth-tones-260nw-2676489185.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2676488335",
+      "title": "Fresh Green Gradient Natural Tones",
+      "url": "https://www.shutterstock.com/image-vector/fresh-green-gradient-background-natural-tones-2676488335",
+      "thumb": "https://www.shutterstock.com/image-vector/fresh-green-gradient-background-natural-260nw-2676488335.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024282",
+      "title": "Maroon Color Base",
+      "url": "https://www.shutterstock.com/image-vector/maroon-color-background-base-1960024282",
+      "thumb": "https://www.shutterstock.com/image-vector/maroon-color-background-base-260nw-1960024282.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
     },
     {
       "id": "2131609929",
-      "title": "Blue and Pink Gradient Color Background",
+      "title": "Blue Pink Gradient Color",
       "url": "https://www.shutterstock.com/image-illustration/blue-pink-gradient-color-background-2131609929",
       "thumb": "https://www.shutterstock.com/image-illustration/blue-pink-gradient-color-background-260nw-2131609929.jpg",
-      "kind": "illustration"
-    },
-    {
-      "id": "2400248419",
-      "title": "This is a photo of a red flower with green leaves in the foreground and a blurred mountainous landscape in the background",
-      "url": "https://www.shutterstock.com/image-photo/this-photo-red-flower-green-leaves-2400248419",
-      "thumb": "https://www.shutterstock.com/image-photo/this-photo-red-flower-green-260nw-2400248419.jpg",
-      "kind": "photo"
-    },
-    {
-      "id": "2400654043",
-      "title": "A vector image of a penguin with detailed shading and coloring, showcasing its distinct features",
-      "url": "https://www.shutterstock.com/image-vector/vector-image-penguin-detailed-shading-coloring-2400654043",
-      "thumb": "https://www.shutterstock.com/image-vector/vector-image-penguin-detailed-shading-260nw-2400654043.jpg",
-      "kind": "vector"
+      "kind": "illustration",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Illustration"
+      ]
     },
     {
       "id": "1960024258",
-      "title": "Purple color background, Base color",
+      "title": "Purple Color Base",
       "url": "https://www.shutterstock.com/image-vector/purple-color-background-base-1960024258",
       "thumb": "https://www.shutterstock.com/image-vector/purple-color-background-base-260nw-1960024258.jpg",
-      "kind": "vector"
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
     },
     {
-      "id": "2683255429",
-      "title": "Charming, minimal black cat illustration sitting under a glowing street lamp on a full moon night. Perfect for cute designs, T-shirts, posters, and phone backgrounds.",
-      "url": "https://www.shutterstock.com/image-vector/charming-minimal-black-cat-illustration-sitting-2683255429",
-      "thumb": "https://www.shutterstock.com/image-vector/charming-minimal-black-cat-illustration-260nw-2683255429.jpg",
-      "kind": "vector"
+      "id": "2131970473",
+      "title": "Gradient Color Ready Use",
+      "url": "https://www.shutterstock.com/image-vector/background-gradient-color-ready-use-2131970473",
+      "thumb": "https://www.shutterstock.com/image-vector/background-gradient-color-ready-use-260nw-2131970473.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
     },
     {
-      "id": "2058838727",
-      "title": "Fogging mountains with two lake",
-      "url": "https://www.shutterstock.com/image-vector/fogging-mountains-two-lake-2058838727",
-      "thumb": "https://www.shutterstock.com/image-vector/fogging-mountains-two-lake-260nw-2058838727.jpg",
-      "kind": "vector"
+      "id": "2131969973",
+      "title": "Muticolored Love Puzzle Style",
+      "url": "https://www.shutterstock.com/image-vector/muticolored-love-puzzle-style-vector-2131969973",
+      "thumb": "https://www.shutterstock.com/image-vector/muticolored-love-puzzle-style-vector-260nw-2131969973.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2061891158",
+      "title": "Beautiful Hair Color Palette Omeans",
+      "url": "https://www.shutterstock.com/image-vector/beautiful-hair-color-palette-omeans-studios-2061891158",
+      "thumb": "https://www.shutterstock.com/image-vector/beautiful-hair-color-palette-omeans-260nw-2061891158.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024255",
+      "title": "Pink Color Base",
+      "url": "https://www.shutterstock.com/image-vector/pink-color-background-base-1960024255",
+      "thumb": "https://www.shutterstock.com/image-vector/pink-color-background-base-260nw-1960024255.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2676487931",
+      "title": "Cool Gradient Shades Blue Purple",
+      "url": "https://www.shutterstock.com/image-vector/cool-gradient-background-shades-blue-purple-2676487931",
+      "thumb": "https://www.shutterstock.com/image-vector/cool-gradient-background-shades-blue-260nw-2676487931.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024237",
+      "title": "Color Base",
+      "url": "https://www.shutterstock.com/image-vector/brown-color-background-base-1960024237",
+      "thumb": "https://www.shutterstock.com/image-vector/brown-color-background-base-260nw-1960024237.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1961831011",
+      "title": "Silver Color Basic Gray",
+      "url": "https://www.shutterstock.com/image-vector/silver-color-background-basic-gray-1961831011",
+      "thumb": "https://www.shutterstock.com/image-vector/silver-color-background-basic-gray-260nw-1961831011.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2676136175",
+      "title": "Color Palette Consists Three Rows",
+      "url": "https://www.shutterstock.com/image-vector/color-palette-consists-three-rows-nine-2676136175",
+      "thumb": "https://www.shutterstock.com/image-vector/color-palette-consists-three-rows-260nw-2676136175.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024261",
+      "title": "Olive Color Base",
+      "url": "https://www.shutterstock.com/image-vector/olive-color-background-base-1960024261",
+      "thumb": "https://www.shutterstock.com/image-vector/olive-color-background-base-260nw-1960024261.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2726139711",
+      "title": "Minimal Color Block Cream Yellow",
+      "url": "https://www.shutterstock.com/image-vector/minimal-color-block-background-cream-yellow-2726139711",
+      "thumb": "https://www.shutterstock.com/image-vector/minimal-color-block-background-cream-260nw-2726139711.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2676488687",
+      "title": "Pink Gradient Smooth Tones Perfect",
+      "url": "https://www.shutterstock.com/image-vector/pink-gradient-background-smooth-tones-perfect-2676488687",
+      "thumb": "https://www.shutterstock.com/image-vector/pink-gradient-background-smooth-tones-260nw-2676488687.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024285",
+      "title": "Rose Color Base",
+      "url": "https://www.shutterstock.com/image-vector/rose-color-background-base-1960024285",
+      "thumb": "https://www.shutterstock.com/image-vector/rose-color-background-base-260nw-1960024285.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024249",
+      "title": "Orange Color Base",
+      "url": "https://www.shutterstock.com/image-vector/orange-color-background-base-1960024249",
+      "thumb": "https://www.shutterstock.com/image-vector/orange-color-background-base-260nw-1960024249.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024246",
+      "title": "Green Color Base",
+      "url": "https://www.shutterstock.com/image-vector/green-color-background-base-1960024246",
+      "thumb": "https://www.shutterstock.com/image-vector/green-color-background-base-260nw-1960024246.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2676486155",
+      "title": "Dark Retro Gradient Bold Stripes",
+      "url": "https://www.shutterstock.com/image-vector/dark-retro-gradient-background-bold-stripes-2676486155",
+      "thumb": "https://www.shutterstock.com/image-vector/dark-retro-gradient-background-bold-260nw-2676486155.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2146806949",
+      "title": "Stock 2146806949",
+      "url": "https://www.shutterstock.com/image-vector/2146806949",
+      "thumb": "https://image.shutterstock.com/image-vector/2146806949-260nw-2146806949.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683250093",
+      "title": "Stock 2683250093",
+      "url": "https://www.shutterstock.com/image-vector/2683250093",
+      "thumb": "https://image.shutterstock.com/image-vector/2683250093-260nw-2683250093.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2058417464",
+      "title": "Stock 2058417464",
+      "url": "https://www.shutterstock.com/image-vector/2058417464",
+      "thumb": "https://image.shutterstock.com/image-vector/2058417464-260nw-2058417464.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683253439",
+      "title": "Stock 2683253439",
+      "url": "https://www.shutterstock.com/image-vector/2683253439",
+      "thumb": "https://image.shutterstock.com/image-vector/2683253439-260nw-2683253439.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024228",
+      "title": "Stock 1960024228",
+      "url": "https://www.shutterstock.com/image-vector/1960024228",
+      "thumb": "https://image.shutterstock.com/image-vector/1960024228-260nw-1960024228.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2061213419",
+      "title": "Stock 2061213419",
+      "url": "https://www.shutterstock.com/image-vector/2061213419",
+      "thumb": "https://image.shutterstock.com/image-vector/2061213419-260nw-2061213419.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2061155162",
+      "title": "Stock 2061155162",
+      "url": "https://www.shutterstock.com/image-vector/2061155162",
+      "thumb": "https://image.shutterstock.com/image-vector/2061155162-260nw-2061155162.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024231",
+      "title": "Stock 1960024231",
+      "url": "https://www.shutterstock.com/image-vector/1960024231",
+      "thumb": "https://image.shutterstock.com/image-vector/1960024231-260nw-1960024231.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2146806859",
+      "title": "Stock 2146806859",
+      "url": "https://www.shutterstock.com/image-vector/2146806859",
+      "thumb": "https://image.shutterstock.com/image-vector/2146806859-260nw-2146806859.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2130911168",
+      "title": "Stock 2130911168",
+      "url": "https://www.shutterstock.com/image-vector/2130911168",
+      "thumb": "https://image.shutterstock.com/image-vector/2130911168-260nw-2130911168.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024276",
+      "title": "Stock 1960024276",
+      "url": "https://www.shutterstock.com/image-vector/1960024276",
+      "thumb": "https://image.shutterstock.com/image-vector/1960024276-260nw-1960024276.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2144091199",
+      "title": "Stock 2144091199",
+      "url": "https://www.shutterstock.com/image-vector/2144091199",
+      "thumb": "https://image.shutterstock.com/image-vector/2144091199-260nw-2144091199.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024243",
+      "title": "Stock 1960024243",
+      "url": "https://www.shutterstock.com/image-vector/1960024243",
+      "thumb": "https://image.shutterstock.com/image-vector/1960024243-260nw-1960024243.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2061213446",
+      "title": "Stock 2061213446",
+      "url": "https://www.shutterstock.com/image-vector/2061213446",
+      "thumb": "https://image.shutterstock.com/image-vector/2061213446-260nw-2061213446.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024270",
+      "title": "Stock 1960024270",
+      "url": "https://www.shutterstock.com/image-vector/1960024270",
+      "thumb": "https://image.shutterstock.com/image-vector/1960024270-260nw-1960024270.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024252",
+      "title": "Stock 1960024252",
+      "url": "https://www.shutterstock.com/image-vector/1960024252",
+      "thumb": "https://image.shutterstock.com/image-vector/1960024252-260nw-1960024252.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024288",
+      "title": "Stock 1960024288",
+      "url": "https://www.shutterstock.com/image-vector/1960024288",
+      "thumb": "https://image.shutterstock.com/image-vector/1960024288-260nw-1960024288.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2726133105",
+      "title": "Stock 2726133105",
+      "url": "https://www.shutterstock.com/image-vector/2726133105",
+      "thumb": "https://image.shutterstock.com/image-vector/2726133105-260nw-2726133105.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024279",
+      "title": "Stock 1960024279",
+      "url": "https://www.shutterstock.com/image-vector/1960024279",
+      "thumb": "https://image.shutterstock.com/image-vector/1960024279-260nw-1960024279.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2132098237",
+      "title": "Stock 2132098237",
+      "url": "https://www.shutterstock.com/image-vector/2132098237",
+      "thumb": "https://image.shutterstock.com/image-vector/2132098237-260nw-2132098237.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024264",
+      "title": "Stock 1960024264",
+      "url": "https://www.shutterstock.com/image-vector/1960024264",
+      "thumb": "https://image.shutterstock.com/image-vector/1960024264-260nw-1960024264.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960024240",
+      "title": "Stock 1960024240",
+      "url": "https://www.shutterstock.com/image-vector/1960024240",
+      "thumb": "https://image.shutterstock.com/image-vector/1960024240-260nw-1960024240.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2676485399",
+      "title": "Stock 2676485399",
+      "url": "https://www.shutterstock.com/image-vector/2676485399",
+      "thumb": "https://image.shutterstock.com/image-vector/2676485399-260nw-2676485399.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1960025932",
+      "title": "Stock 1960025932",
+      "url": "https://www.shutterstock.com/image-vector/1960025932",
+      "thumb": "https://image.shutterstock.com/image-vector/1960025932-260nw-1960025932.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2131613165",
+      "title": "Stock 2131613165",
+      "url": "https://www.shutterstock.com/image-vector/2131613165",
+      "thumb": "https://image.shutterstock.com/image-vector/2131613165-260nw-2131613165.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2061213425",
+      "title": "Stock 2061213425",
+      "url": "https://www.shutterstock.com/image-vector/2061213425",
+      "thumb": "https://image.shutterstock.com/image-vector/2061213425-260nw-2061213425.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2061885173",
+      "title": "Stock 2061885173",
+      "url": "https://www.shutterstock.com/image-vector/2061885173",
+      "thumb": "https://image.shutterstock.com/image-vector/2061885173-260nw-2061885173.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2146806857",
+      "title": "Stock 2146806857",
+      "url": "https://www.shutterstock.com/image-vector/2146806857",
+      "thumb": "https://image.shutterstock.com/image-vector/2146806857-260nw-2146806857.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2061885170",
+      "title": "Stock 2061885170",
+      "url": "https://www.shutterstock.com/image-vector/2061885170",
+      "thumb": "https://image.shutterstock.com/image-vector/2061885170-260nw-2061885170.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2169194223",
+      "title": "Stock 2169194223",
+      "url": "https://www.shutterstock.com/image-vector/2169194223",
+      "thumb": "https://image.shutterstock.com/image-vector/2169194223-260nw-2169194223.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2726135375",
+      "title": "Stock 2726135375",
+      "url": "https://www.shutterstock.com/image-vector/2726135375",
+      "thumb": "https://image.shutterstock.com/image-vector/2726135375-260nw-2726135375.jpg",
+      "kind": "vector",
+      "collection": "Color Palettes & Gradients",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Gradients",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683255931",
+      "title": "Adorable Kawaii Sea Creatures Line",
+      "url": "https://www.shutterstock.com/image-vector/adorable-kawaii-sea-creatures-line-art-2683255931",
+      "thumb": "https://www.shutterstock.com/image-vector/adorable-kawaii-sea-creatures-line-260nw-2683255931.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2141538209",
+      "title": "Set Template Stamp Text",
+      "url": "https://www.shutterstock.com/image-vector/set-template-stamp-text-collection-2141538209",
+      "thumb": "https://www.shutterstock.com/image-vector/set-template-stamp-text-collection-260nw-2141538209.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683250691",
+      "title": "Set Prohibition Signs Red Circle",
+      "url": "https://www.shutterstock.com/image-vector/set-prohibition-signs-red-circle-slash-2683250691",
+      "thumb": "https://www.shutterstock.com/image-vector/set-prohibition-signs-red-circle-260nw-2683250691.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2179694457",
+      "title": "Set Charge Battery Icon Indicator",
+      "url": "https://www.shutterstock.com/image-vector/set-charge-battery-icon-indicator-2179694457",
+      "thumb": "https://www.shutterstock.com/image-vector/set-charge-battery-icon-indicator-260nw-2179694457.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2130161048",
+      "title": "Banking Card Icon Design Line",
+      "url": "https://www.shutterstock.com/image-vector/banking-card-icon-design-line-art-2130161048",
+      "thumb": "https://www.shutterstock.com/image-vector/banking-card-icon-design-line-260nw-2130161048.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2130349739",
+      "title": "Indonesia Money Coins Currency Icon",
+      "url": "https://www.shutterstock.com/image-vector/indonesia-money-coins-currency-icon-2130349739",
+      "thumb": "https://www.shutterstock.com/image-vector/indonesia-money-coins-currency-icon-260nw-2130349739.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2130316709",
+      "title": "Monitor Widescreen Bioskop Screen Icon",
+      "url": "https://www.shutterstock.com/image-vector/monitor-widescreen-bioskop-screen-icon-2130316709",
+      "thumb": "https://www.shutterstock.com/image-vector/monitor-widescreen-bioskop-screen-icon-260nw-2130316709.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2145699303",
+      "title": "Laptop Mockup Concept Banner",
+      "url": "https://www.shutterstock.com/image-vector/laptop-mockup-concept-banner-2145699303",
+      "thumb": "https://www.shutterstock.com/image-vector/laptop-mockup-concept-banner-260nw-2145699303.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2130870758",
+      "title": "Icon Chatting Communication Minus Message",
+      "url": "https://www.shutterstock.com/image-vector/icon-chatting-communication-minus-message-2130870758",
+      "thumb": "https://www.shutterstock.com/image-vector/icon-chatting-communication-minus-message-260nw-2130870758.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2129896082",
+      "title": "Document Icon Note Symbol",
+      "url": "https://www.shutterstock.com/image-vector/document-icon-note-symbol-2129896082",
+      "thumb": "https://www.shutterstock.com/image-vector/document-icon-note-symbol-260nw-2129896082.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2703183735",
+      "title": "Flat Friendly Doctor Holding Clipboard",
+      "url": "https://www.shutterstock.com/image-vector/flat-vector-friendly-doctor-holding-clipboard-2703183735",
+      "thumb": "https://www.shutterstock.com/image-vector/flat-vector-friendly-doctor-holding-260nw-2703183735.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2726174133",
+      "title": "Healthcare Medical Symbols Green",
+      "url": "https://www.shutterstock.com/image-vector/collection-healthcare-medical-symbols-featuring-green-2726174133",
+      "thumb": "https://www.shutterstock.com/image-vector/collection-healthcare-medical-symbols-featuring-260nw-2726174133.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2685651803",
+      "title": "Set Adorable Animal Faces Kawaii",
+      "url": "https://www.shutterstock.com/image-vector/set-adorable-animal-faces-kawaii-style-2685651803",
+      "thumb": "https://www.shutterstock.com/image-vector/set-adorable-animal-faces-kawaii-260nw-2685651803.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2685652067",
+      "title": "Cute Cat Faces Kawaii Style",
+      "url": "https://www.shutterstock.com/image-vector/cute-cat-faces-kawaii-style-ideal-2685652067",
+      "thumb": "https://www.shutterstock.com/image-vector/cute-cat-faces-kawaii-style-260nw-2685652067.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683254837",
+      "title": "Modern Line Icons Set Healthcare",
+      "url": "https://www.shutterstock.com/image-vector/modern-line-icons-set-healthcare-medical-2683254837",
+      "thumb": "https://www.shutterstock.com/image-vector/modern-line-icons-set-healthcare-260nw-2683254837.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2719268967",
+      "title": "Valentine Icons Set Hearts Gift",
+      "url": "https://www.shutterstock.com/image-vector/valentine-icons-set-hearts-gift-box-2719268967",
+      "thumb": "https://www.shutterstock.com/image-vector/valentine-icons-set-hearts-gift-260nw-2719268967.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2145678511",
+      "title": "Basic Programming Icon Website Code",
+      "url": "https://www.shutterstock.com/image-vector/basic-programming-icon-website-code-2145678511",
+      "thumb": "https://www.shutterstock.com/image-vector/basic-programming-icon-website-code-260nw-2145678511.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2146002625",
+      "title": "Stock 2146002625",
+      "url": "https://www.shutterstock.com/image-vector/2146002625",
+      "thumb": "https://image.shutterstock.com/image-vector/2146002625-260nw-2146002625.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2130326828",
+      "title": "Stock 2130326828",
+      "url": "https://www.shutterstock.com/image-vector/2130326828",
+      "thumb": "https://image.shutterstock.com/image-vector/2130326828-260nw-2130326828.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2129869670",
+      "title": "Stock 2129869670",
+      "url": "https://www.shutterstock.com/image-vector/2129869670",
+      "thumb": "https://image.shutterstock.com/image-vector/2129869670-260nw-2129869670.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2688760541",
+      "title": "Stock 2688760541",
+      "url": "https://www.shutterstock.com/image-vector/2688760541",
+      "thumb": "https://image.shutterstock.com/image-vector/2688760541-260nw-2688760541.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2685652209",
+      "title": "Stock 2685652209",
+      "url": "https://www.shutterstock.com/image-vector/2685652209",
+      "thumb": "https://image.shutterstock.com/image-vector/2685652209-260nw-2685652209.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2130018590",
+      "title": "Stock 2130018590",
+      "url": "https://www.shutterstock.com/image-vector/2130018590",
+      "thumb": "https://image.shutterstock.com/image-vector/2130018590-260nw-2130018590.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2146001769",
+      "title": "Stock 2146001769",
+      "url": "https://www.shutterstock.com/image-vector/2146001769",
+      "thumb": "https://image.shutterstock.com/image-vector/2146001769-260nw-2146001769.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2720621485",
+      "title": "Stock 2720621485",
+      "url": "https://www.shutterstock.com/image-vector/2720621485",
+      "thumb": "https://image.shutterstock.com/image-vector/2720621485-260nw-2720621485.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683255209",
+      "title": "Stock 2683255209",
+      "url": "https://www.shutterstock.com/image-vector/2683255209",
+      "thumb": "https://image.shutterstock.com/image-vector/2683255209-260nw-2683255209.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2685651567",
+      "title": "Stock 2685651567",
+      "url": "https://www.shutterstock.com/image-vector/2685651567",
+      "thumb": "https://image.shutterstock.com/image-vector/2685651567-260nw-2685651567.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2716209247",
+      "title": "Stock 2716209247",
+      "url": "https://www.shutterstock.com/image-vector/2716209247",
+      "thumb": "https://image.shutterstock.com/image-vector/2716209247-260nw-2716209247.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2405461579",
+      "title": "Stock 2405461579",
+      "url": "https://www.shutterstock.com/image-vector/2405461579",
+      "thumb": "https://image.shutterstock.com/image-vector/2405461579-260nw-2405461579.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2703183535",
+      "title": "Stock 2703183535",
+      "url": "https://www.shutterstock.com/image-vector/2703183535",
+      "thumb": "https://image.shutterstock.com/image-vector/2703183535-260nw-2703183535.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2172132797",
+      "title": "Stock 2172132797",
+      "url": "https://www.shutterstock.com/image-vector/2172132797",
+      "thumb": "https://image.shutterstock.com/image-vector/2172132797-260nw-2172132797.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2129865722",
+      "title": "Stock 2129865722",
+      "url": "https://www.shutterstock.com/image-vector/2129865722",
+      "thumb": "https://image.shutterstock.com/image-vector/2129865722-260nw-2129865722.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2129950607",
+      "title": "Stock 2129950607",
+      "url": "https://www.shutterstock.com/image-vector/2129950607",
+      "thumb": "https://image.shutterstock.com/image-vector/2129950607-260nw-2129950607.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2145682993",
+      "title": "Stock 2145682993",
+      "url": "https://www.shutterstock.com/image-vector/2145682993",
+      "thumb": "https://image.shutterstock.com/image-vector/2145682993-260nw-2145682993.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2123160554",
+      "title": "Stock 2123160554",
+      "url": "https://www.shutterstock.com/image-vector/2123160554",
+      "thumb": "https://image.shutterstock.com/image-vector/2123160554-260nw-2123160554.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2165388481",
+      "title": "Stock 2165388481",
+      "url": "https://www.shutterstock.com/image-vector/2165388481",
+      "thumb": "https://image.shutterstock.com/image-vector/2165388481-260nw-2165388481.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2145719065",
+      "title": "Stock 2145719065",
+      "url": "https://www.shutterstock.com/image-vector/2145719065",
+      "thumb": "https://image.shutterstock.com/image-vector/2145719065-260nw-2145719065.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2145682187",
+      "title": "Stock 2145682187",
+      "url": "https://www.shutterstock.com/image-vector/2145682187",
+      "thumb": "https://image.shutterstock.com/image-vector/2145682187-260nw-2145682187.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2129905223",
+      "title": "Stock 2129905223",
+      "url": "https://www.shutterstock.com/image-vector/2129905223",
+      "thumb": "https://image.shutterstock.com/image-vector/2129905223-260nw-2129905223.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2129931569",
+      "title": "Stock 2129931569",
+      "url": "https://www.shutterstock.com/image-vector/2129931569",
+      "thumb": "https://image.shutterstock.com/image-vector/2129931569-260nw-2129931569.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2146546823",
+      "title": "Stock 2146546823",
+      "url": "https://www.shutterstock.com/image-vector/2146546823",
+      "thumb": "https://image.shutterstock.com/image-vector/2146546823-260nw-2146546823.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2130011051",
+      "title": "Stock 2130011051",
+      "url": "https://www.shutterstock.com/image-vector/2130011051",
+      "thumb": "https://image.shutterstock.com/image-vector/2130011051-260nw-2130011051.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2130871193",
+      "title": "Stock 2130871193",
+      "url": "https://www.shutterstock.com/image-vector/2130871193",
+      "thumb": "https://image.shutterstock.com/image-vector/2130871193-260nw-2130871193.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2130347795",
+      "title": "Stock 2130347795",
+      "url": "https://www.shutterstock.com/image-vector/2130347795",
+      "thumb": "https://image.shutterstock.com/image-vector/2130347795-260nw-2130347795.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2129962694",
+      "title": "Stock 2129962694",
+      "url": "https://www.shutterstock.com/image-vector/2129962694",
+      "thumb": "https://image.shutterstock.com/image-vector/2129962694-260nw-2129962694.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2061155159",
+      "title": "Stock 2061155159",
+      "url": "https://www.shutterstock.com/image-vector/2061155159",
+      "thumb": "https://image.shutterstock.com/image-vector/2061155159-260nw-2061155159.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2129931734",
+      "title": "Stock 2129931734",
+      "url": "https://www.shutterstock.com/image-vector/2129931734",
+      "thumb": "https://image.shutterstock.com/image-vector/2129931734-260nw-2129931734.jpg",
+      "kind": "vector",
+      "collection": "UI/UX & Gadget Icon Packs",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "GUI",
+        "Icons",
+        "UI",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056453337",
+      "title": "Business Profile Male Icon Student",
+      "url": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-student-2056453337",
+      "thumb": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-260nw-2056453337.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2143977559",
+      "title": "Default Silhouette Avatar Profile Picture",
+      "url": "https://www.shutterstock.com/image-vector/default-silhouette-avatar-profile-picture-2143977559",
+      "thumb": "https://www.shutterstock.com/image-vector/default-silhouette-avatar-profile-picture-260nw-2143977559.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056453322",
+      "title": "Business Profile Male Icon Student",
+      "url": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-student-2056453322",
+      "thumb": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-260nw-2056453322.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056453334",
+      "title": "Business Profile Male Icon Student",
+      "url": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-student-2056453334",
+      "thumb": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-260nw-2056453334.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
     },
     {
       "id": "2056453328",
-      "title": "Vector Business Profile Male Icon Student Associate Bachelor Master Doctoral School University Academy",
+      "title": "Business Profile Male Icon Student",
       "url": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-student-2056453328",
       "thumb": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-260nw-2056453328.jpg",
-      "kind": "vector"
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2688759997",
+      "title": "Modern Flat Business Team Analyzing",
+      "url": "https://www.shutterstock.com/image-vector/modern-flat-vector-business-team-analyzing-2688759997",
+      "thumb": "https://www.shutterstock.com/image-vector/modern-flat-vector-business-team-260nw-2688759997.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056441787",
+      "title": "Profile Business Male Icon Student",
+      "url": "https://www.shutterstock.com/image-vector/vector-profile-business-male-icon-student-2056441787",
+      "thumb": "https://www.shutterstock.com/image-vector/vector-profile-business-male-icon-260nw-2056441787.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2718714837",
+      "title": "Professional Business Man Avatar Suit",
+      "url": "https://www.shutterstock.com/image-vector/professional-business-man-avatar-illustration-suit-2718714837",
+      "thumb": "https://www.shutterstock.com/image-vector/professional-business-man-avatar-illustration-260nw-2718714837.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2143974893",
+      "title": "Angel Silhouette Avatar Profile Picture",
+      "url": "https://www.shutterstock.com/image-vector/angel-silhouette-avatar-profile-picture-2143974893",
+      "thumb": "https://www.shutterstock.com/image-vector/angel-silhouette-avatar-profile-picture-260nw-2143974893.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2685653359",
+      "title": "Professional Male Avatar Flat Style",
+      "url": "https://www.shutterstock.com/image-vector/professional-male-avatar-flat-vector-style-2685653359",
+      "thumb": "https://www.shutterstock.com/image-vector/professional-male-avatar-flat-vector-260nw-2685653359.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056441784",
+      "title": "Profile Business Male Icon Student",
+      "url": "https://www.shutterstock.com/image-vector/vector-profile-business-male-icon-student-2056441784",
+      "thumb": "https://www.shutterstock.com/image-vector/vector-profile-business-male-icon-260nw-2056441784.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2058401462",
+      "title": "Tie Formal Male Portrait Close",
+      "url": "https://www.shutterstock.com/image-vector/tie-formal-male-portrait-close-position-2058401462",
+      "thumb": "https://www.shutterstock.com/image-vector/tie-formal-male-portrait-close-260nw-2058401462.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056453340",
+      "title": "Business Profile Male Icon Student",
+      "url": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-student-2056453340",
+      "thumb": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-260nw-2056453340.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056453343",
+      "title": "Business Profile Male Icon Student",
+      "url": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-student-2056453343",
+      "thumb": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-260nw-2056453343.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683242879",
+      "title": "Stock 2683242879",
+      "url": "https://www.shutterstock.com/image-vector/2683242879",
+      "thumb": "https://image.shutterstock.com/image-vector/2683242879-260nw-2683242879.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056453331",
+      "title": "Stock 2056453331",
+      "url": "https://www.shutterstock.com/image-vector/2056453331",
+      "thumb": "https://image.shutterstock.com/image-vector/2056453331-260nw-2056453331.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2144086599",
+      "title": "Stock 2144086599",
+      "url": "https://www.shutterstock.com/image-vector/2144086599",
+      "thumb": "https://image.shutterstock.com/image-vector/2144086599-260nw-2144086599.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2172070101",
+      "title": "Stock 2172070101",
+      "url": "https://www.shutterstock.com/image-vector/2172070101",
+      "thumb": "https://image.shutterstock.com/image-vector/2172070101-260nw-2172070101.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056441781",
+      "title": "Stock 2056441781",
+      "url": "https://www.shutterstock.com/image-vector/2056441781",
+      "thumb": "https://image.shutterstock.com/image-vector/2056441781-260nw-2056441781.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2143945403",
+      "title": "Stock 2143945403",
+      "url": "https://www.shutterstock.com/image-vector/2143945403",
+      "thumb": "https://image.shutterstock.com/image-vector/2143945403-260nw-2143945403.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2056453325",
+      "title": "Stock 2056453325",
+      "url": "https://www.shutterstock.com/image-vector/2056453325",
+      "thumb": "https://image.shutterstock.com/image-vector/2056453325-260nw-2056453325.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2172083687",
+      "title": "Stock 2172083687",
+      "url": "https://www.shutterstock.com/image-vector/2172083687",
+      "thumb": "https://image.shutterstock.com/image-vector/2172083687-260nw-2172083687.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2055315296",
+      "title": "Stock 2055315296",
+      "url": "https://www.shutterstock.com/image-vector/2055315296",
+      "thumb": "https://image.shutterstock.com/image-vector/2055315296-260nw-2055315296.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2143975959",
+      "title": "Stock 2143975959",
+      "url": "https://www.shutterstock.com/image-vector/2143975959",
+      "thumb": "https://image.shutterstock.com/image-vector/2143975959-260nw-2143975959.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2058401465",
+      "title": "Stock 2058401465",
+      "url": "https://www.shutterstock.com/image-vector/2058401465",
+      "thumb": "https://image.shutterstock.com/image-vector/2058401465-260nw-2058401465.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2172051453",
+      "title": "Stock 2172051453",
+      "url": "https://www.shutterstock.com/image-vector/2172051453",
+      "thumb": "https://image.shutterstock.com/image-vector/2172051453-260nw-2172051453.jpg",
+      "kind": "vector",
+      "collection": "Business & Professional Avatars",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Characters",
+        "Avatars",
+        "Business",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2145720357",
+      "title": "Stock 2145720357",
+      "url": "https://www.shutterstock.com/image-vector/2145720357",
+      "thumb": "https://image.shutterstock.com/image-vector/2145720357-260nw-2145720357.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2398384491",
+      "title": "Stock 2398384491",
+      "url": "https://www.shutterstock.com/image-vector/2398384491",
+      "thumb": "https://image.shutterstock.com/image-vector/2398384491-260nw-2398384491.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2719246083",
+      "title": "Stock 2719246083",
+      "url": "https://www.shutterstock.com/image-vector/2719246083",
+      "thumb": "https://image.shutterstock.com/image-vector/2719246083-260nw-2719246083.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1965275032",
+      "title": "Stock 1965275032",
+      "url": "https://www.shutterstock.com/image-vector/1965275032",
+      "thumb": "https://image.shutterstock.com/image-vector/1965275032-260nw-1965275032.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2688760471",
+      "title": "Stock 2688760471",
+      "url": "https://www.shutterstock.com/image-vector/2688760471",
+      "thumb": "https://image.shutterstock.com/image-vector/2688760471-260nw-2688760471.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2145698353",
+      "title": "Stock 2145698353",
+      "url": "https://www.shutterstock.com/image-vector/2145698353",
+      "thumb": "https://image.shutterstock.com/image-vector/2145698353-260nw-2145698353.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2400646637",
+      "title": "Stock 2400646637",
+      "url": "https://www.shutterstock.com/image-vector/2400646637",
+      "thumb": "https://image.shutterstock.com/image-vector/2400646637-260nw-2400646637.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1963718476",
+      "title": "Stock 1963718476",
+      "url": "https://www.shutterstock.com/image-vector/1963718476",
+      "thumb": "https://image.shutterstock.com/image-vector/1963718476-260nw-1963718476.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683252669",
+      "title": "Stock 2683252669",
+      "url": "https://www.shutterstock.com/image-vector/2683252669",
+      "thumb": "https://image.shutterstock.com/image-vector/2683252669-260nw-2683252669.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1965269785",
+      "title": "Stock 1965269785",
+      "url": "https://www.shutterstock.com/image-vector/1965269785",
+      "thumb": "https://image.shutterstock.com/image-vector/1965269785-260nw-1965269785.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683252029",
+      "title": "Stock 2683252029",
+      "url": "https://www.shutterstock.com/image-vector/2683252029",
+      "thumb": "https://image.shutterstock.com/image-vector/2683252029-260nw-2683252029.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2167018507",
+      "title": "Stock 2167018507",
+      "url": "https://www.shutterstock.com/image-vector/2167018507",
+      "thumb": "https://image.shutterstock.com/image-vector/2167018507-260nw-2167018507.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683254241",
+      "title": "Stock 2683254241",
+      "url": "https://www.shutterstock.com/image-vector/2683254241",
+      "thumb": "https://image.shutterstock.com/image-vector/2683254241-260nw-2683254241.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2688712577",
+      "title": "Stock 2688712577",
+      "url": "https://www.shutterstock.com/image-vector/2688712577",
+      "thumb": "https://image.shutterstock.com/image-vector/2688712577-260nw-2688712577.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2132068197",
+      "title": "Stock 2132068197",
+      "url": "https://www.shutterstock.com/image-vector/2132068197",
+      "thumb": "https://image.shutterstock.com/image-vector/2132068197-260nw-2132068197.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2398381271",
+      "title": "Stock 2398381271",
+      "url": "https://www.shutterstock.com/image-vector/2398381271",
+      "thumb": "https://image.shutterstock.com/image-vector/2398381271-260nw-2398381271.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2688760077",
+      "title": "Stock 2688760077",
+      "url": "https://www.shutterstock.com/image-vector/2688760077",
+      "thumb": "https://image.shutterstock.com/image-vector/2688760077-260nw-2688760077.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2688759597",
+      "title": "Stock 2688759597",
+      "url": "https://www.shutterstock.com/image-vector/2688759597",
+      "thumb": "https://image.shutterstock.com/image-vector/2688759597-260nw-2688759597.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2179233567",
+      "title": "Stock 2179233567",
+      "url": "https://www.shutterstock.com/image-vector/2179233567",
+      "thumb": "https://image.shutterstock.com/image-vector/2179233567-260nw-2179233567.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683251523",
+      "title": "Sad Man Sitting Giant",
+      "url": "https://www.shutterstock.com/image-vector/illustration-sad-man-sitting-on-giant-2683251523",
+      "thumb": "https://www.shutterstock.com/image-vector/illustration-sad-man-sitting-on-260nw-2683251523.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2688759841",
+      "title": "Minimal Abstract Geometric Pastel Circles",
+      "url": "https://www.shutterstock.com/image-vector/minimal-abstract-geometric-background-pastel-circles-2688759841",
+      "thumb": "https://www.shutterstock.com/image-vector/minimal-abstract-geometric-background-pastel-260nw-2688759841.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2398375517",
+      "title": "Mountain Lake Day Landscape",
+      "url": "https://www.shutterstock.com/image-vector/mountain-lake-day-landscape-2398375517",
+      "thumb": "https://www.shutterstock.com/image-vector/mountain-lake-day-landscape-260nw-2398375517.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2058838727",
+      "title": "Fogging Mountains Two Lake",
+      "url": "https://www.shutterstock.com/image-vector/fogging-mountains-two-lake-2058838727",
+      "thumb": "https://www.shutterstock.com/image-vector/fogging-mountains-two-lake-260nw-2058838727.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2400654043",
+      "title": "Penguin Detailed Shading Coloring",
+      "url": "https://www.shutterstock.com/image-vector/vector-image-penguin-detailed-shading-coloring-2400654043",
+      "thumb": "https://www.shutterstock.com/image-vector/vector-image-penguin-detailed-shading-260nw-2400654043.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683255429",
+      "title": "Charming Minimal Black Cat Sitting",
+      "url": "https://www.shutterstock.com/image-vector/charming-minimal-black-cat-illustration-sitting-2683255429",
+      "thumb": "https://www.shutterstock.com/image-vector/charming-minimal-black-cat-illustration-260nw-2683255429.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2058841970",
+      "title": "Ornament Circle Polygon Line Grid",
+      "url": "https://www.shutterstock.com/image-vector/ornament-circle-polygon-line-grid-2058841970",
+      "thumb": "https://www.shutterstock.com/image-vector/ornament-circle-polygon-line-grid-260nw-2058841970.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1957988794",
+      "title": "Ilustration Texture Tiles Floor Ceramics",
+      "url": "https://www.shutterstock.com/image-illustration/ilustration-texture-tiles-floor-ceramics-1957988794",
+      "thumb": "https://www.shutterstock.com/image-illustration/ilustration-texture-tiles-floor-ceramics-260nw-1957988794.jpg",
+      "kind": "illustration",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Illustration"
+      ]
+    },
+    {
+      "id": "2724078469",
+      "title": "Valentine Smartphone Hearts Gift Rose",
+      "url": "https://www.shutterstock.com/image-vector/valentine-smartphone-illustration-hearts-gift-rose-2724078469",
+      "thumb": "https://www.shutterstock.com/image-vector/valentine-smartphone-illustration-hearts-gift-260nw-2724078469.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2688759947",
+      "title": "Creative Education Concept Open Books",
+      "url": "https://www.shutterstock.com/image-vector/creative-education-concept-open-books-pencils-2688759947",
+      "thumb": "https://www.shutterstock.com/image-vector/creative-education-concept-open-books-260nw-2688759947.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2166336711",
+      "title": "Cartoon Paper Kids Concept",
+      "url": "https://www.shutterstock.com/image-vector/cartoon-paper-kids-concept-2166336711",
+      "thumb": "https://www.shutterstock.com/image-vector/cartoon-paper-kids-concept-260nw-2166336711.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2141551893",
+      "title": "Set Template Banner Presentation",
+      "url": "https://www.shutterstock.com/image-vector/set-template-banner-presentation-2141551893",
+      "thumb": "https://www.shutterstock.com/image-vector/set-template-banner-presentation-260nw-2141551893.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2688760693",
+      "title": "Seamless Flat Pattern Tropical Fruits",
+      "url": "https://www.shutterstock.com/image-vector/seamless-flat-vector-pattern-tropical-fruits-2688760693",
+      "thumb": "https://www.shutterstock.com/image-vector/seamless-flat-vector-pattern-tropical-260nw-2688760693.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2675175299",
+      "title": "Happy Father Day Make",
+      "url": "https://www.shutterstock.com/image-vector/happy-father-day-make-2675175299",
+      "thumb": "https://www.shutterstock.com/image-vector/happy-father-day-make-260nw-2675175299.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1958632222",
+      "title": "Texture Floor Ceramic Cube",
+      "url": "https://www.shutterstock.com/image-illustration/illustration-texture-floor-ceramic-cube-1958632222",
+      "thumb": "https://www.shutterstock.com/image-illustration/illustration-texture-floor-ceramic-cube-260nw-1958632222.jpg",
+      "kind": "illustration",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Illustration"
+      ]
+    },
+    {
+      "id": "2123160551",
+      "title": "3d Ball Soocer Color Red",
+      "url": "https://www.shutterstock.com/image-illustration/3d-ball-soocer-color-red-orange-2123160551",
+      "thumb": "https://www.shutterstock.com/image-illustration/3d-ball-soocer-color-red-260nw-2123160551.jpg",
+      "kind": "illustration",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Illustration"
+      ]
+    },
+    {
+      "id": "2400667917",
+      "title": "Top View Filled Coffee Cup",
+      "url": "https://www.shutterstock.com/image-vector/top-view-filled-coffee-cup-brown-2400667917",
+      "thumb": "https://www.shutterstock.com/image-vector/top-view-filled-coffee-cup-260nw-2400667917.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2683249011",
+      "title": "Cartoon Cute Schoolgirl Uniform Red",
+      "url": "https://www.shutterstock.com/image-vector/cartoon-illustration-cute-schoolgirl-uniform-red-2683249011",
+      "thumb": "https://www.shutterstock.com/image-vector/cartoon-illustration-cute-schoolgirl-uniform-260nw-2683249011.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "1963946470",
+      "title": "Banana Fruit Yellow",
+      "url": "https://www.shutterstock.com/image-vector/banana-fruit-vector-illustration-yellow-1963946470",
+      "thumb": "https://www.shutterstock.com/image-vector/banana-fruit-vector-illustration-yellow-260nw-1963946470.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2719240505",
+      "title": "Romantic Couple Celebrating Love",
+      "url": "https://www.shutterstock.com/image-vector/romantic-couple-illustration-celebrating-love-relationship-2719240505",
+      "thumb": "https://www.shutterstock.com/image-vector/romantic-couple-illustration-celebrating-love-260nw-2719240505.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
+    },
+    {
+      "id": "2165311527",
+      "title": "Trigonal Red Black Backdrop",
+      "url": "https://www.shutterstock.com/image-illustration/background-trigonal-red-black-backdrop-2165311527",
+      "thumb": "https://www.shutterstock.com/image-illustration/background-trigonal-red-black-backdrop-260nw-2165311527.jpg",
+      "kind": "illustration",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Illustration"
+      ]
+    },
+    {
+      "id": "2685654645",
+      "title": "Fantasy Castle Dreamy Sunset Sky",
+      "url": "https://www.shutterstock.com/image-vector/fantasy-castle-illustration-dreamy-sunset-sky-2685654645",
+      "thumb": "https://www.shutterstock.com/image-vector/fantasy-castle-illustration-dreamy-sunset-260nw-2685654645.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
     },
     {
       "id": "2177415827",
       "title": "Logos Mountain Fuji Japan Expedition",
       "url": "https://www.shutterstock.com/image-vector/logos-mountain-fuji-japan-expedition-2177415827",
       "thumb": "https://www.shutterstock.com/image-vector/logos-mountain-fuji-japan-expedition-260nw-2177415827.jpg",
-      "kind": "vector"
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
     },
     {
-      "id": "2131970473",
-      "title": "Background gradient color ready to use",
-      "url": "https://www.shutterstock.com/image-vector/background-gradient-color-ready-use-2131970473",
-      "thumb": "https://www.shutterstock.com/image-vector/background-gradient-color-ready-use-260nw-2131970473.jpg",
-      "kind": "vector"
+      "id": "2685651955",
+      "title": "Stock 2685651955",
+      "url": "https://www.shutterstock.com/image-vector/2685651955",
+      "thumb": "https://image.shutterstock.com/image-vector/2685651955-260nw-2685651955.jpg",
+      "kind": "vector",
+      "collection": "Abstract & Conceptual Vectors",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Textures & Materials",
+        "Abstract",
+        "Conceptual",
+        "Vector"
+      ]
     },
     {
       "id": "2145986409",
-      "title": "Lantern traditional moslem festival islam",
+      "title": "Lantern Traditional Moslem Festival Islam",
       "url": "https://www.shutterstock.com/image-vector/lantern-traditional-moslem-festival-islam-2145986409",
       "thumb": "https://www.shutterstock.com/image-vector/lantern-traditional-moslem-festival-islam-260nw-2145986409.jpg",
-      "kind": "vector"
+      "kind": "vector",
+      "collection": "Indonesian & Islamic Culture",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Culture",
+        "Indonesian",
+        "Vector"
+      ]
     },
     {
       "id": "2147067607",
-      "title": "Icon quran book line art",
+      "title": "Icon Quran Book Line Art",
       "url": "https://www.shutterstock.com/image-vector/icon-quran-book-line-art-2147067607",
       "thumb": "https://www.shutterstock.com/image-vector/icon-quran-book-line-art-260nw-2147067607.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2131969973",
-      "title": "Muticolored love puzzle style vector",
-      "url": "https://www.shutterstock.com/image-vector/muticolored-love-puzzle-style-vector-2131969973",
-      "thumb": "https://www.shutterstock.com/image-vector/muticolored-love-puzzle-style-vector-260nw-2131969973.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2123160557",
-      "title": "Plate White Color With Green Screen",
-      "url": "https://www.shutterstock.com/image-illustration/plate-white-color-green-screen-2123160557",
-      "thumb": "https://www.shutterstock.com/image-illustration/plate-white-color-green-screen-260nw-2123160557.jpg",
-      "kind": "illustration"
-    },
-    {
-      "id": "2058841970",
-      "title": "Ornament with circle, polygon and line grid",
-      "url": "https://www.shutterstock.com/image-vector/ornament-circle-polygon-line-grid-2058841970",
-      "thumb": "https://www.shutterstock.com/image-vector/ornament-circle-polygon-line-grid-260nw-2058841970.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2061891158",
-      "title": "Beautiful Hair Color Palette Omeans Studios Aris Hadisopiyan",
-      "url": "https://www.shutterstock.com/image-vector/beautiful-hair-color-palette-omeans-studios-2061891158",
-      "thumb": "https://www.shutterstock.com/image-vector/beautiful-hair-color-palette-omeans-260nw-2061891158.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2683250691",
-      "title": "Set of prohibition signs with red circle and slash showing no smoking, no alcohol, no drugs, and restricted items. Perfect for safety posters, public warnings, and health campaigns.",
-      "url": "https://www.shutterstock.com/image-vector/set-prohibition-signs-red-circle-slash-2683250691",
-      "thumb": "https://www.shutterstock.com/image-vector/set-prohibition-signs-red-circle-260nw-2683250691.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2179694457",
-      "title": "Set charge battery icon indicator",
-      "url": "https://www.shutterstock.com/image-vector/set-charge-battery-icon-indicator-2179694457",
-      "thumb": "https://www.shutterstock.com/image-vector/set-charge-battery-icon-indicator-260nw-2179694457.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "1960024255",
-      "title": "Pink color background, Base color",
-      "url": "https://www.shutterstock.com/image-vector/pink-color-background-base-1960024255",
-      "thumb": "https://www.shutterstock.com/image-vector/pink-color-background-base-260nw-1960024255.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2400795367",
-      "title": "Three Santa hats in different styles, outlined and colored in red and white",
-      "url": "https://www.shutterstock.com/image-vector/three-santa-hats-different-styles-outlined-2400795367",
-      "thumb": "https://www.shutterstock.com/image-vector/three-santa-hats-different-styles-260nw-2400795367.jpg",
-      "kind": "vector"
+      "kind": "vector",
+      "collection": "Indonesian & Islamic Culture",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Culture",
+        "Indonesian",
+        "Vector"
+      ]
     },
     {
       "id": "2147067609",
-      "title": "Mosque icon kine art design",
+      "title": "Mosque Icon Kine Art Design",
       "url": "https://www.shutterstock.com/image-vector/mosque-icon-kine-art-design-2147067609",
       "thumb": "https://www.shutterstock.com/image-vector/mosque-icon-kine-art-design-260nw-2147067609.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2399721591",
-      "title": "Blossom red flower in top of the montain, Majalengka",
-      "url": "https://www.shutterstock.com/image-photo/blossom-red-flower-top-montain-majalengka-2399721591",
-      "thumb": "https://www.shutterstock.com/image-photo/blossom-red-flower-top-montain-260nw-2399721591.jpg",
-      "kind": "photo"
-    },
-    {
-      "id": "2676487931",
-      "title": "Cool gradient background with shades of blue and purple. Perfect for abstract design, wallpapers, posters, and modern creative projects with a calming aesthetic.",
-      "url": "https://www.shutterstock.com/image-vector/cool-gradient-background-shades-blue-purple-2676487931",
-      "thumb": "https://www.shutterstock.com/image-vector/cool-gradient-background-shades-blue-260nw-2676487931.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2130161048",
-      "title": "Banking card icon design line art",
-      "url": "https://www.shutterstock.com/image-vector/banking-card-icon-design-line-art-2130161048",
-      "thumb": "https://www.shutterstock.com/image-vector/banking-card-icon-design-line-260nw-2130161048.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "1960024237",
-      "title": "Brown color background, Base color",
-      "url": "https://www.shutterstock.com/image-vector/brown-color-background-base-1960024237",
-      "thumb": "https://www.shutterstock.com/image-vector/brown-color-background-base-260nw-1960024237.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2400728357",
-      "title": "The image features a vibrant red background with intricate white snowflakes scattered throughout",
-      "url": "https://www.shutterstock.com/image-vector/image-features-vibrant-red-background-intricate-2400728357",
-      "thumb": "https://www.shutterstock.com/image-vector/image-features-vibrant-red-background-260nw-2400728357.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2130316709",
-      "title": "Monitor widescreen bioskop screen icon",
-      "url": "https://www.shutterstock.com/image-vector/monitor-widescreen-bioskop-screen-icon-2130316709",
-      "thumb": "https://www.shutterstock.com/image-vector/monitor-widescreen-bioskop-screen-icon-260nw-2130316709.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2130349739",
-      "title": "Indonesia money coins currency icon",
-      "url": "https://www.shutterstock.com/image-vector/indonesia-money-coins-currency-icon-2130349739",
-      "thumb": "https://www.shutterstock.com/image-vector/indonesia-money-coins-currency-icon-260nw-2130349739.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "1957988794",
-      "title": "Ilustration texture tiles floor ceramics",
-      "url": "https://www.shutterstock.com/image-illustration/ilustration-texture-tiles-floor-ceramics-1957988794",
-      "thumb": "https://www.shutterstock.com/image-illustration/ilustration-texture-tiles-floor-ceramics-260nw-1957988794.jpg",
-      "kind": "illustration"
-    },
-    {
-      "id": "2724078469",
-      "title": "Valentine smartphone illustration with hearts, gift, rose, and love message icons. Flat vector design perfect for dating apps, mobile UI, love notifications, Valentine’s Day promotions, and romantic digital concepts.",
-      "url": "https://www.shutterstock.com/image-vector/valentine-smartphone-illustration-hearts-gift-rose-2724078469",
-      "thumb": "https://www.shutterstock.com/image-vector/valentine-smartphone-illustration-hearts-gift-260nw-2724078469.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2688759947",
-      "title": "Creative education concept with open books, pencils, and a light bulb symbolizing knowledge and ideas. Perfect for learning and innovation themes",
-      "url": "https://www.shutterstock.com/image-vector/creative-education-concept-open-books-pencils-2688759947",
-      "thumb": "https://www.shutterstock.com/image-vector/creative-education-concept-open-books-260nw-2688759947.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2145699303",
-      "title": "Laptop mockup concept for banner",
-      "url": "https://www.shutterstock.com/image-vector/laptop-mockup-concept-banner-2145699303",
-      "thumb": "https://www.shutterstock.com/image-vector/laptop-mockup-concept-banner-260nw-2145699303.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2400291677",
-      "title": "This is a photo of a mountainous landscape with a cable car and terraced fields",
-      "url": "https://www.shutterstock.com/image-photo/this-photo-mountainous-landscape-cable-car-2400291677",
-      "thumb": "https://www.shutterstock.com/image-photo/this-photo-mountainous-landscape-cable-260nw-2400291677.jpg",
-      "kind": "photo"
-    },
-    {
-      "id": "2166336711",
-      "title": "Cartoon paper for kids concept",
-      "url": "https://www.shutterstock.com/image-vector/cartoon-paper-kids-concept-2166336711",
-      "thumb": "https://www.shutterstock.com/image-vector/cartoon-paper-kids-concept-260nw-2166336711.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "1961831011",
-      "title": "Silver color background, Basic gray color",
-      "url": "https://www.shutterstock.com/image-vector/silver-color-background-basic-gray-1961831011",
-      "thumb": "https://www.shutterstock.com/image-vector/silver-color-background-basic-gray-260nw-1961831011.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2688759997",
-      "title": "Modern flat vector of business team analyzing data and charts. Perfect for presentations, web design, and corporate projects",
-      "url": "https://www.shutterstock.com/image-vector/modern-flat-vector-business-team-analyzing-2688759997",
-      "thumb": "https://www.shutterstock.com/image-vector/modern-flat-vector-business-team-260nw-2688759997.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2688760693",
-      "title": "Seamless flat vector pattern of tropical fruits (pineapple, banana, coconut) and leaves. Minimal design, clean outlines, pastel colors. Perfect for fabric, packaging, or summer wallpaper",
-      "url": "https://www.shutterstock.com/image-vector/seamless-flat-vector-pattern-tropical-fruits-2688760693",
-      "thumb": "https://www.shutterstock.com/image-vector/seamless-flat-vector-pattern-tropical-260nw-2688760693.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2141551893",
-      "title": "Set template for banner presentation",
-      "url": "https://www.shutterstock.com/image-vector/set-template-banner-presentation-2141551893",
-      "thumb": "https://www.shutterstock.com/image-vector/set-template-banner-presentation-260nw-2141551893.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2130870758",
-      "title": "Icon chatting communication minus message",
-      "url": "https://www.shutterstock.com/image-vector/icon-chatting-communication-minus-message-2130870758",
-      "thumb": "https://www.shutterstock.com/image-vector/icon-chatting-communication-minus-message-260nw-2130870758.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2178677729",
-      "title": "Vector landscape beauty sunrise in beach",
-      "url": "https://www.shutterstock.com/image-vector/vector-landscape-beauty-sunrise-beach-2178677729",
-      "thumb": "https://www.shutterstock.com/image-vector/vector-landscape-beauty-sunrise-beach-260nw-2178677729.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2129896082",
-      "title": "Document icon or note icon symbol",
-      "url": "https://www.shutterstock.com/image-vector/document-icon-note-symbol-2129896082",
-      "thumb": "https://www.shutterstock.com/image-vector/document-icon-note-symbol-260nw-2129896082.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2129837975",
-      "title": "Border Avatar Ramadhan, Frame ramadhan kareem",
-      "url": "https://www.shutterstock.com/image-vector/border-avatar-ramadhan-frame-kareem-2129837975",
-      "thumb": "https://www.shutterstock.com/image-vector/border-avatar-ramadhan-frame-kareem-260nw-2129837975.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2400818655",
-      "title": "A colorful collection of seven different gift boxes and wraps",
-      "url": "https://www.shutterstock.com/image-vector/colorful-collection-seven-different-gift-boxes-2400818655",
-      "thumb": "https://www.shutterstock.com/image-vector/colorful-collection-seven-different-gift-260nw-2400818655.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2400774177",
-      "title": "A green Christmas tree adorned with white snowflakes and topped with a yellow star",
-      "url": "https://www.shutterstock.com/image-vector/green-christmas-tree-adorned-white-snowflakes-2400774177",
-      "thumb": "https://www.shutterstock.com/image-vector/green-christmas-tree-adorned-white-260nw-2400774177.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2676136175",
-      "title": "The color palette consists of three rows with nine squares containing shades of blue, green, and orange that create visual harmony and interesting contrast.",
-      "url": "https://www.shutterstock.com/image-vector/color-palette-consists-three-rows-nine-2676136175",
-      "thumb": "https://www.shutterstock.com/image-vector/color-palette-consists-three-rows-260nw-2676136175.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2703183735",
-      "title": "Flat vector of a friendly doctor holding a clipboard with a heart icon. Minimal line art on a light blue background. Ideal for healthcare, cardiology, and medical",
-      "url": "https://www.shutterstock.com/image-vector/flat-vector-friendly-doctor-holding-clipboard-2703183735",
-      "thumb": "https://www.shutterstock.com/image-vector/flat-vector-friendly-doctor-holding-260nw-2703183735.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2675175299",
-      "title": "Happy Father Day Make Happy",
-      "url": "https://www.shutterstock.com/image-vector/happy-father-day-make-2675175299",
-      "thumb": "https://www.shutterstock.com/image-vector/happy-father-day-make-260nw-2675175299.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "1958632222",
-      "title": "Illustration texture floor ceramic cube",
-      "url": "https://www.shutterstock.com/image-illustration/illustration-texture-floor-ceramic-cube-1958632222",
-      "thumb": "https://www.shutterstock.com/image-illustration/illustration-texture-floor-ceramic-cube-260nw-1958632222.jpg",
-      "kind": "illustration"
-    },
-    {
-      "id": "1960024261",
-      "title": "Olive color background, Base color",
-      "url": "https://www.shutterstock.com/image-vector/olive-color-background-base-1960024261",
-      "thumb": "https://www.shutterstock.com/image-vector/olive-color-background-base-260nw-1960024261.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2685651803",
-      "title": "Set of adorable animal faces in kawaii style, ideal for kids crafts, digital stickers, and cute stationery",
-      "url": "https://www.shutterstock.com/image-vector/set-adorable-animal-faces-kawaii-style-2685651803",
-      "thumb": "https://www.shutterstock.com/image-vector/set-adorable-animal-faces-kawaii-260nw-2685651803.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2726174133",
-      "title": "A collection of healthcare and medical symbols featuring green, blue, and red cross icons, suitable for hospital websites, healthcare applications, pharmacy branding, medical UI, and health-related digital products. Clean, minimal, and professional vector-style illustration ideal for web, app, and print use.",
-      "url": "https://www.shutterstock.com/image-vector/collection-healthcare-medical-symbols-featuring-green-2726174133",
-      "thumb": "https://www.shutterstock.com/image-vector/collection-healthcare-medical-symbols-featuring-260nw-2726174133.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2056441787",
-      "title": "Vector Profile Business Male Icon Student Doctoral Bachelor Master Associate Student School",
-      "url": "https://www.shutterstock.com/image-vector/vector-profile-business-male-icon-student-2056441787",
-      "thumb": "https://www.shutterstock.com/image-vector/vector-profile-business-male-icon-260nw-2056441787.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2123160551",
-      "title": "3D Ball Soocer With Color Red And Orange Green Screen",
-      "url": "https://www.shutterstock.com/image-illustration/3d-ball-soocer-color-red-orange-2123160551",
-      "thumb": "https://www.shutterstock.com/image-illustration/3d-ball-soocer-color-red-260nw-2123160551.jpg",
-      "kind": "illustration"
-    },
-    {
-      "id": "2400232493",
-      "title": "This is a photo of a flower in a field with a view of the mountains in the background",
-      "url": "https://www.shutterstock.com/image-photo/this-photo-flower-field-view-mountains-2400232493",
-      "thumb": "https://www.shutterstock.com/image-photo/this-photo-flower-field-view-260nw-2400232493.jpg",
-      "kind": "photo"
-    },
-    {
-      "id": "2718714837",
-      "title": "Professional business man avatar illustration with suit and tie. Clean flat design portrait ideal for corporate profile, startup branding, HR, presentation, website, and mobile app UI.",
-      "url": "https://www.shutterstock.com/image-vector/professional-business-man-avatar-illustration-suit-2718714837",
-      "thumb": "https://www.shutterstock.com/image-vector/professional-business-man-avatar-illustration-260nw-2718714837.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2400667917",
-      "title": "A top view of a filled coffee cup with a brown ceramic handle",
-      "url": "https://www.shutterstock.com/image-vector/top-view-filled-coffee-cup-brown-2400667917",
-      "thumb": "https://www.shutterstock.com/image-vector/top-view-filled-coffee-cup-260nw-2400667917.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2726139711",
-      "title": "Minimal color block background with cream, yellow, and black stripes. Modern abstract design perfect for branding, posters, presentations, web design, packaging, and creative layouts.",
-      "url": "https://www.shutterstock.com/image-vector/minimal-color-block-background-cream-yellow-2726139711",
-      "thumb": "https://www.shutterstock.com/image-vector/minimal-color-block-background-cream-260nw-2726139711.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2143974893",
-      "title": "Angel silhouette avatar profile picture",
-      "url": "https://www.shutterstock.com/image-vector/angel-silhouette-avatar-profile-picture-2143974893",
-      "thumb": "https://www.shutterstock.com/image-vector/angel-silhouette-avatar-profile-picture-260nw-2143974893.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2683249011",
-      "title": "Cartoon illustration of a cute schoolgirl in uniform with red ribbon, smiling and cheerful. Perfect for education, kids content, mascot, or character design.",
-      "url": "https://www.shutterstock.com/image-vector/cartoon-illustration-cute-schoolgirl-uniform-red-2683249011",
-      "thumb": "https://www.shutterstock.com/image-vector/cartoon-illustration-cute-schoolgirl-uniform-260nw-2683249011.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2685653359",
-      "title": "Professional male avatar in flat vector style, ideal for business profiles, corporate icons, and web design",
-      "url": "https://www.shutterstock.com/image-vector/professional-male-avatar-flat-vector-style-2685653359",
-      "thumb": "https://www.shutterstock.com/image-vector/professional-male-avatar-flat-vector-260nw-2685653359.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2676488687",
-      "title": "Pink gradient background with smooth tones. Perfect for romantic design, beauty themes, Valentine’s Day projects, wallpapers, posters, and modern abstract artwork.",
-      "url": "https://www.shutterstock.com/image-vector/pink-gradient-background-smooth-tones-perfect-2676488687",
-      "thumb": "https://www.shutterstock.com/image-vector/pink-gradient-background-smooth-tones-260nw-2676488687.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2056441784",
-      "title": "Vector Profile Business Male Icon Student Doctoral Bachelor Master Associate Student School",
-      "url": "https://www.shutterstock.com/image-vector/vector-profile-business-male-icon-student-2056441784",
-      "thumb": "https://www.shutterstock.com/image-vector/vector-profile-business-male-icon-260nw-2056441784.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2058401462",
-      "title": "Tie Formal Male Portrait and  Close Up Position",
-      "url": "https://www.shutterstock.com/image-vector/tie-formal-male-portrait-close-position-2058401462",
-      "thumb": "https://www.shutterstock.com/image-vector/tie-formal-male-portrait-close-260nw-2058401462.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2685652067",
-      "title": "Cute cat faces in kawaii style, ideal for digital stickers, kids design, and adorable pet illustrations",
-      "url": "https://www.shutterstock.com/image-vector/cute-cat-faces-kawaii-style-ideal-2685652067",
-      "thumb": "https://www.shutterstock.com/image-vector/cute-cat-faces-kawaii-style-260nw-2685652067.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "1960024249",
-      "title": "Orange color background, Base color",
-      "url": "https://www.shutterstock.com/image-vector/orange-color-background-base-1960024249",
-      "thumb": "https://www.shutterstock.com/image-vector/orange-color-background-base-260nw-1960024249.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2685660719",
-      "title": "Red and white poster celebrating Indonesian Pancasila Day with Garuda design, symbolizing unity and patriotism",
-      "url": "https://www.shutterstock.com/image-vector/red-white-poster-celebrating-indonesian-pancasila-2685660719",
-      "thumb": "https://www.shutterstock.com/image-vector/red-white-poster-celebrating-indonesian-260nw-2685660719.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "1960024285",
-      "title": "Rose color background, Base color",
-      "url": "https://www.shutterstock.com/image-vector/rose-color-background-base-1960024285",
-      "thumb": "https://www.shutterstock.com/image-vector/rose-color-background-base-260nw-1960024285.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "1963946470",
-      "title": "Banana fruit vector illustration yellow",
-      "url": "https://www.shutterstock.com/image-vector/banana-fruit-vector-illustration-yellow-1963946470",
-      "thumb": "https://www.shutterstock.com/image-vector/banana-fruit-vector-illustration-yellow-260nw-1963946470.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "1960024246",
-      "title": "Green color background, Base color",
-      "url": "https://www.shutterstock.com/image-vector/green-color-background-base-1960024246",
-      "thumb": "https://www.shutterstock.com/image-vector/green-color-background-base-260nw-1960024246.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2683254837",
-      "title": "Modern line icons set for healthcare, medical services, hospital, and emergency concepts. Essential elements for apps, websites, or print design.",
-      "url": "https://www.shutterstock.com/image-vector/modern-line-icons-set-healthcare-medical-2683254837",
-      "thumb": "https://www.shutterstock.com/image-vector/modern-line-icons-set-healthcare-260nw-2683254837.jpg",
-      "kind": "vector"
+      "kind": "vector",
+      "collection": "Indonesian & Islamic Culture",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Culture",
+        "Indonesian",
+        "Vector"
+      ]
     },
     {
       "id": "2147067913",
-      "title": "Set islamic icon simple design",
+      "title": "Set Islamic Icon Simple Design",
       "url": "https://www.shutterstock.com/image-vector/set-islamic-icon-simple-design-2147067913",
       "thumb": "https://www.shutterstock.com/image-vector/set-islamic-icon-simple-design-260nw-2147067913.jpg",
-      "kind": "vector"
+      "kind": "vector",
+      "collection": "Indonesian & Islamic Culture",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Culture",
+        "Indonesian",
+        "Vector"
+      ]
     },
     {
       "id": "2167015721",
-      "title": "Red and white frame template",
+      "title": "Red Frame Template",
       "url": "https://www.shutterstock.com/image-vector/red-white-frame-template-2167015721",
       "thumb": "https://www.shutterstock.com/image-vector/red-white-frame-template-260nw-2167015721.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2719268967",
-      "title": "Valentine icons set with hearts, gift box, rose, love letter, arrow, and engagement ring. Flat vector illustration perfect for Valentine’s Day, romance design, wedding, dating apps, and greeting cards.",
-      "url": "https://www.shutterstock.com/image-vector/valentine-icons-set-hearts-gift-box-2719268967",
-      "thumb": "https://www.shutterstock.com/image-vector/valentine-icons-set-hearts-gift-260nw-2719268967.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2676486155",
-      "title": "Dark retro gradient background with bold stripes in warm and deep tones, ideal for abstract design, posters, digital art, and modern creative projects.",
-      "url": "https://www.shutterstock.com/image-vector/dark-retro-gradient-background-bold-stripes-2676486155",
-      "thumb": "https://www.shutterstock.com/image-vector/dark-retro-gradient-background-bold-260nw-2676486155.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2719240505",
-      "title": "Romantic couple illustration celebrating love and relationship. Flat design with heart symbols, warm colors, and peaceful landscape. Perfect for Valentine’s Day, wedding, dating, and romance themes.",
-      "url": "https://www.shutterstock.com/image-vector/romantic-couple-illustration-celebrating-love-relationship-2719240505",
-      "thumb": "https://www.shutterstock.com/image-vector/romantic-couple-illustration-celebrating-love-260nw-2719240505.jpg",
-      "kind": "vector"
-    },
-    {
-      "id": "2165311527",
-      "title": "Background Trigonal red black backdrop",
-      "url": "https://www.shutterstock.com/image-illustration/background-trigonal-red-black-backdrop-2165311527",
-      "thumb": "https://www.shutterstock.com/image-illustration/background-trigonal-red-black-backdrop-260nw-2165311527.jpg",
-      "kind": "illustration"
-    },
-    {
-      "id": "2130892778",
-      "title": "Eyes anime cartoon japanese girl",
-      "url": "https://www.shutterstock.com/image-vector/eyes-anime-cartoon-japanese-girl-2130892778",
-      "thumb": "https://www.shutterstock.com/image-vector/eyes-anime-cartoon-japanese-girl-260nw-2130892778.jpg",
-      "kind": "vector"
+      "kind": "vector",
+      "collection": "Indonesian & Islamic Culture",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Culture",
+        "Indonesian",
+        "Vector"
+      ]
     },
     {
       "id": "2685660855",
-      "title": "Black and white Garuda emblem for Pancasila Day, symbol of Indonesian unity, culture, and philosophy",
+      "title": "Black Garuda Emblem Pancasila Day",
       "url": "https://www.shutterstock.com/image-vector/black-white-garuda-emblem-pancasila-day-2685660855",
       "thumb": "https://www.shutterstock.com/image-vector/black-white-garuda-emblem-pancasila-260nw-2685660855.jpg",
-      "kind": "vector"
+      "kind": "vector",
+      "collection": "Indonesian & Islamic Culture",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Culture",
+        "Indonesian",
+        "Vector"
+      ]
     },
     {
-      "id": "2056453343",
-      "title": "Vector Business Profile Male Icon Student Associate Bachelor Master Doctoral School University Academy",
-      "url": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-student-2056453343",
-      "thumb": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-260nw-2056453343.jpg",
-      "kind": "vector"
+      "id": "2685660719",
+      "title": "Red Poster Celebrating Indonesian",
+      "url": "https://www.shutterstock.com/image-vector/red-white-poster-celebrating-indonesian-pancasila-2685660719",
+      "thumb": "https://www.shutterstock.com/image-vector/red-white-poster-celebrating-indonesian-260nw-2685660719.jpg",
+      "kind": "vector",
+      "collection": "Indonesian & Islamic Culture",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Culture",
+        "Indonesian",
+        "Vector"
+      ]
     },
     {
-      "id": "2056453340",
-      "title": "Vector Business Profile Male Icon Student Associate Bachelor Master Doctoral School University Academy",
-      "url": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-student-2056453340",
-      "thumb": "https://www.shutterstock.com/image-vector/vector-business-profile-male-icon-260nw-2056453340.jpg",
-      "kind": "vector"
+      "id": "2169144193",
+      "title": "Stock 2169144193",
+      "url": "https://www.shutterstock.com/image-vector/2169144193",
+      "thumb": "https://image.shutterstock.com/image-vector/2169144193-260nw-2169144193.jpg",
+      "kind": "vector",
+      "collection": "Indonesian & Islamic Culture",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Culture",
+        "Indonesian",
+        "Vector"
+      ]
     },
     {
-      "id": "2685654645",
-      "title": "Fantasy castle illustration with dreamy sunset sky, perfect for fairytales, children books, and magic stories",
-      "url": "https://www.shutterstock.com/image-vector/fantasy-castle-illustration-dreamy-sunset-sky-2685654645",
-      "thumb": "https://www.shutterstock.com/image-vector/fantasy-castle-illustration-dreamy-sunset-260nw-2685654645.jpg",
-      "kind": "vector"
+      "id": "2720615095",
+      "title": "Stock 2720615095",
+      "url": "https://www.shutterstock.com/image-vector/2720615095",
+      "thumb": "https://image.shutterstock.com/image-vector/2720615095-260nw-2720615095.jpg",
+      "kind": "vector",
+      "collection": "Indonesian & Islamic Culture",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Culture",
+        "Indonesian",
+        "Vector"
+      ]
     },
     {
-      "id": "2145678511",
-      "title": "Basic programming icon website code",
-      "url": "https://www.shutterstock.com/image-vector/basic-programming-icon-website-code-2145678511",
-      "thumb": "https://www.shutterstock.com/image-vector/basic-programming-icon-website-code-260nw-2145678511.jpg",
-      "kind": "vector"
+      "id": "2147067877",
+      "title": "Stock 2147067877",
+      "url": "https://www.shutterstock.com/image-vector/2147067877",
+      "thumb": "https://image.shutterstock.com/image-vector/2147067877-260nw-2147067877.jpg",
+      "kind": "vector",
+      "collection": "Indonesian & Islamic Culture",
+      "addedAt": "2026-09-07",
+      "downloadCount": 0,
+      "favoriteCount": 0,
+      "category": "Platforms",
+      "tags": [
+        "Shutterstock",
+        "Props",
+        "Culture",
+        "Indonesian",
+        "Vector"
+      ]
     }
   ]
 }
