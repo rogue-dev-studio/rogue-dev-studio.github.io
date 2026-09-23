@@ -1,0 +1,7 @@
+{
+  "updated_at": "2026-09-22T23:40:00+07:00",
+  "store": "itch",
+  "profile": "https://rogue-dev-studio.itch.io",
+  "items": [],
+  "_comment": "Add per-asset rows with url + title (+ thumb). Profile root alone is ignored by Rogue Assets Store."
+}

@@ -27,3 +27,8 @@ AGENTS.md
 *.log
 .temp/
 .tmp/
+
+# Stock import scratch (portfolio HTML, captcha probes, Playwright)
+stock/_*
+stock/package.json
+stock/package-lock.json

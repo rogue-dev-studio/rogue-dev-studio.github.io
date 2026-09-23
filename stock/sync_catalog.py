@@ -97,13 +97,25 @@ def normalize(item: dict) -> dict | None:
     }
 
 
+def load_credentials() -> tuple[str, str]:
+    key = (
+        os.environ.get("SHUTTERSTOCK_CONSUMER_KEY", "").strip()
+        or os.environ.get("SHUTTERSTOCK_CLIENT_ID", "").strip()
+    )
+    secret = (
+        os.environ.get("SHUTTERSTOCK_CONSUMER_SECRET", "").strip()
+        or os.environ.get("SHUTTERSTOCK_CLIENT_SECRET", "").strip()
+    )
+    return key, secret
+
+
 def main() -> int:
-    key = os.environ.get("SHUTTERSTOCK_CONSUMER_KEY", "").strip()
-    secret = os.environ.get("SHUTTERSTOCK_CONSUMER_SECRET", "").strip()
+    key, secret = load_credentials()
 
     if not key or not secret:
         print(
-            "Set SHUTTERSTOCK_CONSUMER_KEY and SHUTTERSTOCK_CONSUMER_SECRET first.\n"
+            "Set SHUTTERSTOCK_CONSUMER_KEY and SHUTTERSTOCK_CONSUMER_SECRET "
+            "(or CLIENT_ID / CLIENT_SECRET) first.\n"
             "Create an app at https://www.shutterstock.com/account/developers/apps",
             file=sys.stderr,
         )
@@ -118,6 +130,17 @@ def main() -> int:
             data = fetch_page(page, key, secret)
             if total_count is None:
                 total_count = data.get("total_count")
+                per_page = data.get("per_page")
+                if int(total_count or 0) == 0 and int(per_page or 0) == 0:
+                    print(
+                        "API returned total_count=0 / per_page=0 for contributor "
+                        f"{CONTRIBUTOR}.\n"
+                        "This app can search free images but not paid portfolio "
+                        "assets. Enable an Images/media product on the developer "
+                        "app, or paste portfolio pages 2–3 HTML for offline extract.",
+                        file=sys.stderr,
+                    )
+                    return 2
 
             batch = data.get("data") or []
             if not batch:
@@ -141,9 +164,14 @@ def main() -> int:
         print(f"API error {exc.code}: {body}", file=sys.stderr)
         return 1
 
+    if not items:
+        print("No items normalized; leaving catalog.json unchanged.", file=sys.stderr)
+        return 2
+
     payload = {
-        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "store": "shutterstock",
         "profile": PROFILE,
+        "updatedAt": datetime.now(timezone.utc).isoformat(),
         "total": len(items),
         "items": items,
     }
