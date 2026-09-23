@@ -169,6 +169,9 @@ function fromApiImage(raw, collectionName) {
     raw.url || `https://www.shutterstock.com/image-${pathType}/${id}`;
   if (!thumb) return null;
   const publishedAt = publishDateFromImage(raw);
+  const storeCategories = (raw.categories || [])
+    .map((c) => (c && c.name ? String(c.name) : ""))
+    .filter(Boolean);
   return {
     id,
     title,
@@ -176,6 +179,7 @@ function fromApiImage(raw, collectionName) {
     thumb,
     kind: imageType,
     collection: collectionName || undefined,
+    storeCategories: storeCategories.length ? storeCategories : undefined,
     publishedAt: publishedAt || undefined,
     addedAt: publishedAt || undefined,
   };
