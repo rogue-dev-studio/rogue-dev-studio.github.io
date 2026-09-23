@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T02:03:19.125Z",
+  "generatedAt": "2026-09-23T10:21:54.062Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -596,7 +596,267 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-market-agent",
       "language": "JavaScript",
       "default_branch": "main",
-      "updated_at": "2026-09-22T05:52:32Z",
+      "updated_at": "2026-09-23T09:58:57Z",
+      "images": []
+    },
+    {
+      "name": "rogue-workspace-hygiene-skill",
+      "description": "Organize personal folders (Downloads, Desktop, Documents, arbitrary paths) by file category or by face clusters in photos. Modes: by-type, by-extension, by-face (when user explicitly asks to group images by wajah/face). Run ONLY when the user explicitly asks to merapihkan/organize/tidy a folder - never proactively. Aliases: personal-folder-tidy,...",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-workspace-hygiene-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:41:23Z",
+      "images": []
+    },
+    {
+      "name": "rogue-vector-knowledge-tools-skill",
+      "description": "Canonical vector DB / knowledge-graph tooling for code and embeddings: RuVector CLI, RVF format, and GitNexus-style knowledge graphs.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-vector-knowledge-tools-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:41:20Z",
+      "images": []
+    },
+    {
+      "name": "rogue-ui-ux-design-skill",
+      "description": "Expert UI/UX design for product interfaces: user flows, information architecture, wireframes, interaction patterns, accessibility, and a mandatory theme/brand alignment gate against the active project (PROJECT.md, design docs, existing tokens/visual language). Use before or alongside frontend work when designing screens, reviewing mockups, or va...",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-ui-ux-design-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:41:17Z",
+      "images": []
+    },
+    {
+      "name": "rogue-skill-pack-managers-skill",
+      "description": "Canonical skill/pack marketplace management: install, update, and audit agent skills across hosts (OpenSkills, agent-skills-cli, Claude marketplace).",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-skill-pack-managers-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:41:13Z",
+      "images": []
+    },
+    {
+      "name": "rogue-skill-authoring-skill",
+      "description": "Canonical guide for authoring and validating portable agent skills (SKILL.md packs) for the agent house catalog and team local skills.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-skill-authoring-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:41:10Z",
+      "images": []
+    },
+    {
+      "name": "rogue-research-and-local-llm-skill",
+      "description": "Canonical research and local/remote LLM usage: Ollama, DeepSeek/Perplexity style research MCPs, web/youtube summary, and research swarms.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-research-and-local-llm-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:41:07Z",
+      "images": []
+    },
+    {
+      "name": "rogue-remote-desktop-access-skill",
+      "description": "Canonical remote desktop / GUI access playbook: Guacamole, XFCE/xRDP, and VNC for environments that need a graphical desktop.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-remote-desktop-access-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:41:04Z",
+      "images": []
+    },
+    {
+      "name": "rogue-office-document-tools-skill",
+      "description": "Canonical office/document generation and transformation: Word, PDF, PowerPoint, Excel, and LaTeX.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-office-document-tools-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:41:00Z",
+      "images": []
+    },
+    {
+      "name": "rogue-observability-engineering-skill",
+      "description": "Expert application observability: structured logging, correlation IDs, health checks, metrics/SLIs, error tracking, and safe diagnostics without leaking secrets or excess PII. Use when adding logging/monitoring for services, diagnosing production-like failures, defining health/readiness endpoints, or improving operational visibility in Phase 2+ ...",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-observability-engineering-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:57Z",
+      "images": []
+    },
+    {
+      "name": "rogue-llm-gateway-routing-skill",
+      "description": "Canonical LLM gateway/routing/proxy playbook: multi-provider failover, token reduction proxies, and cost wrappers.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-llm-gateway-routing-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:50Z",
+      "images": []
+    },
+    {
+      "name": "rogue-frontend-engineering-skill",
+      "description": "Expert frontend application engineering: accessible UI structure, state and data-fetching discipline, form/validation UX, responsive layouts, performance budgets, and integration with API contracts. Use when building or refining SPA/web screens, design-system consumption, client-side routing, or fixing UI reliability (loading, empty, and error s...",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-frontend-engineering-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:47Z",
+      "images": []
+    },
+    {
+      "name": "rogue-engineering-technical-interview-skill",
+      "description": "General engineering technical interviews: backend, frontend, fullstack, mobile, DevOps tracks - live coding, debugging, system design light, take-home briefs, rubrics, and candidate practice. Not HR-specific; use for technical interview, technical test, mock interview, live coding, system design interview, persiapan tes teknis, simulasi intervie...",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-engineering-technical-interview-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:43Z",
+      "images": []
+    },
+    {
+      "name": "rogue-e2e-delivery-skill",
+      "description": "End-to-end software house delivery. Use whenever the user asks to build a feature, fix a non-trivial bug, start a project, or run the full workflow. Orchestrates all roles and executes through Release unless blocked. Skip when WORKMODE is manual unless user/command forces E2E.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-e2e-delivery-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:36Z",
+      "images": []
+    },
+    {
+      "name": "rogue-database-engineering-skill",
+      "description": "Expert database engineering for application data layers: schema and ERD design, relational modeling, indexing, query performance gates, views, triggers, functions, mapping/junction tables, versioned migrations, seeders, and PostgreSQL/MySQL operational practice. Use for Database Engineer delivery, migration work, integrity constraints, and measu...",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-database-engineering-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:33Z",
+      "images": []
+    },
+    {
+      "name": "rogue-continuous-dev-shift-skill",
+      "description": "Autonomous timed development shift: agents pick backlog work, run maintenance, impact analysis, QA, UI/UX, performance review, and code review in a loop until duration ends. Use for dev shift, maintenance aplikasi, application audit, or autonomous sprint. Trigger: /dev-shift or natural language prompt.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-continuous-dev-shift-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:30Z",
+      "images": []
+    },
+    {
+      "name": "rogue-container-docker-ops-skill",
+      "description": "Canonical container workflows: Docker/Compose development plus MCP-style container management patterns.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-container-docker-ops-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:27Z",
+      "images": []
+    },
+    {
+      "name": "rogue-comfyui-mcp",
+      "description": "Status: partial - not auto-wired (-Mcp all skips this package).",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-comfyui-mcp",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:23Z",
+      "images": []
+    },
+    {
+      "name": "rogue-code-review-skill",
+      "description": "Expert code review against architecture and coding standards: readability, maintainability, security, performance, layering, Sonar-equivalent cleanliness, comment and formatting discipline, modal safety, and a strict ban on raw SQL or database queries outside the persistence layer. Author/date file headers are identity metadata only and are out ...",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-code-review-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:21Z",
+      "images": []
+    },
+    {
+      "name": "rogue-clipper-ops-skill",
+      "description": "Video clipper and repurposing ops for creator-approved promotion: consent intake, highlight selection, short-form cuts, captions/branding, attribution, and platform-safe publish handoff. Use when a creator wants clippers to promote their content via clips, Shorts, Reels, or compilations.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-clipper-ops-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:17Z",
+      "images": []
+    },
+    {
+      "name": "rogue-clarity-skill",
+      "description": "Canonical spec and requirements skill: 5-phase clarity workflow plus Spec-Kit / markdown-agent spec patterns. Use for PRD, SRS, AC, and implementable specifications before coding.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-clarity-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:14Z",
+      "images": []
+    },
+    {
+      "name": "rogue-backend-engineering-skill",
+      "description": "Expert backend application engineering: layered architecture, domain services, validation, transactions, caching boundaries, background jobs, and framework idioms (e.g. Laravel/Node) without leaking business rules into controllers. Use when implementing or refactoring server-side features, services, form requests/DTOs, policies, queues, or integ...",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-backend-engineering-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:09Z",
+      "images": []
+    },
+    {
+      "name": "rogue-auth-access-control-skill",
+      "description": "Expert authentication and authorization engineering: identity lifecycle, session/token handling, password/OTP flows, RBAC/ABAC permission models, default-deny enforcement at every sensitive boundary, and safe audit logging. Use when implementing login/logout, role-permission matrices, policy gates, scoped multi-tenant access, or reviewing authn/...",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-auth-access-control-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:07Z",
+      "images": []
+    },
+    {
+      "name": "rogue-api-engineering-skill",
+      "description": "Expert API design and delivery: resource modeling, versioning, consistent error envelopes, pagination/filtering, idempotency, OpenAPI/contracts, and boundary validation. Use when defining or changing REST (or HTTP) APIs, DTO/request-response shapes, client integration contracts, or when reviewing endpoint consistency before frontend or third-par...",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-api-engineering-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:04Z",
+      "images": []
+    },
+    {
+      "name": "rogue-ai-coding-assistants-skill",
+      "description": "Canonical playbook for AI coding assistants and CLI pair-programmers (Claude Code, Kilo, Goose, OpenCode, multi-CLI toolkits). Use when choosing or operating an assistant workflow inside the project.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-ai-coding-assistants-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:40:01Z",
+      "images": []
+    },
+    {
+      "name": "rogue-agentic-qe-skill",
+      "description": "Canonical quality engineering: test strategy, case generation, coverage gates, exploratory checks, and security-tinged QA (incl. Shannon-style pentest track when requested).",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-agentic-qe-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:39:57Z",
+      "images": []
+    },
+    {
+      "name": "rogue-agentic-flow-skill",
+      "description": "Canonical multi-agent orchestration: decompose work, dependency graphs, parallel tracks, handoffs, and merge. Absorbs Claude Flow / Ruflo / Loki / Ralph / Paperclip / OpenFang patterns into one portable playbook.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-agentic-flow-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-23T05:39:54Z",
       "images": []
     },
     {
@@ -670,26 +930,6 @@
       "images": []
     },
     {
-      "name": "rogue-comfyui-mcp",
-      "description": "Status: **partial** - belum auto-wire (`-Mcp all` melewatkan paket ini).",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-comfyui-mcp",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:15:32Z",
-      "images": []
-    },
-    {
-      "name": "rogue-workspace-hygiene-skill",
-      "description": "Organize personal folders (Downloads, Desktop, Documents, arbitrary paths) by file category or by face clusters in photos. Modes: by-type, by-extension, by-face (when user explicitly asks to group images by wajah/face). Run ONLY when the user explicitly asks to merapihkan/organize/tidy a folder - never proactively. Aliases: personal-folder-tidy,...",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-workspace-hygiene-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:15:15Z",
-      "images": []
-    },
-    {
       "name": "rogue-web-artifacts-builder-skill",
       "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
       "homepage": "",
@@ -707,26 +947,6 @@
       "language": "",
       "default_branch": "main",
       "updated_at": "2026-09-21T08:14:46Z",
-      "images": []
-    },
-    {
-      "name": "rogue-vector-knowledge-tools-skill",
-      "description": "Canonical vector DB / knowledge-graph tooling for code and embeddings: RuVector CLI, RVF format, and GitNexus-style knowledge graphs.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-vector-knowledge-tools-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:14:31Z",
-      "images": []
-    },
-    {
-      "name": "rogue-ui-ux-design-skill",
-      "description": "Expert UI/UX design for product interfaces: user flows, information architecture, wireframes, interaction patterns, accessibility, and a mandatory theme/brand alignment gate against the active project (PROJECT.md, design docs, existing tokens/visual language). Use before or alongside frontend work when designing screens, reviewing mockups, or va...",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-ui-ux-design-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:14:16Z",
       "images": []
     },
     {
@@ -780,26 +1000,6 @@
       "images": []
     },
     {
-      "name": "rogue-skill-pack-managers-skill",
-      "description": "Canonical skill/pack marketplace management: install, update, and audit agent skills across hosts (OpenSkills, agent-skills-cli, Claude marketplace).",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-skill-pack-managers-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:12:39Z",
-      "images": []
-    },
-    {
-      "name": "rogue-skill-authoring-skill",
-      "description": "Canonical guide for authoring and validating portable agent skills (SKILL.md packs) for the agent house catalog and team local skills.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-skill-authoring-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:12:21Z",
-      "images": []
-    },
-    {
       "name": "rogue-ship-skill",
       "description": "Plan launch readiness, staged rollouts, production monitoring, rollback, communications, and post-launch validation. Use when the user asks for `/ship`, pre-launch checklists, release readiness, staged rollout plans, feature flags, deployment monitoring, or rollback planning.",
       "homepage": "",
@@ -850,16 +1050,6 @@
       "images": []
     },
     {
-      "name": "rogue-research-and-local-llm-skill",
-      "description": "Canonical research and local/remote LLM usage: Ollama, DeepSeek/Perplexity style research MCPs, web/youtube summary, and research swarms.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-research-and-local-llm-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:10:41Z",
-      "images": []
-    },
-    {
       "name": "rogue-remotion-skill",
       "description": "Create videos programmatically using React (Remotion) or generate mathematical/conceptual animations (Manim). Use when the user asks to make a video, animation, product demo, tutorial, social clip, or branded video pipeline. Triggers: /remotion-video, /video-animation, /video-toolkit",
       "homepage": "",
@@ -867,16 +1057,6 @@
       "language": "",
       "default_branch": "main",
       "updated_at": "2026-09-21T08:10:24Z",
-      "images": []
-    },
-    {
-      "name": "rogue-remote-desktop-access-skill",
-      "description": "Canonical remote desktop / GUI access playbook: Guacamole, XFCE/xRDP, and VNC for environments that need a graphical desktop.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-remote-desktop-access-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:10:06Z",
       "images": []
     },
     {
@@ -970,26 +1150,6 @@
       "images": []
     },
     {
-      "name": "rogue-office-document-tools-skill",
-      "description": "Canonical office/document generation and transformation: Word, PDF, PowerPoint, Excel, and LaTeX.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-office-document-tools-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:07:23Z",
-      "images": []
-    },
-    {
-      "name": "rogue-observability-engineering-skill",
-      "description": "Expert application observability: structured logging, correlation IDs, health checks, metrics/SLIs, error tracking, and safe diagnostics without leaking secrets or excess PII. Use when adding logging/monitoring for services, diagnosing production-like failures, defining health/readiness endpoints, or improving operational visibility in Phase 2+ ...",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-observability-engineering-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:07:07Z",
-      "images": []
-    },
-    {
       "name": "rogue-nodejs-devtools-skill",
       "description": "TypeScript, ESLint, Prettier. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `nodejs-devtools` work when listed in TEAM.yaml or explicitly requested.",
       "homepage": "",
@@ -1027,166 +1187,6 @@
       "language": "",
       "default_branch": "main",
       "updated_at": "2026-09-21T08:06:00Z",
-      "images": []
-    },
-    {
-      "name": "rogue-ml-failure-audit-skill",
-      "description": "General workflow for auditing ML CI failures, experiment regressions, training run failures, golden metric failures, and telemetry-backed ML work-product claims from local repositories, logs, metrics, configs, and artifacts. Use when Codex needs to decide whether an ML failure is a model/convergence issue, correctness bug, data/config issue, inf...",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-ml-failure-audit-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:05:44Z",
-      "images": []
-    },
-    {
-      "name": "rogue-mise-config-skill",
-      "description": "Global mise configuration and settings. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `mise-config` work when listed in TEAM.yaml or explicitly requested.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-mise-config-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:05:28Z",
-      "images": []
-    },
-    {
-      "name": "rogue-mintlify-docs-updater-skill",
-      "description": "Maintain this repository's Mintlify documentation from uploaded Markdown files. Use when asked to add, update, or organize docs pages in `docs/`, place new content under `get_started`, `core`, `core/models`, or `troubleshooting`, and keep `docs/docs.json` navigation in sync with new pages.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-mintlify-docs-updater-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:05:09Z",
-      "images": []
-    },
-    {
-      "name": "rogue-marketing-ideas-skill",
-      "description": "Generate tailored SaaS and product marketing ideas across organic, paid, community, partnerships, product-led growth, retention, and launch channels. Use when the user asks for `/marketing-ideas`, marketing brainstorms, launch ideas, channel ideas, growth tactics, or a prioritized marketing plan.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-marketing-ideas-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:04:52Z",
-      "images": []
-    },
-    {
-      "name": "rogue-llm-gateway-routing-skill",
-      "description": "Canonical LLM gateway/routing/proxy playbook: multi-provider failover, token reduction proxies, and cost wrappers.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-llm-gateway-routing-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:04:33Z",
-      "images": []
-    },
-    {
-      "name": "rogue-legal-work-plugin-skill",
-      "description": "In-house legal workflows for contract review against playbooks, NDA triage with GREEN/YELLOW/RED ratings, compliance briefings, and vendor checks. Use when the user invokes /review-contract, /triage-nda, /legal-risk-assessment, or /vendor-check for organisation-standard legal analysis.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-legal-work-plugin-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:04:17Z",
-      "images": []
-    },
-    {
-      "name": "rogue-last30days-skill",
-      "description": "Research what people have discussed in the last 30 days across high-signal public platforms. Use when the user asks for `/last30days`, recent trend research, competitive intelligence, market pulse briefs, or engagement-ranked synthesis from Reddit, Hacker News, GitHub, X, YouTube, Polymarket, and similar sources.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-last30days-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:04:01Z",
-      "images": []
-    },
-    {
-      "name": "rogue-kicad-skill",
-      "description": "KiCad PCB design MCP server. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `kicad` work when listed in TEAM.yaml or explicitly requested.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-kicad-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:03:45Z",
-      "images": []
-    },
-    {
-      "name": "rogue-jvm-skill",
-      "description": "JVM languages (Java, Kotlin, Scala). Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `jvm` work when listed in TEAM.yaml or explicitly requested.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-jvm-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:03:30Z",
-      "images": []
-    },
-    {
-      "name": "rogue-jupyter-notebooks-skill",
-      "description": "Jupyter notebook execution MCP server. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `jupyter-notebooks` work when listed in TEAM.yaml or explicitly requested.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-jupyter-notebooks-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:03:15Z",
-      "images": []
-    },
-    {
-      "name": "rogue-internal-comms-skill",
-      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-internal-comms-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:02:58Z",
-      "images": []
-    },
-    {
-      "name": "rogue-instagram-reel-editor-skill",
-      "description": "Edits raw travel footage into polished Instagram Reels (9:16, 1080×1920) with cinematic color grading, beat-synced cuts, text overlays, transitions, and background music. Use when the user mentions editing a reel, travel reel, Instagram video, cutting footage, travel clips, reel from footage, or provides folders with destination subfolders and o...",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-instagram-reel-editor-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:02:41Z",
-      "images": []
-    },
-    {
-      "name": "rogue-instagram-posting-skill",
-      "description": "Automates the process of posting to an already logged-in Instagram account using a browser-capable agent. Use this skill when the user requests to post, upload, publish, or share a video or image to Instagram with provided content and tags.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-instagram-posting-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:02:25Z",
-      "images": []
-    },
-    {
-      "name": "rogue-infra-tools-skill",
-      "description": "Infrastructure and DevOps tooling (Terraform, K8s, Config Mgmt). Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `infra-tools` work when listed in TEAM.yaml or explicitly requested.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-infra-tools-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:02:09Z",
-      "images": []
-    },
-    {
-      "name": "rogue-import-to-ontology-skill",
-      "description": "Document to ontology import. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `import-to-ontology` work when listed in TEAM.yaml or explicitly requested.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-import-to-ontology-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:01:51Z",
-      "images": []
-    },
-    {
-      "name": "rogue-imagemagick-skill",
-      "description": "ImageMagick processing MCP server. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `imagemagick` work when listed in TEAM.yaml or explicitly requested.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-imagemagick-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-21T08:01:36Z",
       "images": []
     }
   ]
