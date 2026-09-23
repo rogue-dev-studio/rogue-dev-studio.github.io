@@ -111,10 +111,36 @@ async function listCollectionItems(collectionId) {
 
 async function fetchImageMeta(id) {
   try {
-    return await getJson(`/v2/images/${id}?view=full`);
+    return await getJson(`/v2/images/${encodeURIComponent(id)}?view=full`);
   } catch (_) {
     return null;
   }
+}
+
+/** Batch lookup (up to ~50 ids). Returns Map id → image. */
+async function fetchImageList(ids) {
+  const map = new Map();
+  const clean = (ids || []).map(String).filter(Boolean);
+  const CHUNK = 40;
+  for (let i = 0; i < clean.length; i += CHUNK) {
+    const slice = clean.slice(i, i + CHUNK);
+    const qs = slice.map((id) => "id=" + encodeURIComponent(id)).join("&");
+    try {
+      const data = await getJson(`/v2/images?${qs}&view=full`);
+      for (const img of data.data || []) {
+        if (img && img.id) map.set(String(img.id), img);
+      }
+    } catch (_) {
+      console.error(JSON.stringify({ chunkFailed: slice.length }));
+      for (const id of slice) {
+        await new Promise((r) => setTimeout(r, 800));
+        const one = await fetchImageMeta(id);
+        if (one && one.id) map.set(String(one.id), one);
+      }
+    }
+    await new Promise((r) => setTimeout(r, 1000));
+  }
+  return map;
 }
 
 function pickThumb(assets) {
@@ -124,6 +150,11 @@ function pickThumb(assets) {
     if (node && node.url) return node.url;
   }
   return "";
+}
+
+function publishDateFromImage(raw) {
+  if (!raw) return "";
+  return toAddedAt(raw.added_date || raw.addedDate || raw.publishedAt || "");
 }
 
 function fromApiImage(raw, collectionName) {
@@ -137,6 +168,7 @@ function fromApiImage(raw, collectionName) {
   const url =
     raw.url || `https://www.shutterstock.com/image-${pathType}/${id}`;
   if (!thumb) return null;
+  const publishedAt = publishDateFromImage(raw);
   return {
     id,
     title,
@@ -144,6 +176,8 @@ function fromApiImage(raw, collectionName) {
     thumb,
     kind: imageType,
     collection: collectionName || undefined,
+    publishedAt: publishedAt || undefined,
+    addedAt: publishedAt || undefined,
   };
 }
 
@@ -154,11 +188,11 @@ function toAddedAt(raw) {
   return new Date(t).toISOString().slice(0, 10);
 }
 
-function fallbackFromId(id, existing, collectionName, addedAt) {
+function fallbackFromId(id, existing, collectionName, collectionAddedAt) {
   if (existing.has(id)) {
     const prev = { ...existing.get(id) };
     if (collectionName) prev.collection = collectionName;
-    if (addedAt && !prev.addedAt) prev.addedAt = addedAt;
+    if (collectionAddedAt) prev.collectionAddedAt = collectionAddedAt;
     return prev;
   }
   return {
@@ -168,7 +202,7 @@ function fallbackFromId(id, existing, collectionName, addedAt) {
     thumb: `https://image.shutterstock.com/image-vector/${id}-260nw-${id}.jpg`,
     kind: "vector",
     collection: collectionName || undefined,
-    addedAt: addedAt || undefined,
+    collectionAddedAt: collectionAddedAt || undefined,
     downloadCount: 0,
     favoriteCount: 0,
     _needsEnrich: true,
@@ -193,10 +227,7 @@ async function main() {
   );
 
   const seen = new Set();
-  const items = [];
-  let enrichedApi = 0;
-  let fromCache = 0;
-  let fallback = 0;
+  const pending = [];
 
   for (const col of collections) {
     const rows = await listCollectionItems(col.id);
@@ -205,38 +236,65 @@ async function main() {
       const id = String(row.id);
       if (!id || seen.has(id)) continue;
       seen.add(id);
-      const addedAt = toAddedAt(row.added_time || row.addedAt);
-
-      let item = null;
-      const apiImg =
-        process.env.SKIP_IMAGE_DETAIL === "0" ? await fetchImageMeta(id) : null;
-      if (apiImg) {
-        item = fromApiImage(apiImg, col.name);
-        if (item) {
-          if (addedAt) item.addedAt = item.addedAt || addedAt;
-          enrichedApi += 1;
-        }
-      }
-      if (!item && existing.has(id)) {
-        item = fallbackFromId(id, existing, col.name, addedAt);
-        delete item._needsEnrich;
-        fromCache += 1;
-      }
-      if (!item) {
-        item = fallbackFromId(id, existing, col.name, addedAt);
-        if (item._needsEnrich) {
-          fallback += 1;
-          delete item._needsEnrich;
-        }
-      }
-      if (addedAt) item.addedAt = item.addedAt || addedAt;
-      if (typeof item.downloadCount !== "number") item.downloadCount = 0;
-      if (typeof item.favoriteCount !== "number") {
-        item.favoriteCount =
-          typeof item.likes === "number" ? item.likes : 0;
-      }
-      items.push(item);
+      pending.push({
+        id,
+        collectionName: col.name,
+        collectionAddedAt: toAddedAt(row.added_time || row.addedAt),
+      });
     }
+  }
+
+  const imageMap = await fetchImageList(pending.map((p) => p.id));
+  console.log(JSON.stringify({ imageMeta: imageMap.size, pending: pending.length }));
+
+  const items = [];
+  let enrichedApi = 0;
+  let fromCache = 0;
+  let fallback = 0;
+
+  for (const row of pending) {
+    const { id, collectionName, collectionAddedAt } = row;
+    let item = null;
+    const apiImg = imageMap.get(id) || null;
+    if (apiImg) {
+      item = fromApiImage(apiImg, collectionName);
+      if (item) {
+        enrichedApi += 1;
+      }
+    }
+    if (!item && existing.has(id)) {
+      item = fallbackFromId(id, existing, collectionName, collectionAddedAt);
+      delete item._needsEnrich;
+      fromCache += 1;
+    }
+    if (!item) {
+      item = fallbackFromId(id, existing, collectionName, collectionAddedAt);
+      if (item._needsEnrich) {
+        fallback += 1;
+        delete item._needsEnrich;
+      }
+    }
+    if (collectionAddedAt) item.collectionAddedAt = collectionAddedAt;
+    const published = item.publishedAt || publishDateFromImage(apiImg) || "";
+    if (published) {
+      item.publishedAt = published;
+      item.addedAt = published;
+    } else {
+      delete item.publishedAt;
+      // Keep prior published addedAt if it is not the collection-add day.
+      if (
+        item.addedAt &&
+        collectionAddedAt &&
+        item.addedAt === collectionAddedAt
+      ) {
+        delete item.addedAt;
+      }
+    }
+    if (typeof item.downloadCount !== "number") item.downloadCount = 0;
+    if (typeof item.favoriteCount !== "number") {
+      item.favoriteCount = typeof item.likes === "number" ? item.likes : 0;
+    }
+    items.push(item);
   }
 
   const catalog = {
@@ -263,12 +321,16 @@ async function main() {
   } catch (err) {
     console.error("polish skipped:", err && err.message);
   }
+  const dates = items.map((i) => i.addedAt).filter(Boolean);
+  const uniqueDates = [...new Set(dates)].sort();
   console.log(
     JSON.stringify({
       wrote: items.length,
       enrichedApi,
       fromCache,
       fallback,
+      uniquePublishDates: uniqueDates.length,
+      sampleDates: uniqueDates.slice(0, 8),
       out: OUT,
     })
   );
