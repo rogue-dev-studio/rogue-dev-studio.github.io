@@ -3,5 +3,5 @@
   "store": "turbosquid",
   "profile": "https://www.turbosquid.com/Search/Artists/ArisHadisopiyan",
   "items": [],
-  "_comment": "Add per-asset rows with url + title (+ thumb). Profile URL alone is ignored by Rogue Assets Store."
+  "_comment": "Add per-asset rows with url + title (+ thumb). Profile URL alone is ignored by Rogue Asset Store."
 }

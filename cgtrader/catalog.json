@@ -3,5 +3,5 @@
   "store": "cgtrader",
   "profile": "https://www.cgtrader.com/aris-hadisopiyan",
   "items": [],
-  "_comment": "Add per-asset rows with url + title (+ thumb). Artist profile URL alone is ignored by Rogue Assets Store."
+  "_comment": "Add per-asset rows with url + title (+ thumb). Artist profile URL alone is ignored by Rogue Asset Store."
 }

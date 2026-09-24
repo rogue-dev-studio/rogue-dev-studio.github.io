@@ -15,29 +15,29 @@ const KARYA_PROJECTS = [
     'rental-mobil-new'
 ];
 
-/** Section 04 — Toolkit (AI Agents Rogue editions + marketplace) */
+/** Section 04 — Toolkit (AI Agents Rogue editions + Asset Store) */
 const AGENTS_PROJECTS = [
-    'rogue-market-agent',
+    'rogue-asset-store',
     'ai-agents-rogue-programmer',
     'ai-agents-rogue'
 ];
 
 const AGENTS_META = {
-    'rogue-market-agent': {
-        title: 'Rogue Market Agent',
-        category: 'Marketplace',
+    'rogue-asset-store': {
+        title: 'Rogue Asset Store',
+        category: 'Store',
         audience: 'Pengguna Cursor, Claude Code, dan host AI lain',
         stack: 'Skills · MCP Servers · GitHub Pages',
         requirements: [
             'Katalog publik skill & MCP server Rogue',
-            'Listing dari topic rogue-market-skills / rogue-market-mcp',
+            'Listing dari topic rogue-asset-skills / rogue-asset-mcp',
             'Install lewat CLI host (skills add / MCP config)'
         ],
         problem: 'Skill dan MCP tersebar di banyak repo tanpa satu tempat discovery.',
-        approach: 'Marketplace statis di GitHub Pages yang menarik listing dari topic org.',
+        approach: 'Asset Store statis di GitHub Pages yang menarik listing dari topic org.',
         result: 'Satu katalog installable untuk skill dan MCP Rogue Development.',
-        url: 'https://rogue-dev-studio.github.io/rogue-market-agent/',
-        linkLabel: 'Buka marketplace →'
+        url: 'https://rogue-dev-studio.github.io/rogue-asset-store/',
+        linkLabel: 'Buka store →'
     },
     'ai-agents-rogue-programmer': {
         title: 'AI Agents Rogue Programmer',

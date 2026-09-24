@@ -3,5 +3,5 @@
   "store": "itch",
   "profile": "https://rogue-dev-studio.itch.io",
   "items": [],
-  "_comment": "Add per-asset rows with url + title (+ thumb). Profile root alone is ignored by Rogue Assets Store."
+  "_comment": "Add per-asset rows with url + title (+ thumb). Profile root alone is ignored by Rogue Asset Store."
 }
