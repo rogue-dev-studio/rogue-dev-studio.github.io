@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T10:37:18.703Z",
+  "generatedAt": "2026-09-24T16:00:00.851Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -590,6 +590,16 @@
   ],
   "archive": [
     {
+      "name": "rogue-ai-coding-assistants-skill",
+      "description": "Canonical playbook for AI coding assistants and CLI pair-programmers (Claude Code, Kilo, Goose, OpenCode, multi-CLI toolkits). Use when choosing or operating an assistant workflow inside the project.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-ai-coding-assistants-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-24T10:38:07Z",
+      "images": []
+    },
+    {
       "name": "rogue-youtube-publishing-skill",
       "description": "Rogue skill: manual YouTube publishing with confirm-gated MCP upload",
       "homepage": "",
@@ -1177,16 +1187,6 @@
       "language": "",
       "default_branch": "main",
       "updated_at": "2026-09-24T09:18:35Z",
-      "images": []
-    },
-    {
-      "name": "rogue-internal-comms-skill",
-      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-internal-comms-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-24T09:18:33Z",
       "images": []
     }
   ]
