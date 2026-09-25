@@ -852,37 +852,14 @@ function setupNav() {
     });
 }
 
-function setupContactForm() {
-    const form = document.getElementById('contact-form');
-    if (!form) return;
-
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        const name = document.getElementById('contact-name').value.trim();
-        const email = document.getElementById('contact-email').value.trim();
-        const need = document.getElementById('contact-need').value.trim();
-        const budget = document.getElementById('contact-budget').value;
-        const timeline = document.getElementById('contact-timeline').value;
-
-        if (!name || !email || !need || !budget || !timeline) {
-            return;
-        }
-
-        const subject = encodeURIComponent(`Pesan untuk Rogue Development — ${name}`);
-        const body = encodeURIComponent(
-            `Nama: ${name}\nEmail: ${email}\nBudget: ${budget}\nTimeline: ${timeline}\n\nKebutuhan:\n${need}`
-        );
-
-        const inbox = ['aris.hadisopiyan', 'gmail.com'].join('@');
-        window.location.href = `mailto:${inbox}?subject=${subject}&body=${body}`;
-    });
-}
-
 async function initApp() {
+    if (window.location.hash === '#contact') {
+        window.location.replace('contact/');
+        return;
+    }
+
     renderIcons();
     renderAvailability();
-    setupContactForm();
     setupNav();
 
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

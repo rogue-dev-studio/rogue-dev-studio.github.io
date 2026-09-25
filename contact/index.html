@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo-tp.png" type="image/png">
+    <link rel="apple-touch-icon" href="../img/logo-tp.png">
+
+    <title>Kontak — Rogue Development</title>
+    <meta name="title" content="Kontak — Rogue Development">
+    <meta name="description" content="Diskusikan proyek website, SaaS, atau sistem bisnis dengan Rogue Development.">
+    <meta name="author" content="Rogue Developer">
+    <meta name="robots" content="index,follow,noarchive,nosnippet">
+    <link rel="canonical" href="https://rogue-dev-studio.github.io/contact/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rogue-dev-studio.github.io/contact/">
+    <meta property="og:title" content="Kontak — Rogue Development">
+    <meta property="og:description" content="Ceritakan kebutuhan proyek Anda. Kami balas ke email yang Anda cantumkan.">
+    <meta property="og:image" content="https://rogue-dev-studio.github.io/img/banner-seo.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rogue-dev-studio.github.io/contact/">
+    <meta property="twitter:title" content="Kontak — Rogue Development">
+    <meta property="twitter:description" content="Ceritakan kebutuhan proyek Anda. Kami balas ke email yang Anda cantumkan.">
+    <meta property="twitter:image" content="https://rogue-dev-studio.github.io/img/banner-seo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/styles.css?v=20260925k">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js" defer></script>
+</head>
+<body class="page-contact">
+    <div class="bg-pattern"></div>
+
+    <nav>
+        <a href="../" class="logo">ROGUE.DEV</a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu">Menu</button>
+        <ul class="nav-links" id="site-nav">
+            <li><a href="../#projects">Karya</a></li>
+            <li><a href="../#toolkit">Toolkit</a></li>
+            <li><a href="https://rogue-dev-studio.github.io/rogue-asset-store/" rel="noopener">Assets</a></li>
+            <li><a href="../lab/">Lab</a></li>
+            <li><a href="../cv/">CV</a></li>
+            <li><a href="./" aria-current="page">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contact-section contact-page" id="contact">
+            <p class="contact-eyebrow">Rogue Development · Kontak</p>
+            <h1>Mari Berkolaborasi</h1>
+            <p>Ceritakan kebutuhan proyek Anda. Saya balas ke email yang Anda cantumkan — alamat inbox tidak ditampilkan di halaman ini.</p>
+
+            <form class="contact-form" id="contact-form" novalidate autocomplete="on">
+                <div class="form-trap" aria-hidden="true">
+                    <label for="contact-company-url">Company website</label>
+                    <input type="text" id="contact-company-url" name="company_url" data-contact-trap tabindex="-1" autocomplete="off">
+                </div>
+
+                <div class="form-row">
+                    <label for="contact-name">Nama</label>
+                    <input type="text" id="contact-name" name="name" required autocomplete="name">
+                </div>
+                <div class="form-row">
+                    <label for="contact-email">Email Anda</label>
+                    <input type="email" id="contact-email" name="email" required autocomplete="email">
+                </div>
+                <div class="form-row">
+                    <label for="contact-need">Kebutuhan</label>
+                    <textarea id="contact-need" name="need" rows="4" required placeholder="Contoh: landing bisnis, SaaS ringan, sistem informasi..."></textarea>
+                </div>
+                <div class="form-grid">
+                    <div class="form-row">
+                        <label for="contact-budget">Budget</label>
+                        <select id="contact-budget" name="budget" required>
+                            <option value="">Pilih kisaran</option>
+                            <option value="5-10jt">Rp5–10 jt</option>
+                            <option value="10-25jt">Rp10–25 jt</option>
+                            <option value="25jt+">Rp25 jt+</option>
+                            <option value="belum-pasti">Belum pasti / diskusi dulu</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="contact-timeline">Timeline</label>
+                        <select id="contact-timeline" name="timeline" required>
+                            <option value="">Pilih target</option>
+                            <option value="1-4-minggu">1–4 minggu</option>
+                            <option value="1-2-bulan">1–2 bulan</option>
+                            <option value="fleksibel">Fleksibel</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row captcha-row">
+                    <span class="captcha-label" id="captcha-label">Verifikasi — arcade hoop</span>
+                    <div class="captcha-game-wrap arcade-cabinet" id="contact-captcha">
+                        <div class="captcha-viewport" role="img" aria-labelledby="captcha-label" aria-describedby="captcha-hint">
+                            <div class="captcha-power-hud" aria-live="polite">
+                                <div class="captcha-power-gauge" aria-hidden="true">
+                                    <svg class="captcha-power-svg" viewBox="0 10 200 98" width="132" height="65">
+                                        <g fill="none" stroke-width="28" stroke-linecap="butt">
+                                            <path stroke="#1b7a3d" d="M22.03 97.96 A78 78 0 0 1 31.45 62.78"/>
+                                            <path stroke="#7cbb2c" d="M33.49 59.25 A78 78 0 0 1 59.25 33.49"/>
+                                            <path stroke="#f5d031" d="M62.78 31.45 A78 78 0 0 1 97.96 22.03"/>
+                                            <path stroke="#f0a020" d="M102.04 22.03 A78 78 0 0 1 137.22 31.45"/>
+                                            <path stroke="#e85a2b" d="M140.75 33.49 A78 78 0 0 1 166.51 59.25"/>
+                                            <path stroke="#e53935" d="M168.55 62.78 A78 78 0 0 1 177.97 97.96"/>
+                                        </g>
+                                        <g data-power-needle transform="rotate(0 100 100)">
+                                            <polygon points="28,100 94,91.5 94,108.5" fill="#111"/>
+                                            <circle cx="100" cy="100" r="9" fill="#111"/>
+                                            <circle cx="100" cy="100" r="3.6" fill="#f4f4f4"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span class="captcha-power-value" data-power-value data-zone="low">LOW</span>
+                                <span class="captcha-power-label">POWER</span>
+                            </div>
+                            <div class="captcha-time-hud" aria-live="polite">
+                                <span class="captcha-time-value" data-board="time">45</span>
+                                <span class="captcha-time-label">TIME</span>
+                            </div>
+                        </div>
+                        <div class="captcha-score-flash" hidden>SKOR!</div>
+                        <div class="captcha-game-bar">
+                            <p class="captcha-status" id="captcha-game-status" role="status" aria-live="polite">Tahan bola — lepas di GOOD (hampir pas) atau PERFECT (paling sesuai jalur). LOW kurang sampai, FULL kebablasan.</p>
+                            <button type="button" class="btn btn-secondary captcha-refresh" id="captcha-refresh">Ulangi</button>
+                        </div>
+                    </div>
+                    <input type="hidden" id="contact-captcha-pass" name="captcha_pass" value="0">
+                    <p class="captcha-hint" id="captcha-hint">Kamera sudut elevated 3/4 (belakang-kiri → keranjang). Ctrl+F5 jika cache lama.</p>
+                </div>
+
+                <p id="contact-status" class="contact-status" role="status" aria-live="polite" hidden></p>
+                <button type="submit" class="btn btn-primary" id="contact-submit" disabled>Kirim Pesan</button>
+            </form>
+
+            <p class="contact-email-fallback">Tidak ada alamat email yang dipublikasikan di HTML. Setelah gate lolos, aplikasi email Anda yang membuka pesan.</p>
+            <p class="contact-sponsor"><a href="https://github.com/sponsors/rogue-dev-studio" target="_blank" rel="noopener noreferrer">Sponsor di GitHub</a> · <a href="https://www.patreon.com/c/roguedevstudio" target="_blank" rel="noopener noreferrer">Patreon</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span class="dynamic-year">2026</span> Rogue Development · <a href="../">Beranda</a></p>
+    </footer>
+
+    <script src="../js/contact.js?v=20260927j"></script>
+</body>
+</html>

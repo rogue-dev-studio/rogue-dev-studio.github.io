@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /stock/_
+Disallow: /stock/node_modules/
+
+# Contact page is public; inbox is never in HTML.
+# Discourage archival scrapers from caching contact payloads.
+User-agent: archive.org_bot
+Disallow: /contact/
+
+User-agent: Bytespider
+Disallow: /contact/
+
+User-agent: CCBot
+Disallow: /contact/
+
+Sitemap: https://rogue-dev-studio.github.io/

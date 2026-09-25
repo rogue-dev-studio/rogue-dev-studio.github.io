@@ -29,7 +29,7 @@ Portfolio komersial **Rogue Development** (Aris Hadisopiyan) — website, aplika
 
 Untuk inquiry proyek atau kolaborasi bisnis:
 
-- **Contact:** [rogue-dev-studio.github.io/#contact](https://rogue-dev-studio.github.io/#contact)
+- **Contact:** [rogue-dev-studio.github.io/contact/](https://rogue-dev-studio.github.io/contact/)
 - **GitHub:** [github.com/rogue-dev-studio](https://github.com/rogue-dev-studio)
 - **Portfolio:** [rogue-dev-studio.github.io](https://rogue-dev-studio.github.io/)
 
