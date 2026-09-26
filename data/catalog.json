@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T02:13:53.450Z",
+  "generatedAt": "2026-09-26T10:24:20.472Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -590,23 +590,13 @@
   ],
   "archive": [
     {
-      "name": "rogue-ai-coding-assistants-skill",
-      "description": "Canonical playbook for AI coding assistants and CLI pair-programmers (Claude Code, Kilo, Goose, OpenCode, multi-CLI toolkits). Use when choosing or operating an assistant workflow inside the project.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-ai-coding-assistants-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-24T10:38:07Z",
-      "images": []
-    },
-    {
       "name": "rogue-youtube-publishing-skill",
       "description": "Rogue skill: manual YouTube publishing with confirm-gated MCP upload",
       "homepage": "",
       "html_url": "https://github.com/rogue-dev-studio/rogue-youtube-publishing-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:48Z",
+      "updated_at": "2026-09-26T07:54:24Z",
       "images": []
     },
     {
@@ -616,7 +606,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-youtube-mcp",
       "language": "JavaScript",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:45Z",
+      "updated_at": "2026-09-26T07:54:21Z",
       "images": []
     },
     {
@@ -626,7 +616,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-workspace-hygiene-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:42Z",
+      "updated_at": "2026-09-26T07:54:18Z",
       "images": []
     },
     {
@@ -636,7 +626,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-web-artifacts-builder-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:39Z",
+      "updated_at": "2026-09-26T07:54:16Z",
       "images": []
     },
     {
@@ -646,7 +636,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-wardley-maps-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:37Z",
+      "updated_at": "2026-09-26T07:54:13Z",
       "images": []
     },
     {
@@ -656,7 +646,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-vector-knowledge-tools-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:33Z",
+      "updated_at": "2026-09-26T07:54:10Z",
       "images": []
     },
     {
@@ -666,7 +656,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-ui-ux-design-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:31Z",
+      "updated_at": "2026-09-26T07:54:07Z",
       "images": []
     },
     {
@@ -676,7 +666,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-tmux-workspace-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:27Z",
+      "updated_at": "2026-09-26T07:54:04Z",
       "images": []
     },
     {
@@ -686,7 +676,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-theme-factory-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:24Z",
+      "updated_at": "2026-09-26T07:54:01Z",
       "images": []
     },
     {
@@ -696,7 +686,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-swift-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:21Z",
+      "updated_at": "2026-09-26T07:53:58Z",
       "images": []
     },
     {
@@ -706,7 +696,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-supabase-cli-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:18Z",
+      "updated_at": "2026-09-26T07:53:55Z",
       "images": []
     },
     {
@@ -716,7 +706,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-slack-gif-creator-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:15Z",
+      "updated_at": "2026-09-26T07:53:53Z",
       "images": []
     },
     {
@@ -726,7 +716,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-skill-pack-managers-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:12Z",
+      "updated_at": "2026-09-26T07:53:49Z",
       "images": []
     },
     {
@@ -736,7 +726,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-skill-authoring-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:09Z",
+      "updated_at": "2026-09-26T07:53:46Z",
       "images": []
     },
     {
@@ -746,7 +736,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-ship-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:06Z",
+      "updated_at": "2026-09-26T07:53:43Z",
       "images": []
     },
     {
@@ -756,7 +746,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-seo-audit-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:03Z",
+      "updated_at": "2026-09-26T07:53:40Z",
       "images": []
     },
     {
@@ -766,7 +756,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-sdkman-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:21:01Z",
+      "updated_at": "2026-09-26T07:53:37Z",
       "images": []
     },
     {
@@ -776,7 +766,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-rust-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:57Z",
+      "updated_at": "2026-09-26T07:53:34Z",
       "images": []
     },
     {
@@ -786,7 +776,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-ruby-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:54Z",
+      "updated_at": "2026-09-26T07:53:31Z",
       "images": []
     },
     {
@@ -796,7 +786,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-research-and-local-llm-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:50Z",
+      "updated_at": "2026-09-26T07:53:28Z",
       "images": []
     },
     {
@@ -806,7 +796,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-remotion-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:48Z",
+      "updated_at": "2026-09-26T07:53:25Z",
       "images": []
     },
     {
@@ -816,7 +806,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-remote-desktop-access-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:46Z",
+      "updated_at": "2026-09-26T07:53:22Z",
       "images": []
     },
     {
@@ -826,7 +816,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-qgis-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:41Z",
+      "updated_at": "2026-09-26T07:53:20Z",
       "images": []
     },
     {
@@ -836,7 +826,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-qgis-mcp",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:36Z",
+      "updated_at": "2026-09-26T07:53:17Z",
       "images": []
     },
     {
@@ -846,7 +836,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-pytorch-ml-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:32Z",
+      "updated_at": "2026-09-26T07:53:14Z",
       "images": []
     },
     {
@@ -856,7 +846,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-python-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:30Z",
+      "updated_at": "2026-09-26T07:53:11Z",
       "images": []
     },
     {
@@ -866,7 +856,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-pm-skills-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:26Z",
+      "updated_at": "2026-09-26T07:53:08Z",
       "images": []
     },
     {
@@ -876,17 +866,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-playwright-mcp",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:23Z",
-      "images": []
-    },
-    {
-      "name": "rogue-photoshop-skill",
-      "description": "Rogue skill: Adobe Photoshop via MCP for agents",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-photoshop-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:20Z",
+      "updated_at": "2026-09-26T07:53:05Z",
       "images": []
     },
     {
@@ -896,7 +876,17 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-php-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:20Z",
+      "updated_at": "2026-09-26T07:53:02Z",
+      "images": []
+    },
+    {
+      "name": "rogue-photoshop-skill",
+      "description": "Rogue skill: Adobe Photoshop via MCP for agents",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-photoshop-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-26T07:52:59Z",
       "images": []
     },
     {
@@ -906,7 +896,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-photoshop-mcp",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:14Z",
+      "updated_at": "2026-09-26T07:52:57Z",
       "images": []
     },
     {
@@ -916,7 +906,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-pbr-rendering-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:09Z",
+      "updated_at": "2026-09-26T07:52:54Z",
       "images": []
     },
     {
@@ -926,7 +916,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-pbr-rendering-mcp",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:04Z",
+      "updated_at": "2026-09-26T07:52:51Z",
       "images": []
     },
     {
@@ -936,7 +926,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-pal-mcp",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:20:00Z",
+      "updated_at": "2026-09-26T07:52:48Z",
       "images": []
     },
     {
@@ -946,7 +936,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-openclaw-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:54Z",
+      "updated_at": "2026-09-26T07:52:45Z",
       "images": []
     },
     {
@@ -956,7 +946,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-open-design-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:50Z",
+      "updated_at": "2026-09-26T07:52:42Z",
       "images": []
     },
     {
@@ -966,7 +956,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-ontology-enrich-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:45Z",
+      "updated_at": "2026-09-26T07:52:39Z",
       "images": []
     },
     {
@@ -976,7 +966,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-office-document-tools-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:42Z",
+      "updated_at": "2026-09-26T07:52:36Z",
       "images": []
     },
     {
@@ -986,7 +976,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-observability-engineering-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:39Z",
+      "updated_at": "2026-09-26T07:52:33Z",
       "images": []
     },
     {
@@ -996,7 +986,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-nodejs-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:36Z",
+      "updated_at": "2026-09-26T07:52:30Z",
       "images": []
     },
     {
@@ -1006,7 +996,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-nodejs-devtools-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:32Z",
+      "updated_at": "2026-09-26T07:52:27Z",
       "images": []
     },
     {
@@ -1016,7 +1006,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-ngspice-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:29Z",
+      "updated_at": "2026-09-26T07:52:24Z",
       "images": []
     },
     {
@@ -1026,7 +1016,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-ngspice-mcp",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:25Z",
+      "updated_at": "2026-09-26T07:52:22Z",
       "images": []
     },
     {
@@ -1036,7 +1026,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-monitoring-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:22Z",
+      "updated_at": "2026-09-26T07:52:18Z",
       "images": []
     },
     {
@@ -1046,7 +1036,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-ml-failure-audit-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:19Z",
+      "updated_at": "2026-09-26T07:52:16Z",
       "images": []
     },
     {
@@ -1056,7 +1046,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-mise-config-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:16Z",
+      "updated_at": "2026-09-26T07:52:13Z",
       "images": []
     },
     {
@@ -1066,7 +1056,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-mintlify-docs-updater-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:12Z",
+      "updated_at": "2026-09-26T07:52:09Z",
       "images": []
     },
     {
@@ -1076,7 +1066,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-mcp-integrations-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:10Z",
+      "updated_at": "2026-09-26T07:52:07Z",
       "images": []
     },
     {
@@ -1086,7 +1076,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-mcp-builder-mcp",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:07Z",
+      "updated_at": "2026-09-26T07:52:03Z",
       "images": []
     },
     {
@@ -1096,7 +1086,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-marketing-ideas-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:03Z",
+      "updated_at": "2026-09-26T07:51:59Z",
       "images": []
     },
     {
@@ -1106,7 +1096,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-llm-gateway-routing-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:19:00Z",
+      "updated_at": "2026-09-26T07:51:57Z",
       "images": []
     },
     {
@@ -1116,7 +1106,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-linear-mcp",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:18:57Z",
+      "updated_at": "2026-09-26T07:51:54Z",
       "images": []
     },
     {
@@ -1126,7 +1116,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-legal-work-plugin-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:18:55Z",
+      "updated_at": "2026-09-26T07:51:50Z",
       "images": []
     },
     {
@@ -1136,7 +1126,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-last30days-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:18:51Z",
+      "updated_at": "2026-09-26T07:51:47Z",
       "images": []
     },
     {
@@ -1146,7 +1136,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-kicad-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:18:47Z",
+      "updated_at": "2026-09-26T07:51:44Z",
       "images": []
     },
     {
@@ -1156,7 +1146,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-kicad-mcp",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:18:45Z",
+      "updated_at": "2026-09-26T07:51:41Z",
       "images": []
     },
     {
@@ -1166,7 +1156,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-jvm-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:18:42Z",
+      "updated_at": "2026-09-26T07:51:38Z",
       "images": []
     },
     {
@@ -1176,7 +1166,7 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-jupyter-notebooks-skill",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:18:38Z",
+      "updated_at": "2026-09-26T07:51:35Z",
       "images": []
     },
     {
@@ -1186,7 +1176,17 @@
       "html_url": "https://github.com/rogue-dev-studio/rogue-jupyter-mcp",
       "language": "",
       "default_branch": "main",
-      "updated_at": "2026-09-24T09:18:35Z",
+      "updated_at": "2026-09-26T07:51:32Z",
+      "images": []
+    },
+    {
+      "name": "rogue-internal-comms-skill",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-internal-comms-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-09-26T07:51:29Z",
       "images": []
     }
   ]
