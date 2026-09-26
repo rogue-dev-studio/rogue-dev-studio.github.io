@@ -10,11 +10,9 @@
 
     const MIN_DWELL_MS = 2800;
     const STATUS_IDLE = '';
-    const MSG_INVALID = 'Lengkapi semua field yang wajib diisi.';
-    const MSG_CAPTCHA = 'Masukkan bola ke keranjang dulu sebelum mengirim.';
-    const MSG_BLOCKED = 'Tidak dapat mengirim. Muat ulang halaman dan coba lagi.';
-    const MSG_READY = 'Siap dikirim — aplikasi email Anda akan terbuka.';
-    const MSG_NO_WEBGL = 'Gagal memuat library 3D. Cek koneksi internet, lalu muat ulang halaman.';
+    function msg(key) {
+        return window.RogueSiteI18n ? window.RogueSiteI18n.t(key) : key;
+    }
 
     const pageOpenedAt = Date.now();
     let humanTouched = false;
@@ -111,12 +109,13 @@
 
         const mount = host.querySelector('.captcha-viewport') || host;
         const flash = host.querySelector('.captcha-score-flash');
+        const retryOverlay = host.querySelector('.captcha-retry-overlay');
+        const refreshBtn = document.getElementById('captcha-refresh');
         const width = () => Math.max(mount.clientWidth, 280);
         const height = () => Math.max(mount.clientHeight, 320);
 
         const scene = new THREE.Scene();
         scene.background = new THREE.Color(0xd7e0ec);
-        scene.fog = new THREE.Fog(0xd7e0ec, 32, 62);
 
         // Half-court + elevated 3/4 camera (ball foreground → hoop baseline).
         const HOOP_Z = -3.15;
@@ -132,12 +131,72 @@
         camera.position.copy(camHome);
         camera.lookAt(lookHome);
 
-        const renderer = new THREE.WebGLRenderer({ antialias: true });
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+        // Profil ringan HANYA saat tampilan mobile (bukan PC / desktop).
+        const mobileViewport = window.matchMedia('(max-width: 768px)').matches;
+        const lowPower = mobileViewport;
+        const QUALITY = lowPower
+            ? {
+                antialias: false,
+                maxPixelRatio: 1,
+                shadows: false,
+                tribuneRows: 3,
+                seatStride: 3,
+                maxNpcs: 20,
+                walkers: 1,
+                confetti: 14,
+                trailMax: 16,
+                idleHead: false,
+                simplifySeats: true,
+                railStep: 3,
+                pointLight: false,
+                firePool: 20,
+                fireEmit: 26,
+                aimSteps: 24,
+                aimGlow: false,
+                aimHalo: false,
+                fogFar: 40,
+                netLite: true
+            }
+            : {
+                antialias: true,
+                maxPixelRatio: 2,
+                shadows: true,
+                tribuneRows: 5,
+                seatStride: 1,
+                maxNpcs: 999,
+                walkers: 4,
+                confetti: 96,
+                trailMax: 64,
+                idleHead: true,
+                simplifySeats: false,
+                railStep: 1,
+                pointLight: true,
+                firePool: 96,
+                fireEmit: 90,
+                aimSteps: 56,
+                aimGlow: true,
+                aimHalo: true,
+                fogFar: 62,
+                netLite: false
+            };
+
+        const renderer = new THREE.WebGLRenderer({
+            antialias: QUALITY.antialias,
+            powerPreference: lowPower ? 'low-power' : 'high-performance',
+            alpha: false,
+            stencil: false,
+            depth: true
+        });
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, QUALITY.maxPixelRatio));
         renderer.setSize(width(), height());
-        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.enabled = QUALITY.shadows;
         if (renderer.outputColorSpace !== undefined) {
             renderer.outputColorSpace = THREE.SRGBColorSpace;
+        }
+        scene.fog = new THREE.Fog(0xd7e0ec, lowPower ? 20 : 32, QUALITY.fogFar);
+        if (lowPower) {
+            camera.far = 72;
+            camera.updateProjectionMatrix();
         }
 
         const timeHud = host.querySelector('.captcha-time-hud');
@@ -149,6 +208,8 @@
         if (powerHud) mount.appendChild(powerHud);
         if (timeHud) mount.appendChild(timeHud);
         mount.appendChild(renderer.domElement);
+        if (flash) mount.appendChild(flash);
+        if (retryOverlay) mount.appendChild(retryOverlay);
         renderer.domElement.className = 'captcha-game-canvas';
         renderer.domElement.style.touchAction = 'none';
         renderer.domElement.style.width = '100%';
@@ -158,23 +219,54 @@
         let scoreValue = 0;
         let timeLeft = 45;
         let timerArmed = false;
+        let timeExpired = false;
+        let crowdActive = false;
+        let scoreFreeze = false;
+
+        function setRetryVisible(on) {
+            if (refreshBtn) refreshBtn.hidden = !on;
+            if (retryOverlay) retryOverlay.hidden = !on;
+        }
+        setRetryVisible(false);
 
         function paintBoard() {
             if (timeEl) timeEl.textContent = String(Math.max(0, Math.ceil(timeLeft))).padStart(2, '0');
         }
         paintBoard();
 
+        function onTimeUp() {
+            if (timeExpired || scored) return;
+            timeExpired = true;
+            timeLeft = 0;
+            paintBoard();
+            dragging = false;
+            shotLive = false;
+            setAimVisible(false);
+            clearFireTrail();
+            if (flash) flash.hidden = true;
+            // Bekukan semua bola & hentikan sim.
+            for (let i = 0; i < rack.length; i += 1) {
+                const ball = rack[i];
+                if (ball.userData.vel) ball.userData.vel.set(0, 0, 0);
+                ball.userData.simulating = false;
+                ball.userData.inFlight = false;
+            }
+            setRetryVisible(true);
+        }
+
         scene.add(new THREE.AmbientLight(0xffffff, 0.95));
         const hemi = new THREE.HemisphereLight(0xf5f8ff, 0x8a9bb0, 0.75);
         scene.add(hemi);
-        const sun = new THREE.DirectionalLight(0xffffff, 1.15);
+        const sun = new THREE.DirectionalLight(0xffffff, QUALITY.shadows ? 1.15 : 1.35);
         sun.position.set(-5, 9, 4);
-        sun.castShadow = true;
-        sun.shadow.mapSize.set(1024, 1024);
+        sun.castShadow = QUALITY.shadows;
+        if (QUALITY.shadows) sun.shadow.mapSize.set(1024, 1024);
         scene.add(sun);
-        const ballLight = new THREE.PointLight(0xffd2a8, 1.1, 10);
-        ballLight.position.set(-0.4, 1.6, BALL_Z + 0.2);
-        scene.add(ballLight);
+        if (QUALITY.pointLight) {
+            const ballLight = new THREE.PointLight(0xffd2a8, 1.1, 10);
+            ballLight.position.set(-0.4, 1.6, BALL_Z + 0.2);
+            scene.add(ballLight);
+        }
 
         // Half court platform
         const border = new THREE.Mesh(
@@ -351,7 +443,7 @@
             // Scale to real basketball (~24cm): game ball diameter is 0.36.
             const ballD = 0.36;
             const u = ballD / 0.24;
-            const rows = 5;
+            const rows = QUALITY.tribuneRows;
             const rowDepth = 0.82 * u;
             const rowRise = 0.36 * u;
             const baseRx = boundW * 0.5 + WALL_T + 0.9 * u;
@@ -360,9 +452,12 @@
             const seatD = 0.44 * u;
             const seatThick = 0.045 * u;
             const lipH = 0.16 * u;
-            const seatPitch = 0.56 * u;
+            const seatPitch = QUALITY.simplifySeats ? 0.72 * u : 0.56 * u;
             const midCirc = Math.PI * (baseRx + baseRz + rows * rowDepth);
-            const segments = Math.max(40, Math.round(midCirc / seatPitch));
+            const segments = Math.max(
+                QUALITY.simplifySeats ? 28 : 40,
+                Math.round(midCirc / seatPitch)
+            );
             const aisleEvery = Math.max(7, Math.round((2.4 * u) / seatPitch));
             const railPostH = 1.05 * u;
             const railPostR = 0.035 * u;
@@ -383,12 +478,14 @@
                 lip.position.set(0, -lipH * 0.5 + seatThick * 0.2, seatD * 0.5 - seatThick * 0.2);
                 group.add(lip);
 
-                const flangeGeo = new THREE.BoxGeometry(seatThick * 0.7, seatThick * 1.1, seatD * 0.9);
-                const fL = new THREE.Mesh(flangeGeo, seatMat);
-                const fR = new THREE.Mesh(flangeGeo, seatMat);
-                fL.position.set(-seatW * 0.48, seatThick * 0.35, 0);
-                fR.position.set(seatW * 0.48, seatThick * 0.35, 0);
-                group.add(fL, fR);
+                if (!QUALITY.simplifySeats) {
+                    const flangeGeo = new THREE.BoxGeometry(seatThick * 0.7, seatThick * 1.1, seatD * 0.9);
+                    const fL = new THREE.Mesh(flangeGeo, seatMat);
+                    const fR = new THREE.Mesh(flangeGeo, seatMat);
+                    fL.position.set(-seatW * 0.48, seatThick * 0.35, 0);
+                    fR.position.set(seatW * 0.48, seatThick * 0.35, 0);
+                    group.add(fL, fR);
+                }
 
                 group.position.set(x - nx * 0.04, y, z - nz * 0.04);
                 group.rotation.y = Math.atan2(-nx, -nz);
@@ -420,17 +517,19 @@
                 u
             };
 
-            for (let i = 0; i < segments; i += 1) {
+            for (let i = 0; i < segments; i += QUALITY.railStep) {
                 const t0 = (i / segments) * Math.PI * 2;
-                const t1 = ((i + 1) / segments) * Math.PI * 2;
+                const t1 = (((i + QUALITY.railStep) % segments) / segments) * Math.PI * 2;
                 const a = ellipsePoint(baseRx - 0.95 * u, baseRz - 0.95 * u, t0);
                 const b = ellipsePoint(baseRx - 0.95 * u, baseRz - 0.95 * u, t1);
-                const post = new THREE.Mesh(new THREE.CylinderGeometry(railPostR, railPostR, railPostH * 0.85, 6), railMat);
+                const post = new THREE.Mesh(new THREE.CylinderGeometry(railPostR, railPostR, railPostH * 0.85, QUALITY.simplifySeats ? 5 : 6), railMat);
                 post.position.set(a.x, railPostH * 0.45, a.z);
                 scene.add(post);
                 registerBleacherBox(a.x, railPostH * 0.45, a.z, 0.05, railPostH * 0.4, 0.05, 0.35, 'rail');
                 addRailSegment(a.x, railPostH * 0.8, a.z, b.x, b.z);
-                addRailSegment(a.x, railPostH * 0.45, a.z, b.x, b.z);
+                if (!QUALITY.simplifySeats) {
+                    addRailSegment(a.x, railPostH * 0.45, a.z, b.x, b.z);
+                }
             }
 
             for (let r = 0; r < rows; r += 1) {
@@ -582,21 +681,15 @@
 
         function createSpectator(scale) {
             const s = scale;
-            const skin = new THREE.MeshStandardMaterial({
-                color: SKIN_TONES[(Math.random() * SKIN_TONES.length) | 0],
-                roughness: 0.88,
-                metalness: 0.02
-            });
-            const shirt = new THREE.MeshStandardMaterial({
-                color: SHIRT_COLORS[(Math.random() * SHIRT_COLORS.length) | 0],
-                roughness: 0.72,
-                metalness: 0.04
-            });
-            const pants = new THREE.MeshStandardMaterial({
-                color: PANTS_COLORS[(Math.random() * PANTS_COLORS.length) | 0],
-                roughness: 0.8,
-                metalness: 0.03
-            });
+            function bodyMat(color, roughness, metalness) {
+                if (lowPower) {
+                    return new THREE.MeshLambertMaterial({ color });
+                }
+                return new THREE.MeshStandardMaterial({ color, roughness, metalness });
+            }
+            const skin = bodyMat(SKIN_TONES[(Math.random() * SKIN_TONES.length) | 0], 0.88, 0.02);
+            const shirt = bodyMat(SHIRT_COLORS[(Math.random() * SHIRT_COLORS.length) | 0], 0.72, 0.04);
+            const pants = bodyMat(PANTS_COLORS[(Math.random() * PANTS_COLORS.length) | 0], 0.8, 0.03);
 
             const root = new THREE.Group();
             const hips = new THREE.Group();
@@ -608,7 +701,8 @@
             const torso = makeLimb(new THREE.BoxGeometry(0.3 * s, 0.36 * s, 0.18 * s), shirt, 0, 0.3 * s, 0);
             hips.add(torso);
 
-            const head = makeLimb(new THREE.SphereGeometry(0.11 * s, 8, 8), skin, 0, 0.56 * s, 0.01 * s);
+            const headSeg = lowPower ? 5 : 8;
+            const head = makeLimb(new THREE.SphereGeometry(0.11 * s, headSeg, headSeg), skin, 0, 0.56 * s, 0.01 * s);
             hips.add(head);
 
             function makeArm(side) {
@@ -633,7 +727,7 @@
                 const lower = makeLimb(new THREE.BoxGeometry(0.09 * s, 0.24 * s, 0.09 * s), pants, 0, -0.12 * s, 0);
                 const foot = makeLimb(
                     new THREE.BoxGeometry(0.1 * s, 0.05 * s, 0.16 * s),
-                    new THREE.MeshStandardMaterial({ color: 0x222222, roughness: 0.7 }),
+                    bodyMat(0x222222, 0.7, 0.05),
                     0,
                     -0.26 * s,
                     0.03 * s
@@ -690,6 +784,7 @@
                 cheerT: 0,
                 cheerPhase: 0,
                 cheerDelay: 0,
+                cheerFrozen: false,
                 angryT: 0,
                 angryPhase: 0,
                 angryPending: false,
@@ -754,20 +849,13 @@
                 npc.cheerDelay = Math.random() * 0.4;
                 npc.cheerT = 2.4 + Math.random() * 1.6;
                 npc.cheerPhase = Math.random() * Math.PI * 2;
+                npc.cheerFrozen = false;
             }
         }
 
-        function updateCheerPose(npc, dt) {
-            if (npc.cheerDelay > 0) {
-                npc.cheerDelay -= dt;
-                return false;
-            }
-            if (!(npc.cheerT > 0)) return false;
-            npc.cheerT -= dt;
-            npc.cheerPhase += dt * (9.5 + (iHash(npc) % 5) * 0.35);
+        function applyCheerFrame(npc) {
             const wave = Math.sin(npc.cheerPhase);
             const wave2 = Math.sin(npc.cheerPhase * 1.27 + 0.8);
-            // Tangan ke atas, goyang — sorak.
             npc.armL.rotation.set(-2.15 + wave * 0.4, 0.15, 0.55 + wave * 0.3);
             npc.armR.rotation.set(-2.1 + wave2 * 0.4, -0.15, -0.55 - wave2 * 0.3);
             npc.armLElbow.rotation.set(-0.25 + wave * 0.15, 0, 0);
@@ -780,11 +868,37 @@
             } else if (npc.mode === 'walking' || npc.mode === 'returning') {
                 npc.hips.position.y = 0.55 * npc.scale + Math.abs(wave) * 0.03;
             }
+        }
+
+        function updateCheerPose(npc, dt) {
+            if (npc.cheerFrozen) return true;
+            if (npc.cheerDelay > 0) {
+                npc.cheerDelay -= dt;
+                return false;
+            }
+            if (!(npc.cheerT > 0)) return false;
+            npc.cheerT -= dt;
+            npc.cheerPhase += dt * (9.5 + (iHash(npc) % 5) * 0.35);
+            applyCheerFrame(npc);
             if (npc.cheerT <= 0) {
                 npc.cheerT = 0;
+                if (scored) {
+                    // Freeze di ujung pose sorak — jangan reset ke duduk.
+                    applyCheerFrame(npc);
+                    npc.cheerFrozen = true;
+                    return true;
+                }
                 if (npc.mode === 'seated') poseSeated(npc);
             }
             return true;
+        }
+
+        function crowdStillCheering() {
+            for (let i = 0; i < spectators.length; i += 1) {
+                const npc = spectators[i];
+                if (npc.cheerDelay > 0 || npc.cheerT > 0) return true;
+            }
+            return false;
         }
 
         function iHash(npc) {
@@ -1530,15 +1644,48 @@
         (function buildSpectators() {
             if (!seatSlots.length) return;
             const s = (walkPath && walkPath.u) || 1.5;
-            for (let i = 0; i < seatSlots.length; i += 1) {
+            const lookDir = new THREE.Vector3().subVectors(lookHome, camHome).normalize();
+            const rankedSeats = seatSlots.map((seat, idx) => {
+                const to = new THREE.Vector3(
+                    seat.x - camHome.x,
+                    (seat.y + 0.6) - camHome.y,
+                    seat.z - camHome.z
+                );
+                const dist = to.length();
+                const align = dist > 0.01 ? to.normalize().dot(lookDir) : -1;
+                return { seat, idx, score: align * 3 - Math.abs(dist - 16) * 0.04, align };
+            }).sort((a, b) => b.score - a.score);
+
+            const chosen = [];
+            for (let i = 0; i < rankedSeats.length && chosen.length < QUALITY.maxNpcs; i += 1) {
+                const row = rankedSeats[i];
+                if (QUALITY.seatStride > 1 && (row.idx % QUALITY.seatStride) !== 0 && row.align < 0.72) {
+                    continue;
+                }
+                chosen.push(row.seat);
+            }
+            // Pastikan bangku menghadap kamera terisi dulu.
+            for (let i = 0; i < rankedSeats.length && chosen.length < Math.min(12, QUALITY.maxNpcs); i += 1) {
+                const seat = rankedSeats[i].seat;
+                if (chosen.indexOf(seat) < 0) chosen.push(seat);
+            }
+
+            for (let i = 0; i < chosen.length; i += 1) {
                 const npc = createSpectator(s * 0.92);
-                placeSpectatorOnSeat(npc, seatSlots[i]);
+                placeSpectatorOnSeat(npc, chosen[i]);
+                if (lowPower) {
+                    npc.root.traverse((obj) => {
+                        if (obj.isMesh) {
+                            obj.castShadow = false;
+                            obj.receiveShadow = false;
+                        }
+                    });
+                }
                 scene.add(npc.root);
                 spectators.push(npc);
             }
             // Minimal 2 orang jalan dari bangku yang lurus kamera → 2 bangku kosong di depan view.
             if (walkPath && spectators.length) {
-                const lookDir = new THREE.Vector3().subVectors(lookHome, camHome).normalize();
                 const ranked = spectators.map((npc) => {
                     const seat = npc.seat;
                     const to = new THREE.Vector3(
@@ -1564,7 +1711,7 @@
                     }).sort((a, b) => b.score - a.score);
                 }
 
-                const walkCount = Math.max(2, Math.min(4, pool.length));
+                const walkCount = Math.max(2, Math.min(QUALITY.walkers, pool.length));
                 for (let w = 0; w < walkCount; w += 1) {
                     const npc = pool[w].npc;
                     if (npc.mode !== 'seated') continue;
@@ -1633,6 +1780,13 @@
             }
         }
 
+        function clearSpectatorHitFx() {
+            for (let i = spectatorHitFx.length - 1; i >= 0; i -= 1) {
+                scene.remove(spectatorHitFx[i].root);
+            }
+            spectatorHitFx.length = 0;
+        }
+
         function clearVictoryConfetti() {
             for (let i = 0; i < victoryConfetti.length; i += 1) {
                 const piece = victoryConfetti[i];
@@ -1643,9 +1797,60 @@
             victoryConfetti.length = 0;
         }
 
+        function resetCrowdState() {
+            clearSpectatorHitFx();
+            clearVictoryConfetti();
+            for (let i = 0; i < spectators.length; i += 1) {
+                const npc = spectators[i];
+                clearAngryBubble(npc);
+                npc.cheerT = 0;
+                npc.cheerDelay = 0;
+                npc.cheerPhase = 0;
+                npc.cheerFrozen = false;
+                npc.angryT = 0;
+                npc.angryPending = false;
+                npc.angryPhase = 0;
+                npc.path = null;
+                npc.pathIndex = 0;
+                npc.pathWait = 0;
+                npc.pathLane = 0;
+                npc.returnTarget = null;
+                npc.hitCooldown = 0;
+                npc.recoverT = 0;
+                npc.getUpT = 0;
+                npc.grounded = false;
+                npc.stuckT = 0;
+                npc.stuckPos = null;
+                npc.vel.set(0, 0, 0);
+                npc.spin.set(0, 0, 0);
+                npc.joints.forEach((j) => {
+                    if (j.userData.av) j.userData.av.set(0, 0, 0);
+                });
+
+                if (npc.cameraLine && walkPath) {
+                    npc.mode = 'walking';
+                    npc.prevMode = 'walking';
+                    npc.walkTimer = 14 + Math.random() * 10;
+                    npc.walkDir = Math.random() < 0.5 ? 1 : -1;
+                    npc.walkPhase = Math.random() * Math.PI * 2;
+                    if (npc.seat) {
+                        npc.walkAngle = Math.atan2(npc.seat.z - boundCz, npc.seat.x - boundCx);
+                    }
+                    poseStanding(npc);
+                    const p = ellipsePoint(walkPath.rx, walkPath.rz, npc.walkAngle);
+                    npc.root.position.set(p.x, walkPath.y, p.z);
+                    faceEllipseTangent(npc, walkPath.rx, walkPath.rz, npc.walkAngle, npc.walkDir);
+                } else if (npc.seat) {
+                    npc.prevMode = 'seated';
+                    placeSpectatorOnSeat(npc, npc.seat);
+                    poseSeated(npc);
+                }
+            }
+        }
+
         function spawnVictoryConfetti() {
             clearVictoryConfetti();
-            const count = 96;
+            const count = QUALITY.confetti;
             for (let i = 0; i < count; i += 1) {
                 const w = 0.05 + Math.random() * 0.11;
                 const h = 0.03 + Math.random() * 0.09;
@@ -1660,7 +1865,7 @@
                     })
                 );
                 // Sebaran di atas ring / setengah lapangan menghadap kamera.
-                const burst = i < 40;
+                const burst = i < Math.floor(count * 0.42);
                 mesh.position.set(
                     burst ? (Math.random() - 0.5) * 2.4 : (Math.random() - 0.5) * 7.5,
                     burst ? rimY + 0.6 + Math.random() * 1.8 : 3.2 + Math.random() * 2.8,
@@ -1724,14 +1929,16 @@
         function updateSpectators(dt) {
             updateSpectatorHitFx(dt);
             updateVictoryConfetti(dt);
-            if (Math.random() < dt * 0.08) startRandomWalker();
+            if (Math.random() < dt * (lowPower ? 0.035 : 0.08)) startRandomWalker();
 
             for (let i = 0; i < spectators.length; i += 1) {
                 const npc = spectators[i];
                 if (npc.hitCooldown > 0) npc.hitCooldown -= dt;
 
                 if (npc.mode === 'seated') {
-                    if (!updateCheerPose(npc, dt)) {
+                    if (npc.cheerT > 0 || npc.cheerDelay > 0) {
+                        updateCheerPose(npc, dt);
+                    } else if (QUALITY.idleHead && (i & 1) === (Math.floor(performance.now() / 120) & 1)) {
                         npc.head.rotation.y = Math.sin(performance.now() * 0.001 + i) * 0.12;
                     }
                     continue;
@@ -1744,7 +1951,7 @@
                     npc.root.position.set(p.x, walkPath.y, p.z);
                     faceEllipseTangent(npc, walkPath.rx, walkPath.rz, npc.walkAngle, npc.walkDir);
                     constrainNpcToTribune(npc, true);
-                    separateActiveNpcs(npc);
+                    if (!lowPower) separateActiveNpcs(npc);
                     const cheering = updateCheerPose(npc, dt);
                     if (!cheering) {
                         const swing = Math.sin(npc.walkPhase) * 0.55;
@@ -1965,7 +2172,7 @@
         const rimR = 0.42;
         const rimTube = 0.045;
         const rim = new THREE.Mesh(
-            new THREE.TorusGeometry(rimR, rimTube, 12, 48),
+            new THREE.TorusGeometry(rimR, rimTube, lowPower ? 6 : 12, lowPower ? 24 : 48),
             new THREE.MeshBasicMaterial({ color: 0xff2200 })
         );
         rim.rotation.x = Math.PI / 2;
@@ -1977,8 +2184,9 @@
         const netMat = new THREE.LineBasicMaterial({ color: 0xffffff });
         const netBlue = new THREE.LineBasicMaterial({ color: 0x4d7dff });
         const NET_DEPTH = 0.68;
-        for (let i = 0; i < 16; i += 1) {
-            const a = (i / 16) * Math.PI * 2;
+        const NET_COUNT = QUALITY.netLite ? 8 : 16;
+        for (let i = 0; i < NET_COUNT; i += 1) {
+            const a = (i / NET_COUNT) * Math.PI * 2;
             const top = new THREE.Vector3(Math.cos(a) * rimR, rimY, rimZ + Math.sin(a) * rimR * 0.55);
             const mid = new THREE.Vector3(Math.cos(a) * rimR * 0.72, rimY - NET_DEPTH * 0.45, rimZ + Math.sin(a) * rimR * 0.28);
             const bot = new THREE.Vector3(Math.cos(a) * rimR * 0.38, rimY - NET_DEPTH, rimZ + Math.sin(a) * rimR * 0.12);
@@ -2017,6 +2225,9 @@
             }
             netEnergy = Math.max(0, netEnergy - dt * 1.15);
             netOpen = Math.max(0, netOpen - dt * 0.85);
+            if (QUALITY.netLite && netEnergy < 0.02 && netOpen < 0.02 && !scoredNow) {
+                return;
+            }
             const tNow = performance.now() * 0.001;
 
             netStrands.forEach((s) => {
@@ -2120,33 +2331,40 @@
 
         function makeBall() {
             const g = new THREE.Group();
-            const body = new THREE.Mesh(
-                new THREE.SphereGeometry(0.18, 28, 20),
-                new THREE.MeshStandardMaterial({
+            const ballSegW = lowPower ? 12 : 28;
+            const ballSegH = lowPower ? 10 : 20;
+            const bodyMat = lowPower
+                ? new THREE.MeshLambertMaterial({ color: 0xff7a18, emissive: 0x3a1200 })
+                : new THREE.MeshStandardMaterial({
                     color: 0xff7a18,
                     roughness: 0.45,
                     metalness: 0.04,
                     emissive: 0x4a1800,
                     emissiveIntensity: 0.35
-                })
+                });
+            const body = new THREE.Mesh(
+                new THREE.SphereGeometry(0.18, ballSegW, ballSegH),
+                bodyMat
             );
-            body.castShadow = true;
+            body.castShadow = QUALITY.shadows;
             g.add(body);
-            const seamMat = new THREE.MeshStandardMaterial({ color: 0x1a1a1a });
-            const seam = new THREE.TorusGeometry(0.181, 0.008, 8, 40);
-            const a = new THREE.Mesh(seam, seamMat);
-            const b = new THREE.Mesh(seam, seamMat);
-            b.rotation.y = Math.PI / 2;
-            const c = new THREE.Mesh(seam, seamMat);
-            c.rotation.x = Math.PI / 2;
-            g.add(a, b, c);
+            if (!lowPower) {
+                const seamMat = new THREE.MeshStandardMaterial({ color: 0x1a1a1a });
+                const seam = new THREE.TorusGeometry(0.181, 0.008, 8, 40);
+                const a = new THREE.Mesh(seam, seamMat);
+                const b = new THREE.Mesh(seam, seamMat);
+                b.rotation.y = Math.PI / 2;
+                const c = new THREE.Mesh(seam, seamMat);
+                c.rotation.x = Math.PI / 2;
+                g.add(a, b, c);
+            }
             return g;
         }
 
         const ballRadius = 0.18;
         const rackZ = BALL_Z;
         const rack = [];
-        const MAX_SPENT_BALLS = 8;
+        const MAX_SPENT_BALLS = lowPower ? 4 : 8;
         let rackSerial = 0;
 
         function spawnRackBall() {
@@ -2163,6 +2381,10 @@
             ball.userData.prevY = ballRadius;
             ball.userData.bounceCount = 0;
             ball.userData.escapedArena = false;
+            ball.userData.flightT = 0;
+            ball.userData.settleT = 0;
+            ball.userData.bleacherLand = false;
+            ball.userData.shotPower = 0;
             ball.userData.rackIndex = rackSerial;
             rackSerial += 1;
             scene.add(ball);
@@ -2212,18 +2434,177 @@
         const FLOOR_FRICTION = 0.9;
 
         const aimGeo = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
-        const aim = new THREE.Line(aimGeo, new THREE.LineBasicMaterial({
-            color: 0xfff3c4, transparent: true, opacity: 0.85
+        const aimGlow = QUALITY.aimGlow
+            ? new THREE.Line(aimGeo, new THREE.LineDashedMaterial({
+                color: 0xffffff,
+                dashSize: 0.32,
+                gapSize: 0.18,
+                transparent: true,
+                opacity: 0.95,
+                depthTest: true
+            }))
+            : null;
+        const aim = new THREE.Line(aimGeo, new THREE.LineDashedMaterial({
+            color: 0xff5a00,
+            dashSize: 0.32,
+            gapSize: 0.18,
+            transparent: true,
+            opacity: 1,
+            depthTest: true
         }));
+        if (aimGlow) {
+            aimGlow.renderOrder = 2;
+            aimGlow.visible = false;
+            scene.add(aimGlow);
+        }
+        aim.renderOrder = 3;
         aim.visible = false;
         scene.add(aim);
 
-        const trailPoints = [];
-        const trailGeo = new THREE.BufferGeometry();
-        const trail = new THREE.Line(trailGeo, new THREE.LineBasicMaterial({
-            color: 0xffb347, transparent: true, opacity: 0.75
-        }));
-        scene.add(trail);
+        const aimEndSeg = lowPower ? 8 : 14;
+        const aimEnd = new THREE.Mesh(
+            new THREE.SphereGeometry(0.14, aimEndSeg, aimEndSeg),
+            new THREE.MeshBasicMaterial({ color: 0xff3b00 })
+        );
+        aimEnd.visible = false;
+        scene.add(aimEnd);
+
+        const aimEndHalo = QUALITY.aimHalo
+            ? new THREE.Mesh(
+                new THREE.SphereGeometry(0.2, aimEndSeg, aimEndSeg),
+                new THREE.MeshBasicMaterial({
+                    color: 0xffffff,
+                    transparent: true,
+                    opacity: 0.55,
+                    depthWrite: false
+                })
+            )
+            : null;
+        if (aimEndHalo) {
+            aimEndHalo.visible = false;
+            scene.add(aimEndHalo);
+        }
+
+        const aimEndRing = new THREE.Mesh(
+            new THREE.RingGeometry(0.2, 0.34, lowPower ? 16 : 28),
+            new THREE.MeshBasicMaterial({
+                color: 0xff5a00,
+                side: THREE.DoubleSide,
+                transparent: true,
+                opacity: 0.95,
+                depthWrite: false
+            })
+        );
+        aimEndRing.rotation.x = -Math.PI / 2;
+        aimEndRing.visible = false;
+        scene.add(aimEndRing);
+
+        function setAimVisible(on) {
+            aim.visible = on;
+            if (aimGlow) aimGlow.visible = on;
+            aimEnd.visible = on;
+            if (aimEndHalo) aimEndHalo.visible = on;
+            aimEndRing.visible = on;
+        }
+
+        const fireGroup = new THREE.Group();
+        scene.add(fireGroup);
+        const fireGeo = new THREE.SphereGeometry(1, lowPower ? 4 : 6, lowPower ? 4 : 6);
+        const FIRE_COLORS = [0xff1a00, 0xff4d00, 0xff8800, 0xffcc33, 0xfff2a8];
+        const firePoolSize = QUALITY.firePool;
+        const fireBits = [];
+        for (let i = 0; i < firePoolSize; i += 1) {
+            const mat = new THREE.MeshBasicMaterial({
+                color: FIRE_COLORS[i % FIRE_COLORS.length],
+                transparent: true,
+                opacity: 0,
+                depthWrite: false,
+                blending: lowPower ? THREE.NormalBlending : THREE.AdditiveBlending
+            });
+            const mesh = new THREE.Mesh(fireGeo, mat);
+            mesh.visible = false;
+            mesh.scale.setScalar(0.01);
+            fireGroup.add(mesh);
+            fireBits.push({
+                mesh,
+                life: 0,
+                maxLife: 0.4,
+                vx: 0,
+                vy: 0,
+                vz: 0,
+                spin: 0
+            });
+        }
+        let fireCursor = 0;
+        let fireEmitAcc = 0;
+
+        function clearFireTrail() {
+            for (let i = 0; i < fireBits.length; i += 1) {
+                const bit = fireBits[i];
+                bit.life = 0;
+                bit.mesh.visible = false;
+                bit.mesh.material.opacity = 0;
+            }
+            fireEmitAcc = 0;
+        }
+
+        function emitFireTrail(pos, vel, dt, powerRatio) {
+            const p = Math.max(0, Math.min(1, powerRatio == null ? 0.5 : powerRatio));
+            // LOW kecil → FULL besar (ukuran, sebaran, kepadatan).
+            const sizeMul = 0.38 + p * 1.72;
+            const spreadMul = 0.5 + p * 1.35;
+            const emitMul = 0.42 + p * 1.35;
+            const lifeMul = 0.7 + p * 0.55;
+            const speed = Math.hypot(vel.x, vel.y, vel.z);
+            fireEmitAcc += dt * QUALITY.fireEmit * emitMul * (0.65 + Math.min(1.4, speed * 0.18));
+            while (fireEmitAcc >= 1) {
+                fireEmitAcc -= 1;
+                const bit = fireBits[fireCursor];
+                fireCursor = (fireCursor + 1) % fireBits.length;
+                const spread = (0.08 + Math.random() * 0.16) * spreadMul;
+                bit.mesh.position.set(
+                    pos.x + (Math.random() - 0.5) * spread,
+                    pos.y + (Math.random() - 0.5) * spread * 0.7,
+                    pos.z + (Math.random() - 0.5) * spread
+                );
+                bit.vx = -vel.x * 0.12 + (Math.random() - 0.5) * 0.55 * spreadMul;
+                bit.vy = (0.28 + Math.random() * 1.0) * (0.75 + p * 0.55) - vel.y * 0.05;
+                bit.vz = -vel.z * 0.12 + (Math.random() - 0.5) * 0.55 * spreadMul;
+                bit.maxLife = ((lowPower ? 0.16 : 0.26) + Math.random() * (lowPower ? 0.2 : 0.36)) * lifeMul;
+                bit.life = bit.maxLife;
+                bit.spin = (Math.random() - 0.5) * (6 + p * 6);
+                bit.mesh.material.color.setHex(FIRE_COLORS[(Math.random() * FIRE_COLORS.length) | 0]);
+                bit.mesh.visible = true;
+                const s0 = (0.035 + Math.random() * 0.085) * sizeMul;
+                bit.mesh.scale.setScalar(s0);
+                bit.mesh.userData.baseScale = s0;
+            }
+        }
+
+        function updateFireTrail(dt) {
+            for (let i = 0; i < fireBits.length; i += 1) {
+                const bit = fireBits[i];
+                if (bit.life <= 0) continue;
+                bit.life -= dt;
+                if (bit.life <= 0) {
+                    bit.mesh.visible = false;
+                    bit.mesh.material.opacity = 0;
+                    continue;
+                }
+                const t = bit.life / bit.maxLife;
+                bit.mesh.position.x += bit.vx * dt;
+                bit.mesh.position.y += bit.vy * dt;
+                bit.mesh.position.z += bit.vz * dt;
+                bit.vy += 1.8 * dt;
+                bit.vx *= 0.97;
+                bit.vz *= 0.97;
+                bit.mesh.rotation.y += bit.spin * dt;
+                const grow = bit.mesh.userData.baseScale * (0.7 + (1 - t) * 1.6);
+                bit.mesh.scale.setScalar(grow);
+                // Api: inti putih-kuning → oranye → merah pudar
+                bit.mesh.material.opacity = Math.min(1, t * 1.35) * (0.55 + t * 0.45);
+            }
+        }
 
         function playableBalls() {
             return rack.filter((b) => !b.userData.spent && !b.userData.simulating);
@@ -2236,7 +2617,7 @@
             flash.dataset.tone = tone || 'ok';
             const status = document.getElementById('captcha-game-status');
             if (status && tone === 'miss') {
-                status.textContent = 'Meleset — bola baru siap sebentar.';
+                status.textContent = msg('msgMiss');
                 status.dataset.state = 'play';
             }
         }
@@ -2294,20 +2675,15 @@
             if (settleTimer) window.clearTimeout(settleTimer);
             settleTimer = window.setTimeout(() => {
                 settleTimer = 0;
-                if (scored) return;
+                if (scored || timeExpired) return;
                 if (playableBalls().length) return;
                 active = spawnRackBall();
                 pruneSpentBalls();
-                trailPoints.length = 0;
-                trailGeo.setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
+                clearFireTrail();
                 powerPhase = 0;
                 autoPower = 0;
                 lockedPower = 0;
                 if (typeof setPowerMeter === 'function') setPowerMeter(0);
-                const status = document.getElementById('captcha-game-status');
-                if (status) {
-                    status.textContent = 'Tahan bola — lepas di GOOD atau PERFECT agar sesuai jalur.';
-                }
             }, 2000);
         }
 
@@ -2323,9 +2699,8 @@
             shotLive = false;
             netEnergy = 0;
             netOpen = 0;
-            aim.visible = false;
-            trailPoints.length = 0;
-            trailGeo.setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
+            setAimVisible(false);
+            clearFireTrail();
             camLook.copy(lookHome);
             camera.position.copy(camHome);
             camera.lookAt(camLook);
@@ -2338,13 +2713,17 @@
                 scoreValue = 0;
                 timeLeft = 45;
                 timerArmed = false;
+                timeExpired = false;
+                crowdActive = false;
+                scoreFreeze = false;
                 paintBoard();
                 setCaptchaPassed(false);
                 host.classList.remove('is-scored');
-                clearVictoryConfetti();
+                resetCrowdState();
+                setRetryVisible(false);
                 if (flash) {
                     flash.hidden = true;
-                    flash.textContent = 'SKOR!';
+                    flash.textContent = 'VERIFIED';
                     flash.dataset.tone = 'ok';
                 }
             }
@@ -2391,7 +2770,7 @@
                 scoreValue = 1;
                 paintBoard();
                 host.classList.add('is-scored');
-                showFlash('SKOR!', 'ok');
+                showFlash('VERIFIED', 'ok');
                 setCaptchaPassed(true);
                 humanTouched = true;
                 netEnergy = 1.6;
@@ -2517,6 +2896,35 @@
                     vel.y *= 0.9;
                     vel.z *= 0.94;
                 }
+
+                // Landas di atas tribune/kursi = miss (sama seperti lantai).
+                if (ny > 0.55 && p.y >= box.maxY - r * 0.35) {
+                    ball.userData.bleacherLand = true;
+                    if (vel.y < 0) vel.y *= -box.rest * 0.55;
+                    vel.x *= 0.72;
+                    vel.z *= 0.72;
+                }
+            }
+        }
+
+        function maybeMissOutOfPlay(ball, vel, dt) {
+            if (scored || ball.userData.missHandled || !ball.userData.inFlight) return;
+            ball.userData.flightT = (ball.userData.flightT || 0) + dt;
+            const speed = Math.hypot(vel.x, vel.y, vel.z);
+            if (speed < 0.65) ball.userData.settleT = (ball.userData.settleT || 0) + dt;
+            else ball.userData.settleT = 0;
+
+            if (ball.userData.bleacherLand) {
+                handleMiss(ball);
+                return;
+            }
+            // Macet di atas lantai (mis. di antara penonton / sela bangku).
+            if (ball.userData.settleT > 0.5 && ball.position.y > ballRadius + 0.06) {
+                handleMiss(ball);
+                return;
+            }
+            if (ball.userData.flightT > 5.5) {
+                handleMiss(ball);
             }
         }
 
@@ -2563,10 +2971,30 @@
 
             if (!scored && timerArmed && timeLeft > 0) {
                 timeLeft -= dt;
-                if (timeEl && Math.floor(timeLeft) !== Number(timeEl.textContent)) paintBoard();
+                if (timeLeft <= 0) {
+                    timeLeft = 0;
+                    paintBoard();
+                    onTimeUp();
+                } else if (timeEl && Math.floor(timeLeft) !== Number(timeEl.textContent)) {
+                    paintBoard();
+                }
             }
 
-            updateSpectators(dt);
+            // TIME OUT / setelah sorak skor: freeze scene.
+            if (timeExpired || scoreFreeze) {
+                renderer.render(scene, camera);
+                return;
+            }
+
+            if (crowdActive || scored) {
+                updateSpectators(dt);
+            }
+
+            if (scored && !crowdStillCheering()) {
+                scoreFreeze = true;
+                renderer.render(scene, camera);
+                return;
+            }
 
             let tracked = null;
             rack.forEach((ball) => {
@@ -2585,6 +3013,7 @@
                 collideBleachers(ball, vel);
                 collideSpectators(ball, vel);
                 if (!ball.userData.spent) checkScore(ball);
+                maybeMissOutOfPlay(ball, vel, dt);
 
                 if (ball.position.y <= ballRadius) {
                     const firstFloor = !ball.userData.missHandled && !scored;
@@ -2597,9 +3026,7 @@
             });
 
             if (tracked && tracked.userData.simulating && !tracked.userData.spent) {
-                trailPoints.push(tracked.position.clone());
-                if (trailPoints.length > 64) trailPoints.shift();
-                if (trailPoints.length > 1) trailGeo.setFromPoints(trailPoints);
+                emitFireTrail(tracked.position, tracked.userData.vel, dt, tracked.userData.shotPower);
                 camLook.lerp(new THREE.Vector3(
                     lookHome.x + tracked.position.x * 0.12,
                     Math.max(lookHome.y, tracked.position.y * 0.22 + 0.9),
@@ -2617,23 +3044,25 @@
                 updateAimPreview();
                 updateNet(dt, null, scored);
             }
+            updateFireTrail(dt);
 
             renderer.render(scene, camera);
         }
 
         function onPointerDown(event) {
-            if (scored || shotLive || dragging) return;
+            if (scored || shotLive || dragging || timeExpired) return;
             event.preventDefault();
             const ball = pickBall(event);
             if (!ball || ball.userData.simulating) return;
             humanTouched = true;
             timerArmed = true;
+            crowdActive = true;
             active = ball;
             dragging = true;
             powerPhase = 0;
             autoPower = 0;
             setPowerMeter(0);
-            trailPoints.length = 0;
+            clearFireTrail();
             setPointer(event);
             dragStart.copy(dragNow);
             if (typeof renderer.domElement.setPointerCapture === 'function') {
@@ -2698,35 +3127,44 @@
         }
 
         function computeAimDirection(pullX, pullY) {
+            // Tarik layar: +X kanan, +Y ke bawah.
+            // Lemparan = kebalikan tarikan (seperti basketball shooting umum).
             const back = Math.max(0, pullY);
             let dirX = -pullX;
-            let dirZ = -Math.max(back, 40);
-            const dirLen = Math.hypot(dirX, dirZ) || 1;
+            let dirZ = -back;
+            const dirLen = Math.hypot(dirX, dirZ);
+            if (dirLen < 1e-3) {
+                // Belum ditarik — default lurus ke ring.
+                return { dirX: 0, dirZ: -1, back: 0, pullLen: 0 };
+            }
             dirX /= dirLen;
             dirZ /= dirLen;
-            return { dirX, dirZ, back };
+            return { dirX, dirZ, back, pullLen: dirLen };
         }
 
-        // Preview jalur seperti sebelum power bar: mengikuti tarikan bebas (tidak dibatasi bar).
+        // Preview & lemparan: arah jatuh mengikuti vektor tarikan (bukan paksa melengkung ke ring).
         function computeAimArc(start, pullX, pullY) {
             const g = SHOT_G;
-            const { dirX, dirZ, back } = computeAimDirection(pullX, pullY);
-            const pullLen = Math.hypot(pullX, back);
-            const power = pullLen / 140;
+            const { dirX, dirZ, back, pullLen } = computeAimDirection(pullX, pullY);
+            const len = Math.max(pullLen, Math.hypot(pullX, back));
+            const power = len / 140;
 
+            // Assist ke ring hanya jika tarikan sangat pendek; tarikan jelas = ikuti arah 100%.
+            const assist = Math.max(0, 1 - len / 95) * 0.16;
             const toRimX = -start.x;
             const toRimZ = rimZ - start.z;
             const toRimLen = Math.hypot(toRimX, toRimZ) || 1;
-            const rimMix = 0.28;
-            let fx = dirX * (1 - rimMix) + (toRimX / toRimLen) * rimMix;
-            let fz = dirZ * (1 - rimMix) + (toRimZ / toRimLen) * rimMix;
+            let fx = dirX * (1 - assist) + (toRimX / toRimLen) * assist;
+            let fz = dirZ * (1 - assist) + (toRimZ / toRimLen) * assist;
             const fLen = Math.hypot(fx, fz) || 1;
             fx /= fLen;
             fz /= fLen;
 
-            const apexLift = 1.05 + power * 2.15;
+            // Tarik lebih ke bawah → loft lebih tinggi (bola naik dulu); tarik miring → lebih datar.
+            const downRatio = len > 1e-3 ? back / len : 1;
+            const apexLift = 0.75 + power * (1.25 + downRatio * 1.35);
             const vy = Math.sqrt(Math.max(0.5, 2 * g * apexLift));
-            const speed = 2.9 + power * 3.6;
+            const speed = 2.55 + power * 3.9;
             const flightT = (2 * vy) / g;
 
             return {
@@ -2753,6 +3191,57 @@
             };
         }
 
+        function aimPointBlocked(x, y, z, r) {
+            // Lantai
+            if (y <= r + 0.001) return true;
+
+            // Papan (backboard)
+            const boardZ = HOOP_Z - 0.02;
+            if (
+                z - r <= boardZ &&
+                z >= boardZ - 0.3 &&
+                Math.abs(x) <= 0.78 + r * 0.35 &&
+                y >= 2.0 - r &&
+                y <= 3.1 + r
+            ) {
+                return true;
+            }
+
+            // Ring (tabung) — lubang tengah tidak diblok di sini
+            const dx = x;
+            const dz = z - rimZ;
+            const radial = Math.sqrt(dx * dx + dz * dz) || 0.0001;
+            const tubeDist = Math.sqrt(
+                ((radial - rimR) * (radial - rimR)) +
+                ((y - rimY) * (y - rimY))
+            );
+            if (tubeDist < rimTube + r) return true;
+
+            // Net: masuk silinder di bawah ring = ujung jalur di net (tidak tembus ke lantai)
+            if (y < rimY && y > rimY - NET_DEPTH - r && radial < rimR * 0.98 + r * 0.25) {
+                return true;
+            }
+
+            // Tribune / bangku / pagar
+            for (let i = 0; i < bleacherColliders.length; i += 1) {
+                const box = bleacherColliders[i];
+                if (
+                    x + r >= box.minX && x - r <= box.maxX &&
+                    y + r >= box.minY && y - r <= box.maxY &&
+                    z + r >= box.minZ && z - r <= box.maxZ
+                ) {
+                    return true;
+                }
+            }
+
+            // Dinding arena
+            if (y <= WALL_H + r) {
+                if (x <= boundMinX + r || x >= boundMaxX - r) return true;
+                if (z <= boundMinZ + r || z >= boundMaxZ - r) return true;
+            }
+            return false;
+        }
+
         function sampleArcPoints(start, arc, steps) {
             const a = 0.5 * arc.g;
             const b = -arc.vy;
@@ -2765,14 +3254,40 @@
                 const t2 = (-b - root) / (2 * a);
                 tEnd = Math.max(0.45, Math.max(t1, t2));
             }
-            const pts = [];
-            for (let i = 0; i <= steps; i += 1) {
+            const r = ballRadius;
+            const pts = [start.clone()];
+            let prev = start.clone();
+            for (let i = 1; i <= steps; i += 1) {
                 const t = (i / steps) * tEnd;
-                pts.push(new THREE.Vector3(
+                const p = new THREE.Vector3(
                     start.x + arc.vx * t,
                     start.y + arc.vy * t - 0.5 * arc.g * t * t,
                     start.z + arc.vz * t
-                ));
+                );
+                if (aimPointBlocked(p.x, p.y, p.z, r)) {
+                    let lo = 0;
+                    let hi = 1;
+                    const hit = p.clone();
+                    const refine = lowPower ? 5 : 10;
+                    for (let k = 0; k < refine; k += 1) {
+                        const m = (lo + hi) * 0.5;
+                        const mx = prev.x + (p.x - prev.x) * m;
+                        const my = prev.y + (p.y - prev.y) * m;
+                        const mz = prev.z + (p.z - prev.z) * m;
+                        if (aimPointBlocked(mx, my, mz, r)) {
+                            hi = m;
+                            hit.set(mx, my, mz);
+                        } else {
+                            lo = m;
+                        }
+                    }
+                    // Sedikit di permukaan, jangan di dalam objek.
+                    hit.y = Math.max(r, hit.y);
+                    pts.push(hit);
+                    return pts;
+                }
+                pts.push(p);
+                prev.copy(p);
             }
             return pts;
         }
@@ -2786,20 +3301,41 @@
 
         function updateAimPreview() {
             if (!dragging || !active || scored) return;
-            const { pullX, back } = currentPull();
-            const arc = computeAimArc(active.position, pullX, back);
-            aimGeo.setFromPoints(sampleArcPoints(active.position, arc, 40));
-            if (aim.material) aim.material.color.setHex(0xfff3c4);
+            const { pullX, pullY, back } = currentPull();
+            if (back < 6 && Math.abs(pullX) < 6) {
+                setAimVisible(false);
+                return;
+            }
+            const arc = computeAimArc(active.position, pullX, pullY);
+            const pts = sampleArcPoints(active.position, arc, QUALITY.aimSteps);
+            aimGeo.setFromPoints(pts);
+            aim.computeLineDistances();
+            if (aimGlow) aimGlow.computeLineDistances();
+            const end = pts[pts.length - 1];
+            aimEnd.position.copy(end);
+            if (aimEndHalo) aimEndHalo.position.copy(end);
+            // Ring lantai hanya jika ujung benar-benar di lantai; selain itu marker di objek.
+            const onFloor = end.y <= ballRadius + 0.14;
+            if (onFloor) {
+                aimEndRing.position.set(end.x, 0.04, end.z);
+                aimEndRing.visible = true;
+            } else {
+                aimEndRing.visible = false;
+            }
             aim.visible = true;
+            if (aimGlow) aimGlow.visible = true;
+            aimEnd.visible = true;
+            if (aimEndHalo) aimEndHalo.visible = true;
         }
 
         function onPointerMove(event) {
             if (!dragging || !active || scored) return;
             event.preventDefault();
             setPointer(event);
-            const { pullX, back } = currentPull();
+            const { pullX, pullY, back } = currentPull();
+            // Bola ikut arah tarikan (kebalikan lemparan).
             active.position.x = active.userData.home.x + pullX * 0.0045;
-            active.position.y = ballRadius;
+            active.position.y = ballRadius + Math.min(0.35, back * 0.0012);
             active.position.z = active.userData.home.z + back * 0.0055;
             updateAimPreview();
         }
@@ -2808,7 +3344,7 @@
             if (!dragging || !active || scored) return;
             event.preventDefault();
             setPointer(event);
-            const { pullX, back } = currentPull();
+            const { pullX, pullY, back } = currentPull();
             lockedPower = autoPower;
             dragging = false;
             shotLive = true;
@@ -2821,12 +3357,16 @@
             active.userData.prevY = active.position.y;
             active.userData.bounceCount = 0;
             active.userData.escapedArena = false;
-            trailPoints.length = 0;
+            active.userData.flightT = 0;
+            active.userData.settleT = 0;
+            active.userData.bleacherLand = false;
+            clearFireTrail();
 
-            const arc = computeShotArc(active.position, pullX, back, lockedPower);
+            const arc = computeShotArc(active.position, pullX, pullY, lockedPower);
             setPowerMeter(lockedPower);
+            active.userData.shotPower = lockedPower;
             active.userData.vel.set(arc.vx, arc.vy, arc.vz);
-            aim.visible = false;
+            setAimVisible(false);
         }
 
         function onResize() {
@@ -2843,7 +3383,7 @@
         renderer.domElement.addEventListener('pointercancel', () => {
             if (dragging && active && !active.userData.simulating) active.position.copy(active.userData.home);
             dragging = false;
-            aim.visible = false;
+            setAimVisible(false);
             powerPhase = 0;
             autoPower = 0;
             setPowerMeter(0);
@@ -2858,6 +3398,9 @@
         return {
             reset() {
                 resetRack(false);
+            },
+            resize() {
+                onResize();
             },
             destroy() {
                 window.cancelAnimationFrame(animId);
@@ -2901,27 +3444,63 @@
     function setupForm() {
         const form = document.getElementById('contact-form');
         const host = document.getElementById('contact-captcha');
-        if (!form || !host) return;
+        const panel = document.getElementById('contact-captcha-panel');
+        const verifyCheck = document.getElementById('captcha-verify-check');
+        if (!form || !host || !panel || !verifyCheck) return;
 
         const status = document.getElementById('contact-status');
         const refreshBtn = document.getElementById('captcha-refresh');
         const fields = form.querySelectorAll('input, textarea, select');
+        let gameBooting = false;
 
         setCaptchaPassed(false);
+        panel.hidden = true;
+        verifyCheck.checked = false;
 
-        loadThree()
-            .then((THREE) => {
-                try {
-                    game = createBasketGame3D(host, THREE);
-                } catch (err) {
-                    console.error('[contact-3d] init failed', err);
-                    setStatus(status, 'Gagal menyiapkan arena 3D. Muat ulang halaman.', 'error');
+        function ensureGame() {
+            if (game || gameBooting) {
+                if (game && typeof game.resize === 'function') {
+                    window.requestAnimationFrame(() => game.resize());
                 }
-            })
-            .catch((err) => {
-                console.error('[contact-3d] load failed', err);
-                setStatus(status, MSG_NO_WEBGL, 'error');
-            });
+                return;
+            }
+            gameBooting = true;
+            loadThree()
+                .then((THREE) => {
+                    try {
+                        game = createBasketGame3D(host, THREE);
+                        window.requestAnimationFrame(() => {
+                            if (game && typeof game.resize === 'function') game.resize();
+                        });
+                    } catch (err) {
+                        console.error('[contact-3d] init failed', err);
+                        setStatus(status, 'Gagal menyiapkan arena 3D. Muat ulang halaman.', 'error');
+                        verifyCheck.checked = false;
+                        panel.hidden = true;
+                    }
+                })
+                .catch((err) => {
+                    console.error('[contact-3d] load failed', err);
+                    setStatus(status, msg('msgNoWebgl'), 'error');
+                    verifyCheck.checked = false;
+                    panel.hidden = true;
+                })
+                .finally(() => {
+                    gameBooting = false;
+                });
+        }
+
+        verifyCheck.addEventListener('change', () => {
+            humanTouched = true;
+            if (verifyCheck.checked) {
+                panel.hidden = false;
+                ensureGame();
+            } else {
+                panel.hidden = true;
+                setCaptchaPassed(false);
+                if (game) game.reset();
+            }
+        });
 
         if (refreshBtn) {
             refreshBtn.addEventListener('click', () => {
@@ -2932,6 +3511,7 @@
 
         fields.forEach((field) => {
             if (field.matches('[data-contact-trap]')) return;
+            if (field === verifyCheck) return;
             field.addEventListener('focus', () => {
                 humanTouched = true;
             }, { once: true });
@@ -2951,22 +3531,27 @@
             const timeline = document.getElementById('contact-timeline').value;
 
             if (!name || !email || !need || !budget || !timeline) {
-                setStatus(status, MSG_INVALID, 'error');
+                setStatus(status, msg('msgInvalid'), 'error');
+                return;
+            }
+
+            if (!verifyCheck.checked) {
+                setStatus(status, 'Centang “Saya bukan robot” terlebih dahulu.', 'error');
                 return;
             }
 
             if (!captchaPassed) {
-                setStatus(status, MSG_CAPTCHA, 'error');
+                setStatus(status, msg('msgCaptcha'), 'error');
                 return;
             }
 
             if (isBotSubmission(form)) {
-                setStatus(status, MSG_BLOCKED, 'error');
+                setStatus(status, msg('msgBlocked'), 'error');
                 if (game) game.reset();
                 return;
             }
 
-            const subject = encodeURIComponent(`Pesan untuk Rogue Development — ${name}`);
+            const subject = encodeURIComponent(`Pesan untuk Rogue Developer — ${name}`);
             const body = encodeURIComponent(
                 `Nama: ${name}\nEmail: ${email}\nBudget: ${budget}\nTimeline: ${timeline}\n\nKebutuhan:\n${need}`
             );
@@ -2975,16 +3560,16 @@
             try {
                 inbox = resolveInbox();
             } catch (_err) {
-                setStatus(status, MSG_BLOCKED, 'error');
+                setStatus(status, msg('msgBlocked'), 'error');
                 return;
             }
 
             if (!inbox || inbox.indexOf('@') < 1) {
-                setStatus(status, MSG_BLOCKED, 'error');
+                setStatus(status, msg('msgBlocked'), 'error');
                 return;
             }
 
-            setStatus(status, MSG_READY, 'ok');
+            setStatus(status, msg('msgReady'), 'ok');
             window.location.href = `mailto:${inbox}?subject=${subject}&body=${body}`;
             inbox = '';
         });
@@ -3004,8 +3589,8 @@
         const setOpen = (open) => {
             nav.classList.toggle('is-open', open);
             toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-            toggle.setAttribute('aria-label', open ? 'Tutup menu' : 'Buka menu');
-            toggle.textContent = open ? 'Tutup' : 'Menu';
+            toggle.setAttribute('aria-label', msg('navMenuAria'));
+            toggle.textContent = open ? msg('navClose') : msg('navMenu');
         };
 
         toggle.addEventListener('click', () => {
@@ -3017,9 +3602,63 @@
         });
     }
 
+    function setupSiteLang() {
+        if (!window.RogueSiteI18n) return;
+        window.RogueSiteI18n.bind();
+    }
+
+    async function loadIncludes() {
+        const containers = document.querySelectorAll('[data-include]');
+        if (!containers.length) return;
+        await Promise.all([...containers].map(async (el) => {
+            const url = el.getAttribute('data-include');
+            if (!url) return;
+            const response = await fetch(url);
+            if (!response.ok) return;
+            el.outerHTML = await response.text();
+        }));
+    }
+
+    const CONNECT_SOCIALS = [
+        { label: 'GitHub', url: 'https://github.com/rogue-dev-studio', icon: 'github' },
+        { label: 'GitLab', url: 'https://gitlab.com/rogue-dev-studio', icon: 'gitlab' },
+        { label: 'Patreon', url: 'https://www.patreon.com/c/roguedevstudio', icon: 'patreon' },
+        { label: 'itch.io', url: 'https://rogue-dev-studio.itch.io', icon: 'itch' },
+        { label: 'LinkedIn', url: 'https://www.linkedin.com/in/arishadisopiyan/', icon: 'linkedin' },
+        { label: 'Instagram', url: 'https://www.instagram.com/aya.erisu/', icon: 'instagram' }
+    ];
+
+    const PATREON_ICON_SVG =
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><circle cx="14.48" cy="9.73" r="7.23"/><rect x="2" y="2.5" width="4.5" height="19" rx="0.5"/></svg>';
+
+    function connectIconInner(icon) {
+        if (icon === 'patreon') {
+            return `<span class="site-footer-icon-svg" aria-hidden="true">${PATREON_ICON_SVG}</span>`;
+        }
+        const bi = icon === 'itch' ? 'controller' : icon;
+        return `<i class="bi bi-${bi}" aria-hidden="true"></i>`;
+    }
+
+    function renderConnectIcons() {
+        const html = CONNECT_SOCIALS.map((item) => (
+            `<a class="site-footer-social" href="${item.url}" rel="noopener" target="_blank" ` +
+            `aria-label="${item.label}" data-tooltip="${item.label}" title="${item.label}">` +
+            connectIconInner(item.icon) +
+            '</a>'
+        )).join('');
+
+        document.querySelectorAll('.site-footer-socials').forEach((el) => {
+            el.innerHTML = html;
+        });
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
-        setupYear();
-        setupNav();
-        setupForm();
+        loadIncludes().finally(() => {
+            setupYear();
+            setupNav();
+            setupSiteLang();
+            renderConnectIcons();
+            setupForm();
+        });
     });
 })();

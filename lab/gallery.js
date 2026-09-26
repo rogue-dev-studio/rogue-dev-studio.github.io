@@ -43,7 +43,7 @@
     }
 
     const DEFAULT_THUMB = `${window.location.origin}/thumbnail-default.png`;
-    const SVG_FALLBACK = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="100%" height="100%" fill="%23121a16"/><text x="400" y="310" font-family="sans-serif" font-size="28" fill="%23eef5f0" text-anchor="middle">ROGUE.DEV</text></svg>`;
+    const SVG_FALLBACK = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="100%" height="100%" fill="%23121a16"/><text x="400" y="310" font-family="sans-serif" font-size="24" fill="%23eef5f0" text-anchor="middle">ROGUE DEVELOPER</text></svg>`;
 
     function mountDefault(el, title) {
         el.innerHTML = `<img src="${DEFAULT_THUMB}" alt="${escapeHTML(title)}" class="is-fallback">`;

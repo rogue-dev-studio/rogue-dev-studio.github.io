@@ -35,9 +35,21 @@ const AGENTS_META = {
         ],
         problem: 'Skill dan MCP tersebar di banyak repo tanpa satu tempat discovery.',
         approach: 'Asset Store statis di GitHub Pages yang menarik listing dari topic org.',
-        result: 'Satu katalog installable untuk skill dan MCP Rogue Development.',
+        result: 'Satu katalog installable untuk skill dan MCP Rogue Developer.',
         url: 'https://rogue-dev-studio.github.io/rogue-asset-store/',
-        linkLabel: 'Buka store →'
+        linkLabel: 'Buka store →',
+        en: {
+            audience: 'Users of Cursor, Claude Code, and other AI hosts',
+            requirements: [
+                'Public catalog of Rogue skills & MCP servers',
+                'Listings from rogue-asset-skills / rogue-asset-mcp topics',
+                'Install via host CLI (skills add / MCP config)'
+            ],
+            problem: 'Skills and MCP servers are scattered across repos without one discovery place.',
+            approach: 'A static Asset Store on GitHub Pages that pulls org topic listings.',
+            result: 'One installable catalog for Rogue Developer skills and MCP servers.',
+            linkLabel: 'Open store →'
+        }
     },
     'ai-agents-rogue-programmer': {
         title: 'AI Agents Rogue Programmer',
@@ -52,7 +64,18 @@ const AGENTS_META = {
         problem: 'Tim butuh paket agent coding yang ringkas tanpa katalog penuh semua domain.',
         approach: 'Memisahkan edisi Programmer dari katalog utama agar onboarding coding lebih cepat.',
         result: 'Satu paket agent siap pakai khusus alur pengembangan software.',
-        url: 'https://github.com/rogue-dev-studio/ai-agents-rogue-programmer'
+        url: 'https://github.com/rogue-dev-studio/ai-agents-rogue-programmer',
+        en: {
+            audience: 'Developers & coding-assistant workflows',
+            requirements: [
+                'Engineering-focused edition (API, DB, FE, BE)',
+                'Free to use — no required fork or star',
+                'Install on Cursor, Claude Code, and similar hosts'
+            ],
+            problem: 'Teams need a lean coding-agent pack without the full multi-domain catalog.',
+            approach: 'Split the Programmer edition from the main catalog for faster coding onboarding.',
+            result: 'A ready-to-use agent pack focused on software development workflows.'
+        }
     },
     'ai-agents-rogue': {
         title: 'AI Agents Rogue',
@@ -67,7 +90,18 @@ const AGENTS_META = {
         problem: 'AI coding assistant sering jalan tanpa role, rule, dan alur delivery yang konsisten.',
         approach: 'Menstandarkan multi-agent software house (orchestrator, BA, engineer, QA) sebagai katalog terbuka.',
         result: 'Satu sistem agents yang bisa di-install dan dipakai lintas host.',
-        url: 'https://github.com/rogue-dev-studio/ai-agents-rogue'
+        url: 'https://github.com/rogue-dev-studio/ai-agents-rogue',
+        en: {
+            audience: 'Product & engineering teams',
+            requirements: [
+                'Catalog of agents, skills, rules, and command workflows',
+                'E2E or manual mode via WORKMODE',
+                'Portable across Cursor, Claude Code, Antigravity, OpenCode'
+            ],
+            problem: 'AI coding assistants often run without consistent roles, rules, and delivery flow.',
+            approach: 'Standardize a multi-agent software house (orchestrator, BA, engineer, QA) as an open catalog.',
+            result: 'One agent system you can install and use across hosts.'
+        }
     }
 };
 
@@ -88,7 +122,21 @@ const FEATURED_META = {
         problem: 'Pendataan anggota, jadwal, dan absensi masih terpisah dan sulit diaudit.',
         approach: 'Membangun SIJAMA dengan unggulan face recognition kamera lokal (tanpa cloud) untuk absensi pengajian, plus master wilayah, anggota, dan kegiatan.',
         result: 'Operasional organisasi punya satu aplikasi web dengan Docker Compose.',
-        url: 'https://sijama-web.onrender.com'
+        url: 'https://sijama-web.onrender.com',
+        en: {
+            category: 'Information System',
+            audience: 'Organization admins',
+            requirements: [
+                'Menus: Information, Reports, Transactions, Master, Apps (RBAC)',
+                'Study attendance with local-camera face recognition',
+                'Master members, families, locations & hierarchical regions',
+                'Routine schedules, event calendar, and attendance reports',
+                'Responsive PC + mobile (bottom navigation)'
+            ],
+            problem: 'Member data, schedules, and attendance were fragmented and hard to audit.',
+            approach: 'Build SIJAMA with local-camera face recognition (no cloud) for study attendance, plus region, member, and event masters.',
+            result: 'Organization ops run in one web app with Docker Compose.'
+        }
     },
     'laravel-pms': {
         title: 'Project Management System',
@@ -104,7 +152,20 @@ const FEATURED_META = {
         problem: 'Tim kesulitan melihat gambaran kerja proyek sebelum membangun sistem sendiri.',
         approach: 'Menyediakan demo UI manajemen proyek yang bisa langsung dicoba. Bukan PMS produksi.',
         result: 'Alur tugas dan progress terlihat di browser.',
-        url: 'https://demo-pms.netlify.app/'
+        url: 'https://demo-pms.netlify.app/',
+        en: {
+            category: 'Business System',
+            audience: 'Project managers & teams',
+            requirements: [
+                'Manage tasks & progress status',
+                'Team member collaboration',
+                'Project progress dashboard',
+                'Public demo without local install'
+            ],
+            problem: 'Teams struggle to see project work before building their own system.',
+            approach: 'Provide a project-management UI demo you can try immediately. Not a production PMS.',
+            result: 'Task flow and progress are visible in the browser.'
+        }
     },
     'sistem-antrian': {
         title: 'Sistem Antrian',
@@ -120,7 +181,21 @@ const FEATURED_META = {
         problem: 'Bisnis layanan butuh alur antrian yang rapi dan bisa dipantau secara realtime.',
         approach: 'Membangun aplikasi antrian berbasis web untuk operasional harian.',
         result: 'Proses panggil antrian lebih teratur dan mudah diikuti staf maupun pelanggan.',
-        url: 'https://github.com/rogue-dev-studio/sistem-antrian'
+        url: 'https://github.com/rogue-dev-studio/sistem-antrian',
+        en: {
+            category: 'Operations System',
+            audience: 'Service counters & customers',
+            title: 'Queue System',
+            requirements: [
+                'Take a queue number',
+                'Call & update status',
+                'Dashboard & remaining queue',
+                'Display ready for counter monitors'
+            ],
+            problem: 'Service businesses need a tidy queue flow that can be monitored in realtime.',
+            approach: 'Build a web-based queue app for daily operations.',
+            result: 'Calling the queue is more orderly for staff and customers.'
+        }
     },
     'sistem-informasi-klinik': {
         title: 'Sistem Informasi Klinik',
@@ -137,7 +212,22 @@ const FEATURED_META = {
         problem: 'Klinik membutuhkan pencatatan pasien, poliklinik, dan pendaftaran dalam satu alur.',
         approach: 'Merancang aplikasi klinik yang menghubungkan data pasien dan layanan.',
         result: 'Administrasi klinik lebih tertata dari pendaftaran hingga pelayanan.',
-        url: 'https://github.com/rogue-dev-studio/sistem-informasi-klinik'
+        url: 'https://github.com/rogue-dev-studio/sistem-informasi-klinik',
+        en: {
+            category: 'Information System',
+            audience: 'Clinic admins & staff',
+            title: 'Clinic Information System',
+            requirements: [
+                'Authenticated login',
+                'Patient CRUD & search',
+                'Clinic/polyclinic CRUD',
+                'Service registration',
+                'Patient & registration reports'
+            ],
+            problem: 'Clinics need patient, clinic unit, and registration records in one flow.',
+            approach: 'Design a clinic app that connects patient data and services.',
+            result: 'Clinic admin is clearer from registration through care.'
+        }
     },
     'rental-mobil-new': {
         title: 'Rental Mobil',
@@ -153,11 +243,25 @@ const FEATURED_META = {
         problem: 'Bisnis rental perlu mengelola armada, sewa, dan data pelanggan tanpa catatan terpisah-pisah.',
         approach: 'Membangun sistem rental mobil berbasis web untuk operasional usaha.',
         result: 'Proses sewa dan inventaris kendaraan lebih mudah dikelola.',
-        url: 'https://github.com/rogue-dev-studio/rental-mobil-new'
+        url: 'https://github.com/rogue-dev-studio/rental-mobil-new',
+        en: {
+            category: 'Business System',
+            audience: 'Rental owners & staff',
+            title: 'Car Rental',
+            requirements: [
+                'Fleet management',
+                'Customer data',
+                'Rental transactions',
+                'Vehicle availability status'
+            ],
+            problem: 'Rental businesses need fleet, rentals, and customer data without scattered notes.',
+            approach: 'Build a web-based car rental system for day-to-day ops.',
+            result: 'Rentals and vehicle inventory are easier to manage.'
+        }
     }
 };
 
-const SOCIAL_FALLBACK = [
+const CONNECT_SOCIALS = [
     { label: 'GitHub', url: 'https://github.com/rogue-dev-studio', icon: 'github' },
     { label: 'GitLab', url: 'https://gitlab.com/rogue-dev-studio', icon: 'gitlab' },
     { label: 'Patreon', url: 'https://www.patreon.com/c/roguedevstudio', icon: 'patreon' },
@@ -166,11 +270,47 @@ const SOCIAL_FALLBACK = [
     { label: 'Instagram', url: 'https://www.instagram.com/aya.erisu/', icon: 'instagram' }
 ];
 
+const SOCIAL_FALLBACK = CONNECT_SOCIALS;
+
 /** Bootstrap Icons has no bi-patreon — use brand logomark (circle + stem). */
 const PATREON_ICON_SVG =
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><circle cx="14.48" cy="9.73" r="7.23"/><rect x="2" y="2.5" width="4.5" height="19" rx="0.5"/></svg>';
 
-window.svgFallback = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="100%" height="100%" fill="%23F5F5F0"/><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="%23000000" stroke-width="1" opacity="0.06"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/><rect x="250" y="200" width="300" height="200" fill="none" stroke="%23000000" stroke-width="2"/><text x="400" y="295" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="bold" fill="%23000000" text-anchor="middle" letter-spacing="2">ROGUE.DEV</text></svg>`;
+function ensureBootstrapIcons() {
+    if (document.querySelector('link[data-bootstrap-icons]')) return;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css';
+    link.setAttribute('data-bootstrap-icons', '');
+    document.head.appendChild(link);
+}
+
+function connectIconInner(icon) {
+    if (icon === 'patreon') {
+        return `<span class="site-footer-icon-svg" aria-hidden="true">${PATREON_ICON_SVG}</span>`;
+    }
+    const bi = icon === 'itch' ? 'controller' : icon;
+    return `<i class="bi bi-${bi}" aria-hidden="true"></i>`;
+}
+
+function connectSocialMarkup(item, className) {
+    return (
+        `<a class="${className}" href="${escapeHTML(item.url)}" rel="noopener" target="_blank" ` +
+        `aria-label="${escapeHTML(item.label)}" data-tooltip="${escapeHTML(item.label)}" title="${escapeHTML(item.label)}">` +
+        connectIconInner(item.icon) +
+        '</a>'
+    );
+}
+
+function renderConnectIcons() {
+    ensureBootstrapIcons();
+    const footerHtml = CONNECT_SOCIALS.map((item) => connectSocialMarkup(item, 'site-footer-social')).join('');
+
+    document.querySelectorAll('.site-footer-socials').forEach((el) => {
+        el.innerHTML = footerHtml;
+    });
+}
+window.svgFallback = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="100%" height="100%" fill="%23F5F5F0"/><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="%23000000" stroke-width="1" opacity="0.06"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/><rect x="250" y="200" width="300" height="200" fill="none" stroke="%23000000" stroke-width="2"/><text x="400" y="295" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="bold" fill="%23000000" text-anchor="middle" letter-spacing="1">ROGUE DEVELOPER</text></svg>`;
 
 function defaultThumbSrc() {
     if (window.location.protocol === 'file:') return window.svgFallback;
@@ -312,16 +452,10 @@ function renderIcons() {
 }
 
 function renderAvailability() {
-    const now = new Date();
-    const year = now.getFullYear();
-    const quarter = Math.floor(now.getMonth() / 3);
-    const ranges = [
-        'Januari–Maret',
-        'April–Juni',
-        'Juli–September',
-        'Oktober–Desember'
-    ];
-    const label = `${ranges[quarter]} ${year}`;
+    const year = new Date().getFullYear();
+    const label = window.RogueSiteI18n
+        ? window.RogueSiteI18n.availabilityLabel()
+        : `Juli–September ${year}`;
 
     document.querySelectorAll('.availability-label').forEach((el) => {
         el.textContent = label;
@@ -330,6 +464,19 @@ function renderAvailability() {
     document.querySelectorAll('.dynamic-year').forEach((el) => {
         el.textContent = String(year);
     });
+}
+
+function ui(key) {
+    return window.RogueSiteI18n ? window.RogueSiteI18n.t(key) : key;
+}
+
+function localizeMeta(meta) {
+    if (!meta) return {};
+    const lang = window.RogueSiteI18n ? window.RogueSiteI18n.getLang() : 'id';
+    if (lang === 'en' && meta.en) {
+        return Object.assign({}, meta, meta.en);
+    }
+    return meta;
 }
 
 function ensureLightbox() {
@@ -565,7 +712,7 @@ async function renderFeaturedProjects() {
     const grid = document.getElementById('featured-grid');
     if (!grid) return;
 
-    grid.innerHTML = '<p class="section-lead">Memuat karya…</p>';
+    grid.innerHTML = `<p class="section-lead">${escapeHTML(ui('loadingWork'))}</p>`;
 
     const catalog = await loadStaticCatalog();
     let portfolioRepos = [];
@@ -595,34 +742,34 @@ async function renderFeaturedProjects() {
 
     await Promise.all(names.map(async (repoName) => {
         const remote = byName.get(repoName);
-        const meta = FEATURED_META[repoName] || {};
+        const meta = localizeMeta(FEATURED_META[repoName] || {});
         const title = meta.title || prettyTitle(repoName);
-        const category = meta.category || 'Sistem Digital';
+        const category = meta.category || ui('categoryDigital');
         const url = meta.url || (remote ? liveOrRepoUrl(remote) : `https://github.com/${OWNER}/${repoName}`);
         const desc = remote?.description || '';
         const card = document.createElement('article');
         card.className = 'project-card featured-card';
 
         const reqList = Array.isArray(meta.requirements) && meta.requirements.length
-            ? `<li><strong>Kebutuhan:</strong> ${meta.requirements.map((r) => escapeHTML(r)).join(' · ')}</li>`
+            ? `<li><strong>${escapeHTML(ui('labelNeeds'))}</strong> ${meta.requirements.map((r) => escapeHTML(r)).join(' · ')}</li>`
             : '';
         const audienceLine = meta.audience
-            ? `<li><strong>Untuk:</strong> ${escapeHTML(meta.audience)}</li>`
+            ? `<li><strong>${escapeHTML(ui('labelFor'))}</strong> ${escapeHTML(meta.audience)}</li>`
             : '';
         const stackLine = meta.stack
-            ? `<li><strong>Stack:</strong> ${escapeHTML(meta.stack)}</li>`
+            ? `<li><strong>${escapeHTML(ui('labelStack'))}</strong> ${escapeHTML(meta.stack)}</li>`
             : '';
 
         const caseBlock = meta.problem
             ? `<ul class="case-meta">
                     ${audienceLine}
-                    <li><strong>Tantangan:</strong> ${escapeHTML(meta.problem)}</li>
-                    <li><strong>Solusi:</strong> ${escapeHTML(meta.approach)}</li>
-                    <li><strong>Hasil:</strong> ${escapeHTML(meta.result)}</li>
+                    <li><strong>${escapeHTML(ui('labelChallenge'))}</strong> ${escapeHTML(meta.problem)}</li>
+                    <li><strong>${escapeHTML(ui('labelSolution'))}</strong> ${escapeHTML(meta.approach)}</li>
+                    <li><strong>${escapeHTML(ui('labelResult'))}</strong> ${escapeHTML(meta.result)}</li>
                     ${reqList}
                     ${stackLine}
                </ul>`
-            : `<p class="project-desc">${escapeHTML(desc || 'Proyek portfolio.')}</p>`;
+            : `<p class="project-desc">${escapeHTML(desc || ui('fallbackProject'))}</p>`;
 
         card.innerHTML = `
             <div class="project-image thumb-gallery" data-repo="${escapeHTML(repoName)}"></div>
@@ -630,7 +777,7 @@ async function renderFeaturedProjects() {
                 <div class="project-category">${escapeHTML(category)}</div>
                 <h3 class="project-title">${escapeHTML(title)}</h3>
                 ${caseBlock}
-                <a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer" class="project-link">Buka →</a>
+                <a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer" class="project-link">${escapeHTML(ui('openLink'))}</a>
             </div>
         `;
         grid.appendChild(card);
@@ -660,7 +807,7 @@ async function renderAgentsProjects() {
     const grid = document.getElementById('agents-grid');
     if (!grid) return;
 
-    grid.innerHTML = '<p class="section-lead">Memuat toolkit…</p>';
+    grid.innerHTML = `<p class="section-lead">${escapeHTML(ui('loadingToolkit'))}</p>`;
 
     const catalog = await loadStaticCatalog();
     const byName = new Map();
@@ -674,34 +821,34 @@ async function renderAgentsProjects() {
 
     AGENTS_PROJECTS.forEach((repoName) => {
         const remote = byName.get(repoName);
-        const meta = AGENTS_META[repoName] || {};
+        const meta = localizeMeta(AGENTS_META[repoName] || {});
         const title = meta.title || prettyTitle(repoName);
         const category = meta.category || 'AI Agents';
         const url = meta.url || (remote ? liveOrRepoUrl(remote) : `https://github.com/${OWNER}/${repoName}`);
         const desc = remote?.description || '';
 
         const reqList = Array.isArray(meta.requirements) && meta.requirements.length
-            ? `<li><strong>Kebutuhan:</strong> ${meta.requirements.map((r) => escapeHTML(r)).join(' · ')}</li>`
+            ? `<li><strong>${escapeHTML(ui('labelNeeds'))}</strong> ${meta.requirements.map((r) => escapeHTML(r)).join(' · ')}</li>`
             : '';
         const audienceLine = meta.audience
-            ? `<li><strong>Untuk:</strong> ${escapeHTML(meta.audience)}</li>`
+            ? `<li><strong>${escapeHTML(ui('labelFor'))}</strong> ${escapeHTML(meta.audience)}</li>`
             : '';
         const stackLine = meta.stack
-            ? `<li><strong>Stack:</strong> ${escapeHTML(meta.stack)}</li>`
+            ? `<li><strong>${escapeHTML(ui('labelStack'))}</strong> ${escapeHTML(meta.stack)}</li>`
             : '';
 
         const caseBlock = meta.problem
             ? `<ul class="case-meta">
                     ${audienceLine}
-                    <li><strong>Tantangan:</strong> ${escapeHTML(meta.problem)}</li>
-                    <li><strong>Solusi:</strong> ${escapeHTML(meta.approach)}</li>
-                    <li><strong>Hasil:</strong> ${escapeHTML(meta.result)}</li>
+                    <li><strong>${escapeHTML(ui('labelChallenge'))}</strong> ${escapeHTML(meta.problem)}</li>
+                    <li><strong>${escapeHTML(ui('labelSolution'))}</strong> ${escapeHTML(meta.approach)}</li>
+                    <li><strong>${escapeHTML(ui('labelResult'))}</strong> ${escapeHTML(meta.result)}</li>
                     ${reqList}
                     ${stackLine}
                </ul>`
-            : `<p class="project-desc">${escapeHTML(desc || 'Katalog AI agents Rogue Development.')}</p>`;
+            : `<p class="project-desc">${escapeHTML(desc || ui('fallbackAgents'))}</p>`;
 
-        const linkLabel = meta.linkLabel || 'Buka di GitHub →';
+        const linkLabel = meta.linkLabel || ui('openGithub');
         const card = document.createElement('article');
         card.className = 'project-card featured-card';
         card.innerHTML = `
@@ -721,114 +868,11 @@ async function renderAgentsProjects() {
 }
 
 function renderSocialFallback() {
-    const container = document.querySelector('.social-links');
-    if (!container || container.children.length > 0) return;
-
-    SOCIAL_FALLBACK.forEach((account) => {
-        const link = document.createElement('a');
-        link.href = account.url;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        link.setAttribute('aria-label', account.label);
-        link.innerHTML = `<i class="icon icon-${escapeHTML(account.icon)}"></i>`;
-        container.appendChild(link);
-    });
-
-    renderIcons();
+    renderConnectIcons();
 }
 
 async function fetchGitHubSocials() {
-    try {
-        const response = await fetch(`https://api.github.com/users/${OWNER}/social_accounts`);
-        if (!response.ok) {
-            renderSocialFallback();
-            return;
-        }
-
-        const socials = await response.json();
-        const container = document.querySelector('.social-links');
-        if (!container) return;
-
-        container.innerHTML = '';
-
-        const githubLink = document.createElement('a');
-        githubLink.href = `https://github.com/${OWNER}`;
-        githubLink.target = '_blank';
-        githubLink.rel = 'noopener noreferrer';
-        githubLink.setAttribute('aria-label', 'GitHub');
-        githubLink.innerHTML = '<i class="icon icon-github"></i>';
-        container.appendChild(githubLink);
-
-        const ensured = [...socials];
-        const urls = ensured.map((s) => (s.url || '').toLowerCase());
-        if (!urls.some((u) => u.includes('gitlab.com'))) {
-            ensured.push({ provider: 'generic', url: 'https://gitlab.com/rogue-dev-studio' });
-        }
-        if (!urls.some((u) => u.includes('patreon.com'))) {
-            ensured.push({ provider: 'generic', url: 'https://www.patreon.com/c/roguedevstudio' });
-        }
-        if (!urls.some((u) => u.includes('itch.io'))) {
-            ensured.push({ provider: 'generic', url: 'https://rogue-dev-studio.itch.io' });
-        }
-        if (!urls.some((u) => u.includes('shutterstock.com'))) {
-            ensured.push({ provider: 'generic', url: 'https://www.shutterstock.com/g/ArisHadisopiyan' });
-        }
-        if (!urls.some((u) => u.includes('turbosquid.com'))) {
-            ensured.push({ provider: 'generic', url: 'https://www.turbosquid.com/Search/Artists/ArisHadisopiyan' });
-        }
-
-        ensured.forEach((account) => {
-            const provider = escapeHTML((account.provider || 'generic').toLowerCase());
-            const rawUrl = account.url;
-            const url = escapeHTML(rawUrl);
-            let iconName = provider;
-            let label = provider.charAt(0).toUpperCase() + provider.slice(1);
-
-            if (provider === 'generic') {
-                if (rawUrl.includes('gitlab.com')) {
-                    iconName = 'gitlab';
-                    label = 'GitLab';
-                } else if (rawUrl.includes('patreon.com')) {
-                    iconName = 'patreon';
-                    label = 'Patreon';
-                } else if (rawUrl.includes('itch.io')) {
-                    iconName = 'itch';
-                    label = 'itch.io';
-                } else if (rawUrl.includes('shutterstock.com')) {
-                    iconName = 'camera';
-                    label = 'Shutterstock';
-                } else if (rawUrl.includes('turbosquid.com')) {
-                    iconName = 'link';
-                    label = 'TurboSquid';
-                } else if (rawUrl.includes('linkedin.com')) {
-                    iconName = 'linkedin';
-                    label = 'LinkedIn';
-                } else if (rawUrl.includes('instagram.com')) {
-                    iconName = 'instagram';
-                    label = 'Instagram';
-                } else if (rawUrl.includes('twitter.com') || rawUrl.includes('x.com')) {
-                    iconName = 'twitter';
-                    label = 'Twitter';
-                } else {
-                    iconName = 'link';
-                    label = 'Website';
-                }
-            }
-
-            const link = document.createElement('a');
-            link.href = url;
-            link.target = '_blank';
-            link.rel = 'noopener noreferrer';
-            link.setAttribute('aria-label', escapeHTML(label));
-            link.innerHTML = `<i class="icon icon-${escapeHTML(iconName)}"></i>`;
-            container.appendChild(link);
-        });
-
-        renderIcons();
-    } catch (error) {
-        console.error('Gagal mengambil akun sosial GitHub:', error);
-        renderSocialFallback();
-    }
+    renderConnectIcons();
 }
 
 function setupNav() {
@@ -839,8 +883,8 @@ function setupNav() {
     const setOpen = (open) => {
         nav.classList.toggle('is-open', open);
         toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-        toggle.setAttribute('aria-label', open ? 'Tutup menu' : 'Buka menu');
-        toggle.textContent = open ? 'Tutup' : 'Menu';
+        toggle.setAttribute('aria-label', open ? ui('navMenuAria') : ui('navMenuAria'));
+        toggle.textContent = open ? ui('navClose') : ui('navMenu');
     };
 
     toggle.addEventListener('click', () => {
@@ -849,6 +893,16 @@ function setupNav() {
 
     nav.querySelectorAll('.nav-links a').forEach((link) => {
         link.addEventListener('click', () => setOpen(false));
+    });
+}
+
+function setupSiteLang() {
+    if (!window.RogueSiteI18n) return;
+    window.RogueSiteI18n.bind();
+    window.addEventListener('site-lang-change', () => {
+        renderAvailability();
+        renderFeaturedProjects();
+        renderAgentsProjects();
     });
 }
 
@@ -861,6 +915,8 @@ async function initApp() {
     renderIcons();
     renderAvailability();
     setupNav();
+    setupSiteLang();
+    renderConnectIcons();
 
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener('click', function (e) {
