@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T02:07:43.168Z",
+  "generatedAt": "2026-09-27T10:55:20.201Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -590,6 +590,16 @@
   ],
   "archive": [
     {
+      "name": "rogue-asset-store",
+      "description": "Rogue Asset Store — skills, MCP servers, and digital assets by Rogue Development",
+      "homepage": "https://rogue-dev-studio.github.io/rogue-asset-store/",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-asset-store",
+      "language": "JavaScript",
+      "default_branch": "main",
+      "updated_at": "2026-09-27T06:53:41Z",
+      "images": []
+    },
+    {
       "name": "rogue-backend-engineering-skill",
       "description": "Expert backend application engineering: layered architecture, domain services, validation, transactions, caching boundaries, background jobs, and framework idioms (e.g. Laravel/Node) without leaking business rules into controllers. Use when implementing or refactoring server-side features, services, form requests/DTOs, policies, queues, or integ...",
       "homepage": "",
@@ -1177,16 +1187,6 @@
       "language": "",
       "default_branch": "main",
       "updated_at": "2026-09-26T07:51:35Z",
-      "images": []
-    },
-    {
-      "name": "rogue-jupyter-mcp",
-      "description": "Status: **partial** - docs only.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-jupyter-mcp",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-26T07:51:32Z",
       "images": []
     }
   ]
