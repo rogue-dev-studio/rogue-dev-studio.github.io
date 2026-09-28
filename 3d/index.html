@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="3d83a86d-cf78-4db1-9abc-4e3b2a122b1e" type="text/javascript" async></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -15,6 +14,14 @@
     security_storage: 'granted',
     wait_for_update: 500
   });
+  try {
+    if (localStorage.getItem('rogue_consent_v1') === 'granted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted',
+        functionality_storage: 'granted'
+      });
+    }
+  } catch (e) {}
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3457N10K0E"></script>
@@ -74,5 +81,6 @@
 
     <script src="gallery.js"></script>
     <script src="../js/nav-mobile.js"></script>
+<script src="../js/consent.js?v=20260928a" defer></script>
 </body>
 </html>
