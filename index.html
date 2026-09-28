@@ -16,11 +16,12 @@
 
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Rogue Developer">
     <meta property="og:url" content="https://rogue-dev-studio.github.io/">
     <meta property="og:title" content="Rogue Developer — Website, SaaS & Aset Digital">
     <meta property="og:description" content="Website, aplikasi web, dan sistem untuk bisnis — plus aset 3D & stock siap pakai.">
-    <!-- Ganti URL gambar di bawah dengan link logo/banner website Anda (1200x630 pixel direkomendasikan) -->
     <meta property="og:image" content="https://rogue-dev-studio.github.io/img/banner-seo.png">
+    <meta property="og:locale" content="id_ID">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -34,25 +35,52 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css?v=20260929i">
 
-    <!-- JSON-LD (Schema Markup) untuk membantu Google mengenali bisnis lokal Anda -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Rogue Developer",
-      "image": "https://rogue-dev-studio.github.io/img/logo.png",
-      "description": "Website, aplikasi web, dan sistem untuk bisnis — plus aset 3D & stock siap pakai.",
-      "url": "https://rogue-dev-studio.github.io/",
-      "founder": {
-        "@type": "Person",
-        "name": "Aris Hadisopiyan"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bandung",
-        "addressRegion": "Jawa Barat",
-        "addressCountry": "ID"
-      }
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://rogue-dev-studio.github.io/#organization",
+          "name": "Rogue Developer",
+          "alternateName": ["Rogue Development", "Rogue Dev Studio"],
+          "url": "https://rogue-dev-studio.github.io/",
+          "logo": "https://rogue-dev-studio.github.io/img/logo.png",
+          "image": "https://rogue-dev-studio.github.io/img/banner-seo.png",
+          "sameAs": [
+            "https://github.com/rogue-dev-studio",
+            "https://rogue-dev-studio.github.io/rogue-asset-store/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://rogue-dev-studio.github.io/#website",
+          "name": "Rogue Developer",
+          "url": "https://rogue-dev-studio.github.io/",
+          "description": "Website, aplikasi web, dan sistem untuk bisnis — plus aset 3D & stock siap pakai.",
+          "publisher": { "@id": "https://rogue-dev-studio.github.io/#organization" },
+          "inLanguage": ["id", "en"]
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://rogue-dev-studio.github.io/#localbusiness",
+          "name": "Rogue Developer",
+          "image": "https://rogue-dev-studio.github.io/img/logo.png",
+          "description": "Website, aplikasi web, dan sistem untuk bisnis — plus aset 3D & stock siap pakai.",
+          "url": "https://rogue-dev-studio.github.io/",
+          "founder": {
+            "@type": "Person",
+            "name": "Aris Hadisopiyan"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bandung",
+            "addressRegion": "Jawa Barat",
+            "addressCountry": "ID"
+          },
+          "parentOrganization": { "@id": "https://rogue-dev-studio.github.io/#organization" }
+        }
+      ]
     }
     </script>
 </head>

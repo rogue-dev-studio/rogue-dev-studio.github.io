@@ -14,4 +14,4 @@ Disallow: /contact/
 User-agent: CCBot
 Disallow: /contact/
 
-Sitemap: https://rogue-dev-studio.github.io/
+Sitemap: https://rogue-dev-studio.github.io/sitemap.xml
