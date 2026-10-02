@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T11:27:30.046Z",
+  "generatedAt": "2026-10-02T16:54:53.369Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -590,6 +590,56 @@
   ],
   "archive": [
     {
+      "name": "rogue-research-and-local-llm-skill",
+      "description": "Canonical research and local/remote LLM usage: Ollama, DeepSeek/Perplexity style research MCPs, web/youtube summary, and research swarms.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-research-and-local-llm-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-10-02T16:26:55Z",
+      "images": []
+    },
+    {
+      "name": "rogue-rust-skill",
+      "description": "Rust development environment. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `rust` work when listed in TEAM.yaml or explicitly requested.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-rust-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-10-02T16:26:52Z",
+      "images": []
+    },
+    {
+      "name": "rogue-ruby-skill",
+      "description": "Ruby development environment. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `ruby` work when listed in TEAM.yaml or explicitly requested.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-ruby-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-10-02T16:26:51Z",
+      "images": []
+    },
+    {
+      "name": "rogue-skill-authoring-skill",
+      "description": "Canonical guide for authoring and validating portable agent skills (SKILL.md packs) for the agent house catalog and team local skills.",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-skill-authoring-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-10-02T16:26:43Z",
+      "images": []
+    },
+    {
+      "name": "rogue-skill-pack-managers-skill",
+      "description": "Canonical skill/pack marketplace management: install, update, and audit agent skills across hosts (OpenSkills, agent-skills-cli, Claude marketplace).",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-skill-pack-managers-skill",
+      "language": "",
+      "default_branch": "main",
+      "updated_at": "2026-10-02T16:26:43Z",
+      "images": []
+    },
+    {
       "name": "rogue-asset-store",
       "description": "Rogue Asset Store — skills, MCP servers, and digital assets by Rogue Development",
       "homepage": "https://rogue-dev-studio.github.io/rogue-asset-store/",
@@ -730,26 +780,6 @@
       "images": []
     },
     {
-      "name": "rogue-skill-pack-managers-skill",
-      "description": "Canonical skill/pack marketplace management: install, update, and audit agent skills across hosts (OpenSkills, agent-skills-cli, Claude marketplace).",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-skill-pack-managers-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-26T07:53:49Z",
-      "images": []
-    },
-    {
-      "name": "rogue-skill-authoring-skill",
-      "description": "Canonical guide for authoring and validating portable agent skills (SKILL.md packs) for the agent house catalog and team local skills.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-skill-authoring-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-26T07:53:46Z",
-      "images": []
-    },
-    {
       "name": "rogue-ship-skill",
       "description": "Plan launch readiness, staged rollouts, production monitoring, rollback, communications, and post-launch validation. Use when the user asks for `/ship`, pre-launch checklists, release readiness, staged rollout plans, feature flags, deployment monitoring, or rollback planning.",
       "homepage": "",
@@ -777,36 +807,6 @@
       "language": "",
       "default_branch": "main",
       "updated_at": "2026-09-26T07:53:37Z",
-      "images": []
-    },
-    {
-      "name": "rogue-rust-skill",
-      "description": "Rust development environment. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `rust` work when listed in TEAM.yaml or explicitly requested.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-rust-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-26T07:53:34Z",
-      "images": []
-    },
-    {
-      "name": "rogue-ruby-skill",
-      "description": "Ruby development environment. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `ruby` work when listed in TEAM.yaml or explicitly requested.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-ruby-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-26T07:53:31Z",
-      "images": []
-    },
-    {
-      "name": "rogue-research-and-local-llm-skill",
-      "description": "Canonical research and local/remote LLM usage: Ollama, DeepSeek/Perplexity style research MCPs, web/youtube summary, and research swarms.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-research-and-local-llm-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-26T07:53:28Z",
       "images": []
     },
     {
