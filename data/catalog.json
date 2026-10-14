@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T16:03:25.604Z",
+  "generatedAt": "2026-10-14T21:02:12.526Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -590,6 +590,16 @@
   ],
   "archive": [
     {
+      "name": "rogue-blender-mcp",
+      "description": "Rogue Blender MCP — modeling, sculpting, and scene control for AI agents",
+      "homepage": "https://rogue-dev-studio.github.io/rogue-market-agent/",
+      "html_url": "https://github.com/rogue-dev-studio/rogue-blender-mcp",
+      "language": "Python",
+      "default_branch": "main",
+      "updated_at": "2026-10-14T17:56:30Z",
+      "images": []
+    },
+    {
       "name": "rogue-research-and-local-llm-skill",
       "description": "Canonical research and local/remote LLM usage: Ollama, DeepSeek/Perplexity style research MCPs, web/youtube summary, and research swarms.",
       "homepage": "",
@@ -1177,16 +1187,6 @@
       "language": "",
       "default_branch": "main",
       "updated_at": "2026-09-26T07:51:38Z",
-      "images": []
-    },
-    {
-      "name": "rogue-jupyter-notebooks-skill",
-      "description": "Jupyter notebook execution MCP server. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `jupyter-notebooks` work when listed in TEAM.yaml or explicitly requested.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-jupyter-notebooks-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-26T07:51:35Z",
       "images": []
     }
   ]
