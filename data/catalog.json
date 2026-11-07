@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T03:27:57.102Z",
+  "generatedAt": "2026-11-07T11:59:13.471Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -590,6 +590,16 @@
   ],
   "archive": [
     {
+      "name": "blogger-theme-builder-pro",
+      "description": "Single-file visual builder that compiles native Blogger (Blogspot) XML themes.",
+      "homepage": "https://rogue-dev-studio.github.io/blogger-theme-builder-pro/",
+      "html_url": "https://github.com/rogue-dev-studio/blogger-theme-builder-pro",
+      "language": "HTML",
+      "default_branch": "main",
+      "updated_at": "2026-11-07T05:20:16Z",
+      "images": []
+    },
+    {
       "name": "virtual-3d-agents-office",
       "description": "Explorable two-floor 3D office where nine AI agents work, move between rooms and report status. Seeded front-end simulation built with Vite + three.js.",
       "homepage": "",
@@ -1177,16 +1187,6 @@
       "language": "",
       "default_branch": "main",
       "updated_at": "2026-09-26T07:51:47Z",
-      "images": []
-    },
-    {
-      "name": "rogue-kicad-skill",
-      "description": "KiCad PCB design MCP server. Use when the project needs this capability or the user / team manifest asks for it. Use for specialized `kicad` work when listed in TEAM.yaml or explicitly requested.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-kicad-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-26T07:51:44Z",
       "images": []
     }
   ]
