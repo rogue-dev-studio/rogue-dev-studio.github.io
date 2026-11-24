@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T03:31:31.279Z",
+  "generatedAt": "2026-11-24T16:35:51.167Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -590,6 +590,16 @@
   ],
   "archive": [
     {
+      "name": "ai-agents-rogue",
+      "description": "Kumpulan AI agents, prompt, rules, skills, dan command workflows terstandarisasi",
+      "homepage": "https://rogue-dev-studio.github.io/",
+      "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue",
+      "language": "PowerShell",
+      "default_branch": "master",
+      "updated_at": "2026-11-24T10:25:54Z",
+      "images": []
+    },
+    {
       "name": "blogger-theme-builder-pro",
       "description": "Single-file visual builder that compiles native Blogger (Blogspot) XML themes.",
       "homepage": "https://rogue-dev-studio.github.io/blogger-theme-builder-pro/",
@@ -607,16 +617,6 @@
       "language": "JavaScript",
       "default_branch": "main",
       "updated_at": "2026-10-19T09:57:44Z",
-      "images": []
-    },
-    {
-      "name": "ai-agents-rogue",
-      "description": "Kumpulan AI agents, prompt, rules, skills, dan command workflows terstandarisasi",
-      "homepage": "https://rogue-dev-studio.github.io/",
-      "html_url": "https://github.com/rogue-dev-studio/ai-agents-rogue",
-      "language": "Python",
-      "default_branch": "master",
-      "updated_at": "2026-10-17T06:34:06Z",
       "images": []
     },
     {
