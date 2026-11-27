@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T01:12:48.204Z",
+  "generatedAt": "2026-11-27T15:42:34.592Z",
   "owner": "rogue-dev-studio",
   "topics": {
     "lab": "experiment-arishadisopiyan",
@@ -590,6 +590,16 @@
   ],
   "archive": [
     {
+      "name": "github-cli-tool",
+      "description": "",
+      "homepage": "",
+      "html_url": "https://github.com/rogue-dev-studio/github-cli-tool",
+      "language": "",
+      "default_branch": "master",
+      "updated_at": "2026-11-27T07:55:25Z",
+      "images": []
+    },
+    {
       "name": "ai-agents-rogue",
       "description": "Kumpulan AI agents, prompt, rules, skills, dan command workflows terstandarisasi",
       "homepage": "https://rogue-dev-studio.github.io/",
@@ -1177,16 +1187,6 @@
       "language": "",
       "default_branch": "main",
       "updated_at": "2026-09-26T07:51:50Z",
-      "images": []
-    },
-    {
-      "name": "rogue-last30days-skill",
-      "description": "Research what people have discussed in the last 30 days across high-signal public platforms. Use when the user asks for `/last30days`, recent trend research, competitive intelligence, market pulse briefs, or engagement-ranked synthesis from Reddit, Hacker News, GitHub, X, YouTube, Polymarket, and similar sources.",
-      "homepage": "",
-      "html_url": "https://github.com/rogue-dev-studio/rogue-last30days-skill",
-      "language": "",
-      "default_branch": "main",
-      "updated_at": "2026-09-26T07:51:47Z",
       "images": []
     }
   ]
